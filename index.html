@@ -3,6 +3,9 @@ title: Home
 layout: default
 ---
 
+{% assign header = site.home | where: 'title', 'header' %}
+{% assign test = site.pages | where: 'title', 'test' %}
+
 <header class="Header" role="banner">
 	<div class="gallery">
 		{% include hero-post.html %}
@@ -12,12 +15,15 @@ layout: default
 			<a class="Header-logo" href="/">
 				<img src="/uploads/logo.png" alt="{{ site.title }}">
 			</a>
-			<h1 class="Header-title">
-				{{ page.home.docs.header.headerline }}
-				{{ home.docs.header.headerline }}
-				{{ home.header.headerline }}
-				{{ header.headerline }}
-				{{ page.home.headerline }}
+			<h1 class="Header-title u-marginT">
+				{{ header.headline }}
+				{{ site.home.headline }}
+				{{ site.pages.home.headline }}
+				{{ site.home.header.headline }}
+				{{ test.content }}
+				{{ site.pages.test.page.headline }}
+				{{ site.pages.test.page.content }}
+				{{ header.collection }}
 			</h1>
 		</div>
 	</div>
