@@ -6,8 +6,7 @@
 
 
 .Header {
-	transition-duration: map-fetch($transition, duration, base);
-	transition-duration: 0.2s;
+	position: relative;
 
 	@include respond-to(sm) {
 	}
