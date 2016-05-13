@@ -12,7 +12,13 @@ layout: default
 			<a class="Header-logo" href="/">
 				<img src="/uploads/logo.png" alt="{{ site.title }}">
 			</a>
-			<h1 class="Header-title">{{ home.header.headerline }}</h1>
+			<h1 class="Header-title">
+				{{ page.home.docs.header.headerline }}
+				{{ home.docs.header.headerline }}
+				{{ home.header.headerline }}
+				{{ header.headerline }}
+				{{ page.home.headerline }}
+			</h1>
 		</div>
 	</div>
 </header>
