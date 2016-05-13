@@ -19,7 +19,7 @@
 
 	@if $darkInside {
 		&:before {
-			background-image: linear-gradient(to bottom, rgba( palette(brand), 0.85 ) 0%, rgba( palette(brand), 0 ) 100%);
+			background-image: linear-gradient(to bottom, rgba( palette(brand), 0.9 ) 0%, rgba( palette(brand), 0 ) 100%);
 			background-blend-mode: multiply;
 			content: " ";
 			opacity: 1;
