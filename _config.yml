@@ -25,4 +25,4 @@ defaults:
   values:
     layout: page
 permalink: pretty
-exclude: "[node_modules]"
+exclude: [node_modules]
