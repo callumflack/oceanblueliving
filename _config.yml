@@ -9,6 +9,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  homeslider:
+    title: homeSlider
+    output: true
 defaults:
 - scope:
     path: ''
