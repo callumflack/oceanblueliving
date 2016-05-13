@@ -1,0 +1,88 @@
+
+
+// --------------------------------------------------------------------------
+//   CHART COMPONENT
+// --------------------------------------------------------------------------
+
+
+// .u-size10of12 { width: 83.33333333333334% !important;
+// .u-size7of8 { width: 87.5% !important;
+// .u-size9of10 { width: 90% !important;
+// .u-size11of12 { width: 91.66666666666666% !important;
+
+.c-chart {
+	margin: space(1.25) auto space(1);
+	width: 80%;
+
+	@include respond-to(xs) {
+		width: 87.5%;
+		margin: space(2) auto space(1.5);
+	}
+}
+
+.c-chart-bar {
+	background-color: rgba(palette(neutral), 0.4);
+	border: 1px solid rgba(palette(brand), 0.6);
+	border-radius: size(border-radius, base);
+	height: 140px;
+	position: relative;
+
+	@include respond-to(xs) {
+		height: 220px;
+	}
+}
+
+.c-chart-indicator {
+	@include baseTransition();
+	@include posAbsoluteCenter();
+	background-color: palette(brand-complement);
+	border-bottom-left-radius: size(border-radius, base);
+	border-bottom-right-radius: size(border-radius, base);
+	top: auto;
+	height: 44%;
+
+	.c-chart-indicatorScore {
+		color: palette(white);
+		display: inline-block;
+		font-family: $font-sans-medium;
+		font-size: fontsize(headerXl, xs);
+		text-align: center;
+		width: 100%;
+
+		@include respond-to(xs) {
+			font-size: fontsize(headerXl, base);
+		}
+	}
+
+	.c-chart-indicatorMark {
+		font-family: $font-sans-regular;
+		font-size: fontsize(textSm, xs);
+		left: 2px;
+		position: relative;
+		top: -16px;
+
+		@include respond-to(xs) {
+			font-size: fontsize(textSm, base);
+			top: -20px;
+		}
+	}
+}
+
+.c-chart-label {
+	// @include TextSm($mixinFont: $font-sans-medium);
+	margin-bottom: space(0.7);
+	margin-top: space(0.4);
+	text-align: center;
+
+	color: palette(brand);
+	font-family: $font-sans-medium;
+	font-size: fontsize(textXs, xs);
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	@include respond-to(xs) {
+		margin-bottom: space(0.75);
+		margin-top: space(0.5);
+		font-size: fontsize(textXs, base);
+	}
+}

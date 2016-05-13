@@ -1,0 +1,136 @@
+
+
+// --------------------------------------------------------------------------
+//   QUESTION COMPONENT
+// --------------------------------------------------------------------------
+
+
+.c-questionContext {
+	@include TextSm($mixinFont: $font-sans-medium);
+	margin: space(2.5) 0 space(1.25);
+
+	@include respond-to(xs) {
+		margin: space(5) 0 space(2.25);
+		width: 80%;
+	}
+}
+
+.c-question {
+	@include baseTransition();
+	background-color: rgba(palette(neutral), 0.4);
+	border: 1px solid rgba(palette(brand), 0.6);
+	border-radius: size(border-radius, base);
+	// opacity: 0.3;
+	margin-bottom: space(1.5);
+	padding: space(0.75) space(0.9) space(0.65);
+
+	&.is-active {
+		@include baseTransition();
+		opacity: 1;
+	}
+
+	&.has-error {
+		border-color: palette(bad-news);
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		margin-bottom: space(2.5);
+		position: relative;
+
+		&:after {
+			@include TextSm($mixinFont: $font-sans-medium);
+			background-color: palette(bad-news);
+			border: 1px solid palette(bad-news);
+			border-bottom-left-radius: size(border-radius, base);
+			border-bottom-right-radius: size(border-radius, base);
+			bottom: space(-1);
+			color: palette(white);
+			content: 'Please make a choice';
+			display: block;
+			left: -1px;
+			padding: 4px space(1.25);
+			position: absolute;
+			right: -1px;
+		}
+	}
+
+	@include respond-to(xs) {
+		margin-bottom: space(3);
+		padding: space(1) space(1.5);
+
+		&.has-error {
+			margin-bottom: space(4.5);
+
+			&:after {
+				bottom: -30px;
+				padding: 4px space(3.25);
+			}
+		}
+	}
+}
+
+.c-question-ask {
+	@include TextMd($mixinFont: $font-sans-regular);
+	margin-bottom: space(0.5);
+
+	@include respond-to(xs) {
+		margin-bottom: space(0.75);
+	}
+}
+
+.c-question-ask--number {
+	width: 27px;
+
+	@include respond-to(xs) {
+		width: space(1);
+	}
+}
+
+.c-question-choices {
+	// margin-left: 11%;
+	// width: 76%;
+
+	@include respond-to(xs) {
+		margin: 0 auto;
+		width: 83%;
+	}
+}
+
+.c-question-choices--option {
+	@include TextRg();
+	border-radius: size(border-radius, small);
+	display: flex;
+	margin-bottom: space(0.1);
+	padding: space(0.2) space(0.35);
+
+	input {
+		margin-right: 12px;
+	}
+
+	.Icon {
+		fill: transparent;
+		margin-left: auto; // winning!
+	}
+
+	@include on-event() {
+		cursor: pointer;
+	}
+
+	&.is-active {
+		background-color: palette(brand-complement);
+		color: palette(white);
+		font-family: $font-sans-regular;
+
+		svg {
+			fill: palette(white) !important;
+		}
+	}
+
+	@include respond-to(xs) {
+		margin-bottom: space(0.25);
+		padding: space(0.35) space(0.5);
+	}
+
+	// &:not(:last-child) {
+	// 	margin-bottom: space(0.25);
+	// }
+}

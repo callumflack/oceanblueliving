@@ -1,0 +1,66 @@
+
+
+// --------------------------------------------------------------------------
+//    COMPONENT: Survey progress
+// --------------------------------------------------------------------------
+
+
+// The progress component layout
+// is managed by Suit's flexbox component
+
+.c-surveyProgressWrapper {
+	// display: none;
+
+	@include respond-to(max-sm) {
+		border-top: 1px solid palette(base);
+		position: relative;
+		padding-bottom: space(3.5);
+	}
+}
+
+.c-surveyProgress {
+	width: 100%;
+
+	@include respond-to(md) {
+		width: 70%;
+	}
+}
+
+.c-surveyProgress-score {
+	@include textButtonSm($mixinColor: palette(brand) );
+	letter-spacing: 0.01em;
+	line-height: $base-line-height;
+	margin-bottom: space(1/3);
+	text-transform: none;
+
+	a {
+		font-family: $font-sans-regular;
+	}
+}
+
+.c-surveyProgress-cancel {
+	border-left: 1px solid rgba( palette(brand), 0.3);
+	margin-left: space(1/2);
+	padding-left: space(1/2);
+
+	a {
+		font-family: $font-sans-regular;
+	}
+}
+
+.c-surveyProgress-indicatorBase {
+	background-color: rgba(palette(brand), 0.15);
+	border-radius: 2px;
+	height: 5px;
+	position: relative;
+	width: 100%;
+}
+
+.c-surveyProgress-indicator {
+	@include baseTransition();
+	@include posAbsoluteCenter();
+	background-color: palette(brand);
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	width: 25%;
+}

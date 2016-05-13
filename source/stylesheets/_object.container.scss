@@ -1,0 +1,40 @@
+
+
+// --------------------------------------------------------------------------
+// COMPONENT: CONTAINER
+// --------------------------------------------------------------------------
+
+
+.o-content {
+	margin: space(5) auto 0;
+
+	@include respond-to(sm) {
+		margin: space(7) auto 0;
+	}
+}
+
+.o-container {
+	@include clearfix();
+	margin: 0 auto;
+	max-width: size(container, default);
+	padding: 0 space(1);
+	position: relative;
+
+	@include respond-to(xs) {
+		max-width: size(container, default);
+		padding: 0;
+	}
+
+	&--specificWidth {
+		width: size(container, default);
+
+		@include respond-to(xs) {
+			width: size(container, small);
+		}
+
+		@include respond-to(md) {
+			width: size(container, default);
+		}
+	}
+
+}

@@ -1,0 +1,79 @@
+
+
+// --------------------------------------------------------------------------
+//   HEADLINE TYPOGRAPHY
+// --------------------------------------------------------------------------
+
+
+@mixin headlineTemplate() {
+	@include typeReset();
+	line-height: 1.25;
+	margin-bottom: space(0.85);
+	text-align: center;
+
+	// if the headline is a link
+	// https://css-tricks.com/the-sass-ampersand/
+	// &#{a} {
+	//     @include on-event() {
+	//         opacity: 0.4;
+	//         transition: opacity 500ms ease;
+	//     }
+	// }
+
+	a {
+
+	}
+
+	@include respond-to(xs) {
+		// margin-bottom: space(1.75);
+	}
+}
+
+@mixin headlineRg(
+	$mixinColor: palette(brand),
+	$mixinFont: $font-sans-medium
+) {
+	@include headlineTemplate();
+	color: $mixinColor;
+	font-family: $mixinFont;
+	font-size: fontsize(headerRg, xs);
+
+	@include respond-to(xs) {
+		font-size: fontsize(headerRg, base);
+	}
+}
+
+@mixin headlineSm(
+	$mixinColor: palette(brand),
+	$mixinFont: $font-sans-medium
+) {
+	@include headlineTemplate();
+	color: $mixinColor;
+	font-family: $mixinFont;
+	font-size: fontsize(textRg, xs);
+
+	@include respond-to(xs) {
+		font-size: fontsize(textRg, base);
+	}
+}
+
+
+
+
+
+// Vax Initiate.
+// Hierarchy: primary, secondary, tertiary, quaternary, quinary, senary,
+// septenary, octonary, nonary, denary… and super.
+// --------------------------------------------------------------------------
+
+.u-headline            { @include headlineRg(); }
+.u-headlineEm          { @include headlineRg($mixinFont: $font-sans-medium-i); }
+.u-headline--light     { @include headlineRg($mixinColor: palette(brand-counter)); }
+.u-headlineSm          { @include headlineSm(); }
+.u-headlineSm--light   { @include headlineSm($mixinColor: palette(brand-counter)); }
+
+
+
+// .Headline--sm        { @include headlineSm(); }
+// .Headline--secondary { @include headlineSecondary(); }
+// .Headline--tertiary  { @include headlineTertiary(); }

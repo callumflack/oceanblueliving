@@ -1,0 +1,69 @@
+
+
+// --------------------------------------------------------------------------
+//   NAV COMPONENT
+// --------------------------------------------------------------------------
+
+
+.c-header {
+	position: absolute;;
+	top: 0;
+	width: 100%;
+	z-index: 9;
+
+	&.is-registered {
+		background-color: palette(neutral);
+		border-bottom: 1px solid palette(base);
+		position: fixed;
+	}
+}
+
+.c-nav {
+	display: flex;
+	height: rem(80);
+	padding: space(0.9);
+	position: relative;
+	// z-index: 9;
+
+	@include respond-to(xs) {
+		height: rem(110);
+		padding: space(1);
+	}
+}
+
+
+// Logo home link
+// --------------------------------------------------------------------------
+
+.c-nav-home {
+	img {
+		height: 45px;
+
+		@include respond-to(xs) {
+			height: 60px;
+		}
+	}
+
+	@include when-inside(".Modal") {
+		position: absolute;
+		left: space(0.9);
+		top: space(0.9);
+
+		@include respond-to(xs) {
+			left: space(1);
+			top: space(1);
+		}
+	}
+}
+
+
+// Service provider / Admin status
+// --------------------------------------------------------------------------
+
+.c-nav-status {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	margin-left: auto;
+	position: relative;
+}
