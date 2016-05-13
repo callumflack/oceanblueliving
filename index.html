@@ -4,18 +4,17 @@ layout: default
 ---
 
 {% assign header = site.home | where: 'title', 'header' | first  %}
-{% assign test = site.pages | where: 'title', 'test' | first %}
 
 <header class="Header" role="banner">
 	<div class="gallery">
-		{% include hero-post.html %}
+		{% include header-gallery.html %}
 	</div>
 	<div class="u-posAbsoluteCenter">
 		<div class="o-container u-textCenter u-marginT6">
 			<a class="Header-logo" href="/">
 				<img src="/uploads/logo.png" alt="{{ site.title }}">
 			</a>
-			<h1 class="Header-title u-marginT">
+			<h1 class="Header-title u-marginT2">
 				{{ header.headline }}
 			</h1>
 		</div>

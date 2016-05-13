@@ -1,0 +1,17 @@
+{% assign header = site.home | where: 'title', 'header' | first  %}
+
+{% for image in header.gallery-images %}
+	<div class="gallery-cell">
+		<div class="FlexEmbed">
+			<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+			<div class="FlexEmbed-content">
+				<div
+					class="u-posAbsoluteCenter CoverImage--dark"
+					style="background-image: url('{{ image }}')">
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+{% endfor %}
