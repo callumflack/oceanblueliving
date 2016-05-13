@@ -12,6 +12,7 @@ collections:
   home:
     title: home
     output: false
+    headline: We’re craftspeople who love transforming spaces.
 defaults:
 - scope:
     path: ''
