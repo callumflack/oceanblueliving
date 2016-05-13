@@ -9,7 +9,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-  homeslider:
+  home:
     title: home
     output: true
 defaults:
