@@ -6,6 +6,5 @@ gallery-images:
 - "/uploads/home-hero-1.jpg"
 - "/uploads/home-hero-2.jpg"
 - "/uploads/home-hero-3.jpg"
-Field name: 
 ---
 
