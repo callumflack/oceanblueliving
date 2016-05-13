@@ -6,6 +6,7 @@ Field name:
     slider-1: "/uploads/home-hero-1.jpg"
     slider-2: "/uploads/home-hero-2.jpg"
     slider-3: "/uploads/home-hero-3.jpg"
-header-title: "We’re craftspeople \Lwho love transforming spaces."
+images: "/uploads/home-hero-1.jpg"
+text: "We’re craftspeople \Lwho love transforming spaces."
 ---
 
