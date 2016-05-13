@@ -23,6 +23,6 @@
 }
 
 .Header-title {
-	@include headlineRg();
+	@include headlineSm();
 	color: palette(white);
 }

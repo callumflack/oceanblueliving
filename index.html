@@ -3,8 +3,8 @@ title: Home
 layout: default
 ---
 
-{% assign header = site.home | where: 'title', 'header' %}
-{% assign test = site.pages | where: 'title', 'test' %}
+{% assign header = site.home | where: 'title', 'header' | first  %}
+{% assign test = site.pages | where: 'title', 'test' | first %}
 
 <header class="Header" role="banner">
 	<div class="gallery">
@@ -17,13 +17,7 @@ layout: default
 			</a>
 			<h1 class="Header-title u-marginT">
 				{{ header.headline }}
-				{{ site.home.headline }}
-				{{ site.pages.home.headline }}
-				{{ site.home.header.headline }}
-				{{ test.content }}
-				{{ site.pages.test.page.headline }}
-				{{ site.pages.test.page.content }}
-				{{ header.collection }}
+				{{ test.headline }}
 			</h1>
 		</div>
 	</div>
