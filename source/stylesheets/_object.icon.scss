@@ -6,12 +6,26 @@
 // --------------------------------------------------------------------------
 
 
+.IconWrapper {
+	cursor: pointer;
+	display: inline-block;
+	margin: -30px;
+	padding: 30px;
+}
+
 // .#{$namespace}Icon,
 .Icon {
 	width: 24px;
 	height: 24px;
 	display: inline-block;
 	fill: currentColor; // The color of the SVG will inherit the parent's `color`.
+
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
 
 	@include on-event() {
 		outline: 0;

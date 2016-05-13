@@ -22,11 +22,9 @@
 <body id="top" class="{{type}} {{slug}} {{page.title}} {{page.categories}} {{page.slug}} {% for tag in site.tags %}{{tag.slug}}{% endfor %}"
 	data-spy="scroll" data-target="#scrollspy" data-offset="300">
 
-	{% include header.html %}
+	{% include nav-toggle.html %}
 
-	<main class="Content" role="main">
-		{{ content }}
-	</main>
+	{{ content }}
 
 	{% include footer.html %}
 	{% include nav.html %}

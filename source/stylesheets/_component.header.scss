@@ -1,0 +1,29 @@
+
+
+// --------------------------------------------------------------------------
+//   HEADER
+// --------------------------------------------------------------------------
+
+
+.Header {
+	transition-duration: map-fetch($transition, duration, base);
+	transition-duration: 0.2s;
+
+	@include respond-to(sm) {
+	}
+}
+
+.Header-logo {
+	border-bottom: 1px solid palette(white);
+	display: inline-block;
+	padding-bottom: space(1);
+
+	> img {
+		width: 220px;
+	}
+}
+
+.Header-title {
+	@include headlineRg();
+	color: palette(white);
+}

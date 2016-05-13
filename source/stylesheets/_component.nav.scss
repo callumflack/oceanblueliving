@@ -22,12 +22,8 @@
 }
 
 .Nav-toggler {
-	background: none;
-	padding: .5rem .75rem;
-
-	@include on-event {
-		text-decoration: none;
-	}
+	// background: none;
+	// padding: .5rem .75rem;
 }
 
 
