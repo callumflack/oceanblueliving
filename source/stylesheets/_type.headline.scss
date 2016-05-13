@@ -7,7 +7,7 @@
 
 @mixin headlineTemplate() {
 	@include typeReset();
-	line-height: 1.25;
+	line-height: 1.5;
 	margin-bottom: space(0.85);
 	text-align: center;
 

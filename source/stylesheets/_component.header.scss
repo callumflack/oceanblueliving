@@ -25,4 +25,10 @@
 .Header-title {
 	@include headlineSm();
 	color: palette(white);
+	letter-spacing: 0.03em;
+
+	@include respond-to(sm) {
+		margin: 0 auto;
+		width: 70%;
+	}
 }
