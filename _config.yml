@@ -11,7 +11,7 @@ collections:
     output: true
   home:
     title: home
-    output: true
+    output: false
 defaults:
 - scope:
     path: ''
