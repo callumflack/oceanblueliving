@@ -3,27 +3,28 @@ title: Home
 layout: default
 ---
 
-<section class="Hero u-posRelative">
+<header class="Header u-posRelative" role="banner">
 	<div class="gallery">
 		{% include hero-post.html %}
 	</div>
-	<div class="u-posAbsolute">
-		<div class="o-container u-fullHeight">
-			<div class="Grid Grid--withGutter u-fullHeight u-flex u-flexAlignItemsEnd">
-				<div class="Grid-cell u-textCenter">
-					<div class="Hero-details">
-						<a class="Header-logo" href="/">Hello, I'm Ocean Blue</a>
-					</div>
-				</div>
-			</div>
+	<div class="u-posAbsoluteCenter">
+		<div class="o-container u-textCenter u-marginT6">
+			<a class="Header-logo" href="/">
+				<img src="/uploads/logo.png" alt="{{ site.title }}">
+			</a>
+			<h1 class="Header-title">{{ site.home/header-title }}</h1>
 		</div>
 	</div>
-</section>
+</header>
 
-<section class="u-bgBrand">
-	<article>
-		<div class="o-container">
-			This is the deep-end part.
-		</div>
-	</article>
-</section>
+<main class="Content" role="main">
+
+	<section class="u-bgBrand">
+		<article>
+			<div class="o-container">
+				This is the deep-end part.
+			</div>
+		</article>
+	</section>
+
+</main>

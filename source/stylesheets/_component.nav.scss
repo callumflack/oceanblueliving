@@ -5,59 +5,60 @@
 // --------------------------------------------------------------------------
 
 
-.c-header {
+.Nav {
+	// display: flex;
+	// height: rem(80);
+	// padding: space(0.9);
+	// position: relative;
+
+	padding: space(2) space(4);
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 9;
-}
-
-.c-nav {
-	display: flex;
-	height: rem(80);
-	padding: space(0.9);
-	position: relative;
-	// z-index: 9;
 
 	@include respond-to(xs) {
-		height: rem(110);
-		padding: space(1);
+	}
+}
+
+.Nav-toggler {
+	background: none;
+	padding: .5rem .75rem;
+
+	@include on-event {
+		text-decoration: none;
 	}
 }
 
 
-// Logo home link
+
+
+// Make the header nav fixed and animate down into view on scroll
+// See: http://codepen.io/Craig-Watson/pen/zGbNRL
 // --------------------------------------------------------------------------
 
-.c-nav-home {
-	img {
-		height: 45px;
+$FixedHeaderHeight: rem(143);
 
-		@include respond-to(xs) {
-			height: 60px;
-		}
-	}
-
-	@include when-inside(".Modal") {
-		position: absolute;
-		left: space(0.9);
-		top: space(0.9);
-
-		@include respond-to(xs) {
-			left: space(1);
-			top: space(1);
-		}
-	}
+.Header--fixed {
+	background-color: palette(background);
+	background-color: rgba( palette(background), 0.96 );
+	left: 0;
+	margin-bottom: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	transition-duration: map-fetch($transition, duration, base);
+	z-index: 1050;
 }
 
+// This is the req'd wrapper for all other page content.
+// Yeah, I know.
 
-// Service provider / Admin status
-// --------------------------------------------------------------------------
+body > .Content:first-of-type {
+	margin-top: $FixedHeaderHeight;
+}
 
-.c-nav-status {
-	align-items: center;
-	display: flex;
-	height: 100%;
-	margin-left: auto;
-	position: relative;
+.Header--fixed-transition {
+	transform: translateY( -#{$FixedHeaderHeight} );
+	transition-duration: map-fetch($transition, duration, long);
 }
