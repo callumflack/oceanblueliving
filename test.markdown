@@ -5,4 +5,4 @@ headline: "We’re craftspeople who love transforming spaces."
 layout: default
 ---
 
-We’re craftspeople  who love transforming spaces.
+We’re craftspeople who love transforming spaces.
