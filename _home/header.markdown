@@ -7,6 +7,6 @@ Field name:
     slider-2: "/uploads/home-hero-2.jpg"
     slider-3: "/uploads/home-hero-3.jpg"
 images: "/uploads/home-hero-1.jpg"
-text: We’re craftspeople who love transforming spaces.
+title-text: We’re craftspeople who love transforming spaces.
 ---
 
