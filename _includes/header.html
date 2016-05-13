@@ -1,20 +1,9 @@
-<header class="Header Header--fixed" role="banner">
-    <div class="o-container">
-        <div class="u-cf">
-            <button class="navbar-toggler u-floatRight" type="button" data-modal-toggle>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            <a class="Header-logo" href="/">Therese Plath</a>
-
-            {% if page.header %}
-                <a class="Header-title" href="/blog">Blog</a>
-            {% elsif page.title != 'Home' %}
-                <a class="Header-title" href="{{ page.slug }}">{{ page.title }}</a>
-            {% endif %}
-
-        </div>
-    </div>
+<header class="c-header" role="banner">
+	<div class="u-cf">
+		<button class="navbar-toggler u-floatRight" type="button" data-modal-toggle>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
 </header>
