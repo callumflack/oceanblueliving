@@ -4,6 +4,10 @@ date: 2016-06-02 10:46:00 +10:00
 position: 1
 headline: Create timeless elegance.
 button: See all we do →
+gallery-images:
+- "/uploads/applications-test-1.png"
+- "/uploads/applications-test-2.png"
+- "/uploads/applications-test-3.png"
 ---
 
 We make elegant, functional, and timeless architectural applications.
