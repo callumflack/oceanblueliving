@@ -7,12 +7,12 @@
 
 @mixin buttonBase() {
 	@include baseTransition();
-	background-color: rgba( palette(brand-complement), 1 );
-	border-color: palette(brand-complement);
+	background-color: transparent;
+	border-color: palette(brand);
 	border-radius: size(border-radius, base);
 	border-style: solid;
 	border-width: 1px;
-	padding: 0 space(0.75);
+	padding: 0 space(1.25);
 	// transition: all transition(duration, short) transition(type, base);
 	// vertical-align: top; // 1.
 
@@ -44,8 +44,11 @@
 	font-family: $font-sans-medium;
 	font-size: fontsize(textSm, xs);
 	letter-spacing: 0.05em;
-	line-height: size(button-height, base);
 	text-transform: uppercase;
+
+	// manage the button height
+	line-height: size(button-height, base);
+	padding-top: 4px;
 
 	@include respond-to(xs) {
 		font-size: fontsize(textSm, base);

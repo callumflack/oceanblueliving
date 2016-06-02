@@ -116,8 +116,10 @@
 // --------------------------------------------------------------------------
 // Quick and easy. Could extend this…
 
-@mixin baseTransition {
-	transition-property: all;
+@mixin baseTransition(
+	$property: all
+) {
+	transition-property: $property;
 	transition-duration: map-fetch($transition, duration, long);
 	transition-timing-function: map-fetch($transition, type, base);
 }

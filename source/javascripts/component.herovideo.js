@@ -46,7 +46,7 @@ function videoStop($wrapper) {
 var $allVideos = $("iframe[src^='https://www.youtube.com']:not(.videoIframe)"),
 
 // The element that is fluid width
-$fluidEl = $(".o-container.o-container--textColumn");
+$fluidEl = $(".Container.Container--textColumn");
 
 // When the window is resized
 $(window).resize(function() {

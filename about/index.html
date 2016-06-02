@@ -1,0 +1,59 @@
+---
+title: about
+layout: default
+---
+
+{% assign about = site.pages | where: 'title', 'about' | first  %}
+
+<header class="Header" role="banner">
+	<div class="FlexEmbed">
+		<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+		<div class="FlexEmbed-content">
+			<div class="Header-hero">
+				<img src="{{ about.hero-image }}" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="u-posAbsoluteCenter">
+		<div class="Container u-textCenter u-marginT6">
+			<a class="Header-logo" href="/">
+				<img src="/uploads/logo.png" alt="{{ site.title }}">
+			</a>
+			<h1 class="Header-title u-marginT2">
+				{{ about.headline }}
+			</h1>
+		</div>
+	</div>
+</header>
+
+<main class="Content" role="main">
+	<section class="Section Page">
+		<div class="Container Container--insetTextColumn">
+
+			{{ about.first_text | markdownify }}
+
+			<div class="FlexEmbed">
+				<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+				<div class="FlexEmbed-content">
+					<div class="videoWrapper js-videoWrapper">
+						<iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/{{meta['hero-youtube']}}" width="100%" height="100%" ></iframe>
+						<button class="videoPoster js-videoPoster" style="background-image:url('/assets/video-poster.jpg');">
+							<!-- <svg class="Icon-svgLg ic-play u-posAbsoluteCenter"><use xlink:href="#ic-play"></use></svg>Play video -->
+							<svg class="Icon-svgLg ic-play u-posAbsoluteCenter" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 144 144">
+							<g id="ic-play">
+									<path d="M60,99l36-27L60,45V99z M72,12c-33.1,0-60,26.9-60,60s26.9,60,60,60s60-26.9,60-60S105.1,12,72,12z M72,127
+											c-30.3,0-55-24.7-55-55s24.7-55,55-55s55,24.7,55,55S102.3,127,72,127z"/>
+									<path d="M0,0h144v144H0V0z" fill="none"/>
+							</g>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			{{ about.second_text | markdownify }}
+
+		</div>
+	</section>
+
+</main>

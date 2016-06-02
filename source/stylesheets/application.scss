@@ -29,17 +29,18 @@
 @import "object.icon";
 @import "object.rule";
 @import "object.list";
-// @import "object.link";
+@import "object.link";
 @import "object.media";
 @import "object.cursor";
 @import "object.arrow";
 @import "object.figure";
 
-// @import "layout.header";
-// @import "layout.section";
+@import "layout.header";
+@import "layout.section";
+@import "layout.footer";
 
 @import "component.nav";
-@import "component.header";
+// @import "component.header";
 @import "component.coverimage";
 @import "component.imageblend";
 @import "component.form";
@@ -53,9 +54,12 @@
 @import "component.navbar";
 @import "component.nav";
 // @import "component.fontfaceonload";
+@import "component.pathway";
+@import "component.post";
+@import "component.page";
 @import "component.spinkit";
 
 @import "trumps.spacers";
-// @import "trumps.helpers";
-@import "trumps.helpers.base";
+@import "trumps.helpers";
+// @import "trumps.helpers.base";
 // @import "trumps.responsive";

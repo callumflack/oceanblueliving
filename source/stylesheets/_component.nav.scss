@@ -11,6 +11,7 @@
 	// padding: space(0.9);
 	// position: relative;
 
+	@include baseTransition;
 	padding: space(4) space(8);
 	position: fixed;
 	top: 0;
@@ -19,42 +20,22 @@
 
 	@include respond-to(xs) {
 	}
+
+	// Color the hamburger icon
+	@include when-inside(".Home") {
+		color: palette(white);
+	}
 }
-
-.Nav-toggler {
-	// background: none;
-	// padding: .5rem .75rem;
-}
-
-
 
 
 // Make the header nav fixed and animate down into view on scroll
+// Req's: component.fixedheaderanimation.js
 // See: http://codepen.io/Craig-Watson/pen/zGbNRL
 // --------------------------------------------------------------------------
 
-$FixedHeaderHeight: rem(143);
+$FixedNavHeight: rem(220);
 
-.Header--fixed {
-	background-color: palette(background);
-	background-color: rgba( palette(background), 0.96 );
-	left: 0;
-	margin-bottom: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	transition-duration: map-fetch($transition, duration, base);
-	z-index: 1050;
-}
-
-// This is the req'd wrapper for all other page content.
-// Yeah, I know.
-
-body > .Content:first-of-type {
-	margin-top: $FixedHeaderHeight;
-}
-
-.Header--fixed-transition {
-	transform: translateY( -#{$FixedHeaderHeight} );
+.Nav-transition {
+	transform: translateY( -#{$FixedNavHeight} );
 	transition-duration: map-fetch($transition, duration, long);
 }

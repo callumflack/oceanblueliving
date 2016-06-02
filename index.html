@@ -3,16 +3,31 @@ title: Home
 layout: default
 ---
 
-{% assign header = site.home | where: 'title', 'header' | first  %}
+{% assign header       = site.home | where: 'title', 'header' | first  %}
+{% assign applications = site.home | where: 'title', 'applications' | first  %}
+{% assign price        = site.home | where: 'title', 'price' | first  %}
+{% assign about        = site.home | where: 'title', 'about' | first  %}
 
-<header class="Header" role="banner">
-	<div class="gallery">
-		{% include header-gallery.html %}
+<header class="Header Header--rev u-bgBrand" role="banner">
+	<div class="gallery gallery--fade">
+		{% for image in header.gallery-images %}
+			<div class="gallery-cell">
+				<div class="FlexEmbed">
+					<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+					<div class="FlexEmbed-content">
+						<div
+							class="u-posAbsoluteCenter CoverImage--dark"
+							style="background-image: url('{{ image }}')">
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
 	</div>
 	<div class="u-posAbsoluteCenter">
-		<div class="o-container u-textCenter u-marginT6">
+		<div class="Container u-textCenter u-marginT6">
 			<a class="Header-logo" href="/">
-				<img src="/uploads/logo.png" alt="{{ site.title }}">
+				<img src="/uploads/logo-white.png" alt="{{ site.title }}">
 			</a>
 			<h1 class="Header-title u-marginT2">
 				{{ header.headline }}
@@ -22,13 +37,118 @@ layout: default
 </header>
 
 <main class="Content" role="main">
-
-	<section class="u-bgBrand">
-		<article>
-			<div class="o-container">
-				This is the deep-end part.
+	<section class="Section Pathway u-bgBrand">
+		<div class="Container">
+			<figure class="u-textCenter">
+				<svg class="Icon Icon--lg u-colorWhite">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-estimate"></use>
+				</svg>
+			</figure>
+			<h1 class="Pathway-title u-marginTD2 u-marginB2">{{ applications.headline }}</h1>
+			{{ applications.content }}
+			<div class="u-textCenter u-marginT2">
+				<a class="Button t-button--rev u-colorWhite" href="/price">{{ applications.button }}</a>
 			</div>
-		</article>
+		</div>
+		<div class="gallery gallery--dragger u-marginT6">
+			{% for image in applications.gallery-images %}
+				<div class="gallery-cell">
+					<div class="FlexEmbed">
+						<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+						<div class="FlexEmbed-content">
+							<div
+								class="u-posAbsoluteCenter CoverImage"
+								style="background-image: url('{{ image }}')">
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</section>
+
+	<section class="Section Pathway u-bgBrand">
+		<div class="Container">
+			<figure class="u-textCenter">
+				<svg class="Icon Icon--lg u-colorWhite">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-estimate"></use>
+				</svg>
+			</figure>
+			<h1 class="Pathway-title u-marginTD2 u-marginB2">{{ price.headline }}</h1>
+			{{ price.content }}
+			<div class="u-textCenter u-marginT2">
+				<a class="Button t-button--rev u-colorWhite" href="/price">{{ price.button }}</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="Section Pathway u-bgBrand">
+		<div class="Container">
+			<figure class="u-textCenter">
+				<svg class="Icon Icon--lg u-colorWhite">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-about"></use>
+				</svg>
+			</figure>
+			<h1 class="Pathway-title u-marginTD2 u-marginB2">{{ about.headline }}</h1>
+			<figure class="u-marginT2 u-marginB3">
+				<img src="/uploads/about.png" alt="Vince & LeaAnne Cassaniti, Ocean Blue Living">
+			</figure>
+			{{ about.content }}
+			<div class="u-textCenter u-marginT2">
+				<a class="Button t-button--rev u-colorWhite" href="/about">{{ about.button }}</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- blog -->
+	<section class="Section u-bgBrand u-paddingB0">
+		<figure class="u-textCenter">
+			<svg class="Icon Icon--lg u-colorWhite">
+				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
+			</svg>
+		</figure>
+		<h1 class="Pathway-title u-marginTD2 u-marginB2">The Ocean Blue blog.</h1>
+
+		{% for post in site.posts | limit: 1 %}
+			<article class="Article Post">
+				<div class="FlexEmbed">
+					<div class="FlexEmbed-ratio FlexEmbed-ratio--12by5"></div>
+					<div class="FlexEmbed-content">
+						<div
+							class="u-posAbsoluteCenter CoverImage"
+							style="background-image: url('{{ post.hero-image }}')">
+						</div>
+					</div>
+				</div>
+				<div class="Container Container--textColumn">
+					<div class="Post-meta">
+						<a class="Post-tag" href="/blog/tags/{{ page.tags }}">{{ post.tags }}</a>
+						&nbsp;&nbsp;|&nbsp;&nbsp;
+						<span class="Post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+					</div>
+					<h1 class="Post-title">{{ post.title }}</h1>
+					{{ post.content }}
+
+					<h3 class="HeadlineMinor u-marginT3">Author</h3>
+					<p class="Post-author">{{ post.author }}</p>
+					<h3 class="HeadlineMinor u-marginT3">Share</h3>
+					{% include share.html %}
+				</div>
+			</article>
+		{% endfor %}
+
+		<div class="u-bgWhite u-paddingT3">
+			<a class="Post-pathway" href="/blog">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--md u-colorBrand">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
+					</svg>
+				</figure>
+				<h2 class="Headline--sm u-marginTD2 u-marginB2">View all blog posts →</h2>
+			</a>
+		</div>
+
+
 	</section>
 
 </main>

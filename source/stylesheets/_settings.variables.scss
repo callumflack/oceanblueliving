@@ -167,7 +167,7 @@ $size: (
 		modal-form-sm     : 80%,
 		default           : rem(1100),
 		small             : rem(345),
-		text-column       : rem(1040),
+		text-column       : rem(720),
 		picture           : rem(960),
 		wide-picture      : rem(1240)
 	),
@@ -179,37 +179,31 @@ $size: (
 		),
 		textSm: (
 			xs            : rem(13),
-			base          : rem(16)
+			base          : rem(15)
 		),
 		textRg: (
 			xs            : rem($base-font-size-unit * 0.9),
-			base          : rem($base-font-size-unit * 1.125)
+			base          : rem($base-font-size-unit * 1.25)
 		),
 		textMd: (
-			xs            : rem(18),
-			base          : rem(22)
+			xs            : rem(22),
+			base          : rem(25)
 		),
-
-
-
-
 		textLg: (
 			xs            : rem(17),
 			base          : rem(21)
 		),
-		headerSm: (
-			xs            : rem(17),
-			base          : rem(21)
+		headerXs: (
+			xs            : rem(13),
+			base          : rem(16)
 		),
-
-
-
-
-
-
+		headerSm: (
+			xs            : rem(22),
+			base          : rem(27)
+		),
 		headerRg: (
-			xs            : rem(24),
-			base          : rem(30)
+			xs            : rem(33),
+			base          : rem(39)
 		),
 
 
@@ -255,6 +249,7 @@ $transition: (
 		long         : 500ms
 	),
 	type: (
+		thisalso     : cubic-bezier(0.19, 1, 0.22, 1),
 		cubic-static : cubic-bezier(0, -0.1, 1, -0.1),
 		cubic-state  : cubic-bezier(0, 1.1, 1, 1.1),
 		base         : ease-out,

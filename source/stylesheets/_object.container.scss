@@ -5,15 +5,7 @@
 // --------------------------------------------------------------------------
 
 
-.o-content {
-	margin: space(5) auto 0;
-
-	@include respond-to(sm) {
-		margin: space(7) auto 0;
-	}
-}
-
-.o-container {
+.Container {
 	@include clearfix();
 	margin: 0 auto;
 	max-width: size(container, default);
@@ -25,16 +17,29 @@
 		padding: 0;
 	}
 
-	&--specificWidth {
+	// basic container width var
+	&--textColumn {
 		width: size(container, default);
 
-		@include respond-to(xs) {
-			width: size(container, small);
-		}
-
-		@include respond-to(md) {
-			width: size(container, default);
+		@include respond-to(sm) {
+			width: size(container, text-column);
 		}
 	}
 
+	// inset text column
+	&--insetTextColumn {
+		p {
+			@include TextMd();
+			margin: 0 auto;
+			width: size(container, default);
+
+			@include respond-to(sm) {
+				width: size(container, text-column);
+			}
+
+			+ p {
+				margin-top: space(1);
+			}
+		}
+	}
 }

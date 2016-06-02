@@ -5,6 +5,13 @@
 // --------------------------------------------------------------------------
 
 
+.gallery,
+.flickity-viewport {
+	&:focus {
+		outline: none;
+	}
+}
+
 .gallery-cell {
 	width: 100%;
 }
@@ -43,6 +50,50 @@ a.gallery-cell {
 		background-color: transparent;
 		opacity: 1;
 		transition: opacity 500ms;
+	}
+}
+
+
+// Hero fade effect hack
+// See: http://codepen.io/eikeco/pen/MwGRKr?editors=1100
+// See: http://codepen.io/Tumki/pen/JXOyvp?editors=1100
+// --------------------------------------------------------------------------
+
+.gallery--fade {
+	.flickity-slider {
+		transform: none !important;
+	}
+
+	.gallery-cell {
+		left: 0 !important;
+		opacity: 0.1;
+		transition: opacity 1700ms ease-in-out;
+		z-index: -1;
+	}
+
+	.gallery-cell.is-selected {
+		opacity: 1;
+		z-index: 0
+	}
+}
+
+
+// 'Draggable' like instrument.com
+// --------------------------------------------------------------------------
+
+.gallery--dragger {
+	.gallery-cell {
+		// @include smoothTransition();
+		// margin: 0 5%;
+		opacity: 0.5;
+		transform: scale(0.7);
+		transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
+		width: size(container, default);
+	}
+
+	.gallery-cell.is-selected {
+		opacity: 1;
+		transform: scale(1);
 	}
 }
 

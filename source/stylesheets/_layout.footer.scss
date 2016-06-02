@@ -1,0 +1,48 @@
+
+
+// --------------------------------------------------------------------------
+//   LAYOUT: FOOTER
+// --------------------------------------------------------------------------
+
+
+.Footer {
+	background-color: rgba( palette(brand), 0.03 );
+	border-top: 1px solid palette(base);
+	margin-top: space(1.5);
+	padding: space(2) 0;
+
+	ul {
+		margin-bottom: 0;
+	}
+
+	@include respond-to(xs) {
+		margin-top: space(3);
+		padding: space(2) 0;
+	}
+}
+
+a.Footer-logo {
+	display: block;
+	padding-bottom: space(1);
+	text-align: center;
+
+	> img {
+		width: 160px;
+	}
+
+	@include respond-to(xs) {
+		padding-bottom: space(2);
+	}
+}
+
+.Footer-nav {
+	margin-bottom: space(1.9);
+
+	> div {
+		text-align: center;
+	}
+
+	li {
+		@include TextRg();
+	}
+}

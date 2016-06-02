@@ -7,47 +7,40 @@
 
 
 .Pathway {
-    background-color: palette(neutral);
-    display: inline-block;
-    padding: 6%;
-    text-align: center;
-    width: 100%;
+	h1,
+	p {
+		color: palette(white);
+		margin: 0 auto;
+		max-width: size(container, text-column);
 
-    // When used with .Property's .Card
-    // TOD: somehow refactor w/o min-height
-    &.Card {
-        min-height: rem(366);
-        padding: 0 !important;
-    }
+		@include respond-to(xs) {
+			max-width: size(container, text-column);
+		}
+	}
 
-    @include on-event() {
-        background-color: palette(brand);
-        color: palette(charcoal) !important;
-    }
+	p {
+		@include TextMd();
+		color: rgba( palette(white), 0.7 );
 
-    @include respond-to(sm) {
-        padding: space(2.5);
-    }
-}
+		+ p {
+			margin-top: space(0.5);
+		}
 
-.Pathway-detail {
-    width: 100%;
-}
-
-.Pathway-icon,
-.Pathway-title {
-    display: block;
-    text-align: center;
-}
-
-.Pathway-icon {
-    margin-bottom: space(0.25);
+		@include respond-to(xs) {
+		}
+	}
 }
 
 .Pathway-title {
-    // @extend .u-linkBuriedTarget;
-    @include headlineSm();
-    font-family: $font-sans-xbold;
-    margin-bottom: 0;
-    text-align: center;
+	@include headlineRg();
+	color: palette(white);
+
+	@include respond-to(sm) {
+		// margin: 0 auto;
+		// width: 70%;
+	}
+}
+
+.Pathway .t-button--rev {
+	opacity: 0.7;
 }

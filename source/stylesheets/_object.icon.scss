@@ -15,17 +15,15 @@
 
 // .#{$namespace}Icon,
 .Icon {
-	width: 24px;
-	height: 24px;
+	// cursor: pointer;
 	display: inline-block;
 	fill: currentColor; // The color of the SVG will inherit the parent's `color`.
-
-	cursor: pointer;
-	display: inline-block;
+	height: 24px;
 	line-height: 1;
 	position: relative;
 	text-align: center;
 	vertical-align: middle;
+	width: 24px;
 
 	@include on-event() {
 		outline: 0;
@@ -37,13 +35,13 @@
 	}
 
 	&--md {
-		width: rem(18);
-		height: rem(18);
+		width: rem(40);
+		height: rem(40);
 	}
 
 	&--lg {
-		width: rem(32);
-		height: rem(32);
+		width: rem(54);
+		height: rem(54);
 	}
 
 	&--super {

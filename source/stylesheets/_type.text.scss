@@ -9,6 +9,7 @@
 	@include typeReset();
 	// color: palette(brand);
 	// font-family: $font-sans-light;
+	letter-spacing: 0.015em;
 	line-height: $base-line-height-unit;
 
 	> li,
@@ -24,13 +25,13 @@
 // 12
 @mixin TextXs(
 	$mixinColor: palette(brand),
-	$mixinFont: $font-sans-light
+	$mixinFont: $font-sans-book
 ) {
 	@include textTemplate();
 	color: $mixinColor;
 	font-family: $mixinFont;
 	font-size: fontsize(textXs, xs);
-	letter-spacing: 0.01em;
+	letter-spacing: 0.03em;
 
 	@include respond-to(xs) {
 		font-size: fontsize(textXs, base);
@@ -40,12 +41,13 @@
 // 14
 @mixin TextSm(
 	$mixinColor: palette(brand),
-	$mixinFont: $font-sans-light
+	$mixinFont: $font-sans-book
 ) {
 	@include textTemplate();
 	color: $mixinColor;
 	font-family: $mixinFont;
 	font-size: fontsize(textSm, xs);
+	letter-spacing: 0.03em;
 
 	@include respond-to(xs) {
 		font-size: fontsize(textSm, base);
@@ -57,7 +59,7 @@
 // light or medium
 @mixin TextRg(
 	$mixinColor: palette(brand),
-	$mixinFont: $font-sans-light
+	$mixinFont: $font-sans-book
 ) {
 	@include textTemplate();
 	color: $mixinColor;
@@ -72,7 +74,7 @@
 // 21/29
 @mixin TextMd(
 	$mixinColor: palette(brand),
-	$mixinFont: $font-sans-light
+	$mixinFont: $font-sans-book
 ) {
 	@include textTemplate();
 	color: $mixinColor;
@@ -142,36 +144,19 @@
 .u-textWtMd        { font-family: $font-sans-medium !important; }
 
 
-// Colors
+
+// HTML elements
 // --------------------------------------------------------------------------
-
-.u-colorWhite       { color: palette(background) !important; }
-.u-colorFaint       { color: palette(faint) !important; }
-.u-colorLight       { color: palette(light) !important; }
-.u-colorFaint       { color: palette(faint) !important; }
-.u-colorMuted       { color: palette(muted) !important; }
-.u-colorMedium      { color: palette(medium) !important; }
-.u-colorDark        { color: palette(charcoal) !important; }
-.u-colorBlack       { color: palette(black) !important; }
-.u-colorBrand       { color: palette(brand) !important; }
-.u-colorBrandAlt    { color: palette(brand-complement) !important; }
-.u-colorBrandCount  { color: palette(brand-counter) !important; }
-
-
-
-
-
-
 
 // h1, h2, h3, h4, h5, h6,
 // blockquote, figure
-// li
+// li, a
 ul, ol, dl,
 p, address,
 table, time,
 fieldset, figcaption,
-pre, a {
-	@include TextSm();
+pre {
+	@include TextRg();
 }
 
 // em,
@@ -238,9 +223,9 @@ blockquote,
 
 // p + h2 { margin-top: $space * 1.75; }
 
-.o-container p,
-.o-container li,
-.o-container ol {
+.Container p,
+.Container li,
+.Container ol {
 	&:last-child,
 	&:last-child a {
 		margin-bottom: 0;

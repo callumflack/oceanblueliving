@@ -16,7 +16,7 @@ figure, figcaption,
 table, th, td, caption
 pre, small,
 em, b {
-    @include typeReset();
+	@include typeReset();
 }
 
 
@@ -28,16 +28,16 @@ em, b {
 // :root {
 
 body {
-    @include typeReset();
-    color: color(text, charcoal);
-    font-family: $font-sans-regular;
-    font-size: 100%;
-    line-height: $base-line-height-unit;
-    text-align: left;
-    text-rendering: optimizeLegibility;
-    text-size-adjust: 100%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+	@include typeReset();
+	color: palette(brand);
+	font-family: $font-sans-regular;
+	font-size: 100%;
+	line-height: $base-line-height-unit;
+	text-align: left;
+	text-rendering: optimizeLegibility;
+	text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
 
@@ -51,5 +51,5 @@ blockquote, p, address,
 table, time,
 fieldset,
 pre {
-    margin-bottom: space(0.5);
+	margin-bottom: space(1);
 }

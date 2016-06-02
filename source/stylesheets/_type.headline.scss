@@ -31,7 +31,7 @@
 
 @mixin headlineRg(
 	$mixinColor: palette(brand),
-	$mixinFont: $font-sans-medium
+	$mixinFont: $font-display
 ) {
 	@include headlineTemplate();
 	color: $mixinColor;
@@ -43,7 +43,6 @@
 	}
 }
 
-// TEST XL VERSION
 @mixin headlineSm(
 	$mixinColor: palette(brand),
 	$mixinFont: $font-display
@@ -51,15 +50,13 @@
 	@include headlineTemplate();
 	color: $mixinColor;
 	font-family: $mixinFont;
-	font-size: fontsize(headerXl, xs);
+	font-size: fontsize(headerSm, xs);
+	letter-spacing: 0.03em;
 
 	@include respond-to(xs) {
-		font-size: fontsize(headerXl, base);
+		font-size: fontsize(headerSm, base);
 	}
 }
-
-
-
 
 
 // Vax Initiate.
@@ -70,11 +67,37 @@
 .u-headline            { @include headlineRg(); }
 .u-headlineEm          { @include headlineRg($mixinFont: $font-sans-medium-i); }
 .u-headline--light     { @include headlineRg($mixinColor: palette(brand-counter)); }
-.u-headlineSm          { @include headlineSm(); }
 .u-headlineSm--light   { @include headlineSm($mixinColor: palette(brand-counter)); }
+
+.Headline--sm          { @include headlineSm(); }
 
 
 
 // .Headline--sm        { @include headlineSm(); }
 // .Headline--secondary { @include headlineSecondary(); }
 // .Headline--tertiary  { @include headlineTertiary(); }
+
+
+
+// Minor headlines
+// --------------------------------------------------------------------------
+
+@mixin headlineMinor(
+	$mixinColor: rgba( palette(brand), 0.4 ),
+	$mixinFont: $font-sans-book
+) {
+	@include typeReset();
+	color: $mixinColor;
+	font-family: $mixinFont;
+	font-size: fontsize(headerXs, xs);
+	letter-spacing: 0.06em;
+	line-height: 1.5;
+	margin-bottom: space(0.25);
+	text-transform: uppercase;
+
+	@include respond-to(xs) {
+		font-size: fontsize(headerXs, base);
+	}
+}
+
+.HeadlineMinor { @include headlineMinor(); }

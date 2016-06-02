@@ -1,24 +1,24 @@
 
 // Navbar Scroll Event
-// @URL: http://codepen.io/Craig-Watson/pen/zGbNRL
+// See: http://codepen.io/Craig-Watson/pen/zGbNRL
 // --------------------------------------------------------------------------
 
 $(document).ready( function() {
 
-    var lastScrollTop = 0;
-    var navbar        = $('.Header--fixed');
+	var lastScrollTop = 0;
+	var navbar        = $('.Nav');
 
-    $(window).scroll(function(event) {
-        var st = $(this).scrollTop();
+	$(window).scroll(function(event) {
+		var st = $(this).scrollTop();
 
-        if (st > 143 && st > lastScrollTop){
-            navbar.addClass('Header--fixed-transition');
-        } else {
-            navbar.removeClass('Header--fixed-transition');
-        }
+		if (st > 300 && st > lastScrollTop){
+			navbar.addClass('Nav-transition');
+		} else {
+			navbar.removeClass('Nav-transition');
+		}
 
-        lastScrollTop = st;
+		lastScrollTop = st;
 
-    });
+	});
 
 });
