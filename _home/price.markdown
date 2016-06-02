@@ -1,6 +1,7 @@
 ---
 title: price
 date: 2016-06-02 10:52:00 +10:00
+position: 2
 headline: Design it yourself.
 button: Get an estimate
 ---

@@ -1,6 +1,7 @@
 ---
 title: about
 date: 2016-06-02 10:52:00 +10:00
+position: 3
 headline: Crafted by boat builders.
 button: about us
 ---
