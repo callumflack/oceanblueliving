@@ -1,5 +1,5 @@
 ---
-title: test
+title: about
 date: 2016-05-13 16:39:00 +10:00
 headline: We’re craftspeople who love transforming spaces.
 hero-image: "/uploads/about-2.png"
