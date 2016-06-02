@@ -2,7 +2,7 @@
 title: Ocean Blue Living
 timezone: Australia/Brisbane
 collections:
-  posts:
+  blog:
     title: Posts
     output: true
   uploads:
