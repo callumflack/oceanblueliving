@@ -8,9 +8,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-  about:
-    title: about
-    output: false
   home:
     title: home
     output: false
