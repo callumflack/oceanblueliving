@@ -2,7 +2,7 @@
 title: applications
 date: 2016-06-02 10:46:00 +10:00
 headline: Create timeless elegance.
-button: See all we do
+button: See all we do →
 ---
 
 We make elegant, functional, and timeless architectural applications.
