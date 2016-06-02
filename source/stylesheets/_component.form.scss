@@ -20,7 +20,10 @@ label {
 input:not([type="radio"]),
 input:not([type="submit"]),
 input:not(".Button"),
-input[type="text"], input[type="email"], input[type="tel"], 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
 textarea {
 	@include TextSm();
 	color: palette(medium);
@@ -28,7 +31,7 @@ textarea {
 	border: 1px solid transparent;
 	border-radius: size(border-radius, base);
 	display: inline-block;
-	line-height: size(button-height, base);
+	line-height: size(button-height, basePlus);
 	padding: 0 space(2/3);
 	resize: none;
 	transition: all map-fetch($transition, duration, long) map-fetch($transition, type, base);
@@ -71,23 +74,29 @@ textarea {
 
 
 
-
+// Inputs
 // REFACTOR: text inputs only so I don't override radio btn component styles…
+// --------------------------------------------------------------------------
 
-input[type="text"], input[type="email"], input[type="tel"] {
+$color-placeholder: rgba( palette(brand), 0.7 );
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
 	@include TextMd();
-	color: rgba( palette(brand-counter), 0.7 );
-	background: transparent;
-	border: 0;
-	border-bottom: 1px solid transparent;
-	border-color: rgba( palette(brand-counter), 0.4 );
-	// border-radius: size(border-radius, base);
+	@include baseTransition();
+	color: $color-placeholder;
+	background: palette(brand-counter);
+	// border: 0;
+	border: 1px solid transparent;
+	border-color: palette(base);
+	border-radius: size(border-radius, base);
 	display: inline-block;
 	// font-family: $font-sans-regular;
 	line-height: size(button-height, base);
-	padding: 0;
+	padding: 4px 0 0 0;
 	resize: none;
-	transition: all map-fetch($transition, duration, long) map-fetch($transition, type, base);
 	width: 100%;
 	-webkit-appearance: none;
 
@@ -96,7 +105,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
 	}
 
 	@include respond-to(max-xs) {
-		// font-size: 16px;
+		// font-size: 16px; // must be at least 16px to prevent iOS default zoom-in
 	}
 
 	&:-webkit-autofill {
@@ -105,13 +114,21 @@ input[type="text"], input[type="email"], input[type="tel"] {
 		background-clip: padding-box;
 	}
 
-	$color-placeholder: rgba( palette(brand-counter), 0.7 );
-
 	&::-webkit-input-placeholder { color: $color-placeholder; }
 	&:-moz-placeholder           { color: $color-placeholder; }
 	&::-moz-placeholder          { color: $color-placeholder; }
 	&:-ms-input-placeholder      { color: $color-placeholder; }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 // Floating label pattern
@@ -128,11 +145,11 @@ input[type="text"], input[type="email"], input[type="tel"] {
 
 	label {
 		@include TextMd();
-		color: rgba( palette(brand-counter), 0.7 );
+		color: palette(muted);
 		cursor: text;
-		left: 0;
+		left: 1rem;
 		position: absolute;
-		top: 6px;
+		top: 0.65rem;
 		transition: all map-fetch($transition, duration, fast) map-fetch($transition, type, fine);
 		z-index: 99;
 	}
@@ -189,5 +206,54 @@ input[type="text"], input[type="email"], input[type="tel"] {
 
 	input.Form-control {
 		border-color: palette(bad-news);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Capsule theme
+// --------------------------------------------------------------------------
+
+.Form--capsule {
+	font-size: 0;
+
+	.Form-group {
+		display: inline-block;
+		vertical-align: top;
+
+		> .Form-control {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			border-right-color: transparent;
+		}
+
+		> .Button {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+
+	.Form-control {
+		// background-color: palette(neutral-light);
+		margin: 0;
 	}
 }

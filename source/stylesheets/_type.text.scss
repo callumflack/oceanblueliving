@@ -30,11 +30,11 @@
 	@include textTemplate();
 	color: $mixinColor;
 	font-family: $mixinFont;
-	font-size: fontsize(textXs, xs);
+	font-size: fontsize(textXs, xs) !important;
 	letter-spacing: 0.03em;
 
 	@include respond-to(xs) {
-		font-size: fontsize(textXs, base);
+		font-size: fontsize(textXs, base) !important;
 	}
 }
 

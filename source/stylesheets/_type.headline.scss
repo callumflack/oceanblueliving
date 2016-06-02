@@ -70,6 +70,7 @@
 .u-headlineSm--light   { @include headlineSm($mixinColor: palette(brand-counter)); }
 
 .Headline--sm          { @include headlineSm(); }
+.Headline              { @include headlineRg(); }
 
 
 

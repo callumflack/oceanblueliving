@@ -19,26 +19,24 @@
 				<div class="Grid Grid--withGutter">
 					<div class="Grid-cell u-size3of12">
 						<ul class="o-listClean u-textSm">
-							<li><a href="#">T: 0409 726 128 </a></li>
-							<li><a href="#">E: info@oceanblueliving.com.au</a></li>
+							<li><a href="tel:{{ site.contact-phone }}">T: {{ site.contact-phone }}</a></li>
+							<li><a href="mailto:{{ site.contact-email }}">E: {{ site.contact-email }}</a></li>
 						</ul>
 					</div>
 					<div class="Grid-cell u-size3of12">
 						<a class="u-textSm" href="https://goo.gl/maps/GQHnTB9koXQ2" target="_blank">
-							3/169 Newell Street, Cairns<br>
-							Queensland 4870 Australia
+							{{ site.contact-address }}
 						</a>
 					</div>
 					<div class="Grid-cell u-size3of12">
-						<ul class="o-listClean u-textSm">
-							<li><a href="#">Open Tues–Thurs 9am-2pm</a></li>
-							<li><a href="#">Other times by appointment</a></li>
-						</ul>
+						<p class="u-textSm">
+							{{ site.contact-open }}
+						</p>
 					</div>
 					<div class="Grid-cell u-size3of12">
 						<ul class="o-listClean u-textSm">
-							<li><a href="#">Like us on Facebook</a></li>
-							<li><a href="#">Pin us on Pinterest</a></li>
+							<li><a href="{{ site.social-facebook }}">Like us on Facebook</a></li>
+							<li><a href="{{ site.social-pinterest }}">Pin us on Pinterest</a></li>
 						</ul>
 					</div>
 				</div>

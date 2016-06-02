@@ -7,38 +7,42 @@
 
 
 .Pathway {
-	h1,
-	p {
-		color: palette(white);
-		margin: 0 auto;
-		max-width: size(container, text-column);
-
-		@include respond-to(xs) {
-			max-width: size(container, text-column);
-		}
-	}
+	display: block;
 
 	p {
 		@include TextMd();
-		color: rgba( palette(white), 0.7 );
+	}
 
-		+ p {
-			margin-top: space(0.5);
-		}
+	// as used in About pg
+	+ .Pathway {
+		margin-top: space(3.5);
+		@include respond-to(sm) { margin-top: space(7); }
+	}
 
-		@include respond-to(xs) {
-		}
+	// as used in Home pg
+	&--rev {
+		h1 { color: palette(white); }
+		p { color: rgba( palette(white), 0.7 ); }
+		+ .Pathway { margin-top: 0; }
+	}
+}
+
+.Pathway-title,
+.Pathway-subtitle {
+	margin: space(0.5) 0 space(2);
+
+	@include respond-to(sm) {
+		margin: space(0.5) 0 space(2);
+		// width: 70%;
 	}
 }
 
 .Pathway-title {
 	@include headlineRg();
-	color: palette(white);
+}
 
-	@include respond-to(sm) {
-		// margin: 0 auto;
-		// width: 70%;
-	}
+.Pathway-subtitle {
+	@include headlineSm();
 }
 
 .Pathway .t-button--rev {

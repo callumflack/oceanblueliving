@@ -10,6 +10,10 @@
 
 	@include respond-to(sm) {
 	}
+
+	&--fade {
+		background-image: linear-gradient(to bottom, rgba( palette(neutral-dark), 0 ) 50%, rgba( palette(neutral-dark), 0.7 ) 100%);
+	}
 }
 
 .Header-logo {
@@ -18,7 +22,7 @@
 	padding-bottom: space(1);
 
 	> img {
-		width: 220px;
+		width: 200px;
 	}
 
 	@include when-inside(".Header--rev") {
@@ -45,8 +49,8 @@
 	text-align: center;
 	width: 100%;
 
-	img {
-
+	> img {
+		width: 50%;
 	}
 
 }

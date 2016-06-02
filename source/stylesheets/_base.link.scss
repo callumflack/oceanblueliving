@@ -6,16 +6,16 @@
 
 
 a {
-    @include baseTransition();
-    color: palette(charcoal);
-    text-decoration: none;
+	@include baseTransition();
+	color: palette(brand);
+	text-decoration: none;
 
-    @include on-event() {
-        @include baseTransition();
-        color: palette(black);
-    }
+	@include on-event() {
+		@include baseTransition();
+		color: palette(black);
+	}
 }
 
 p a {
-    color: currentColor;
+	color: currentColor;
 }

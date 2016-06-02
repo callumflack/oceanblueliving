@@ -25,11 +25,11 @@ layout: default
 		{% endfor %}
 	</div>
 	<div class="u-posAbsoluteCenter">
-		<div class="Container u-textCenter u-marginT6">
+		<div class="Container u-textCenter u-marginT4">
 			<a class="Header-logo" href="/">
 				<img src="/uploads/logo-white.png" alt="{{ site.title }}">
 			</a>
-			<h1 class="Header-title u-marginT2">
+			<h1 class="Header-title u-marginT15">
 				{{ header.headline }}
 			</h1>
 		</div>
@@ -37,8 +37,8 @@ layout: default
 </header>
 
 <main class="Content" role="main">
-	<section class="Section Pathway u-bgBrand">
-		<div class="Container">
+	<section class="Section Pathway Pathway--rev u-bgBrand">
+		<div class="Container Container--textColumn">
 			<figure class="u-textCenter">
 				<svg class="Icon Icon--lg u-colorWhite">
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-estimate"></use>
@@ -67,8 +67,8 @@ layout: default
 		</div>
 	</section>
 
-	<section class="Section Pathway u-bgBrand">
-		<div class="Container">
+	<section class="Section Pathway Pathway--rev u-bgBrand">
+		<div class="Container Container--textColumn">
 			<figure class="u-textCenter">
 				<svg class="Icon Icon--lg u-colorWhite">
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-estimate"></use>
@@ -82,17 +82,21 @@ layout: default
 		</div>
 	</section>
 
-	<section class="Section Pathway u-bgBrand">
-		<div class="Container">
+	<section class="Section Pathway Pathway--rev u-bgBrand">
+		<div class="Container Container--textColumn">
 			<figure class="u-textCenter">
 				<svg class="Icon Icon--lg u-colorWhite">
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-about"></use>
 				</svg>
 			</figure>
 			<h1 class="Pathway-title u-marginTD2 u-marginB2">{{ about.headline }}</h1>
+		</div>
+		<div class="Container">
 			<figure class="u-marginT2 u-marginB3">
 				<img src="/uploads/about.png" alt="Vince & LeaAnne Cassaniti, Ocean Blue Living">
 			</figure>
+		</div>
+		<div class="Container Container--textColumn">
 			{{ about.content }}
 			<div class="u-textCenter u-marginT2">
 				<a class="Button t-button--rev u-colorWhite" href="/about">{{ about.button }}</a>
@@ -107,7 +111,7 @@ layout: default
 				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
 			</svg>
 		</figure>
-		<h1 class="Pathway-title u-marginTD2 u-marginB2">The Ocean Blue blog.</h1>
+		<h1 class="Pathway-title u-colorWhite u-marginTD2 u-marginB4">The Ocean Blue blog.</h1>
 
 		{% for post in site.posts | limit: 1 %}
 			<article class="Article Post">

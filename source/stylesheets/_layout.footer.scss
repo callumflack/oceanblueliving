@@ -6,7 +6,7 @@
 
 
 .Footer {
-	background-color: rgba( palette(brand), 0.03 );
+	background-color: palette(brand-counter);
 	border-top: 1px solid palette(base);
 	margin-top: space(1.5);
 	padding: space(2) 0;
@@ -27,7 +27,7 @@ a.Footer-logo {
 	text-align: center;
 
 	> img {
-		width: 160px;
+		width: 150px;
 	}
 
 	@include respond-to(xs) {

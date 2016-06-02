@@ -40,7 +40,7 @@
 
 @mixin textButton() {
 	@include typeReset();
-	color: palette(white);
+	color: palette(brand);
 	font-family: $font-sans-medium;
 	font-size: fontsize(textSm, xs);
 	letter-spacing: 0.05em;
@@ -147,7 +147,7 @@
 }
 
 
-// Button sizes
+// Button sizes (by line-height)
 // --------------------------------------------------------------------------
 
 .t-button {
@@ -174,7 +174,7 @@
 	}
 
 	&--full {
-		line-height: size(button-height, large);
+		// line-height: size(button-height, large);
 		text-align: center;
 		width: 100%;
 	}

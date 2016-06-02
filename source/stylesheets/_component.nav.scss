@@ -12,10 +12,12 @@
 	// position: relative;
 
 	@include baseTransition;
-	padding: space(4) space(8);
+	display: inline;
+	// padding: space(4) space(8);
 	position: fixed;
-	top: 0;
-	width: 100%;
+	top: space(4);
+	right: space(8);
+	// width: 100%;
 	z-index: 9;
 
 	@include respond-to(xs) {
@@ -28,14 +30,34 @@
 }
 
 
+// Nav toggle
+// --------------------------------------------------------------------------
+
+.Nav-toggle {
+	@include baseTransition;
+	display: inline;
+	position: fixed;
+	top: space(4);
+	right: space(8);
+	z-index: 9;
+
+	@include respond-to(xs) {
+	}
+
+	// Color the hamburger icon
+	@include when-inside(".Home") {
+		color: palette(white);
+	}
+}
+
 // Make the header nav fixed and animate down into view on scroll
 // Req's: component.fixedheaderanimation.js
 // See: http://codepen.io/Craig-Watson/pen/zGbNRL
-// --------------------------------------------------------------------------
 
 $FixedNavHeight: rem(220);
 
-.Nav-transition {
+.Nav-toggle--transition {
+	position: fixed;
 	transform: translateY( -#{$FixedNavHeight} );
 	transition-duration: map-fetch($transition, duration, long);
 }

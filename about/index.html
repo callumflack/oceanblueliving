@@ -5,7 +5,7 @@ layout: default
 
 {% assign about = site.pages | where: 'title', 'about' | first  %}
 
-<header class="Header" role="banner">
+<header class="Header--fade" role="banner">
 	<div class="FlexEmbed">
 		<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 		<div class="FlexEmbed-content">
@@ -15,11 +15,11 @@ layout: default
 		</div>
 	</div>
 	<div class="u-posAbsoluteCenter">
-		<div class="Container u-textCenter u-marginT6">
+		<div class="Container u-textCenter u-marginT4">
 			<a class="Header-logo" href="/">
 				<img src="/uploads/logo.png" alt="{{ site.title }}">
 			</a>
-			<h1 class="Header-title u-marginT2">
+			<h1 class="Header-title u-marginT15">
 				{{ about.headline }}
 			</h1>
 		</div>
@@ -32,26 +32,104 @@ layout: default
 
 			{{ about.first_text | markdownify }}
 
-			<div class="FlexEmbed">
-				<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-				<div class="FlexEmbed-content">
-					<div class="videoWrapper js-videoWrapper">
-						<iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/{{meta['hero-youtube']}}" width="100%" height="100%" ></iframe>
-						<button class="videoPoster js-videoPoster" style="background-image:url('/assets/video-poster.jpg');">
-							<!-- <svg class="Icon-svgLg ic-play u-posAbsoluteCenter"><use xlink:href="#ic-play"></use></svg>Play video -->
-							<svg class="Icon-svgLg ic-play u-posAbsoluteCenter" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 144 144">
-							<g id="ic-play">
-									<path d="M60,99l36-27L60,45V99z M72,12c-33.1,0-60,26.9-60,60s26.9,60,60,60s60-26.9,60-60S105.1,12,72,12z M72,127
-											c-30.3,0-55-24.7-55-55s24.7-55,55-55s55,24.7,55,55S102.3,127,72,127z"/>
-									<path d="M0,0h144v144H0V0z" fill="none"/>
-							</g>
-							</svg>
-						</button>
+			<figure class="Figure">
+				<div class="FlexEmbed">
+					<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+					<div class="FlexEmbed-content">
+						<div class="videoWrapper js-videoWrapper">
+							<iframe class="u-posAbsoluteCenter js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/{{ about.video }}" width="100%" height="100%" ></iframe>
+							<button class="u-posAbsoluteCenter CoverImage videoPoster js-videoPoster" style="background-image:url('{{ about.video-image }}');">
+								<svg class="u-posAbsoluteCenter Icon Icon--super u-colorWhite">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-play"></use>
+								</svg>
+								Play video
+							</button>
+						</div>
 					</div>
+				</div>
+			</figure>
+
+			{{ about.second_text | markdownify }}
+
+		</div>
+
+		<div class="Container Container--textColumn u-marginT15">
+			<div class="HzRule HzRule--light"></div>
+		</div>
+	</section>
+
+	<!-- contacts -->
+	<section class="Section u-paddingT0">
+		<div class="Container Container--textColumn">
+
+			<div class="Pathway">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--lg">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-contact"></use>
+					</svg>
+				</figure>
+				<h1 class="Pathway-title">
+					Get in touch.
+				</h1>
+				<div class="Grid-cell Grid-cell--center u-size5of12">
+					<ul class="o-listClean">
+						<li><a href="tel:{{ site.contact-phone }}">T: {{ site.contact-phone }}</a></li>
+						<li><a href="mailto:{{ site.contact-email }}">E: {{ site.contact-email }}</a></li>
+						<a class="u-block u-marginTD2 u-marginBD2" href="https://goo.gl/maps/GQHnTB9koXQ2" target="_blank">
+							{{ site.contact-address }}
+						</a>
+						<li>{{ site.contact-open }}</li>
+					</ul>
 				</div>
 			</div>
 
-			{{ about.second_text | markdownify }}
+			<a class="Pathway" href="/blog">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--lg">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
+					</svg>
+				</figure>
+				<h1 class="Pathway-title">
+					Read the blog.
+				</h1>
+			</a>
+
+			<a class="Pathway" href="{{ site.social-facebook }}">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--md">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-facebook"></use>
+					</svg>
+				</figure>
+				<h2 class="Pathway-subtitle">
+					Like us.
+				</h2>
+			</a>
+
+			<a class="Pathway" href="{{ site.social-pinterest }}">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--md">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-pinterest"></use>
+					</svg>
+				</figure>
+				<h2 class="Pathway-subtitle">
+					Pin us.
+				</h2>
+			</a>
+
+			<div class="Pathway">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--lg">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-newsletter"></use>
+					</svg>
+				</figure>
+				<h2 class="Pathway-subtitle">
+					Get posts delivered.
+				</h2>
+				<div class="Grid-cell--center u-size9of12 u-marginT15">
+					{% include newsletter-subscribe.html %}
+					<p class="u-textXs u-textCenter u-colorMedium u-marginT15">We respect your privacy. Your details will never be shared with a third party.</p>
+				</div>
+			</div>
 
 		</div>
 	</section>

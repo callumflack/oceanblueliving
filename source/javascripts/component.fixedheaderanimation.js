@@ -6,15 +6,16 @@
 $(document).ready( function() {
 
 	var lastScrollTop = 0;
-	var navbar        = $('.Nav');
+	var navToggle     = $('.Nav-toggle');
+	var navTransition = "Nav-toggle--transition";
 
 	$(window).scroll(function(event) {
 		var st = $(this).scrollTop();
 
-		if (st > 300 && st > lastScrollTop){
-			navbar.addClass('Nav-transition');
+		if (st > 400 && st > lastScrollTop){
+			navToggle.addClass(navTransition);
 		} else {
-			navbar.removeClass('Nav-transition');
+			navToggle.removeClass(navTransition);
 		}
 
 		lastScrollTop = st;

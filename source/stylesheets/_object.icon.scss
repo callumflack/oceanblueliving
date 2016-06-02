@@ -29,6 +29,10 @@
 		outline: 0;
 	}
 
+	&--nav {
+		height: 18px;
+	}
+
 	&--sm {
 		width: 12px;
 		height: 12px;
@@ -45,12 +49,12 @@
 	}
 
 	&--super {
-		width: rem(40);
-		height: rem(40);
+		width: rem(70);
+		height: rem(70);
 
 		@include respond-to(xs) {
-			width: rem(48);
-			height: rem(48);
+			width: rem(100);
+			height: rem(100);
 		}
 	}
 

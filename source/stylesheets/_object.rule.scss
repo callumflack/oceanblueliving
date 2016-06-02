@@ -25,6 +25,10 @@
 	height: 0;
 	margin-top: calc( #{space(1)} - 1px);
 	margin-bottom: space(1);
+
+	&--light {
+		border-color: palette(base);
+	}
 }
 
 // Contained on…
