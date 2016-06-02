@@ -1,0 +1,9 @@
+---
+title: about
+date: 2016-06-02 10:52:00 +10:00
+headline: Crafted by boat builders.
+button: about us
+---
+
+We’re boat builders by trade. We were seduced by the weight, feel and versatility of water-jet cutting, so we decided to start our own workshop. Eight years later, we’re only just beginning.
+The biggest ting our clients say about working with us, is we’re good at helping people through the process. Because there’s so much you can do, sometimes it’s overwhelming. We’ve been doing it a while, so we know how to get that idea in your head and make it real, transforming your living space into a you space. 
