@@ -25,6 +25,7 @@
 .u-colorDark        { color: palette(charcoal) !important; }
 .u-colorBlack       { color: palette(black) !important; }
 .u-colorBrand       { color: palette(brand) !important; }
+.u-colorBrandMuted  { color: rgba( palette(brand), 0.5 ) !important; }
 .u-colorBrandLight  { color: rgba( palette(brand), 0.3 ) !important; }
 .u-colorBrandAlt    { color: palette(brand-complement) !important; }
 .u-colorBrandCount  { color: palette(brand-counter) !important; }

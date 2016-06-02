@@ -150,12 +150,13 @@ input[type="password"] {
 		left: 1rem;
 		position: absolute;
 		top: 0.65rem;
-		transition: all map-fetch($transition, duration, fast) map-fetch($transition, type, fine);
+		transition: all map-fetch($transition, duration, short) map-fetch($transition, type, thisalso);
 		z-index: 99;
 	}
 
 	input.Form-control,
 	textarea.Form-control {
+		padding-left: 1rem;
 	}
 
 	&--sm {
@@ -188,14 +189,15 @@ input[type="password"] {
 
 .Form-group.is-active {
 	label {
-		font-size: fontsize(textXs, base);
-		opacity: 1;
-		transform: translate(1px, -16px);
+		// font-size: fontsize(textXs, base);
+		opacity: 0;
+		transform: translateY(-16px);
+		transition: all map-fetch($transition, duration, short) map-fetch($transition, type, thisalso);
 	}
 
 	input.Form-control {
-		border-color: rgba( palette(brand-complement), 1 );
-		color: palette(brand-complement);
+		border-color: palette(brand);
+		color: palette(brand);
 	}
 }
 
@@ -208,26 +210,6 @@ input[type="password"] {
 		border-color: palette(bad-news);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Capsule theme
@@ -243,7 +225,7 @@ input[type="password"] {
 		> .Form-control {
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
-			border-right-color: transparent;
+			border-right-color: transparent !important;
 		}
 
 		> .Button {

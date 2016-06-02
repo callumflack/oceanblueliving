@@ -11,21 +11,29 @@
 	// padding: space(0.9);
 	// position: relative;
 
-	@include baseTransition;
-	display: inline;
-	// padding: space(4) space(8);
-	position: fixed;
-	top: space(4);
-	right: space(8);
-	// width: 100%;
-	z-index: 9;
-
 	@include respond-to(xs) {
 	}
 
 	// Color the hamburger icon
-	@include when-inside(".Home") {
-		color: palette(white);
+	@include when-inside(".Home") { color: palette(white); }
+	@include when-inside(".Modal") { color: palette(white); }
+}
+
+.Nav-title {
+	@include headlineSm();
+	color: palette(white);
+}
+
+$infoColor: rgba( palette(white), 0.5 );
+
+.Nav-info {
+	@include TextMd($mixinFont: $font-sans-light);
+	color: $infoColor;
+
+	&:not(:last-child) {
+		border-right: 1px solid rgba( palette(white), 0.25 );
+		margin-right: space(0.8) !important;
+		padding-right: space(1);
 	}
 }
 
