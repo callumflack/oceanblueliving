@@ -9,6 +9,7 @@ first_text: "We’re boat builders by trade. We were seduced by the weight, feel
   working with us, is we’re good at helping people through the process. Because there’s
   so much you can do, sometimes it’s overwhelming. We’ve been doing it a while, so
   we know how to get that idea in your head into a real thing in your living space. "
+video-image: "/uploads/about-video-placeholder.jpg"
 video: https://youtu.be/C6huQHDcjWY
 second_text: "We’re boat builders by trade. We were seduced by the weight, feel and
   versatility of water-jet cutting, so we decided to start our own workshop. Eight
