@@ -26,3 +26,11 @@ defaults:
 permalink: pretty
 exclude:
 - node_modules
+contact-phone: '0409 726 128 '
+contact-email: info@oceanblueliving.com.au
+contact-address-text: |-
+  3/169 Newell Street, Cairns
+  Queensland 4870 Australia
+contact-open-text: |-
+  Open Tues–Thurs 9am-2pm
+  Other times by appointment
