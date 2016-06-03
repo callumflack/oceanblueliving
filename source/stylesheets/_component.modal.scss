@@ -37,7 +37,7 @@
 	width: auto;
 
 	@include respond-to(sm) {
-		margin: space(2) auto;
+		margin: 0 auto;
 		padding: 0;
 		width: size(container, default);
 	}
