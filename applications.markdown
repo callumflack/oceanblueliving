@@ -20,5 +20,6 @@ header_description: "We make elegant, functional, and timeless architectural app
   gates and letterbox plates, to signage, wall and garden art, we create your designs,
   or you can choose from ours.\n\nOur products are proudly designed and built in our
   Cairns workshop. "
+layout: default
 ---
 
