@@ -38,9 +38,9 @@
 	font-family: $mixinFont;
 	font-size: fontsize(headerRg, xs);
 
-	@include respond-to(xs) {
-		font-size: fontsize(headerRg, base);
-	}
+	@include respond-to(xs) { font-size: fontsize(headerRg, base); }
+	@include respond-to(md) { font-size: fontsize(headerRg, lg); }
+	@include respond-to(xl) { font-size: fontsize(headerRg, xl); }
 }
 
 @mixin headlineSm(

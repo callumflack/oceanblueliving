@@ -88,7 +88,7 @@ a.gallery-cell {
 		opacity: 0.5;
 		transform: scale(0.7);
 		transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
-		width: size(container, default);
+		max-width: size(container, default);
 	}
 
 	.gallery-cell.is-selected {

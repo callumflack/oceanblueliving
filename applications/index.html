@@ -1,0 +1,137 @@
+---
+title: applications
+layout: default
+---
+
+{% assign applications = site.pages | where: 'title', 'applications' | first  %}
+
+<header class="Header--fade" role="banner">
+	<div class="FlexEmbed">
+		<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+		<div class="FlexEmbed-content">
+			<div class="Header-hero">
+				<img src="{{ applications.hero-image }}" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="u-posAbsoluteCenter">
+		<div class="Container u-textCenter u-marginT4">
+			<a class="Header-logo" href="/">
+				<img src="/uploads/logo.png" alt="{{ site.title }}">
+			</a>
+			<h1 class="Header-title u-marginT15">
+				{{ applications.headline }}
+			</h1>
+		</div>
+	</div>
+</header>
+
+<main class="Content" role="main">
+	<section class="Section Page">
+		<div class="Container Container--insetTextColumn">
+
+			{{ applications.first_text | markdownify }}
+
+			<figure class="Figure">
+				<div class="FlexEmbed">
+					<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+					<div class="FlexEmbed-content">
+						<div class="videoWrapper js-videoWrapper">
+							<iframe class="u-posAbsoluteCenter js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="{{ applications.video }}" width="100%" height="100%" ></iframe>
+							<button class="u-posAbsoluteCenter CoverImage videoPoster js-videoPoster" style="background-image:url('{{ applications.video-image }}');">
+								<svg class="u-posAbsoluteCenter Icon Icon--super u-colorWhite">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-play"></use>
+								</svg>
+								Play video
+							</button>
+						</div>
+					</div>
+				</div>
+			</figure>
+
+			{{ applications.second_text | markdownify }}
+
+		</div>
+
+		<div class="Container Container--textColumn u-marginT15">
+			<div class="HzRule HzRule--light"></div>
+		</div>
+	</section>
+
+	<!-- contacts -->
+	<section class="Section u-paddingT0">
+		<div class="Container Container--textColumn">
+
+			<div class="Pathway">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--lg">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-contact"></use>
+					</svg>
+				</figure>
+				<h1 class="Pathway-title">
+					Get in touch.
+				</h1>
+				<div class="Grid-cell Grid-cell--center u-size5of12">
+					<ul class="o-listClean">
+						<li><a href="tel:{{ site.contact-phone }}">T: {{ site.contact-phone }}</a></li>
+						<li><a href="mailto:{{ site.contact-email }}">E: {{ site.contact-email }}</a></li>
+						<a class="u-block u-marginTD2 u-marginBD2" href="https://goo.gl/maps/GQHnTB9koXQ2" target="_blank">
+							{{ site.contact-address }}
+						</a>
+						<li>{{ site.contact-open }}</li>
+					</ul>
+				</div>
+			</div>
+
+			<a class="Pathway" href="/blog">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--lg">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
+					</svg>
+				</figure>
+				<h1 class="Pathway-title">
+					Read the blog.
+				</h1>
+			</a>
+
+			<a class="Pathway" href="{{ site.social-facebook }}">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--md">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-facebook"></use>
+					</svg>
+				</figure>
+				<h1 class="Pathway-title">
+					Like us.
+				</h1>
+			</a>
+
+			<a class="Pathway" href="{{ site.social-pinterest }}">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--md">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-pinterest"></use>
+					</svg>
+				</figure>
+				<h1 class="Pathway-title">
+					Pin us.
+				</h1>
+			</a>
+
+			<div class="Pathway">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--lg">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-newsletter"></use>
+					</svg>
+				</figure>
+				<h2 class="Pathway-subtitle">
+					Get posts delivered.
+				</h2>
+				<div class="Grid-cell--center u-size9of12 u-marginT2">
+					{% include newsletter-subscribe.html %}
+					<p class="u-textXs u-textCenter u-colorMuted u-marginT">We respect your privacy. Your details will never be shared with a third party.</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+</main>
