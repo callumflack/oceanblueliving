@@ -13,7 +13,9 @@ screens_first_text: Parasoleil panels used overhead create shade with air circul
   bridge architecture with nature and create interactive shadows that change over
   the day.
 screens_gallery_images:
-  image: "/uploads/applications-screen-3.jpg"
+  image-1: "/uploads/applications-screen-1.jpg"
+  image-2: "/uploads/applications-screen-2.jpg"
+  image-3: "/uploads/applications-screen-3.jpg"
 screens_second_text: 'Filter intense sunlight while allowing air flow circulation
   with this line of open pattern aluminum and copper panels, cut-out with designs
   to bridge architecture with nature. All-weather shade products create an interesting
