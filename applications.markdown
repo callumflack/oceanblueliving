@@ -11,7 +11,7 @@ header_description: "We make elegant, functional, and timeless architectural app
 screens_first_text: Parasoleil panels used overhead create shade with air circulation,
   bridge architecture with nature and create interactive shadows that change over
   the day.
-screens_images:
+screens_gallery_images:
   Key 1: 
 screens_second_text: 'Filter intense sunlight while allowing air flow circulation
   with this line of open pattern aluminum and copper panels, cut-out with designs
