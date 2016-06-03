@@ -1,7 +1,7 @@
 ---
 title: applications
 date: 2016-06-03 16:46:00 +10:00
-header_title: Timeless, elegant & functional architectural pieces.
+header_headline: Timeless, elegant & functional architectural pieces.
 header_description: "We make elegant, functional, and timeless architectural applications.\n\nOur
   architectural metal panels filter and sculpt light. They’re not only engineered
   to withstand the elements, they’re also profoundly artistic.\n\nFrom screens, panels,
