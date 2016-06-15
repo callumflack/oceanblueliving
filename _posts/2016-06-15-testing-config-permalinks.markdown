@@ -2,7 +2,6 @@
 title: Testing config permalinks
 date: 2016-06-15 20:17:00 +10:00
 author: Joe Burns
-layout: post
 ---
 
 When we work with Stateful Themes (that is to say, themes that we toggle on and off) we normally do so by adding a class to the body element. Examples of this approach to theming include style-switchers (a user can toggle between different themes) and sub-sections of a site (all blog posts have one theme colour, all news pages have another theme colour, etc.). We simply add a class high up the DOM which then invokes that theme for that particular page.
