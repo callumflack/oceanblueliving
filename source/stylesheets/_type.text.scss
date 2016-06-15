@@ -117,14 +117,16 @@
 
 .u-textRg        { @include TextRg(); }
 .u-textRg--light { @include TextRg( palette(brand-counter) ); }
-// .u-textRgBlock   { > * { @include TextRg( palette(brand-counter) ); } }
 
 .u-textMd        { @include TextMd(); }
 .u-textMd--light { @include TextMd( palette(brand-counter) ); }
-.u-textMdBlock   { > * { @include TextMd( palette(brand-counter) ); } }
+
+.u-textXsBlock   { > * { @include TextXs( palette(brand) ); } }
+.u-textSmBlock   { > * { @include TextSm( palette(brand) ); } }
+.u-textRgBlock   { > * { @include TextRg( palette(brand) ); } }
+.u-textMdBlock   { > * { @include TextMd( palette(brand) ); } }
 
 // .u-textLg        { @include TextLg(); }
-
 
 // [class*="u-text"] {
 //     >  {
