@@ -6,10 +6,6 @@
 
 
 .Nav {
-	// display: flex;
-	// height: rem(80);
-	// padding: space(0.9);
-	// position: relative;
 	opacity: 0;
 	transform: translateY(10px);
 	transition: all map-fetch($transition, duration, long) map-fetch($transition, type, base);
@@ -70,10 +66,12 @@ $infoColor: rgba( palette(white), 0.5 );
 	display: inline;
 	position: fixed;
 	top: space(4);
-	right: space(8);
+	top: $vertSpaceXs;
+	right: space(1);
 	z-index: 9;
 
 	@include respond-to(xs) {
+		right: 6vw;
 	}
 
 	// Color the hamburger icon

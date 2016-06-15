@@ -5,21 +5,21 @@ layout: default
 
 {% assign about = site.pages | where: 'title', 'about' | first  %}
 
-<header class="Header--fade" role="banner">
+<header class="Header Header--fade" role="banner">
 	<div class="FlexEmbed">
-		<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+		<div class="FlexEmbed-ratio"></div>
 		<div class="FlexEmbed-content">
 			<div class="Header-hero">
 				<img src="{{ about.hero-image }}" alt="">
 			</div>
 		</div>
 	</div>
-	<div class="u-posAbsoluteCenter">
-		<div class="Container u-textCenter u-marginT4">
+	<div class="Header-wrapper">
+		<div class="Container">
 			<a class="Header-logo" href="/">
 				<img src="/uploads/logo.png" alt="{{ site.title }}">
 			</a>
-			<h1 class="Header-title u-marginT15">
+			<h1 class="Header-title">
 				{{ about.headline }}
 			</h1>
 		</div>

@@ -7,18 +7,20 @@
 
 .Figure {
 	margin: space(3.5) auto;
+	margin: $vertSpace auto;
 
 	img { width: 100%; }
 
-	@include respond-to(xs) {
+	@include respond-to(sm) {
 		margin: space(7) 0;
+		margin: $vertSpaceLg 0;
 	}
 }
 
 .Figure--hero {
 	margin: 0 0 space(1);
 
-	@include respond-to(xs) {
+	@include respond-to(sm) {
 		margin: space(1.5) 0 space(1.25);
 		margin: 0 0 space(1.25);
 	}

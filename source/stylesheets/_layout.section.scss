@@ -7,16 +7,20 @@
 
 .Section {
 	padding: space(3.5) 0;
+	padding: $vertSpace 0;
 
 	@include respond-to(sm) {
 		padding: space(7) 0;
+		padding: $vertSpaceLg 0;
 	}
 
 	@include when-inside(".Home") {
 		padding: space(6) 0;
+		padding: $vertSpace 0;
 
 		@include respond-to(sm) {
 			padding: space(12) 0;
+			padding: $vertSpaceLg 0;
 		}
 	}
 }

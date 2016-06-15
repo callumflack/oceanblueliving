@@ -17,9 +17,27 @@
 }
 
 .Header-wrapper {
-	@extend .u-posAbsoluteCenter;
+	@include posAbsoluteCenter();
 	z-index: 2;
+
+	> .Container {
+		margin-top: space(4);
+		margin-top: $vertSpaceXs;
+		text-align: center;
+	}
 }
+
+.Header .FlexEmbed-ratio {
+	padding-bottom: 130%;
+	@include respond-to(xs) { padding-bottom: 100%; }
+	@include respond-to(md) { padding-bottom: 75%; }
+	@include respond-to(lg) { padding-bottom: 66%; }
+	@include respond-to(xl) { padding-bottom: 100vh; }
+}
+
+
+// Header elements
+// --------------------------------------------------------------------------
 
 .Header-logo {
 	border-bottom: 1px solid palette(brand);
@@ -27,7 +45,10 @@
 	padding-bottom: space(1);
 
 	> img {
-		width: 200px;
+		width: 30%;
+		width: 130px;
+		@include respond-to(sm) { width: 160px; }
+		@include respond-to(lg) { width: 200px; }
 	}
 
 	@include when-inside(".Header--rev") {
@@ -35,9 +56,13 @@
 	}
 }
 
+.Header-logo + .Header-title {
+	margin-top: space(1.5) !important;
+	margin-top: $vertSpaceXs !important;
+}
+
 .Header-title {
 	@include headlineRg();
-
 	margin: space(0.5) auto space(2);
 
 	@include respond-to(sm) {
@@ -57,6 +82,9 @@
 	width: 100%;
 
 	> img {
-		width: 50%;
+		width: 100%;
+		@include respond-to(xs) { width: 90%; }
+		@include respond-to(md) { width: 66%; }
+		@include respond-to(xl) { width: 55%; }
 	}
 }

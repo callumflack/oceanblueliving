@@ -12,17 +12,14 @@
 	padding: 0 space(1);
 	position: relative;
 
-	@include respond-to(xs) {
-		max-width: size(container, default);
+	@include respond-to(text-column) {
 		padding: 0;
 	}
 
 	// basic container width var
 	&--textColumn {
-		width: size(container, default);
-
-		@include respond-to(sm) {
-			width: size(container, text-column);
+		@include respond-to(text-column) {
+			max-width: size(container, text-column);
 		}
 	}
 
@@ -31,10 +28,9 @@
 		p {
 			@include TextMd();
 			margin: 0 auto;
-			width: size(container, default);
 
-			@include respond-to(sm) {
-				width: size(container, text-column);
+			@include respond-to(text-column) {
+				max-width: size(container, text-column);
 			}
 
 			+ p {
