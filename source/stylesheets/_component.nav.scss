@@ -70,7 +70,9 @@ $infoColor: rgba( palette(white), 0.5 );
 	right: space(1);
 	z-index: 9;
 
-	@include respond-to(xs) {
+	@include respond-to(sm) {
+		top: space(4);
+		top: $vertSpace;
 		right: 6vw;
 	}
 

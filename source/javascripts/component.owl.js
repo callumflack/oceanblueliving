@@ -12,7 +12,7 @@ $(document).ready( function() {
 	owl.owlCarousel({
 		animateOut: 'fadeOut',
 		autoplay: true,
-		autoplayTimeout: 8000,
+		autoplayTimeout: 5000,
 		// autoWidth:true,
 		items: 1,
 		loop: true,

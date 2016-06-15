@@ -24,6 +24,10 @@
 		margin-top: space(4);
 		margin-top: $vertSpaceXs;
 		text-align: center;
+
+		@include respond-to(sm) {
+			margin-top: $vertSpace;
+		}
 	}
 }
 
