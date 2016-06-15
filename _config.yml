@@ -5,6 +5,7 @@ collections:
   posts:
     title: Posts
     output: true
+    permalink: /blog/:slug/
   uploads:
     title: Uploads
     output: true
