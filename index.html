@@ -8,7 +8,7 @@ layout: default
 {% assign price        = site.home | where: 'title', 'price' | first  %}
 {% assign about        = site.home | where: 'title', 'about' | first  %}
 
-<header class="Header Header--rev u-bgBrand" role="banner">
+<!-- <header class="Header Header--rev u-bgBrand" role="banner">
 	<div class="gallery gallery--fade">
 		{% for image in header.gallery-images %}
 			<div class="gallery-cell">
@@ -34,6 +34,32 @@ layout: default
 			</h1>
 		</div>
 	</div>
+</header> -->
+
+<header class="Header Header--rev u-bgBrand" role="banner">
+	<div class="owl-carousel">
+		{% for image in header.gallery-images %}
+		<div class="FlexEmbed">
+			<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+			<div class="FlexEmbed-content">
+				<div
+					class="u-posAbsoluteCenter CoverImage--dark"
+					style="background-image: url('{{ image }}')">
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="Header-wrapper">
+		<div class="Container u-textCenter u-marginT4">
+			<a class="Header-logo" href="/">
+				<img src="/uploads/logo-white.png" alt="{{ site.title }}">
+			</a>
+			<h1 class="Header-title u-marginT15">
+				{{ header.headline }}
+			</h1>
+		</div>
+	</div>
 </header>
 
 <main class="Content" role="main">
@@ -41,7 +67,7 @@ layout: default
 		<div class="Container Container--textColumn">
 			<figure class="u-textCenter">
 				<svg class="Icon Icon--lg u-colorWhite">
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-estimate"></use>
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-services"></use>
 				</svg>
 			</figure>
 			<h1 class="Pathway-title u-marginTD2 u-marginB2">{{ applications.headline }}</h1>

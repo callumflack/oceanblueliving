@@ -15,11 +15,6 @@ $namespace             : '';
 // Colours
 // --------------------------------------------------------------------------
 
-// These are to be replaced
-$color-grey            : #a19a8f;
-$color-grey-rule       : rgba($color-grey,0.4);
-$color-grey-lite       : rgba($color-grey,0.25);
-
 // Do not use these values directly in your Sass files. Use the more
 // specifically named variables below that use these root values.
 
@@ -50,78 +45,78 @@ $palette: (
 
 );
 
-$root-color: (
-	grey-85                    : tint($base-black, 15%),
-	grey-78                    : tint($base-black, 22%),
-	grey-66                    : tint($base-black, 34%),
-	grey-50                    : tint($base-black, 50%),
-	grey-40                    : tint($base-black, 60%),
-	grey-35                    : tint($base-black, 65%),
-	grey-25                    : tint($base-black, 75%),
-	grey-12                    : tint($base-black, 88%),
-	grey-06                    : tint($base-black, 94%),
-	grey-03                    : tint($base-black, 97%),
-	background                 : #fdfdfd,
-	neutral                    : #f0eeeb,
-	neutral-light              : lighten(#f0eeeb, 4%),
-	brand                      : #ffe93b,
-	brand-faint                : lighten(#0071bc, 56%),
-	brand-light                : lighten(#0071bc, 59%),
-	brand-muted                : #E5F0F8,
-	brand-dark                 : darken(#0071bc, 15%),
-	brand-alt                  : #f15a24,
-	brand-alt-dark             : darken(#f15a24, 10%),
-	brand-alt-muted            : desaturate(#f15a24, 20%),
-	brand-alt-muted-dark       : darken(#f15a24, 20%),
-	warning                    : #FFD40C,
-	bad-news                   : #C60C0C,
-	good-news                  : #97C70A
-);
-
-$color: (
-
-	ui: (
-		white                    : $base-white,
-		faint                    : map-fetch($root-color, grey-03),
-		light                    : map-fetch($root-color, grey-06),
-		base                     : map-fetch($root-color, grey-12),
-		muted                    : map-fetch($root-color, grey-25),
-		medium                   : map-fetch($root-color, grey-40),
-		charcoal                 : map-fetch($root-color, grey-78),
-		dark                     : map-fetch($root-color, grey-85),
-		background               : map-fetch($root-color, background),
-		neutral                  : map-fetch($root-color, neutral),
-		neutral-light            : map-fetch($root-color, neutral-light),
-		brand                    : map-fetch($root-color, brand),
-		brand-light              : map-fetch($root-color, brand-light),
-		brand-faint              : map-fetch($root-color, brand-faint),
-		brand-muted              : map-fetch($root-color, brand-muted),
-		brand-dark               : map-fetch($root-color, brand-dark),
-		brand-alt                : map-fetch($root-color, brand-alt),
-		brand-alt-dark           : map-fetch($root-color, brand-alt-dark),
-		brand-alt-muted          : map-fetch($root-color, brand-alt-muted),
-		brand-alt-muted-dark     : map-fetch($root-color, brand-alt-muted-dark),
-		warning                  : map-fetch($root-color, warning)
-	),
-
-	text: (
-		base                     : map-fetch($root-color, grey-85),
-		background               : map-fetch($root-color, background),
-		white                    : $base-white,
-		faint                    : map-fetch($root-color, grey-12),
-		light                    : map-fetch($root-color, grey-25),
-		muted                    : map-fetch($root-color, grey-35),
-		medium                   : map-fetch($root-color, grey-50),
-		charcoal                 : map-fetch($root-color, grey-66),
-		dark                     : map-fetch($root-color, grey-85),
-		brand                    : map-fetch($root-color, brand),
-		brand-dark               : map-fetch($root-color, brand-dark),
-		brand-alt                : map-fetch($root-color, brand-alt),
-		brand-alt-dark           : map-fetch($root-color, brand-alt-dark),
-		warning                  : map-fetch($root-color, warning)
-	)
-
-);
+// $root-color: (
+// 	grey-85                    : tint($base-black, 15%),
+// 	grey-78                    : tint($base-black, 22%),
+// 	grey-66                    : tint($base-black, 34%),
+// 	grey-50                    : tint($base-black, 50%),
+// 	grey-40                    : tint($base-black, 60%),
+// 	grey-35                    : tint($base-black, 65%),
+// 	grey-25                    : tint($base-black, 75%),
+// 	grey-12                    : tint($base-black, 88%),
+// 	grey-06                    : tint($base-black, 94%),
+// 	grey-03                    : tint($base-black, 97%),
+// 	background                 : #fdfdfd,
+// 	neutral                    : #f0eeeb,
+// 	neutral-light              : lighten(#f0eeeb, 4%),
+// 	brand                      : #ffe93b,
+// 	brand-faint                : lighten(#0071bc, 56%),
+// 	brand-light                : lighten(#0071bc, 59%),
+// 	brand-muted                : #E5F0F8,
+// 	brand-dark                 : darken(#0071bc, 15%),
+// 	brand-alt                  : #f15a24,
+// 	brand-alt-dark             : darken(#f15a24, 10%),
+// 	brand-alt-muted            : desaturate(#f15a24, 20%),
+// 	brand-alt-muted-dark       : darken(#f15a24, 20%),
+// 	warning                    : #FFD40C,
+// 	bad-news                   : #C60C0C,
+// 	good-news                  : #97C70A
+// );
+//
+// $color: (
+//
+// 	ui: (
+// 		white                    : $base-white,
+// 		faint                    : map-fetch($root-color, grey-03),
+// 		light                    : map-fetch($root-color, grey-06),
+// 		base                     : map-fetch($root-color, grey-12),
+// 		muted                    : map-fetch($root-color, grey-25),
+// 		medium                   : map-fetch($root-color, grey-40),
+// 		charcoal                 : map-fetch($root-color, grey-78),
+// 		dark                     : map-fetch($root-color, grey-85),
+// 		background               : map-fetch($root-color, background),
+// 		neutral                  : map-fetch($root-color, neutral),
+// 		neutral-light            : map-fetch($root-color, neutral-light),
+// 		brand                    : map-fetch($root-color, brand),
+// 		brand-light              : map-fetch($root-color, brand-light),
+// 		brand-faint              : map-fetch($root-color, brand-faint),
+// 		brand-muted              : map-fetch($root-color, brand-muted),
+// 		brand-dark               : map-fetch($root-color, brand-dark),
+// 		brand-alt                : map-fetch($root-color, brand-alt),
+// 		brand-alt-dark           : map-fetch($root-color, brand-alt-dark),
+// 		brand-alt-muted          : map-fetch($root-color, brand-alt-muted),
+// 		brand-alt-muted-dark     : map-fetch($root-color, brand-alt-muted-dark),
+// 		warning                  : map-fetch($root-color, warning)
+// 	),
+//
+// 	text: (
+// 		base                     : map-fetch($root-color, grey-85),
+// 		background               : map-fetch($root-color, background),
+// 		white                    : $base-white,
+// 		faint                    : map-fetch($root-color, grey-12),
+// 		light                    : map-fetch($root-color, grey-25),
+// 		muted                    : map-fetch($root-color, grey-35),
+// 		medium                   : map-fetch($root-color, grey-50),
+// 		charcoal                 : map-fetch($root-color, grey-66),
+// 		dark                     : map-fetch($root-color, grey-85),
+// 		brand                    : map-fetch($root-color, brand),
+// 		brand-dark               : map-fetch($root-color, brand-dark),
+// 		brand-alt                : map-fetch($root-color, brand-alt),
+// 		brand-alt-dark           : map-fetch($root-color, brand-alt-dark),
+// 		warning                  : map-fetch($root-color, warning)
+// 	)
+//
+// );
 
 // http://www.sitepoint.com/debugging-sass-maps/
 // I can't get this to work, but it'd be very handy…

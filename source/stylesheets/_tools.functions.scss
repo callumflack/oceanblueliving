@@ -16,11 +16,11 @@
 // See: http://codepen.io/jakealbaugh/post/using-sass-functions-to-access-complex-variable-maps
 
 @function map-fetch($map, $keys...) {
-    $value: $map;
-    @each $key in $keys {
-        $value: map-get($value, $key);
-    }
-    @return $value;
+	$value: $map;
+	@each $key in $keys {
+		$value: map-get($value, $key);
+	}
+	@return $value;
 }
 
 // OUI map-fetch
@@ -50,19 +50,19 @@
 // http://www.sitepoint.com/debugging-sass-maps/
 
 @mixin debug-map($map) {
-    @at-root {
-        @debug-map {
-            __toString__: inspect($map);
-            __length__: length($map);
-            __depth__: depth($map);
-            __keys__: map-keys($map);
-            __properties__ {
-                @each $key, $value in $map {
-                    #{'(' + type-of($value) + ') ' + $key}: inspect($value);
-                }
-            }
-        }
-    }
+	@at-root {
+		@debug-map {
+			__toString__: inspect($map);
+			__length__: length($map);
+			__depth__: depth($map);
+			__keys__: map-keys($map);
+			__properties__ {
+				@each $key, $value in $map {
+					#{'(' + type-of($value) + ') ' + $key}: inspect($value);
+				}
+			}
+		}
+	}
 }
 
 
@@ -76,24 +76,24 @@
 //     @return map-get(map-get($palettes, $palette), $tone);
 // }
 
-@function color($type: 'ui', $increment: 'base') {
-    @return map-fetch($color, $type, $increment);
-}
+// @function color($type: 'ui', $increment: 'base') {
+//     @return map-fetch($color, $type, $increment);
+// }
 
 @function palette($hue: 'grey-25') {
-    @return map-fetch($palette, $hue);
+	@return map-fetch($palette, $hue);
 }
 
 @function size($type: 'font', $increment: 'text') {
-    @return map-fetch($size, $type, $increment);
+	@return map-fetch($size, $type, $increment);
 }
 
 @function fontsize($increment: 'textRg', $response: 'base') {
-    @return map-fetch($size, font, $increment, $response);
+	@return map-fetch($size, font, $increment, $response);
 }
 
 @function transition($property: 'duration', $response: 'short') {
-    @return map-fetch($transition, $property, $response);
+	@return map-fetch($transition, $property, $response);
 }
 
 // I think this is a Giraudel function…
@@ -101,17 +101,17 @@
 // @link https://jonsuh.com/blog/organizing-z-index-with-sass/
 
 @function font-weight($key) {
-    @if not map-has-key($font-weight, $key) {
-        @error 'There is no key named `#{$key}` in $font-weights. '
-             + 'Key should be one of #{map-keys($font-weight)}.';
-    }
+	@if not map-has-key($font-weight, $key) {
+		@error 'There is no key named `#{$key}` in $font-weights. '
+			 + 'Key should be one of #{map-keys($font-weight)}.';
+	}
 
-    @return map-get($font-weight, $key);
+	@return map-get($font-weight, $key);
 }
 
 @mixin font-weight($key) {
-    // font-family: $font;
-    font-weight: font-weight($key);
+	// font-family: $font;
+	font-weight: font-weight($key);
 }
 
 
@@ -119,7 +119,7 @@
 // --------------------------------------------------------------------------
 
 @function tint($current-color, $percent) {
-    @return mix(#FFF, $current-color, $percent);
+	@return mix(#FFF, $current-color, $percent);
 }
 
 
@@ -138,7 +138,7 @@
 // }
 
 @function space($value) {
-    @return $space-unit * $value;
+	@return $space-unit * $value;
 }
 
 
@@ -147,10 +147,10 @@
 // http://davidtheclark.github.io/scut/strip-unit.html
 
 @function scut-strip-unit (
-    $num
+	$num
 ) {
 
-    @return $num / ($num * 0 + 1);
+	@return $num / ($num * 0 + 1);
 
 }
 
@@ -164,23 +164,23 @@
 $scut-rem-base: 16 !default;
 
 @function rem (
-    $pixels
+	$pixels
 ) {
 
-    $rem-vals: ();
-    @each $val in $pixels {
-        $val-in-rems: scut-strip-unit($val) / $scut-rem-base * 1rem;
-        $rem-vals: append($rem-vals, $val-in-rems);
-    }
+	$rem-vals: ();
+	@each $val in $pixels {
+		$val-in-rems: scut-strip-unit($val) / $scut-rem-base * 1rem;
+		$rem-vals: append($rem-vals, $val-in-rems);
+	}
 
-    @if length($rem-vals) == 1 {
-        // return a single value instead of a list,
-        // so it can be used in calculations
-        @return nth($rem-vals, 1);
-    }
-    @else {
-        @return $rem-vals;
-    }
+	@if length($rem-vals) == 1 {
+		// return a single value instead of a list,
+		// so it can be used in calculations
+		@return nth($rem-vals, 1);
+	}
+	@else {
+		@return $rem-vals;
+	}
 
 }
 
@@ -192,56 +192,56 @@ $scut-rem-base: 16 !default;
 // Original $formats: eot woff2 woff ttf svg
 
 @function main-src($formats, $file-path, $font-family) {
-    // Return the list of `src` values, in order, that
-    // a good `@font-face` will need, including only
-    // those formats specified in the list `$formats`.
-    $result: ();
-    @if index($formats, eot) {
-        $eot-val: url('#{$file-path}.eot?#iefix') format('embedded-opentype');
-        $result: append($result, $eot-val, comma);
-    }
-    @if index($formats, woff2) {
-        $woff2-val: url('#{$file-path}.woff2') format('woff2');
-        $result: append($result, $woff2-val, comma);
-    }
-    @if index($formats, woff) {
-        $woff-val: url('#{$file-path}.woff') format('woff');
-        $result: append($result, $woff-val, comma);
-    }
-    @if index($formats, ttf) {
-        $ttf-val: url('#{$file-path}.ttf') format('truetype');
-        $result: append($result, $ttf-val, comma);
-    }
-    @if index($formats, svg) {
-        $svg-val: url('#{$file-path}.svg##{$font-family}') format('svg');
-        $result: append($result, $svg-val, comma);
-    }
-    @return $result;
+	// Return the list of `src` values, in order, that
+	// a good `@font-face` will need, including only
+	// those formats specified in the list `$formats`.
+	$result: ();
+	@if index($formats, eot) {
+		$eot-val: url('#{$file-path}.eot?#iefix') format('embedded-opentype');
+		$result: append($result, $eot-val, comma);
+	}
+	@if index($formats, woff2) {
+		$woff2-val: url('#{$file-path}.woff2') format('woff2');
+		$result: append($result, $woff2-val, comma);
+	}
+	@if index($formats, woff) {
+		$woff-val: url('#{$file-path}.woff') format('woff');
+		$result: append($result, $woff-val, comma);
+	}
+	@if index($formats, ttf) {
+		$ttf-val: url('#{$file-path}.ttf') format('truetype');
+		$result: append($result, $ttf-val, comma);
+	}
+	@if index($formats, svg) {
+		$svg-val: url('#{$file-path}.svg##{$font-family}') format('svg');
+		$result: append($result, $svg-val, comma);
+	}
+	@return $result;
 }
 
 @mixin font-face (
-    $font-family,
-    $file-path,
-    $weight: normal,
-    $style: normal,
-    $formats: eot woff ttf svg
+	$font-family,
+	$file-path,
+	$weight: normal,
+	$style: normal,
+	$formats: eot woff ttf svg
 ) {
 
-    @if index('italic' 'oblique', $weight) {
-        $style: $weight;
-        $weight: normal;
-    }
+	@if index('italic' 'oblique', $weight) {
+		$style: $weight;
+		$weight: normal;
+	}
 
-    @font-face {
-        font-family: $font-family;
-        font-weight: $weight;
-        font-style: $style;
+	@font-face {
+		font-family: $font-family;
+		font-weight: $weight;
+		font-style: $style;
 
-        @if index($formats, eot) {
-            src: url('#{$file-path}.eot');
-        }
+		@if index($formats, eot) {
+			src: url('#{$file-path}.eot');
+		}
 
-        src: main-src( $formats, $file-path, $font-family );
-    }
+		src: main-src( $formats, $file-path, $font-family );
+	}
 
 }

@@ -5,6 +5,9 @@
 		</svg>
 	</figure>
 	<h1 class="Pathway-title">
+		{% if page.title == "applications" %}
+			Got bigger ideas?</br>
+		{% endif %}
 		Get in touch.
 	</h1>
 	<div class="Grid-cell Grid-cell--center u-size5of12">
@@ -14,7 +17,7 @@
 			<a class="u-block u-marginTD2 u-marginBD2" href="https://goo.gl/maps/GQHnTB9koXQ2" target="_blank">
 				{{ site.contact-address }}
 			</a>
-			<li>{{ site.contact-open }}</li>
+			{{ site.contact-open | markdownify }}
 		</ul>
 	</div>
 </div>

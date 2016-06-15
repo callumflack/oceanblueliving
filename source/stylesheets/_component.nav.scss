@@ -10,6 +10,9 @@
 	// height: rem(80);
 	// padding: space(0.9);
 	// position: relative;
+	opacity: 0;
+	transform: translateY(10px);
+	transition: all map-fetch($transition, duration, long) map-fetch($transition, type, base);
 
 	@include respond-to(xs) {
 	}
@@ -17,6 +20,27 @@
 	// Color the hamburger icon
 	@include when-inside(".Home") { color: palette(white); }
 	@include when-inside(".Modal") { color: palette(white); }
+}
+
+/* uncss:ignore */
+.Modal.is-active .Nav {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all map-fetch($transition, duration, long) map-fetch($transition, type, fine) 250ms;
+}
+
+.Nav-list {
+	@include listClean();
+	float: right;
+	opacity: 0;
+	padding-top: 5px;
+
+	@include respond-to(xs) { padding-top: 0; }
+
+	li {
+		padding-bottom: space(0.25);
+		text-align: right;
+	}
 }
 
 .Nav-title {
