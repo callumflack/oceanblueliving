@@ -83,7 +83,7 @@
 // Minor headlines
 // --------------------------------------------------------------------------
 
-@mixin headlineMinor(
+@mixin Headline--minor(
 	$mixinColor: rgba( palette(brand), 0.4 ),
 	$mixinFont: $font-sans-book
 ) {
@@ -101,4 +101,4 @@
 	}
 }
 
-.HeadlineMinor { @include headlineMinor(); }
+.Headline--minor { @include Headline--minor(); }

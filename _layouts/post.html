@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<header class="Header Header--fade" role="banner">
+	<div class="FlexEmbed">
+		<div class="FlexEmbed-ratio"></div>
+		<div class="FlexEmbed-content">
+			<div class="Header-hero">
+				<img src="{{ about.hero-image }}" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="Header-wrapper">
+		<div class="Container">
+			<a class="Header-logo" href="/">
+				<img src="/uploads/logo.png" alt="{{ site.title }}">
+			</a>
+			<h1 class="Header-title">
+				{{ about.headline }}
+			</h1>
+		</div>
+	</div>
+</header>
+
+<main class="Content" role="main">
+	<section class="Section Page">
+		<div class="Container Container--insetTextColumn">
+
+			{{ content }}
+
+		</div>
+
+		<div class="Container Container--textColumn u-marginT15">
+			<h3 class="Headline--minor u-marginT3">Author</h3>
+			<p class="Post-author">{{ post.author }}</p>
+			<h3 class="Headline--minor u-marginT3">Share</h3>
+			{% include share.html %}
+			<div class="HzRule HzRule--light u-marginT3"></div>
+		</div>
+	</section>
+
+	<!-- next / prev -->
+	<section class="Section u-paddingT0">
+		<div class="Container Container--textColumn">
+			{% include pathway-newsletter.html %}
+		</div>
+	</section>
+
+</main>
