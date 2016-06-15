@@ -1,6 +1,7 @@
 ---
 title: How to bring light into your house
 date: 2016-06-02 13:28:00 +10:00
+permalink: "/blog/:slug/"
 tags:
 - ideas
 author: LeaAnne Cassaniti
