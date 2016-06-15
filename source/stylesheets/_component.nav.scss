@@ -7,7 +7,7 @@
 
 .Nav {
 	opacity: 0;
-	transform: translateY(10px);
+	transform: translateY(20px);
 	transition: all map-fetch($transition, duration, long) map-fetch($transition, type, base);
 
 	@include respond-to(xs) {
@@ -42,6 +42,7 @@
 .Nav-title {
 	@include headlineSm();
 	color: palette(white);
+	a { @include noLink(); }
 }
 
 $infoColor: rgba( palette(white), 0.5 );

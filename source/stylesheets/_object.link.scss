@@ -5,7 +5,17 @@
 // --------------------------------------------------------------------------
 
 
-// Avoiding ugly text-decoration with new underlines
+// Removing all link interaction styling
+// --------------------------------------------------------------------------
+
+@mixin noLink {
+	@include on-event() {
+		color: inherit;
+	}
+}
+
+
+// Avoiding ugly default text-decoration with new underlines
 // --------------------------------------------------------------------------
 
 $linkRuleBlack: linear-gradient(to bottom, rgba(palette(dark),0) 50%,  rgba(palette(dark),0.4) 50%);
@@ -16,35 +26,35 @@ $linkRuleBrand: linear-gradient(to bottom, rgba(palette(brand),0) 50%, palette(b
 $linkRuleNone:  linear-gradient(to bottom, rgba(palette(dark),0) 50%,  rgba(palette(dark),0) 50%);
 
 @mixin underlineLink(
-    $mixin-rule: $linkRuleBlack,
-    $mixin-hover-rule: none,
-    $mixin-color: currentColor,
-    $mixin-hover-color: inherit,
-    // $mixin-hover-color: currentColor,
-    $mixin-inverse: false
+	$mixin-rule: $linkRuleBlack,
+	$mixin-hover-rule: none,
+	$mixin-color: currentColor,
+	$mixin-hover-color: inherit,
+	// $mixin-hover-color: currentColor,
+	$mixin-inverse: false
 
 ) {
 
-    @if $mixin-rule == 'none' {
-        background-image: none;
-        padding-bottom: 0;
-    }
+	@if $mixin-rule == 'none' {
+		background-image: none;
+		padding-bottom: 0;
+	}
 
-    @else {
-        background-image: $mixin-rule;
-        background-repeat: repeat-x;
-        background-size: 1px 1px;
-        background-position: 0 100%;
-        color: $mixin-color;
-        padding-bottom: rem(3);
-        text-decoration: none;
-    }
+	@else {
+		background-image: $mixin-rule;
+		background-repeat: repeat-x;
+		background-size: 1px 1px;
+		background-position: 0 100%;
+		color: $mixin-color;
+		padding-bottom: rem(3);
+		text-decoration: none;
+	}
 
-    @include on-event() {
-        background-image: $mixin-hover-rule;
-        color: $mixin-hover-color;
-        text-decoration: none;
-    }
+	@include on-event() {
+		background-image: $mixin-hover-rule;
+		color: $mixin-hover-color;
+		text-decoration: none;
+	}
 }
 
 .o-link { @include underlineLink(); }
@@ -71,24 +81,24 @@ $linkRuleNone:  linear-gradient(to bottom, rgba(palette(dark),0) 50%,  rgba(pale
 // --------------------------------------------------------------------------
 
 @mixin complexLink {
-    display: block;
-    width: 100%;
+	display: block;
+	width: 100%;
 
-    @include on-event() {
-        .o-linkBuriedTarget {
-            background-color: palette(brand);
-        }
-    }
+	@include on-event() {
+		.o-linkBuriedTarget {
+			background-color: palette(brand);
+		}
+	}
 }
 
 .o-linkBuried {
-    @include complexLink();
-    margin-bottom: space(0.5);
+	@include complexLink();
+	margin-bottom: space(0.5);
 }
 
 // Don't forget: this is a span, not an <a>,
 // so it needs these styles.
 .o-linkBuriedTarget {
-    @include baseTransition();
-    color: palette(black);
+	@include baseTransition();
+	color: palette(black);
 }

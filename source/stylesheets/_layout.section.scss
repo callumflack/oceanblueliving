@@ -5,7 +5,7 @@
 // --------------------------------------------------------------------------
 
 
-.Section {
+@mixin sectionSpace() {
 	padding: space(3.5) 0;
 	padding: $vertSpace 0;
 
@@ -13,6 +13,10 @@
 		padding: space(7) 0;
 		padding: $vertSpaceLg 0;
 	}
+}
+
+.Section {
+	@include sectionSpace();
 
 	@include when-inside(".Home") {
 		padding: space(6) 0;

@@ -8,34 +8,6 @@ layout: default
 {% assign price        = site.home | where: 'title', 'price' | first  %}
 {% assign about        = site.home | where: 'title', 'about' | first  %}
 
-<!-- <header class="Header Header--rev u-bgBrand" role="banner">
-	<div class="gallery gallery--fade">
-		{% for image in header.gallery-images %}
-			<div class="gallery-cell">
-				<div class="FlexEmbed">
-					<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-					<div class="FlexEmbed-content">
-						<div
-							class="u-posAbsoluteCenter CoverImage--dark"
-							style="background-image: url('{{ image }}')">
-						</div>
-					</div>
-				</div>
-			</div>
-		{% endfor %}
-	</div>
-	<div class="u-posAbsoluteCenter">
-		<div class="Container u-textCenter u-marginT4">
-			<a class="Header-logo" href="/">
-				<img src="/uploads/logo-white.png" alt="{{ site.title }}">
-			</a>
-			<h1 class="Header-title u-marginT15">
-				{{ header.headline }}
-			</h1>
-		</div>
-	</div>
-</header> -->
-
 <header class="Header Header--rev u-bgBrand" role="banner">
 	<div class="owl-carousel">
 		{% for image in header.gallery-images %}
@@ -51,7 +23,7 @@ layout: default
 		{% endfor %}
 	</div>
 	<div class="Header-wrapper">
-		<div class="Container u-textCenter u-marginT4">
+		<div class="Container u-textCenter">
 			<a class="Header-logo" href="/">
 				<img src="/uploads/logo-white.png" alt="{{ site.title }}">
 			</a>
@@ -151,12 +123,17 @@ layout: default
 					</div>
 				</div>
 				<div class="Container Container--textColumn">
-					<div class="Post-meta">
-						<a class="Post-tag" href="/blog/tags/{{ page.tags }}">{{ post.tags }}</a>
-						&nbsp;&nbsp;|&nbsp;&nbsp;
-						<span class="Post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+					<div class="Post-header">
+						<div class="Post-meta">
+							{% for tag in page.tags %}
+								<a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a>
+							{% endfor %}
+							<a class="Post-tag" href="/blog/tags/{{ page.tags }}">{{ post.tags | first | capitalize }}</a>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+							<span class="Post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+						</div>
+						<h1 class="Post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
 					</div>
-					<h1 class="Post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
 
 					{{ post.content }}
 
@@ -168,16 +145,7 @@ layout: default
 			</article>
 		{% endfor %}
 
-		<div class="u-bgWhite u-paddingT3">
-			<a class="Post-pathway" href="/blog">
-				<figure class="u-textCenter">
-					<svg class="Icon Icon--md u-colorBrand">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
-					</svg>
-				</figure>
-				<h2 class="Headline--sm u-marginTD2 u-marginB2">View all blog posts →</h2>
-			</a>
-		</div>
+		{% include pathway-blog.html %}
 
 
 	</section>

@@ -194,6 +194,11 @@
 // Close button (this just positions an icon)
 // --------------------------------------------------------------------------
 
+// Suit overrride
+// TODO: move into close button only?
+
+button:focus { outline: none; }
+
 .t-buttonClose {
 	color: palette(brand);
 	position: fixed;

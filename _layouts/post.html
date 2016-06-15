@@ -2,49 +2,87 @@
 layout: default
 ---
 
-<header class="Header Header--fade" role="banner">
-	<div class="FlexEmbed">
-		<div class="FlexEmbed-ratio"></div>
-		<div class="FlexEmbed-content">
-			<div class="Header-hero">
-				<img src="{{ about.hero-image }}" alt="">
+<main class="Content" role="main">
+	<article class="Article Post">
+		<div class="Container Container--textColumn">
+			<div class="Post-header">
+				<div class="Post-meta">
+					{% for tag in page.tags %}
+						<a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a>
+					{% endfor %}
+					<a class="Post-tag" href="/blog/tags/{{ page.tags }}">{{ post.tags | first | capitalize }}</a>
+					&nbsp;&nbsp;|&nbsp;&nbsp;
+					<span class="Post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+				</div>
+				<h1 class="Post-title"><a href="{{ post.url }}">{{ page.title }}</a></h1>
 			</div>
 		</div>
-	</div>
-	<div class="Header-wrapper">
-		<div class="Container">
-			<a class="Header-logo" href="/">
-				<img src="/uploads/logo.png" alt="{{ site.title }}">
-			</a>
-			<h1 class="Header-title">
-				{{ about.headline }}
-			</h1>
-		</div>
-	</div>
-</header>
 
-<main class="Content" role="main">
-	<section class="Section Page">
-		<div class="Container Container--insetTextColumn">
+		<div class="FlexEmbed">
+			<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+			<div class="FlexEmbed-content">
+				<div
+					class="u-posAbsoluteCenter CoverImage"
+					style="background-image: url('{{ page.hero-image }}')">
+				</div>
+			</div>
+		</div>
+
+		<div class="Container Container--textColumn Section">
 
 			{{ content }}
 
-		</div>
-
-		<div class="Container Container--textColumn u-marginT15">
 			<h3 class="Headline--minor u-marginT3">Author</h3>
-			<p class="Post-author">{{ post.author }}</p>
+			<p class="Post-author">{{ page.author }}</p>
 			<h3 class="Headline--minor u-marginT3">Share</h3>
 			{% include share.html %}
 			<div class="HzRule HzRule--light u-marginT3"></div>
 		</div>
-	</section>
+	</article>
 
 	<!-- next / prev -->
+	<!-- <section class="Section">
+		<div class="DivRule"></div>
+		<a href="/blog">
+			<h1 class="Headline Arrow-right">View all posts</h1>
+		</a>
+		<div class="Grid">
+			{% if page.previous %}
+				<div class="Grid-cell u-xs-size1of2">
+					<a class="Post" href="{{ page.previous.url }}">
+						<figure class="Post-image--dark">
+							<div class="FlexEmbed">
+								<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9 u-bgDark"></div>
+								<div class="FlexEmbed-content CoverImage" style="background-image: url('{{ page.previous.hero }}')"></div>
+								<div class="FlexEmbed-content">
+									<h1 class="Post-headline Post-headline--right Arrow-left">{{ page.previous.title }}</h1>
+								</div>
+							</div>
+						</figure>
+					</a>
+				</div>
+			{% endif %}
+			{% if page.next %}
+			<div class="Grid-cell u-xs-size1of2">
+				<a class="Post" href="{{ page.next.url }}">
+					<figure class="Post-image--dark">
+						<div class="FlexEmbed">
+							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9 u-bgDark"></div>
+							<div class="FlexEmbed-content CoverImage" style="background-image: url('{{ page.next.hero }}')"></div>
+							<div class="FlexEmbed-content">
+								<h1 class="Post-headline Arrow-right">{{ page.next.title }}</h1>
+							</div>
+						</div>
+					</figure>
+				</a>
+			</div>
+			{% endif %}
+
+		</div>
+	</section> -->
 	<section class="Section u-paddingT0">
 		<div class="Container Container--textColumn">
 			{% include pathway-newsletter.html %}
 		</div>
 	</section>
-
 </main>

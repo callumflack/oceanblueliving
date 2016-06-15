@@ -51,11 +51,15 @@ a.Post {
 // 	}
 // }
 
+
+.Post-header {
+	@include sectionSpace();
+}
+
 .Post-meta {
 	@include TextSm();
 	color: palette(muted);
-	margin-bottom: space(1);
-	margin-top: space(5);
+	margin: space(1) 0;
 	text-align: center;
 }
 
@@ -66,10 +70,9 @@ a.Post {
 
 .Post-title {
 	@include headlineRg();
-	margin-bottom: space(2);
 
 	@include respond-to(sm) {
-		margin: 0 auto space(4);
+		margin: 0 auto;
 		width: 70%;
 	}
 }

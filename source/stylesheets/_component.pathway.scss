@@ -6,6 +6,8 @@
 // --------------------------------------------------------------------------
 
 
+$revOpacity: 0.5;
+
 .Pathway {
 	display: block;
 
@@ -22,7 +24,7 @@
 	// as used in Home pg
 	&--rev {
 		h1 { color: palette(white); }
-		p { color: rgba( palette(white), 0.7 ); }
+		p { color: rgba( palette(white), $revOpacity ); }
 		+ .Pathway { margin-top: 0; }
 	}
 }
@@ -46,5 +48,5 @@
 }
 
 .Pathway .t-button--rev {
-	opacity: 0.7;
+	opacity: $revOpacity;
 }
