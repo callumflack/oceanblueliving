@@ -5,9 +5,14 @@
 // --------------------------------------------------------------------------
 
 
-// For the home page's most recent post
+// When is a post is article.
 .Post--article {
 	background-color: palette(background);
+}
+
+.Post--article-ruleOff {
+	border-bottom: 1px solid palette(base);
+	padding-bottom: space(3);
 }
 
 // When a post is also a link.

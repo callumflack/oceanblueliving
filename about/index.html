@@ -27,7 +27,7 @@ layout: default
 </header>
 
 <main class="Content" role="main">
-	<section class="Section Page">
+	<section class="Section">
 		<div class="Container Container--insetTextColumn">
 
 			{{ about.first_text | markdownify }}
@@ -52,10 +52,7 @@ layout: default
 			{{ about.second_text | markdownify }}
 
 		</div>
-
-		<div class="Container Container--textColumn u-marginT15">
-			<div class="HzRule HzRule--light"></div>
-		</div>
+		<div class="Container Container--textColumn Post--article-ruleOff"></div>
 	</section>
 
 	<!-- contacts -->
@@ -63,17 +60,7 @@ layout: default
 		<div class="Container Container--textColumn">
 
 			{% include pathway-primary.html %}
-
-			<a class="Pathway" href="/blog">
-				<figure class="u-textCenter">
-					<svg class="Icon Icon--lg">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
-					</svg>
-				</figure>
-				<h1 class="Pathway-title">
-					Read the blog.
-				</h1>
-			</a>
+			{% include pathway-blog.html %}
 
 			<a class="Pathway" href="{{ site.social-facebook }}">
 				<figure class="u-textCenter">
@@ -81,18 +68,17 @@ layout: default
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-facebook"></use>
 					</svg>
 				</figure>
-				<h1 class="Pathway-title">
+				<h1 class="Pathway-subtitle">
 					Like us.
 				</h1>
 			</a>
-
 			<a class="Pathway" href="{{ site.social-pinterest }}">
 				<figure class="u-textCenter">
 					<svg class="Icon Icon--md">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-pinterest"></use>
 					</svg>
 				</figure>
-				<h1 class="Pathway-title">
+				<h1 class="Pathway-subtitle">
 					Pin us.
 				</h1>
 			</a>

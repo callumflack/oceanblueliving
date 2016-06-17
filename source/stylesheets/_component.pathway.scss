@@ -18,7 +18,12 @@ $revOpacity: 0.5;
 	// as used in About pg
 	+ .Pathway {
 		margin-top: space(3.5);
-		@include respond-to(sm) { margin-top: space(7); }
+		margin-top: $vertSpace;
+
+		@include respond-to(sm) {
+			margin-top: space(7);
+			margin-top: $vertSpaceLg; 
+		}
 	}
 
 	// as used in Home pg

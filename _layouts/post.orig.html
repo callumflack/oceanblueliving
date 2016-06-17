@@ -4,8 +4,8 @@ layout: default
 
 <main class="Content" role="main">
 	<article class="Post--article">
-		<section class="Section">
-			<div class="Container Container--textColumn">
+		<div class="Container Container--textColumn">
+			<div class="Post-header">
 				<div class="Post-meta">
 					{% for tag in page.tags %}
 						<a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a>
@@ -16,7 +16,7 @@ layout: default
 				</div>
 				<h1 class="Post-title"><a href="{{ post.url }}">{{ page.title }}</a></h1>
 			</div>
-		</section>
+		</div>
 
 		<div class="FlexEmbed">
 			<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
@@ -28,17 +28,18 @@ layout: default
 			</div>
 		</div>
 
-		<section class="Section">
-			<div class="Container Container--textColumn Post--article-ruleOff">
+		<div class="Container Container--textColumn">
+			<article class="Section">
 
-					{{ content }}
+				{{ content }}
 
-					<h3 class="Headline--minor u-marginT3">Author</h3>
-					<p class="Post-author">{{ page.author }}</p>
-					<h3 class="Headline--minor u-marginT3">Share</h3>
-					{% include share.html %}
-			</div>
-		</section>
+				<h3 class="Headline--minor u-marginT3">Author</h3>
+				<p class="Post-author">{{ page.author }}</p>
+				<h3 class="Headline--minor u-marginT3">Share</h3>
+				{% include share.html %}
+				<div class="HzRule HzRule--light u-marginT3"></div>
+			</article>
+		</div>
 	</article>
 
 	<section class="Section u-paddingT0">
