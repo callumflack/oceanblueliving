@@ -3,13 +3,13 @@ title: Blog
 layout: default
 ---
 
-<header class="Header Header--rev u-bgBrand" role="banner">
+<header class="Header Header--halfRatio Header--rev u-bgBrand" role="banner">
 	<div class="FlexEmbed">
-		<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+		<div class="FlexEmbed-ratio"></div>
 		<div class="FlexEmbed-content">
 			<div
 				class="u-posAbsoluteCenter CoverImage--dark"
-				style="background-image: url('/_uploads/blog-hero.png')">
+				style="background-image: url('/uploads/blog-hero.png')">
 			</div>
 		</div>
 	</div>
@@ -26,26 +26,25 @@ layout: default
 </header>
 
 <main class="Content" role="main">
-	<section class="Section Pathway Pathway--rev u-bgBrand">
+	<section class="Section Pathway">
 		<div class="Container">
+			{% for post in site.posts %}
+			<a class="Post" href="{{ post.url }}">
+				<div class="Grid Grid--withGutter">
+					<div class="Grid-cell">
+						<figure class="Post-image">
+							<div class="FlexEmbed">
+								<div class="FlexEmbed-ratio FlexEmbed-ratio--postImage"></div>
+								<div class="FlexEmbed-content CoverImage" style="background-image: url('{{ post.list-image }}')"></div>
+							</div>
+						</figure>
+					</div>
+					<div class="Grid-cell">
+						<h1 class="Post-title">{{ post.title }}</h1>
+					</div>
+				</div>
+			</a>
+			{% endfor %}
 		</div>
 	</section>
 </main>
-
-
-<section class="Section u-marginT0">
-	<div class="Container">
-		<div class="Grid Grid--withGutter">
-			<div class="Grid-cell u-sm-size3of12 u-sm-display">
-				<div class="Affix" data-spy="affix" data-offset-top="200">
-					{% include post-aside.html %}
-				</div>
-			</div>
-			<div class="Grid-cell u-sm-size9of12">
-				{% for post in site.posts %}
-					{% include post-in-list.html %}
-				{% endfor %}
-			</div>
-		</div>
-	</div>
-</section>

@@ -31,12 +31,20 @@
 	}
 }
 
-.Header .FlexEmbed-ratio {
+.Header--fullRatio .FlexEmbed-ratio {
 	padding-bottom: 130%;
 	@include respond-to(xs) { padding-bottom: 100%; }
 	@include respond-to(md) { padding-bottom: 75%; }
 	@include respond-to(lg) { padding-bottom: 66%; }
 	@include respond-to(xl) { padding-bottom: 100vh; }
+}
+
+.Header--halfRatio .FlexEmbed-ratio {
+	padding-bottom: 65%;
+	@include respond-to(xs) { padding-bottom: 50%; }
+	@include respond-to(md) { padding-bottom: 37.5%; }
+	@include respond-to(lg) { padding-bottom: 33%; }
+	@include respond-to(xl) { padding-bottom: 50vh; }
 }
 
 

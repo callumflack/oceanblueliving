@@ -78,9 +78,8 @@ $infoColor: rgba( palette(white), 0.5 );
 	}
 
 	// Color the hamburger icon
-	@include when-inside(".Home") {
-		color: palette(white);
-	}
+	@include when-inside(".Home") { color: palette(white); }
+	@include when-inside(".Blog") { color: palette(white); }
 }
 
 // Make the header nav fixed and animate down into view on scroll

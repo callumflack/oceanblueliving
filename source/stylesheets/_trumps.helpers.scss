@@ -13,6 +13,12 @@
 .u-mxs-fullWidth    { @include respond-to(max-xs) { width: 100%; } }
 
 
+// Custom flexEmbeds
+// --------------------------------------------------------------------------
+
+// .FlexEmbed-ratio--8by9 { padding-bottom: 25%; }
+
+
 // Colors
 // Alt: .u-colorBrand { color: palette($increment: brand) !important; }
 // --------------------------------------------------------------------------

@@ -8,7 +8,7 @@ layout: default
 {% assign price        = site.home | where: 'title', 'price' | first  %}
 {% assign about        = site.home | where: 'title', 'about' | first  %}
 
-<header class="Header Header--rev u-bgBrand" role="banner">
+<header class="Header Header--fullRatio Header--rev u-bgBrand" role="banner">
 	<div class="owl-carousel">
 		{% for image in header.gallery-images %}
 		<div class="FlexEmbed">
