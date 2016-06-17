@@ -1,8 +1,11 @@
 ---
 title: Artistic privacy
-date: 2016-06-17 15:39:00 +10:00
+date: 2016-05-17 15:39:00 +10:00
 tags:
 - Ideas
+author: LeaAnne Cassaniti
+hero-image: 
+list-image: 
 ---
 
 When we work at scale, we often find that we spend a large amount of our time reading, maintaining, and refactoring existing code, rather than writing and adding new features. This is the reason we focus so much on things like architectures, naming conventions, methodologies, preprocessors, scalability, etc.: because writing CSS is easy; looking after it is not.
