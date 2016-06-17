@@ -6,6 +6,7 @@ tags:
 - ideas
 author: LeaAnne Cassaniti
 hero-image: "/uploads/blog-home-test.png"
+list-image: "/uploads/post-list-hero-2.png"
 layout: post
 ---
 
