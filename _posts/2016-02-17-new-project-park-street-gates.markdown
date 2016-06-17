@@ -5,7 +5,7 @@ tags:
 - News
 - Events
 author: Callum Flack
-hero-image: 
+hero-image: "/uploads/post-hero-3.jpg"
 list-image: "/uploads/post-list-hero-3.png"
 ---
 
