@@ -5,7 +5,7 @@ permalink: "/blog/:slug/"
 tags:
 - ideas
 author: LeaAnne Cassaniti
-hero-image: "/uploads/blog-home-test.png"
+hero-image: "/uploads/post-hero-2a.jpg"
 list-image: "/uploads/post-list-hero-2.png"
 layout: post
 ---
