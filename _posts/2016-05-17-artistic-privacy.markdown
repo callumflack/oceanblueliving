@@ -4,7 +4,7 @@ date: 2016-05-17 15:39:00 +10:00
 tags:
 - Ideas
 author: LeaAnne Cassaniti
-hero-image: "/uploads/post-list-hero-1.png"
+hero-image: "/uploads/post-hero-1.jpg"
 list-image: "/uploads/post-list-hero-1.png"
 layout: post
 ---
