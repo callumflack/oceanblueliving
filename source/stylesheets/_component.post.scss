@@ -81,6 +81,12 @@ a.Post {
 	@include TextMd();
 }
 
+.Post-subtitle {
+	@include headlineSm();
+	margin: space(1) 0;
+	text-align: left;
+}
+
 .Post-author {
 	@include TextSm();
 }

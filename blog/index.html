@@ -26,25 +26,29 @@ layout: default
 </header>
 
 <main class="Content" role="main">
-	<section class="Section Pathway">
-		<div class="Container">
+	<section class="Section">
+		<div class="Grid Grid--withGutterLg">
 			{% for post in site.posts %}
-			<a class="Post" href="{{ post.url }}">
-				<div class="Grid Grid--withGutter">
-					<div class="Grid-cell">
-						<figure class="Post-image">
-							<div class="FlexEmbed">
-								<div class="FlexEmbed-ratio FlexEmbed-ratio--postImage"></div>
-								<div class="FlexEmbed-content CoverImage" style="background-image: url('{{ post.list-image }}')"></div>
-							</div>
-						</figure>
+			<div class="Grid-cell u-xs-size1of2 u-sm-size1of3">
+				<a class="Post" href="{{ post.url }}">
+					<div class="Grid Grid--withGutter">
+						<div class="Grid-cell">
+							<figure class="Post-image">
+								<img src="{{ post.list-image }}" alt="{{ post.title }}">
+							</figure>
+						</div>
+						<div class="Grid-cell">
+							<h1 class="Post-subtitle">{{ post.title }}</h1>
+						</div>
 					</div>
-					<div class="Grid-cell">
-						<h1 class="Post-title">{{ post.title }}</h1>
-					</div>
-				</div>
-			</a>
+				</a>
+			</div>
 			{% endfor %}
+		</div>
+	</section>
+	<section class="Section u-paddingT0">
+		<div class="Container Container--textColumn">
+			{% include pathway-newsletter.html %}
 		</div>
 	</section>
 </main>

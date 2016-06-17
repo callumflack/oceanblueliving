@@ -1,0 +1,21 @@
+
+
+// --------------------------------------------------------------------------
+// PRETRUMPS: SUITCSS ADDITIONS
+// --------------------------------------------------------------------------
+
+
+$gutterSpace: 3vw;
+
+.Grid--withGutterLg {
+	margin: 0 -#{$gutterSpace};
+	padding: 0 6vw;
+
+	@include respond-to(xs) { margin: 0 -#{$gutterSpace}; }
+}
+
+.Grid--withGutterLg > .Grid-cell {
+	padding: 0 $gutterSpace;
+
+	@include respond-to(xs) { padding: 0 $gutterSpace; }
+}
