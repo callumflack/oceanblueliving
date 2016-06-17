@@ -30,15 +30,16 @@ layout: default
 		<div class="Grid Grid--withGutterLg">
 			{% for post in site.posts %}
 			<div class="Grid-cell u-xs-size1of2 u-sm-size1of3">
-				<a class="Post" href="{{ post.url }}">
-					<div class="Grid Grid--withGutter">
-						<div class="Grid-cell">
-							<figure class="Post-image">
-								<img src="{{ post.list-image }}" alt="{{ post.title }}">
-							</figure>
-						</div>
-						<div class="Grid-cell">
-							<h1 class="Post-subtitle">{{ post.title }}</h1>
+				<a class="Post--inList" href="{{ post.url }}">
+					<div class="Post-contentAligner">
+						<figure class="Post-image">
+							<img src="{{ post.list-image }}" alt="{{ post.title }}">
+						</figure>
+						<h1 class="Post-subtitle">{{ post.title }}</h1>
+						<div class="Post-meta">
+							{% for tag in post.tags %}
+								<span class="Post-tag">{{ tag | capitalize }}</span>
+							{% endfor %}
 						</div>
 					</div>
 				</a>

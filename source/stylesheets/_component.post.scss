@@ -5,52 +5,39 @@
 // --------------------------------------------------------------------------
 
 
-.Post {
+// For the home page's most recent post
+.Post--article {
 	background-color: palette(background);
 }
 
-a.Post {
-	@include complexLink();
+// When a post is also a link.
+// These are vertically & horizontally centered.
+// See: https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+a.Post--inList {
+	// @include baseTransition();
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	opacity: 1;
 
 	+ .Post {
 		margin-top: space(3.25);
+		margin-top: 4vh;
+	}
+
+	> .Post-contentAligner {
+		flex: 1;
 	}
 
 	@include on-event() {
-		.CoverImage {
+		.CoverImage,
+		.Post-image {
 			@include baseTransition();
-			background-blend-mode: multiply;
-			background-color: rgba( palette(brand), 0.4 );
-			// filter: grayscale(100%);
-			// opacity: 0.3;
-		}
-	}
-
-	@include when-inside(".post") {
-		@include on-event() {
-			.CoverImage {
-				opacity: 0.2;
-			}
+			opacity: 0.5;
 		}
 	}
 }
-
-// .Post-image {
-// 	margin-top: space(0.3);
-//
-// 	&--fullWidth {
-// 		margin-bottom: space(1);
-// 	}
-//
-// 	&--dark .CoverImage {
-// 		opacity: 0.5;
-// 	}
-//
-// 	.CoverImage {
-// 		@include baseTransition();
-// 	}
-// }
-
 
 .Post-header {
 	@include sectionSpace();
@@ -59,13 +46,17 @@ a.Post {
 .Post-meta {
 	@include TextSm();
 	color: palette(muted);
-	margin: space(1) 0;
+	margin: space(0.5) 0;
 	text-align: center;
+
+	@include when-inside(".Post--inList") {
+		margin-bottom: 0;
+		text-align: left;
+	}
 }
 
-.Post-tags,
+.Post-tag,
 .Post-date {
-	display: inline-block;
 }
 
 .Post-title {
@@ -83,7 +74,7 @@ a.Post {
 
 .Post-subtitle {
 	@include headlineSm();
-	margin: space(1) 0;
+	margin: space(1) 0 0 0;
 	text-align: left;
 }
 
@@ -110,17 +101,3 @@ a.Post-pathway {
 		padding: space(6) 0;
 	}
 }
-
-
-
-// Article layout
-// --------------------------------------------------------------------------
-
-// .Article {
-// 	background-color: palette(white);
-// 	// padding: space(6) 0;
-//
-// 	@include respond-to(sm) {
-// 		// padding: space(12) 0;
-// 	}
-// }

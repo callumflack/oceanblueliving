@@ -7,7 +7,7 @@
 
 @mixin headlineTemplate() {
 	@include typeReset();
-	line-height: 1.5;
+	line-height: 1.45;
 	margin-bottom: space(0.85);
 	text-align: center;
 
@@ -51,7 +51,7 @@
 	color: $mixinColor;
 	font-family: $mixinFont;
 	font-size: fontsize(headerSm, xs);
-	letter-spacing: 0.03em;
+	// letter-spacing: 0.03em;
 
 	@include respond-to(xs) {
 		font-size: fontsize(headerSm, base);

@@ -5,11 +5,11 @@
 // --------------------------------------------------------------------------
 
 
-$gutterSpace: 3vw;
+$gutterSpace: 4vw;
 
 .Grid--withGutterLg {
 	margin: 0 -#{$gutterSpace};
-	padding: 0 6vw;
+	padding: 0 8vw;
 
 	@include respond-to(xs) { margin: 0 -#{$gutterSpace}; }
 }
