@@ -6,6 +6,7 @@
 	<meta http-equiv="cleartype", content="on" >
 	<meta name="viewport", content="width=device-width, initial-scale=1.0" >
 	<title>Ocean Blue Living</title>
+
 	<!-- <meta name='description' content='' > -->
 	<!-- <meta name='keywords' content="" > -->
 	<!-- <meta name="author", content="" > -->
@@ -25,6 +26,8 @@
 	<meta name="google-site-verification" content="" />
 	<!-- <link rel="alternate" type="application/rss+xml" href="" /> -->
 	<!-- <link rel="alternate" type="application/rss+xml" href="" /> -->
+
+	<link rel="stylesheet" href="/source/stylesheets/owl.carousel.css">
 	<link rel="stylesheet" href="/source/stylesheets/application.css">
 	<!-- <link rel="stylesheet" href="/build/application.min.css"> -->
 </head>
@@ -42,21 +45,21 @@
 
 	
 
-<header class="Header--fade" role="banner">
+<header class="Header Header--fullRatio Header--fade" role="banner">
 	<div class="FlexEmbed">
-		<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+		<div class="FlexEmbed-ratio"></div>
 		<div class="FlexEmbed-content">
 			<div class="Header-hero">
 				<img src="/uploads/about-2.png" alt="">
 			</div>
 		</div>
 	</div>
-	<div class="u-posAbsoluteCenter">
-		<div class="Container u-textCenter u-marginT4">
+	<div class="Header-wrapper">
+		<div class="Container">
 			<a class="Header-logo" href="/">
 				<img src="/uploads/logo.png" alt="Ocean Blue Living">
 			</a>
-			<h1 class="Header-title u-marginT15">
+			<h1 class="Header-title">
 				We’re craftspeople who love transforming spaces.
 			</h1>
 		</div>
@@ -64,7 +67,7 @@
 </header>
 
 <main class="Content" role="main">
-	<section class="Section Page">
+	<section class="Section">
 		<div class="Container Container--insetTextColumn">
 
 			<p>We’re boat builders by trade. We were seduced by the weight, feel and versatility of water-jet cutting, so we decided to start our own workshop. Eight years later, we’re only just beginning.</p>
@@ -95,10 +98,7 @@
 
 
 		</div>
-
-		<div class="Container Container--textColumn u-marginT15">
-			<div class="HzRule HzRule--light"></div>
-		</div>
+		<div class="Container Container--textColumn Post--article-ruleOff"></div>
 	</section>
 
 	<!-- contacts -->
@@ -112,6 +112,7 @@
 		</svg>
 	</figure>
 	<h1 class="Pathway-title">
+		
 		Get in touch.
 	</h1>
 	<div class="Grid-cell Grid-cell--center u-size5of12">
@@ -122,23 +123,25 @@
 				3/169 Newell Street, Cairns
 Queensland 4870 Australia
 			</a>
-			<li>Open Tues–Thurs 9am-2pm
-Other times by appointment</li>
+			<div class="s-cms-content u-textRg">
+				<p>Open Tues–Thurs 9am–2pm</p>
+
+<p>Other times by appointment</p>
+
+			</div>
 		</ul>
 	</div>
 </div>
 
-
 			<a class="Pathway" href="/blog">
-				<figure class="u-textCenter">
-					<svg class="Icon Icon--lg">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
-					</svg>
-				</figure>
-				<h1 class="Pathway-title">
-					Read the blog.
-				</h1>
-			</a>
+	<figure class="u-textCenter">
+		<svg class="Icon Icon--md u-colorBrand">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
+		</svg>
+	</figure>
+	<h2 class="Headline--sm u-marginTD2 u-marginB2">View all blog posts →</h2>
+</a>
+
 
 			<a class="Pathway" href="https://www.facebook.com/oceanblueliving">
 				<figure class="u-textCenter">
@@ -146,33 +149,32 @@ Other times by appointment</li>
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-facebook"></use>
 					</svg>
 				</figure>
-				<h1 class="Pathway-title">
+				<h1 class="Pathway-subtitle">
 					Like us.
 				</h1>
 			</a>
-
 			<a class="Pathway" href="https://www.facebook.com/oceanblueliving">
 				<figure class="u-textCenter">
 					<svg class="Icon Icon--md">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-pinterest"></use>
 					</svg>
 				</figure>
-				<h1 class="Pathway-title">
+				<h1 class="Pathway-subtitle">
 					Pin us.
 				</h1>
 			</a>
 
 			<div class="Pathway">
-				<figure class="u-textCenter">
-					<svg class="Icon Icon--lg">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-newsletter"></use>
-					</svg>
-				</figure>
-				<h2 class="Pathway-subtitle">
-					Get posts delivered.
-				</h2>
-				<div class="Grid-cell--center u-size9of12 u-marginT2">
-					<div id="mc_embed_signup" class="">
+	<figure class="u-textCenter">
+		<svg class="Icon Icon--lg">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-newsletter"></use>
+		</svg>
+	</figure>
+	<h2 class="Pathway-subtitle">
+		Get posts delivered.
+	</h2>
+	<div class="Grid-cell--center u-size9of12 u-marginT2">
+		<div id="mc_embed_signup" class="">
 	<form action="//oceanblueliving.us13.list-manage.com/subscribe/post?u=5262b8bb4d6d9d31c4d3b03f0&amp;id=3dd454cbc2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 		<div id="mc_embed_signup_scroll">
 			<div class="mc-field-group">
@@ -193,9 +195,10 @@ Other times by appointment</li>
 	</form>
 </div>
 
-					<p class="u-textXs u-textCenter u-colorMuted u-marginT">We respect your privacy. Your details will never be shared with a third party.</p>
-				</div>
-			</div>
+		<p class="u-textXs u-textCenter u-colorMuted u-marginT">We respect your privacy. Your details won't be shared with anyone else.</p>
+	</div>
+</div>
+
 
 		</div>
 	</section>
@@ -236,7 +239,8 @@ Queensland 4870 Australia
 					</div>
 					<div class="Grid-cell u-size3of12">
 						<p class="u-textSm">
-							Open Tues–Thurs 9am-2pm
+							Open Tues–Thurs 9am–2pm
+
 Other times by appointment
 						</p>
 					</div>
@@ -256,27 +260,29 @@ Other times by appointment
 
 	<div class="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-modal>
 	<div class="Modal-dialog" role="document">
-		<div class="Container u-textCenter u-marginT4">
-			<nav class="Nav" role="nav">
-				<div class="Header--rev">
-					<a class="Header-logo" href="/">
-						<img src="/uploads/logo-white.png" alt="Ocean Blue Living">
-					</a>
-				</div>
-				<ul class="o-listInline u-marginT2">
-					<li class="Nav-title"><a href="/">Home</a></li>
-					<li class="Nav-title"><a href="/applications">Applications</a></li>
-					<li class="Nav-title"><a href="/price">Design</a></li>
-					<li class="Nav-title"><a href="/blog">Blog</a></li>
-					<li class="Nav-title"><a href="/about">About</a></li>
-				</ul>
-				<ul class="o-listInline">
-					<li class="Nav-info"><a href="tel:0409 726 128 ">T: 0409 726 128 </a></li>
-					<li class="Nav-info"><a href="mailto:info@oceanblueliving.com.au">E: info@oceanblueliving.com.au</a></li>
-					<li class="Nav-info">Cairns, Australia</li>
-				</ul>
-			</nav>
+		<div class="Header-wrapper">
+			<div class="Container u-textCenter">
+				<nav class="Nav" role="nav">
+					<div class="Header--rev">
+						<a class="Header-logo" href="/">
+							<img src="/uploads/logo-white.png" alt="Ocean Blue Living">
+						</a>
+					</div>
+					<ul class="o-listInline u-marginT2">
+						<li class="Nav-title"><a href="/">Home</a></li>
+						<li class="Nav-title"><a href="/applications">Applications</a></li>
+						<li class="Nav-title"><a href="/design">Design</a></li>
+						<li class="Nav-title"><a href="/blog">Blog</a></li>
+						<li class="Nav-title"><a href="/about">About</a></li>
+					</ul>
+					<ul class="o-listInline">
+						<li class="Nav-info"><a href="tel:0409 726 128 ">T: 0409 726 128 </a></li>
+						<li class="Nav-info"><a href="mailto:info@oceanblueliving.com.au">E: info@oceanblueliving.com.au</a></li>
+						<li class="Nav-info">Cairns, Australia</li>
+					</ul>
+				</nav>
 
+			</div>
 		</div>
 	</div>
 </div>
@@ -309,6 +315,11 @@ Other times by appointment
 		<rect width="54" height="54" style="fill:transparent"/>
 		<path d="M52.09,23.05a12.57,12.57,0,0,0-1.52-2.57c-0.53-.73-4-4.75-5.41-4.75H44.7a1.66,1.66,0,0,0-.92-0.4A1.45,1.45,0,0,1,43,15l-0.07-.07a8.3,8.3,0,0,1-1.85-.46,27.61,27.61,0,0,0-3.22-.26c-0.15-.29-0.31-0.58-0.48-0.86l-0.26-.46a1.41,1.41,0,0,0-.26-0.46,5,5,0,0,0-.59-0.59,3.07,3.07,0,0,1-.46-0.46c-0.33-.4-0.66-0.73-1-1.06a6.47,6.47,0,0,0-2.64-1.45,23,23,0,0,0-4.55-1.32c-0.26-.07-0.53-0.13-0.73-0.2L26,7.15a11.64,11.64,0,0,0-2.11.07c-0.33,0-.73.07-1.06,0.07H22.79c-0.33,0-.66-0.07-1-0.07a4.36,4.36,0,0,0-.92-0.07,3.34,3.34,0,0,0-.86.13,1.64,1.64,0,0,1-.53.07c-0.33.07-.73,0.07-1.12,0.13a22.34,22.34,0,0,0-2.31.26c-0.59.13-1.32,0.33-2,.53l-0.2.07c-0.73.26-1.52,0.46-2.24,0.73A22.79,22.79,0,0,0,7.48,11a10.88,10.88,0,0,0-3.23,2.71,9.9,9.9,0,0,0-1.91,3.83c-0.4,1.72-.73,3.1-1.06,4.42a20.14,20.14,0,0,0-.59,4.88A38.88,38.88,0,0,0,1.74,37.44a5.49,5.49,0,0,0,1.85,2.84,3.42,3.42,0,0,0,2,1.06H6.36c0.13,0,.33.07,0.46,0.07a0.72,0.72,0,0,0,.33.07H7.21a1,1,0,0,0,.53-0.26c0.13-.07.2-0.13,0.33-0.2a1,1,0,0,1,.46-0.13,4.55,4.55,0,0,0,.53-0.2A2.84,2.84,0,0,0,9.66,40c0.13-.13.2-0.33,0.33-0.46a12.66,12.66,0,0,1,.92-1,18.17,18.17,0,0,0,1.52-1.78,0.5,0.5,0,0,0,.13-0.33,1.44,1.44,0,0,1,.2-0.33,6,6,0,0,1,1.85-1.52,8.58,8.58,0,0,0,1-.66,10.23,10.23,0,0,1,2.11-1.32,10.48,10.48,0,0,1,2.1-.65,5,5,0,0,1,.47.72l0.07,0.13a9.4,9.4,0,0,0,2.24,1.65c0.13,0.07.2,0.07,0.33,0.13s0.2,0.07.26,0.07a5.79,5.79,0,0,1,.66.4,3.56,3.56,0,0,0,.86.46,15,15,0,0,0,4,.86l0.33,0.07a10.24,10.24,0,0,1,1.52.33l1,0.2c0.66,0.13,1.32.26,2,.46L34,37.57a8.45,8.45,0,0,1,2.31.53c0.4,0.13.79,0.2,1.19,0.33a16.38,16.38,0,0,1,5.54,4.62l0.59,0.79c1,1.39,2,2.84,4,3a0.13,0.13,0,0,0,.13-0.07,0.61,0.61,0,0,1,.4-0.07h0.53a2.88,2.88,0,0,0,.46-0.26,0.35,0.35,0,0,1,.2-0.13,0.14,0.14,0,0,0,.13-0.13,1.19,1.19,0,0,1,.46-1A0.5,0.5,0,0,0,50,45a0.47,0.47,0,0,1,.13-0.46,0.7,0.7,0,0,0,.13-0.33,0.55,0.55,0,0,0,0-.33v-0.2a0.35,0.35,0,0,0,.2-0.13,0.36,0.36,0,0,0,0-.26V43.18a3.23,3.23,0,0,0,.2-0.46A1.73,1.73,0,0,0,51,41.6a0.14,0.14,0,0,0,.13-0.13,1.24,1.24,0,0,0,.13-0.53v-0.2a0.06,0.06,0,0,0,.07-0.07,0.35,0.35,0,0,0,.2-0.13,0.12,0.12,0,0,0,0-.2V40.28c0.07-.07.13-0.2,0.2-0.26a0.88,0.88,0,0,0,.2-0.33V39.16c0.13-1.19.33-2.38,0.53-3.5C53.35,31.37,54,27.34,52.09,23.05ZM35.2,17.64a1.9,1.9,0,0,1,.07.86,7.36,7.36,0,0,1-.79,2.77,8.46,8.46,0,0,1-3.23,3.56,27.06,27.06,0,0,1-5.68,2.51c-0.79.2-1.85,0.53-2.9,0.86-0.47.14-.94,0.25-1.41,0.35-0.11-.28-0.21-0.56-0.3-0.87V27.54A7.55,7.55,0,0,1,22,23.25a12.35,12.35,0,0,1,2.64-3.1A17.15,17.15,0,0,1,29.06,18a22.33,22.33,0,0,1,5.35-1.12,5.42,5.42,0,0,1,.73-0.06v0.26C35.13,17.31,35.2,17.51,35.2,17.64ZM16.72,29.59a10.33,10.33,0,0,0-2.31,1.32,8,8,0,0,0-.92.66,15,15,0,0,0-3.1,2.57,11.24,11.24,0,0,0-1,1.45,4.43,4.43,0,0,1-.46.73A19.53,19.53,0,0,0,7.35,38l-0.2.26a3.21,3.21,0,0,0-.46.2,0.7,0.7,0,0,1-.33.13C5,37.57,4.64,35.07,4.44,32.82c-0.07-.59-0.13-1.12-0.2-1.65a25.08,25.08,0,0,1-.07-4.49V26.09A18.77,18.77,0,0,1,4.9,21.6c0.2-.66.33-1.39,0.46-2S5.7,18,5.89,17.25a9.24,9.24,0,0,1,.92-1.78c0.07-.13.13-0.2,0.2-0.33a4.37,4.37,0,0,1,.92-1.19,9.07,9.07,0,0,1,1.32-.86c0.26-.13.46-0.26,0.73-0.4a19.24,19.24,0,0,1,7.66-2.64H18A6.09,6.09,0,0,0,19,10a15.12,15.12,0,0,1,2.57-.2H25.5a12.11,12.11,0,0,1,1.72.13L28,10.12c0.26,0.07.53,0.13,0.73,0.2a8.79,8.79,0,0,1,4,1.91,1.18,1.18,0,0,1,.33.46c0.07,0.07.07,0.13,0.13,0.2a1.75,1.75,0,0,0,.33.4,1.56,1.56,0,0,0,.33.33l0.37,0.62a21,21,0,0,0-3.34.51,7.67,7.67,0,0,0-1.19.26,16.66,16.66,0,0,0-5.87,2.44,9.18,9.18,0,0,0-3.37,2.71,11.29,11.29,0,0,0-2.71,4.95,0.32,0.32,0,0,0,.07.26v0.07a4.53,4.53,0,0,0-.13,2.44,11.09,11.09,0,0,0,.47,1.29A11.79,11.79,0,0,0,16.72,29.59Zm33.2,1c0,0.86-.07,1.65-0.13,2.38,0,0.26-.07.46-0.07,0.73a1.83,1.83,0,0,1-.07.59c0,0.33-.07.66-0.07,0.92a1.4,1.4,0,0,1-.2.46c-0.07.13-.13,0.33-0.2,0.46-0.13.46-.2,0.92-0.33,1.39a14,14,0,0,1-.46,1.78c-0.46,1.12-.86,2.31-1.32,3.63-0.33-.33-0.59-0.73-0.92-1.06a19.61,19.61,0,0,0-4.55-4.49l-0.33-.2a12.46,12.46,0,0,0-3.37-1.72l-1.72-.4c-0.79-.2-1.65-0.4-2.51-0.59H33.61a11.59,11.59,0,0,1-2.57-.4l-0.73-.2a14.29,14.29,0,0,0-1.65-.26,8.33,8.33,0,0,1-1.85-.33,9.36,9.36,0,0,1-1.19-.53,0.71,0.71,0,0,1-.46-0.13l-0.26-.13c-0.46-.2-1-0.46-1.39-0.66A4.42,4.42,0,0,1,23,31.38l0.35-.07c0.53-.13,1.06-0.33,1.65-0.53A6.49,6.49,0,0,1,26,30.45a45.08,45.08,0,0,0,5.15-2,13.11,13.11,0,0,0,4.22-2.84,11.6,11.6,0,0,0,2.84-4A8.62,8.62,0,0,0,38.89,19c-0.07-.46-0.13-0.73-0.2-1.06a1.45,1.45,0,0,1-.07-0.53,2.24,2.24,0,0,0-.07-0.66,8.13,8.13,0,0,1,1.32.13c0.2,0,.33.07,0.53,0.07a11.14,11.14,0,0,1,4.69,1.65c0.33,0.26.66,0.59,1.06,0.92a6,6,0,0,0,.66.59,9.08,9.08,0,0,1,1.45,1.72,3.31,3.31,0,0,1,.33.86,4,4,0,0,0,.33.79,16.53,16.53,0,0,1,1,6.4v0.73Z"/>
 	</symbol>
+	<symbol id="ic-services" viewBox="0 0 54 54">
+		<title>ic-services</title>
+		<rect width="54" height="54" style="fill:transparent"/>
+		<path d="M44.13,21.28a2.58,2.58,0,0,0-.45-0.94c-0.14-.14-0.22-0.24-0.33-0.36a5.86,5.86,0,0,1-.8-1.11,13.51,13.51,0,0,1-.83-1.11,9.39,9.39,0,0,0-.94-1.34,5.75,5.75,0,0,0-.65-0.87,2.45,2.45,0,0,1-.58-0.64c-0.06-.15-0.1-0.33-0.15-0.46A1.83,1.83,0,0,1,39.15,14c0-.44-0.85-1.19-1.07-1.55C38,12.31,38,12.11,37.89,12a3.65,3.65,0,0,0-.58-0.5c-0.35-.29-0.67-0.71-1-1-0.86-.64-2.17-0.42-3.24-0.49-0.23,0-.44,0-0.69,0a3,3,0,0,0-1.18,0,1.87,1.87,0,0,1-.83,0,8.7,8.7,0,0,1-.88,0,5.86,5.86,0,0,0-1.08,0c-0.4,0-.79,0-1.19,0a23.54,23.54,0,0,1-2.4,0,43.33,43.33,0,0,0-4.58,0,13.31,13.31,0,0,0-2.33.15,2.26,2.26,0,0,0-.5.16,1.7,1.7,0,0,0-.51.56,0.74,0.74,0,0,1-.29.28,5.52,5.52,0,0,0-.37.59,3.69,3.69,0,0,1-.61.73,1.9,1.9,0,0,0-.3.34A12.72,12.72,0,0,1,14,15a13.63,13.63,0,0,0-1,1.38,3.14,3.14,0,0,0-.6,1c0,0.25-.47.46-0.47,0.69,0,0.53-1,.88-1.05,1.38a4.6,4.6,0,0,1-.31.46c-0.15.24-.34,0.48-0.47,0.74a1.41,1.41,0,0,0-.26,1,5.07,5.07,0,0,1,.25.66,2.35,2.35,0,0,0,.53.84c0.3,0.4.63,0.78,0.91,1.19,0.88,1.27,1.89,2.53,2.72,3.86,0.56,0.89,1,1.88,1.67,2.72l1.49,1.91a12.89,12.89,0,0,0,1.49,1.86,6.9,6.9,0,0,1,.7.91,9.38,9.38,0,0,1,.71.85,3.14,3.14,0,0,0,.34.29c0.11,0.12.16,0.28,0.26,0.41,0.27,0.35.53,0.71,0.81,1,0.57,0.7,1.09,1.43,1.69,2.1a8.66,8.66,0,0,1,1.13,1.54,4.43,4.43,0,0,1,.52.81,1.19,1.19,0,0,0,.39.53,1.32,1.32,0,0,1,.39.38,1.56,1.56,0,0,0,.82.47,3.42,3.42,0,0,0,1.24,0,2.47,2.47,0,0,0,1-.23c0.59-.33,1-0.93,1.56-1.29a2.73,2.73,0,0,0,.71-0.67,1.65,1.65,0,0,1,.44-0.54c0.21,0,.32-0.65.53-0.69a2,2,0,0,0,.36-0.68A3.65,3.65,0,0,1,33,39,3.92,3.92,0,0,0,33.6,38c0.08-.13.21-0.23,0.29-0.34A17.53,17.53,0,0,1,35,36.09a5.77,5.77,0,0,1,.45-0.63A5.14,5.14,0,0,1,35.87,35a4.29,4.29,0,0,0,.71-1.1c0.16-.25.32-0.49,0.49-0.73a2.71,2.71,0,0,0,.49-0.62,4.06,4.06,0,0,1,.55-0.91c0.19-.3.42-0.66,0.57-1a4.62,4.62,0,0,1,.53-0.92A4.92,4.92,0,0,0,40,28.61a6,6,0,0,1,.56-0.93A2.11,2.11,0,0,0,41,26.92a2.93,2.93,0,0,1,.47-0.69c0.11-.15.21-0.29,0.31-0.46L42,25.49a1.29,1.29,0,0,0,.21-0.43,1.57,1.57,0,0,1,.43-0.39s0-.08,0-0.12l0.2-.1c0.17-.17.36-0.36,0.52-0.54,0.5-.59,1.13-1.86.76-2.63h0Zm-12.06-2a2.15,2.15,0,0,1,.39-0.58,10,10,0,0,1,.65-0.84,1.14,1.14,0,0,0,.32-0.35,3.56,3.56,0,0,0,.36-0.33s0.29-.34.27-0.34,0.7-.87.78-1c0.24-.29.49-0.59,0.8-0.2A25.15,25.15,0,0,1,37.13,18c0.21,0.34.44,0.61,0.69,1s0.59,0.81.9,1.21c0.47,0.6-.67.48-1,0.47-0.49,0-1,.08-1.48,0s-0.91.08-1.38,0-1.25,0-1.87,0a2,2,0,0,1-1.47-.36A8.7,8.7,0,0,1,32.08,19.25Zm-16.95.37A2.88,2.88,0,0,1,16,18.06a3.72,3.72,0,0,1,.88-1.18,1.67,1.67,0,0,0,.32-0.38,1.56,1.56,0,0,1,.29-0.38c0.17-.26.22-0.55,0.38-0.79a5,5,0,0,1,.49-0.55c0.33-.35.77,0.36,0.93,0.54s0.27,0.2.29,0.22a2.16,2.16,0,0,0,.26.41c0.24,0.15.39,0.58,0.6,0.7a2.3,2.3,0,0,1,.58.53,4.71,4.71,0,0,0,.38.34l0.1,0.2,0.12,0a2.09,2.09,0,0,0,.67.65,2.38,2.38,0,0,1,.62.58c0.21,0.16.38,0.28,0.57,0.45a0.69,0.69,0,0,1,.44.5c-1.52.12-3.11,0-4.64-.08-0.68,0-1.35-.05-2,0s-1.72.23-2.15-.18C15.12,19.37,15.41,19.88,15.13,19.62ZM27,38.66a0.91,0.91,0,0,1-.58-0.58,1.5,1.5,0,0,0-.32-0.28c-0.09-.1-0.14-0.24-0.23-0.35a10.8,10.8,0,0,1-1.16-1.65,18,18,0,0,0-1.23-1.37c-0.45-.6-1-1.12-1.46-1.67-0.26-.31-0.47-0.65-0.73-1a4.73,4.73,0,0,1-.66-0.8,2,2,0,0,0-.51-0.71,7.06,7.06,0,0,1-.75-1c-0.22-.24-0.31-0.57-0.52-0.81s-0.16-.53-0.34-0.73a15,15,0,0,1-.77-1.34c-0.16-.22-0.39-0.33-0.54-0.56a9,9,0,0,0-.62-0.93A6.38,6.38,0,0,1,16,24.07a1.49,1.49,0,0,1-.54-0.78c0.16-.4,1.39-0.26,1.71-0.21a21.9,21.9,0,0,0,2.64.15,4,4,0,0,1,.86,0,4.25,4.25,0,0,0,1.29.11c0.89,0,1.75.16,2.65,0.1,0.28,0,.8-0.06.84,0.29a2,2,0,0,0,.15.86,2.69,2.69,0,0,1,.16,1.54c0,0.61.23,1.2,0.25,1.82a4.09,4.09,0,0,1,.05.66c0,0.35.16,0.73,0.08,1.05,0,0.15.08,1.35,0.05,1.35a7.37,7.37,0,0,1,.28,1,10,10,0,0,1,.5,2.79,1.63,1.63,0,0,0,.08.5,2.88,2.88,0,0,1,0,1c0,0.8.33,1.64,0,2.41C26.85,38.66,27.23,38.27,27,38.66ZM28.92,16.9c-0.17.24-.51,1.06-0.89,1a3.18,3.18,0,0,1-.53-0.31s-0.39-.32-0.39-0.31a3.35,3.35,0,0,0-.74-0.5,1.91,1.91,0,0,1-.37-0.3A2.67,2.67,0,0,0,25.45,16,2,2,0,0,1,25,15.59a2.87,2.87,0,0,0-.47-0.25,3.46,3.46,0,0,1-1.05-.85,0.91,0.91,0,0,1-.41-0.93,1,1,0,0,1,1.17-.07c1,0.33,2.13-.15,3.19-0.13a9.88,9.88,0,0,1,1.24.07c0.3,0,.58-0.22.85-0.15a5.57,5.57,0,0,0,.61,0c0.23,0,1.8,0,1.64.33a7,7,0,0,1-1,1.14c-0.58.76-1.31,1.39-1.88,2.18h0ZM38.45,25c-0.31.37-.52,0.83-0.78,1.22L37.11,27c0,0.06-.15.15-0.19,0.22l-0.09.24-0.13,0c-0.43.7-.87,1.49-1.3,2.24-0.24.42-.54,0.86-0.82,1.25s-0.53.89-.82,1.35a9.6,9.6,0,0,1-.75,1c-0.26.31-.41,0.66-0.69,1a3.36,3.36,0,0,1-.65.88c-0.21,0-.3.59-0.64,0.4A11.89,11.89,0,0,0,30.9,34c-0.12-.86-0.36-1.69-0.45-2.55a7.91,7.91,0,0,0-.37-1.25A3.34,3.34,0,0,1,29.91,29a3.38,3.38,0,0,0-.11-0.39,5.44,5.44,0,0,1,0-1.11c0-.6-0.19-1.16-0.19-1.74s-0.07-1.81.38-1.95a3.38,3.38,0,0,1,1.19.07c0.21,0,.42,0,0.63,0a5.7,5.7,0,0,0,.68.09,11.32,11.32,0,0,1,1.6,0c0.71,0,1.43-.08,2.13,0s1.28,0,1.92,0a1.29,1.29,0,0,1,.8.1,2,2,0,0,1-.5.94h0Z"/>
+	</symbol>
 	<symbol id="ic-newsletter" viewBox="0 0 54 54">
 		<title>ic-newsletter</title>
 		<rect width="54" height="54" style="fill:transparent"/>
@@ -333,6 +344,7 @@ Other times by appointment
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="/build/lib.owl.carousel.min.js"></script>
 	<script src="/build/application.min.js"></script>
 	
 

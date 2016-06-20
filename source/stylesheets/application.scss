@@ -50,6 +50,7 @@
 @import "component.scrollspy";
 @import "component.affix";
 @import "component.flickity";
+@import "component.owl";
 @import "component.videoembed";
 // @import "component.aside";
 @import "component.navbar";
@@ -62,5 +63,7 @@
 
 @import "trumps.spacers";
 @import "trumps.helpers";
+@import "trumps.suitcss";
+@import "trumps.cms";
 // @import "trumps.helpers.base";
-// @import "trumps.responsive";
+@import "trumps.responsive";
