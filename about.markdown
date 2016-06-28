@@ -1,7 +1,7 @@
 ---
 title: about
 date: 2016-05-13 16:39:00 +10:00
-headline: We’re craftspeople who love transforming PINK.
+headline: We’re craftspeople who love transforming spaces.
 hero-image: "/uploads/about-2.png"
 first_text: "We’re boat builders by trade. We were seduced by the weight, feel and
   versatility of water-jet cutting, so we decided to start our own workshop. Eight
