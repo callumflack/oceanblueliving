@@ -5,7 +5,7 @@ layout: default
 
 {% assign header       = site.home | where: 'title', 'header' | first  %}
 {% assign applications = site.home | where: 'title', 'applications' | first  %}
-{% assign price        = site.home | where: 'title', 'price' | first  %}
+{% assign design       = site.home | where: 'title', 'design' | first  %}
 {% assign about        = site.home | where: 'title', 'about' | first  %}
 
 <header class="Header Header--fullRatio Header--rev u-bgBrand" role="banner">
@@ -45,7 +45,7 @@ layout: default
 			<h1 class="Pathway-title u-marginTD2 u-marginB25">{{ applications.headline }}</h1>
 			{{ applications.content }}
 			<div class="u-textCenter u-marginT25">
-				<a class="Button t-button--rev u-colorWhite" href="/price">{{ applications.button }}</a>
+				<a class="Button t-button--rev u-colorWhite" href="/applications">{{ applications.button }}</a>
 			</div>
 		</div>
 		<div class="gallery gallery--dragger u-marginT6 u-marginB6">
@@ -63,21 +63,6 @@ layout: default
 				</div>
 			{% endfor %}
 		</div>
-		<!-- <div class="gallery--dragger u-marginT6">
-			<div class="owl-carousel js-owl-dragger">
-				{% for image in applications.gallery-images %}
-					<div class="FlexEmbed">
-						<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-						<div class="FlexEmbed-content">
-							<div
-								class="u-posAbsoluteCenter CoverImage"
-								style="background-image: url('{{ image }}')">
-							</div>
-						</div>
-					</div>
-				{% endfor %}
-			</div>
-		</div> -->
 	</section>
 
 	<section class="Section Pathway Pathway--rev u-bgBrand">
@@ -87,10 +72,10 @@ layout: default
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-estimate"></use>
 				</svg>
 			</figure>
-			<h1 class="Pathway-title u-marginTD2 u-marginB25">{{ price.headline }}</h1>
-			{{ price.content }}
+			<h1 class="Pathway-title u-marginTD2 u-marginB25">{{ design.headline }}</h1>
+			{{ design.content }}
 			<div class="u-textCenter u-marginT25">
-				<a class="Button t-button--rev u-colorWhite" href="/price">{{ price.button }}</a>
+				<a class="Button t-button--rev u-colorWhite" href="/design">{{ design.button }}</a>
 			</div>
 		</div>
 	</section>

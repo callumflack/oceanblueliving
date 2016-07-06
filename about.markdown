@@ -1,5 +1,6 @@
 ---
 title: about
+layout: about
 date: 2016-05-13 16:39:00 +10:00
 headline: We’re craftspeople who love transforming spaces.
 hero-image: "/uploads/about-2.png"
@@ -17,7 +18,4 @@ second_text: "We’re boat builders by trade. We were seduced by the weight, fee
   working with us, is we’re good at helping people through the process. Because there’s
   so much you can do, sometimes it’s overwhelming. We’ve been doing it a while, so
   we know how to get that idea in your head into a real thing in your living space. "
-layout: default
 ---
-
-
