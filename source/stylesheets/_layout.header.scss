@@ -21,13 +21,14 @@
 	z-index: 2;
 
 	> .Container {
-		margin-top: space(4);
-		margin-top: $vertSpaceXs;
+		@include sectionSpace--xsTop();
+		// margin-top: space(4);
+		// margin-top: $vertSpaceSm;
 		text-align: center;
 
-		@include respond-to(sm) {
-			margin-top: $vertSpace;
-		}
+		// @include respond-to(sm) {
+		// 	margin-top: $vertSpace;
+		// }
 	}
 }
 
@@ -70,7 +71,7 @@
 
 .Header-logo + .Header-title {
 	margin-top: space(1.5) !important;
-	margin-top: $vertSpaceXs !important;
+	// margin-top: $vertSpaceSm !important;
 }
 
 .Header-title {

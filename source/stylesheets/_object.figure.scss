@@ -17,6 +17,13 @@
 	}
 }
 
+.Figure--lg {
+	content: "buggyfill";
+	margin: $vertSpace auto;
+
+	img { width: 100%; }
+}
+
 .Figure--hero {
 	margin: 0 0 space(1);
 

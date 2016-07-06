@@ -44,17 +44,22 @@
 	}
 
 	&--lg {
-		width: rem(54);
-		height: rem(54);
+		width: rem(40);
+		height: rem(40);
+
+		@include respond-to(xs) {
+			width: rem(54);
+			height: rem(54);
+		}
 	}
 
 	&--super {
-		width: rem(70);
-		height: rem(70);
+		width: rem(60);
+		height: rem(60);
 
 		@include respond-to(xs) {
-			width: rem(100);
-			height: rem(100);
+			width: rem(80);
+			height: rem(80);
 		}
 	}
 

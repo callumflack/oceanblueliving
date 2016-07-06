@@ -5,19 +5,24 @@ layout: default
 
 {% assign about = site.pages | where: 'title', 'about' | first  %}
 
-<header class="Header Header--fullRatio Header--fade" role="banner">
+<!-- <header class="Header Header--fullRatio Header--fade" role="banner"> -->
+<header class="Header Header--fullRatio Header--rev" role="banner">
 	<div class="FlexEmbed">
 		<div class="FlexEmbed-ratio"></div>
 		<div class="FlexEmbed-content">
-			<div class="Header-hero">
+			<!-- <div class="Header-hero">
 				<img src="{{ about.hero_image }}" alt="">
+			</div> -->
+			<div
+				class="u-posAbsoluteCenter CoverImage--dark"
+				style="background-image: url('{{ about.hero_image }}')">
 			</div>
 		</div>
 	</div>
 	<div class="Header-wrapper">
 		<div class="Container">
 			<a class="Header-logo" href="/">
-				<img src="/uploads/logo.png" alt="{{ site.title }}">
+				<img src="/uploads/logo-white.png" alt="{{ site.title }}">
 			</a>
 			<h1 class="Header-title">
 				{{ about.hero_headline }}
@@ -27,12 +32,13 @@ layout: default
 </header>
 
 <main class="Content" role="main">
+
 	<section class="Section">
 		<div class="Container Container--insetTextColumn">
 
 			{{ about.first_text | markdownify }}
 
-			<figure class="Figure">
+			<figure class="Figure--lg">
 				<div class="FlexEmbed">
 					<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 					<div class="FlexEmbed-content">
@@ -56,13 +62,13 @@ layout: default
 	</section>
 
 	<!-- contacts -->
-	<section class="Section u-paddingT0">
+	<section class="Section--rg">
 		<div class="Container Container--textColumn">
 
 			{% include pathway-primary.html %}
 			{% include pathway-blog.html %}
 
-			<a class="Pathway" href="{{ site.social-facebook }}">
+			<a class="Pathway Section--smTop" href="{{ site.social-facebook }}">
 				<figure class="u-textCenter">
 					<svg class="Icon Icon--md">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-facebook"></use>
@@ -72,7 +78,7 @@ layout: default
 					Like us.
 				</h1>
 			</a>
-			<a class="Pathway" href="{{ site.social-pinterest }}">
+			<a class="Pathway Section--smTop" href="{{ site.social-pinterest }}">
 				<figure class="u-textCenter">
 					<svg class="Icon Icon--md">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-pinterest"></use>

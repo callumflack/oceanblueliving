@@ -53,6 +53,12 @@
 	@include CoverImage(true);
 }
 
+.CoverImage--applications {
+	@include respond-to(md) {
+		background-position-y: 40%;
+	}
+}
+
 .ContainImage {
 	@include CoverImage();
 	background-size: contain;

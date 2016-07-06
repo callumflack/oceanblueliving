@@ -5,26 +5,87 @@
 // --------------------------------------------------------------------------
 
 
-@mixin sectionSpace() {
-	padding: space(3.5) 0;
-	padding: $vertSpace 0;
+// Using multiple mixins because 'content:' won't take a var.
+// API:
+// $vertSpaceSm              : 8.5vh;
+// $vertSpace                : 17vh;
+// $vertSpaceLg              : 34vh;
 
-	@include respond-to(sm) {
-		padding: space(7) 0;
-		padding: $vertSpaceLg 0;
-	}
+@mixin sectionSpace() {
+	content: 'viewport-units-buggyfill;'  'padding: 17vh 0;';
+	padding: $vertSpace 0;
 }
 
-.Section {
-	@include sectionSpace();
+@mixin sectionSpace--xs() {
+	content: 'viewport-units-buggyfill;'  'padding: 6vh 0;';
+	padding: $vertSpaceXs 0;
+}
 
-	@include when-inside(".Home") {
-		padding: space(6) 0;
-		padding: $vertSpace 0;
+@mixin sectionSpace--sm() {
+	content: 'viewport-units-buggyfill;'  'padding: 8.5vh 0;';
+	padding: $vertSpaceSm 0;
+}
 
-		@include respond-to(sm) {
-			padding: space(12) 0;
-			padding: $vertSpaceLg 0;
-		}
+@mixin sectionSpace--lg() {
+	content: 'viewport-units-buggyfill;'  'padding: 34vh 0;';
+	padding: $vertSpaceLg 0;
+}
+
+
+//  --#{breakpoint}Top
+
+@mixin sectionSpace--top() {
+	content: 'viewport-units-buggyfill;'  'padding-top: 17vh;';
+	padding-top: $vertSpace;
+}
+
+@mixin sectionSpace--xsTop() {
+	content: 'viewport-units-buggyfill;'  'padding-top: 6vh;';
+	padding-top: $vertSpaceXs;
+}
+
+@mixin sectionSpace--smTop() {
+	content: 'viewport-units-buggyfill;'  'padding-top: 8.5vh;';
+	padding-top: $vertSpaceSm;
+}
+
+@mixin sectionSpace--lgTop() {
+	content: 'viewport-units-buggyfill;'  'padding-top: 34vh;';
+	padding-top: $vertSpaceLg;
+}
+
+
+// Vax initiate.
+
+.Content {
+	@include sectionSpace--top();
+}
+
+.Section + .Section {
+	@include sectionSpace--lgTop();
+
+}
+
+.Section--xs    { @include sectionSpace--xs(); }
+.Section--sm    { @include sectionSpace--sm(); }
+.Section--rg    { @include sectionSpace(); }
+.Section--lg    { @include sectionSpace--lg(); }
+
+.Section--top   { @include sectionSpace--top(); }
+.Section--xsTop { @include sectionSpace--xsTop(); }
+.Section--smTop { @include sectionSpace--smTop(); }
+.Section--lgTop { @include sectionSpace--lgTop(); }
+
+
+// Vars
+
+.Section--cta {
+	content: 'viewport-units-buggyfill;'  'margin: 17vh 0;';
+	margin: $vertSpace 0;
+
+	> .Container {
+		border-top: 1px solid palette(base);
+		content: 'viewport-units-buggyfill;'  'padding-top: 14vh;';
+		padding-top: 14vh !important;
 	}
 }

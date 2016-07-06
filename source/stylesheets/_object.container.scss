@@ -38,4 +38,9 @@
 			}
 		}
 	}
+
+	&--ruleOff {
+		border-bottom: 1px solid palette(base);
+		padding-bottom: space(3);
+	}
 }

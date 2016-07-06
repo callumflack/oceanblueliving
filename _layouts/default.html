@@ -37,6 +37,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="/build/lib.owl.carousel.min.js"></script>
 	<script src="/build/application.min.js"></script>
+	<script src="/build/viewport-units-buggyfill.hacks.js"></script>
+	<script src="/build/viewport-units-buggyfill.js"></script>
+	<script>
+	  window.viewportUnitsBuggyfill.init({
+		refreshDebounceWait: 50,
+		hacks: window.viewportUnitsBuggyfillHacks
+	  });
+	</script>
 	{% include google-analytics.html %}
 
 </body>

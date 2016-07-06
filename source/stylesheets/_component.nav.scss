@@ -15,6 +15,7 @@
 
 	// Color the hamburger icon
 	@include when-inside(".Home") { color: palette(white); }
+	@include when-inside(".about") { color: palette(white); }
 	@include when-inside(".Modal") { color: palette(white); }
 }
 
@@ -64,21 +65,24 @@ $infoColor: rgba( palette(white), 0.5 );
 
 .Nav-toggle {
 	@include baseTransition;
+	content: "buggyfill";
 	display: inline;
 	position: fixed;
-	top: space(4);
+	// top: space(4);
 	top: $vertSpaceXs;
 	right: space(1);
 	z-index: 9;
 
 	@include respond-to(sm) {
-		top: space(4);
-		top: $vertSpace;
-		right: 6vw;
+		// top: space(4);
+		// top: $vertSpace;
+		// right: 6vw;
+		right: $vertSpaceXs;
 	}
 
 	// Color the hamburger icon
 	@include when-inside(".Home") { color: palette(white); }
+	@include when-inside(".about") { color: palette(white); }
 	@include when-inside(".Blog") { color: palette(white); }
 }
 

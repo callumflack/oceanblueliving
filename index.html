@@ -8,7 +8,7 @@ layout: default
 {% assign design       = site.home | where: 'title', 'design' | first  %}
 {% assign about        = site.home | where: 'title', 'about' | first  %}
 
-<header class="Header Header--fullRatio Header--rev u-bgBrand" role="banner">
+<header class="Header Header--fullRatio Header--rev" role="banner">
 	<div class="owl-carousel js-owl">
 		{% for image in header.gallery-images %}
 		<div class="FlexEmbed">
@@ -34,8 +34,8 @@ layout: default
 	</div>
 </header>
 
-<main class="Content" role="main">
-	<section class="Section Pathway Pathway--rev u-bgBrand">
+<main class="Content u-bgBrand" role="main">
+	<section class="Section Pathway Pathway--rev">
 		<div class="Container Container--textColumn">
 			<figure class="u-textCenter">
 				<svg class="Icon Icon--lg u-colorWhite">
@@ -43,12 +43,14 @@ layout: default
 				</svg>
 			</figure>
 			<h1 class="Pathway-title u-marginTD2 u-marginB25">{{ applications.headline }}</h1>
-			{{ applications.content }}
+			<div class="u-textMdBlock">
+				{{ applications.content }}
+			</div>
 			<div class="u-textCenter u-marginT25">
 				<a class="Button t-button--rev u-colorWhite" href="/applications">{{ applications.button }}</a>
 			</div>
 		</div>
-		<div class="gallery gallery--dragger u-marginT6 u-marginB6">
+		<div class="gallery gallery--dragger gallery--light Section--smTop">
 			{% for image in applications.gallery-images %}
 				<div class="gallery-cell">
 					<div class="FlexEmbed">
@@ -65,7 +67,7 @@ layout: default
 		</div>
 	</section>
 
-	<section class="Section Pathway Pathway--rev u-bgBrand">
+	<section class="Section Pathway Pathway--rev">
 		<div class="Container Container--textColumn">
 			<figure class="u-textCenter">
 				<svg class="Icon Icon--lg u-colorWhite">
@@ -73,14 +75,16 @@ layout: default
 				</svg>
 			</figure>
 			<h1 class="Pathway-title u-marginTD2 u-marginB25">{{ design.headline }}</h1>
-			{{ design.content }}
+			<div class="u-textMdBlock">
+				{{ design.content }}
+			</div>
 			<div class="u-textCenter u-marginT25">
 				<a class="Button t-button--rev u-colorWhite" href="/design">{{ design.button }}</a>
 			</div>
 		</div>
 	</section>
 
-	<section class="Section Pathway Pathway--rev u-bgBrand">
+	<section class="Section Pathway Pathway--rev">
 		<div class="Container Container--textColumn">
 			<figure class="u-textCenter">
 				<svg class="Icon Icon--lg u-colorWhite">
@@ -91,11 +95,13 @@ layout: default
 		</div>
 		<div class="Container">
 			<figure class=" u-marginB3">
-				<img src="/uploads/about-duo-test.jpg" alt="Vince & LeaAnne Cassaniti, Ocean Blue Living">
+				<img src="/uploads/about-duo-brand.jpg" alt="Vince & LeaAnne Cassaniti, Ocean Blue Living" style="opacity:0.7">
 			</figure>
 		</div>
 		<div class="Container Container--textColumn">
-			{{ about.content }}
+			<div class="u-textMdBlock">
+				{{ about.content }}
+			</div>
 			<div class="u-textCenter u-marginT25">
 				<a class="Button t-button--rev u-colorWhite" href="/about">{{ about.button }}</a>
 			</div>
@@ -103,7 +109,7 @@ layout: default
 	</section>
 
 	<!-- blog -->
-	<section class="Section u-bgBrand u-paddingB0">
+	<section class="Section">
 		<figure class="u-textCenter">
 			<svg class="Icon Icon--lg u-colorWhite">
 				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
@@ -112,7 +118,7 @@ layout: default
 		<h1 class="Pathway-title u-colorWhite u-marginTD2 u-marginB3">The Ocean Blue blog.</h1>
 
 		{% for post in site.posts | limit: 1 %}
-			<article class="Post--article">
+			<article class="Post--article u-bgWhite">
 				<div class="FlexEmbed">
 					<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 					<div class="FlexEmbed-content">
@@ -147,7 +153,7 @@ layout: default
 
 	</section>
 
-	<section class="Section">
+	<section class="Section--rg u-bgWhite">
 		{% include pathway-blog.html %}
 	</section>
 

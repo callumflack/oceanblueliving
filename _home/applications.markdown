@@ -5,9 +5,9 @@ position: 1
 headline: Create timeless elegance.
 button: See all we do →
 gallery-images:
-- "/uploads/applications-test-1.png"
-- "/uploads/applications-test-2.png"
-- "/uploads/applications-screen-160706.jpg"
+- "/uploads/applications-screen-rainforest.jpg"
+- "/uploads/applications-screen-bamboo.jpg"
+- "/uploads/applications-outdoor-birds.png"
 ---
 
 We make elegant, functional, and timeless architectural applications.

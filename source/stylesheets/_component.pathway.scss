@@ -11,26 +11,9 @@ $revOpacity: 0.5;
 .Pathway {
 	display: block;
 
-	p {
-		@include TextMd();
-	}
-
-	// as used in About pg
-	+ .Pathway {
-		margin-top: space(3.5);
-		margin-top: $vertSpace;
-
-		@include respond-to(sm) {
-			margin-top: space(7);
-			margin-top: $vertSpaceLg; 
-		}
-	}
-
-	// as used in Home pg
 	&--rev {
 		h1 { color: palette(white); }
 		p { color: rgba( palette(white), $revOpacity ); }
-		+ .Pathway { margin-top: 0; }
 	}
 }
 

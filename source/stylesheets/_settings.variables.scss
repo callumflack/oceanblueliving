@@ -61,9 +61,10 @@ $base-line-height         : ($base-font-size-unit * $base-line-height-unit) * 1p
 $space-unit               : rem($base-line-height);
 $space                    : $space-unit * 1;
 
-$vertSpaceXs              : 3.5vh;
-$vertSpace                : 7vh;
-$vertSpaceLg              : 14vh;
+$vertSpaceXs              : 6vh;
+$vertSpaceSm              : 8.5vh;
+$vertSpace                : 17vh;
+$vertSpaceLg              : 34vh;
 
 $size: (
 

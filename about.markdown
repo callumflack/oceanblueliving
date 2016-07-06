@@ -3,7 +3,7 @@ title: about
 layout: about
 date: 2016-05-13 16:39:00 +10:00
 hero_headline: We’re craftspeople who love transforming spaces.
-hero_image: "/uploads/about-2.png"
+hero_image: "/uploads/about-unedited-8.jpg"
 first_text: "We’re boat builders by trade. We were seduced by the weight, feel and
   versatility of water-jet cutting, so we decided to start our own workshop. Eight
   years later, we’re only just beginning.\n\nThe biggest thing our clients say about
