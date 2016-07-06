@@ -1,7 +1,7 @@
 ---
 title: applications
-layout: applications
 date: 2016-06-03 16:46:00 +10:00
+layout: default
 hero_image: "/uploads/applications-hero-test2.jpg"
 hero_headline: Timeless, elegant & functional architectural pieces.
 hero_description: "Our architectural metal panels filter and sculpt light. They’re not only engineered
