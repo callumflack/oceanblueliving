@@ -10,18 +10,18 @@ layout: default
 		<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 		<div class="FlexEmbed-content">
 			<div class="u-posAbsoluteCenter CoverImage"
-				style="background-image: url('{{ applications.header_image }}')">
+				style="background-image: url('{{ applications.hero_image }}')">
 			</div>
 			<div class="Container u-textCenter u-marginT4">
 				<a class="Header-logo" href="/">
 					<img src="/uploads/logo.png" alt="{{ site.title }}">
 				</a>
 				<h1 class="Header-title u-marginT15">
-					{{ applications.header_headline }}
+					{{ applications.hero_headline }}
 				</h1>
 			</div>
 			<div class="Container Container--textColumn">
-				{{ applications.header_description | markdownify }}
+				{{ applications.hero_description | markdownify }}
 			</div>
 		</div>
 	</div>
