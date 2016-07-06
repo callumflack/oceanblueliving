@@ -8,3 +8,4 @@ gallery-images:
 - "/uploads/home-hero-2.jpg"
 - "/uploads/home-hero-3.jpg"
 ---
+
