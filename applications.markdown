@@ -1,7 +1,7 @@
 ---
 title: applications
-layout: applications
 date: 2016-06-03 16:46:00 +10:00
+layout: default
 hero_image: "/uploads/applications-header.jpg"
 hero_headline: Timeless, elegant & functional architectural pieces.
 hero_description: "We make elegant, functional, and timeless architectural applications.\n\nOur
@@ -24,5 +24,5 @@ screens_second_text: 'Filter intense sunlight while allowing air flow circulatio
   materials, and versatile patterns are reliable tools to design places where people
   want to be. Standard shade panels are for installations with wind loads up to 100
   mph and snow loads up to 100 lb/sf using Parasoleil’s own brackets and hardware.  '
-layout: default
 ---
+
