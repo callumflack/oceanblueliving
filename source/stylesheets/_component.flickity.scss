@@ -5,6 +5,12 @@
 // --------------------------------------------------------------------------
 
 
+// For this project…
+.gallery {
+	overflow: hidden;
+	width: 100%;
+}
+
 .gallery,
 .flickity-viewport {
 	&:focus {
@@ -84,15 +90,24 @@ a.gallery-cell {
 .gallery--dragger {
 	.gallery-cell {
 		cursor: grab;
-		opacity: 0.5;
-		transform: scale(0.7);
+		// opacity: 0.5;
+		transform: scale(0.6);
 		transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
 		max-width: size(container, default);
 	}
 
 	.gallery-cell.is-selected {
+		filter: grayscale(0);
 		opacity: 1;
 		transform: scale(1);
+		transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
+	}
+}
+
+.gallery--light {
+	.gallery-cell {
+		filter: grayscale(100%);
+		opacity: 0.3;
 	}
 }
 
