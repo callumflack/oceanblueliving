@@ -1,29 +1,39 @@
 ---
-title: Blog
+title: blog
 layout: default
 ---
 
-<header class="Header Header--halfRatio Header--rev u-bgBrand" role="banner">
+{% assign blog = site.pages | where: 'title', 'blog' | first  %}
+
+<header class="Header Header--halfRatio Header--rev" role="banner">
 	<div class="FlexEmbed">
 		<div class="FlexEmbed-ratio"></div>
 		<div class="FlexEmbed-content">
+			<div class="Header-masthead">
+				<a class="Header-logo" href="/">
+					<img src="/uploads/logo-white.png" alt="{{ site.title }}">
+				</a>
+			</div>
 			<div
 				class="u-posAbsoluteCenter CoverImage--dark"
-				style="background-image: url('/uploads/blog-hero.png')">
+				style="background-image: url('{{ blog.hero_image }}')">
 			</div>
 		</div>
 	</div>
 	<div class="Header-wrapper">
-		<div class="Container u-textCenter">
-			<a class="Header-logo" href="/">
-				<img src="/uploads/logo-white.png" alt="{{ site.title }}">
-			</a>
-			<h1 class="Header-title u-marginT15">
-				The Ocean Blue blog.
-			</h1>
+		<div class="o-aligner">
+			<div class="o-aligner-item">
+				<div class="Container">
+					<h1 class="Header-title">
+						{{ blog.hero_headline }}
+					</h1>
+				</div>
+			</div>
 		</div>
 	</div>
 </header>
+
+
 
 <main class="Content" role="main">
 	<section class="Section">

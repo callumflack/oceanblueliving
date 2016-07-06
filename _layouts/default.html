@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="/source/stylesheets/application.css">
 	<!-- <link rel="stylesheet" href="/build/application.min.css"> -->
 </head>
-<body id="top" class="{{type}} {{slug}} {{page.title}} {{page.categories}} {{page.slug}} {% for tag in site.tags %}{{tag.slug}}{% endfor %}"
+<body id="top" class="{{type}} {{slug}} {{page.title}} {{page.categories}} {% for tag in site.tags %}{{tag.slug}}{% endfor %}"
 	data-spy="scroll" data-target="#scrollspy" data-offset="300">
 
 	{% include nav-toggle.html %}

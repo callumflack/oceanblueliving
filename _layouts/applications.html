@@ -9,19 +9,27 @@ layout: default
 	<div class="FlexEmbed">
 		<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 		<div class="FlexEmbed-content">
-			<div class="u-posAbsoluteCenter CoverImage CoverImage--applications"
-				style="background-image: url('{{ applications.hero_image }}')">
-			</div>
-			<div class="Container u-textCenter Section--xsTop">
+			<div class="Header-masthead">
 				<a class="Header-logo" href="/">
 					<img src="/uploads/logo.png" alt="{{ site.title }}">
 				</a>
-				<h1 class="Header-title u-marginT15">
-					{{ applications.hero_headline }}
-				</h1>
 			</div>
-			<div class="Container Container--textColumn u-textMdBlock">
-				{{ applications.hero_description | markdownify }}
+			<div class="u-posAbsoluteCenter CoverImage CoverImage--applications"
+				style="background-image: url('{{ applications.hero_image }}')">
+			</div>
+		</div>
+	</div>
+	<div class="Header-wrapper">
+		<div class="o-aligner">
+			<div class="o-aligner-item">
+				<div class="Container">
+					<h1 class="Header-title">
+						{{ applications.hero_headline }}
+					</h1>
+				</div>
+				<div class="Container Container--textColumn Pathway-text u-textCenter u-marginT">
+					{{ applications.hero_description | markdownify }}
+				</div>
 			</div>
 		</div>
 	</div>
@@ -36,32 +44,36 @@ layout: default
 
 	<section class="Section Pathway">
 		<div class="Container Container--textColumn">
-			<figure class="u-textCenter">
+			<!-- <figure class="u-textCenter">
 				<img class="Icon Icon--super" src="/uploads/ic-app-screens.png" alt="Screen applications icon" />
-			</figure>
-			<h1 class="Pathway-title u-marginTD2 u-marginB2">Screens</h1>
-			<div class="u-textMdBlock">
+			</figure> -->
+			<h1 class="Pathway-title Pathway-hgroup">Screens</h1>
+			<div class="Pathway-text">
 				{{ applications.screens_first_text | markdownify }}
 			</div>
 		</div>
-		<div class="gallery gallery--dragger gallery--light Section--sm">
-			{% for image in applications.screens_gallery_images %}
-				<div class="gallery-cell">
-					<div class="FlexEmbed">
-						<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-						<div class="FlexEmbed-content">
-							<div
-								class="u-posAbsoluteCenter CoverImage"
-								style="background-image: url('{{ image }}');">
+		<figure class="Figure--lg">
+			<div class="gallery gallery--dragger gallery--light">
+				{% for image in applications.screens_gallery_images %}
+					<div class="gallery-cell">
+						<div class="FlexEmbed">
+							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+							<div class="FlexEmbed-content">
+								<div
+									class="u-posAbsoluteCenter CoverImage"
+									style="background-image: url('{{ image }}');">
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			{% endfor %}
-		</div>
+				{% endfor %}
+			</div>
+		</figure>
 		<div class="Container Container--textColumn">
-			{{ applications.screens_second_text | markdownify }}
-			<div class="u-textCenter u-marginT2">
+			<div class="Pathway-text">
+				{{ applications.screens_second_text | markdownify }}
+			</div>
+			<div class="Pathway-action">
 				<a class="Button t-button" href="/design">Design + estimate →</a>
 			</div>
 		</div>
@@ -69,32 +81,36 @@ layout: default
 
 	<section class="Section Pathway">
 		<div class="Container Container--textColumn">
-			<figure class="u-textCenter">
+			<!-- <figure class="u-textCenter">
 				<img class="Icon Icon--super" src="/uploads/ic-app-gates.png" alt="Gate applications icon" />
-			</figure>
-			<h1 class="Pathway-title u-marginTD2 u-marginB2">Gates</h1>
-			<div class="u-textMdBlock">
+			</figure> -->
+			<h1 class="Pathway-title Pathway-hgroup">Gates</h1>
+			<div class="Pathway-text">
 				{{ applications.gates_first_text | markdownify }}
 			</div>
 		</div>
-		<div class="gallery gallery--dragger gallery--light Section--sm">
-			{% for image in applications.gates_gallery_images %}
-				<div class="gallery-cell">
-					<div class="FlexEmbed">
-						<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-						<div class="FlexEmbed-content">
-							<div
-								class="u-posAbsoluteCenter CoverImage"
-								style="background-image: url('{{ image }}')">
+		<figure class="Figure--lg">
+			<div class="gallery gallery--dragger gallery--light">
+				{% for image in applications.gates_gallery_images %}
+					<div class="gallery-cell">
+						<div class="FlexEmbed">
+							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+							<div class="FlexEmbed-content">
+								<div
+									class="u-posAbsoluteCenter CoverImage"
+									style="background-image: url('{{ image }}')">
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			{% endfor %}
-		</div>
+				{% endfor %}
+			</div>
+		</figure>
 		<div class="Container Container--textColumn">
-			{{ applications.gates_second_text | markdownify }}
-			<div class="u-textCenter u-marginT2">
+			<div class="Pathway-text">
+				{{ applications.gates_second_text | markdownify }}
+			</div>
+			<div class="Pathway-action">
 				<a class="Button t-button" href="/design">Design + estimate →</a>
 			</div>
 		</div>
@@ -102,35 +118,42 @@ layout: default
 
 	<section class="Section Pathway">
 		<div class="Container Container--textColumn">
-			<figure class="u-textCenter">
+			<!-- <figure class="u-textCenter">
 				<img class="Icon Icon--super" src="/uploads/ic-app-shade.png" alt="Outdoor applications icon" />
-			</figure>
-			<h1 class="Pathway-title u-marginTD2 u-marginB2">Outdoor</h1>
-			<div class="u-textMdBlock">
+			</figure> -->
+			<h1 class="Pathway-title Pathway-hgroup">Outdoor</h1>
+			<div class="Pathway-text">
 				{{ applications.gates_first_text | markdownify }}
 			</div>
 		</div>
-		<div class="gallery gallery--dragger gallery--light Section--sm">
-			{% for image in applications.gates_gallery_images %}
-				<div class="gallery-cell">
-					<div class="FlexEmbed">
-						<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-						<div class="FlexEmbed-content">
-							<div
-								class="u-posAbsoluteCenter CoverImage"
-								style="background-image: url('{{ image }}')">
+		<figure class="Figure--lg">
+			<div class="gallery gallery--dragger gallery--light">
+				{% for image in applications.gates_gallery_images %}
+					<div class="gallery-cell">
+						<div class="FlexEmbed">
+							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+							<div class="FlexEmbed-content">
+								<div
+									class="u-posAbsoluteCenter CoverImage"
+									style="background-image: url('{{ image }}')">
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			{% endfor %}
-		</div>
+				{% endfor %}
+			</div>
+		</figure>
 		<div class="Container Container--textColumn">
-			{{ applications.gates_second_text | markdownify }}
-			<div class="u-textCenter u-marginT2">
+			<div class="Pathway-text">
+				{{ applications.gates_second_text | markdownify }}
+			</div>
+			<div class="Pathway-action">
 				<a class="Button t-button" href="/design">Design + estimate →</a>
 			</div>
 		</div>
+
+		<div class="Container Container--textColumn Post--article-ruleOff"></div>
+
 	</section>
 
 
@@ -140,7 +163,7 @@ layout: default
 
 
 	<!-- pathway -->
-	<section class="Section--cta">
+	<section class="Section--rg">
 		<div class="Container Container--textColumn Container--ruleTop">
 			{% include pathway-primary.html %}
 		</div>

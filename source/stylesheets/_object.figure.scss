@@ -6,15 +6,10 @@
 
 
 .Figure {
-	margin: space(3.5) auto;
-	margin: $vertSpace auto;
+	content: "buggyfill";
+	margin: $vertSpaceSm auto;
 
 	img { width: 100%; }
-
-	@include respond-to(sm) {
-		margin: space(7) 0;
-		margin: $vertSpaceLg 0;
-	}
 }
 
 .Figure--lg {
@@ -22,6 +17,15 @@
 	margin: $vertSpace auto;
 
 	img { width: 100%; }
+}
+
+.Figure--icon {
+	margin: 0 0 space(0.5);
+	text-align: center;
+
+	@include respond-to(sm) {
+		margin: 0 0 space(0.75);
+	}
 }
 
 .Figure--hero {

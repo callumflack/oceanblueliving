@@ -5,19 +5,22 @@
 // --------------------------------------------------------------------------
 
 
-// When is a post is article.
+// When a post is an article.
 .Post--article {
 	background-color: palette(background);
 }
 
 .Post--article-ruleOff {
 	border-bottom: 1px solid palette(base);
-	padding-bottom: space(3);
+	content: "buggyfill";
+	padding-bottom: space(5);
+	padding-bottom: 8.5vh;
 }
 
 // When a post is also a link.
 // These are vertically & horizontally centered.
 // See: https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/
+
 a.Post--inList {
 	// @include baseTransition();
 	align-items: center;

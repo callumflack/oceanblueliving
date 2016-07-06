@@ -55,7 +55,7 @@ $palette: (
 // --------------------------------------------------------------------------
 
 $base-font-size-unit      : 16;
-$base-line-height-unit    : 1.425;
+$base-line-height-unit    : 1.5;
 $base-font-size           : $base-font-size-unit * 1px;
 $base-line-height         : ($base-font-size-unit * $base-line-height-unit) * 1px; //22.8
 $space-unit               : rem($base-line-height);
@@ -139,16 +139,18 @@ $size: (
 			lg            : rem(35),
 			xl            : rem(39)
 		),
+		headerLg: (
+			xs            : rem(27),
+			base          : rem(35),
+			lg            : rem(41),
+			xl            : rem(46)
+		),
 
 
 
 
 
 		headerMd: (
-			xs            : rem(21),
-			base          : rem(28)
-		),
-		headerLg: (
 			xs            : rem(21),
 			base          : rem(28)
 		),

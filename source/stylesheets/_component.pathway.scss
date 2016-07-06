@@ -12,27 +12,41 @@ $revOpacity: 0.5;
 	display: block;
 
 	&--rev {
-		h1 { color: palette(white); }
-		p { color: rgba( palette(white), $revOpacity ); }
-	}
-}
-
-.Pathway-title,
-.Pathway-subtitle {
-	margin: space(0.5) 0 space(2);
-
-	@include respond-to(sm) {
-		margin: space(0.5) 0 space(2);
-		// width: 70%;
+		h1      { color: palette(white); }
+		p       { color: rgba( palette(white), $revOpacity ); }
+		.Button { color: palette(white); }
 	}
 }
 
 .Pathway-title {
 	@include headlineRg();
+	margin: 0;
 }
 
 .Pathway-subtitle {
 	@include headlineSm();
+	margin: space(0.5) 0 space(1.25);
+
+	@include respond-to(sm) {
+		margin: space(0.75) 0 space(1.5);
+	}
+}
+
+.Pathway-hgroup {
+	margin: 0 0 space(2);
+
+	@include respond-to(sm) {
+		margin: 0 0 space(3);
+	}
+}
+
+.Pathway-text {
+	> * { @include TextMd( palette(brand) ); }
+}
+
+.Pathway-action {
+	margin-top: space(3);
+	text-align: center;
 }
 
 .Pathway .t-button--rev {

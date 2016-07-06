@@ -53,6 +53,13 @@
 	@include CoverImage(true);
 }
 
+.CoverImage--darkRev {
+	@include CoverImage(true);
+	&::before {
+		background-image: linear-gradient(to bottom, rgba( palette(brand), 0 ) 0%, rgba( palette(brand), 0.45 ) 100%);
+	}
+}
+
 .CoverImage--applications {
 	@include respond-to(md) {
 		background-position-y: 40%;

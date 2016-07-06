@@ -52,16 +52,20 @@ li {
 // Apply to the ul/ol tag, but it's setup for use on any div.
 // --------------------------------------------------------------------------
 
-@mixin listInline() {
+@mixin listInline(
+	$mixinMarginRight: space(1)
+) {
 	@include listClean();
 
 	li,
+	a,
 	div {
 		display: inline-block;
 		&:not(:last-child) {
-			margin-right: space(1);
+			margin-right: $mixinMarginRight;
 		}
 	}
 }
 
-.o-listInline { @include listInline(); }
+.o-listInline     { @include listInline(); }
+.o-listInline--lg { @include listInline( space(2) ); }

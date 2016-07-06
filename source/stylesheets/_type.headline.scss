@@ -7,7 +7,8 @@
 
 @mixin headlineTemplate() {
 	@include typeReset();
-	line-height: 1.45;
+	line-height: $base-line-height-unit;
+	line-height: 1.6;
 	margin-bottom: space(0.85);
 	text-align: center;
 
@@ -43,6 +44,20 @@
 	@include respond-to(xl) { font-size: fontsize(headerRg, xl); }
 }
 
+@mixin headlineLg(
+	$mixinColor: palette(brand),
+	$mixinFont: $font-display
+) {
+	@include headlineTemplate();
+	color: $mixinColor;
+	font-family: $mixinFont;
+	font-size: fontsize(headerLg, xs);
+
+	@include respond-to(xs) { font-size: fontsize(headerLg, base); }
+	@include respond-to(md) { font-size: fontsize(headerLg, lg); }
+	@include respond-to(xl) { font-size: fontsize(headerLg, xl); }
+}
+
 @mixin headlineSm(
 	$mixinColor: palette(brand),
 	$mixinFont: $font-display
@@ -51,6 +66,7 @@
 	color: $mixinColor;
 	font-family: $mixinFont;
 	font-size: fontsize(headerSm, xs);
+	line-height: 1.75;
 	// letter-spacing: 0.03em;
 
 	@include respond-to(xs) {

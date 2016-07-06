@@ -91,7 +91,7 @@ a.gallery-cell {
 	.gallery-cell {
 		cursor: grab;
 		// opacity: 0.5;
-		transform: scale(0.6);
+		transform: scale(0.5);
 		transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
 		max-width: size(container, default);
 	}

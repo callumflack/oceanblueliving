@@ -1,13 +1,17 @@
- <div class="Pathway {% if page.title == "about" %}Section--smTop{% endif %}">
-	<figure class="u-textCenter">
+ <div class="Pathway {% unless page.title == "blog" %}Section--smTop{% endunless %}">
+	<figure class="Figure--icon">
 		<svg class="Icon Icon--lg">
 			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-newsletter"></use>
 		</svg>
 	</figure>
 	<h2 class="Pathway-subtitle">
-		Get posts delivered.
+		{% if page.title == "about" %}
+			Keep up-to-date.
+		{% else %}
+			Get posts delivered.
+		{% endif %}
 	</h2>
-	<div class="Grid-cell--center u-size9of12 u-marginT2">
+	<div class="Grid-cell--center u-size9of12">
 		{% include newsletter-subscribe.html %}
 		<p class="u-textXs u-textCenter u-colorMuted u-marginT">We respect your privacy. Your details won't be shared with anyone else.</p>
 	</div>

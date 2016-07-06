@@ -5,11 +5,15 @@ layout: default
 
 {% assign about = site.pages | where: 'title', 'about' | first  %}
 
-<!-- <header class="Header Header--fullRatio Header--fade" role="banner"> -->
 <header class="Header Header--fullRatio Header--rev" role="banner">
 	<div class="FlexEmbed">
 		<div class="FlexEmbed-ratio"></div>
 		<div class="FlexEmbed-content">
+			<div class="Header-masthead">
+				<a class="Header-logo" href="/">
+					<img src="/uploads/logo-white.png" alt="{{ site.title }}">
+				</a>
+			</div>
 			<!-- <div class="Header-hero">
 				<img src="{{ about.hero_image }}" alt="">
 			</div> -->
@@ -20,16 +24,22 @@ layout: default
 		</div>
 	</div>
 	<div class="Header-wrapper">
-		<div class="Container">
-			<a class="Header-logo" href="/">
-				<img src="/uploads/logo-white.png" alt="{{ site.title }}">
-			</a>
-			<h1 class="Header-title">
-				{{ about.hero_headline }}
-			</h1>
+		<div class="o-aligner">
+			<div class="o-aligner-item">
+				<div class="Container">
+					<h1 class="Header-title">
+						{{ about.hero_headline }}
+					</h1>
+				</div>
+			</div>
 		</div>
 	</div>
 </header>
+
+
+
+
+
 
 <main class="Content" role="main">
 
@@ -66,29 +76,8 @@ layout: default
 		<div class="Container Container--textColumn">
 
 			{% include pathway-primary.html %}
-			{% include pathway-blog.html %}
-
-			<a class="Pathway Section--smTop" href="{{ site.social-facebook }}">
-				<figure class="u-textCenter">
-					<svg class="Icon Icon--md">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-facebook"></use>
-					</svg>
-				</figure>
-				<h1 class="Pathway-subtitle">
-					Like us.
-				</h1>
-			</a>
-			<a class="Pathway Section--smTop" href="{{ site.social-pinterest }}">
-				<figure class="u-textCenter">
-					<svg class="Icon Icon--md">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-pinterest"></use>
-					</svg>
-				</figure>
-				<h1 class="Pathway-subtitle">
-					Pin us.
-				</h1>
-			</a>
-
+			{% include pathway-socials.html %}
+			<!-- {% include pathway-blog.html %} -->
 			{% include pathway-newsletter.html %}
 
 		</div>

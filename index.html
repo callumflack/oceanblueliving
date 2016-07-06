@@ -1,5 +1,5 @@
 ---
-title: Home
+title: home
 layout: default
 ---
 
@@ -23,99 +23,122 @@ layout: default
 		{% endfor %}
 	</div>
 	<div class="Header-wrapper">
-		<div class="Container u-textCenter">
+		<div class="o-aligner">
+			<div class="o-aligner-item">
+				<div class="Container">
+					<h1 class="Header-title">
+						{{ header.hero_headline }}
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="Header-wrapper">
+		<div class="Header-masthead">
 			<a class="Header-logo" href="/">
 				<img src="/uploads/logo-white.png" alt="{{ site.title }}">
 			</a>
-			<h1 class="Header-title u-marginT15">
-				{{ header.headline }}
-			</h1>
 		</div>
 	</div>
 </header>
 
+
+
+
+
+
 <main class="Content u-bgBrand" role="main">
 	<section class="Section Pathway Pathway--rev">
 		<div class="Container Container--textColumn">
-			<figure class="u-textCenter">
-				<svg class="Icon Icon--lg u-colorWhite">
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-services"></use>
-				</svg>
-			</figure>
-			<h1 class="Pathway-title u-marginTD2 u-marginB25">{{ applications.headline }}</h1>
-			<div class="u-textMdBlock">
+			<div class="Pathway-hgroup">
+				<figure class="Figure--icon">
+					<svg class="Icon Icon--lg u-colorWhite">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-services"></use>
+					</svg>
+				</figure>
+				<h1 class="Pathway-title">{{ applications.headline }}</h1>
+			</div>
+			<div class="Pathway-text">
 				{{ applications.content }}
 			</div>
-			<div class="u-textCenter u-marginT25">
-				<a class="Button t-button--rev u-colorWhite" href="/applications">{{ applications.button }}</a>
+			<div class="Pathway-action">
+				<a class="Button t-button--rev" href="/applications">{{ applications.button }}</a>
 			</div>
 		</div>
-		<div class="gallery gallery--dragger gallery--light Section--smTop">
-			{% for image in applications.gallery-images %}
-				<div class="gallery-cell">
-					<div class="FlexEmbed">
-						<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-						<div class="FlexEmbed-content">
-							<div
-								class="u-posAbsoluteCenter CoverImage"
-								style="background-image: url('{{ image }}')">
+		<figure class="Figure--lg">
+			<div class="gallery gallery--dragger gallery--light">
+				{% for image in applications.gallery-images %}
+					<div class="gallery-cell">
+						<div class="FlexEmbed">
+							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+							<div class="FlexEmbed-content">
+								<div
+									class="u-posAbsoluteCenter CoverImage"
+									style="background-image: url('{{ image }}')">
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			{% endfor %}
-		</div>
+				{% endfor %}
+			</div>
+		</figure>
 	</section>
 
 	<section class="Section Pathway Pathway--rev">
 		<div class="Container Container--textColumn">
-			<figure class="u-textCenter">
-				<svg class="Icon Icon--lg u-colorWhite">
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-estimate"></use>
-				</svg>
-			</figure>
-			<h1 class="Pathway-title u-marginTD2 u-marginB25">{{ design.headline }}</h1>
-			<div class="u-textMdBlock">
+			<div class="Pathway-hgroup">
+				<figure class="Figure--icon">
+					<svg class="Icon Icon--lg u-colorWhite">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-estimate"></use>
+					</svg>
+				</figure>
+				<h1 class="Pathway-title">{{ design.headline }}</h1>
+			</div>
+			<div class="Pathway-text">
 				{{ design.content }}
 			</div>
-			<div class="u-textCenter u-marginT25">
-				<a class="Button t-button--rev u-colorWhite" href="/design">{{ design.button }}</a>
+			<div class="Pathway-action">
+				<a class="Button t-button--rev" href="/design">{{ design.button }}</a>
 			</div>
 		</div>
 	</section>
 
 	<section class="Section Pathway Pathway--rev">
 		<div class="Container Container--textColumn">
-			<figure class="u-textCenter">
-				<svg class="Icon Icon--lg u-colorWhite">
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-about"></use>
-				</svg>
-			</figure>
-			<h1 class="Pathway-title u-marginTD2 u-marginB3">{{ about.headline }}</h1>
+			<div class="Pathway-hgroup u-marginB0">
+				<figure class="Figure--icon">
+					<svg class="Icon Icon--lg u-colorWhite">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-about"></use>
+					</svg>
+				</figure>
+				<h1 class="Pathway-title">{{ about.headline }}</h1>
+			</div>
 		</div>
 		<div class="Container">
-			<figure class=" u-marginB3">
-				<img src="/uploads/about-duo-brand.jpg" alt="Vince & LeaAnne Cassaniti, Ocean Blue Living" style="opacity:0.7">
+			<figure class="Figure">
+				<img src="/uploads/about-duo.jpg" alt="Vince & LeaAnne Cassaniti, Ocean Blue Living" style="opacity:1">
 			</figure>
 		</div>
 		<div class="Container Container--textColumn">
-			<div class="u-textMdBlock">
+			<div class="Pathway-text">
 				{{ about.content }}
 			</div>
-			<div class="u-textCenter u-marginT25">
-				<a class="Button t-button--rev u-colorWhite" href="/about">{{ about.button }}</a>
+			<div class="Pathway-action">
+				<a class="Button t-button--rev" href="/about">{{ about.button }}</a>
 			</div>
 		</div>
 	</section>
 
 	<!-- blog -->
 	<section class="Section">
-		<figure class="u-textCenter">
-			<svg class="Icon Icon--lg u-colorWhite">
-				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
-			</svg>
-		</figure>
-		<h1 class="Pathway-title u-colorWhite u-marginTD2 u-marginB3">The Ocean Blue blog.</h1>
+		<div class="Pathway-hgroup">
+			<figure class="Figure--icon">
+				<svg class="Icon Icon--lg u-colorWhite">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
+				</svg>
+			</figure>
+			<h1 class="Pathway-title u-colorWhite">The Ocean Blue blog.</h1>
+		</div>
 
 		{% for post in site.posts | limit: 1 %}
 			<article class="Post--article u-bgWhite">
