@@ -9,7 +9,7 @@ layout: default
 {% assign about        = site.home | where: 'title', 'about' | first  %}
 
 <header class="Header Header--fullRatio Header--rev u-bgBrand" role="banner">
-	<div class="owl-carousel">
+	<div class="owl-carousel js-owl">
 		{% for image in header.gallery-images %}
 		<div class="FlexEmbed">
 			<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
@@ -42,13 +42,13 @@ layout: default
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-services"></use>
 				</svg>
 			</figure>
-			<h1 class="Pathway-title u-marginTD2 u-marginB2">{{ applications.headline }}</h1>
+			<h1 class="Pathway-title u-marginTD2 u-marginB25">{{ applications.headline }}</h1>
 			{{ applications.content }}
-			<div class="u-textCenter u-marginT2">
+			<div class="u-textCenter u-marginT25">
 				<a class="Button t-button--rev u-colorWhite" href="/price">{{ applications.button }}</a>
 			</div>
 		</div>
-		<div class="gallery gallery--dragger u-marginT6">
+		<div class="gallery gallery--dragger u-marginT6 u-marginB6">
 			{% for image in applications.gallery-images %}
 				<div class="gallery-cell">
 					<div class="FlexEmbed">
@@ -63,6 +63,21 @@ layout: default
 				</div>
 			{% endfor %}
 		</div>
+		<!-- <div class="gallery--dragger u-marginT6">
+			<div class="owl-carousel js-owl-dragger">
+				{% for image in applications.gallery-images %}
+					<div class="FlexEmbed">
+						<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+						<div class="FlexEmbed-content">
+							<div
+								class="u-posAbsoluteCenter CoverImage"
+								style="background-image: url('{{ image }}')">
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div> -->
 	</section>
 
 	<section class="Section Pathway Pathway--rev u-bgBrand">
@@ -72,9 +87,9 @@ layout: default
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-estimate"></use>
 				</svg>
 			</figure>
-			<h1 class="Pathway-title u-marginTD2 u-marginB2">{{ price.headline }}</h1>
+			<h1 class="Pathway-title u-marginTD2 u-marginB25">{{ price.headline }}</h1>
 			{{ price.content }}
-			<div class="u-textCenter u-marginT2">
+			<div class="u-textCenter u-marginT25">
 				<a class="Button t-button--rev u-colorWhite" href="/price">{{ price.button }}</a>
 			</div>
 		</div>
@@ -87,16 +102,16 @@ layout: default
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-about"></use>
 				</svg>
 			</figure>
-			<h1 class="Pathway-title u-marginTD2 u-marginB2">{{ about.headline }}</h1>
+			<h1 class="Pathway-title u-marginTD2 u-marginB3">{{ about.headline }}</h1>
 		</div>
 		<div class="Container">
-			<figure class="u-marginT2 u-marginB3">
-				<img src="/uploads/about.png" alt="Vince & LeaAnne Cassaniti, Ocean Blue Living">
+			<figure class=" u-marginB3">
+				<img src="/uploads/about-duo-test.jpg" alt="Vince & LeaAnne Cassaniti, Ocean Blue Living">
 			</figure>
 		</div>
 		<div class="Container Container--textColumn">
 			{{ about.content }}
-			<div class="u-textCenter u-marginT2">
+			<div class="u-textCenter u-marginT25">
 				<a class="Button t-button--rev u-colorWhite" href="/about">{{ about.button }}</a>
 			</div>
 		</div>
@@ -109,7 +124,7 @@ layout: default
 				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
 			</svg>
 		</figure>
-		<h1 class="Pathway-title u-colorWhite u-marginTD2 u-marginB4">The Ocean Blue blog.</h1>
+		<h1 class="Pathway-title u-colorWhite u-marginTD2 u-marginB3">The Ocean Blue blog.</h1>
 
 		{% for post in site.posts | limit: 1 %}
 			<article class="Post--article">

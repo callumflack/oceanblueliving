@@ -1,0 +1,91 @@
+---
+title: about
+layout: default
+---
+
+{% assign about = site.pages | where: 'title', 'about' | first  %}
+
+<header class="Header Header--fullRatio Header--fade" role="banner">
+	<div class="FlexEmbed">
+		<div class="FlexEmbed-ratio"></div>
+		<div class="FlexEmbed-content">
+			<div class="Header-hero">
+				<img src="{{ about.hero-image }}" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="Header-wrapper">
+		<div class="Container">
+			<a class="Header-logo" href="/">
+				<img src="/uploads/logo.png" alt="{{ site.title }}">
+			</a>
+			<h1 class="Header-title">
+				{{ about.headline }}
+			</h1>
+		</div>
+	</div>
+</header>
+
+<main class="Content" role="main">
+	<section class="Section">
+		<div class="Container Container--insetTextColumn">
+
+			{{ about.first_text | markdownify }}
+
+			<figure class="Figure">
+				<div class="FlexEmbed">
+					<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+					<div class="FlexEmbed-content">
+						<div class="videoWrapper js-videoWrapper">
+							<iframe class="u-posAbsoluteCenter js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="{{ about.video }}" width="100%" height="100%" ></iframe>
+							<button class="u-posAbsoluteCenter CoverImage videoPoster js-videoPoster" style="background-image:url('{{ about.video-image }}');">
+								<svg class="u-posAbsoluteCenter Icon Icon--super u-colorWhite">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-play"></use>
+								</svg>
+								Play video
+							</button>
+						</div>
+					</div>
+				</div>
+			</figure>
+
+			{{ about.second_text | markdownify }}
+
+		</div>
+		<div class="Container Container--textColumn Post--article-ruleOff"></div>
+	</section>
+
+	<!-- contacts -->
+	<section class="Section u-paddingT0">
+		<div class="Container Container--textColumn">
+
+			{% include pathway-primary.html %}
+			{% include pathway-blog.html %}
+
+			<a class="Pathway" href="{{ site.social-facebook }}">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--md">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-facebook"></use>
+					</svg>
+				</figure>
+				<h1 class="Pathway-subtitle">
+					Like us.
+				</h1>
+			</a>
+			<a class="Pathway" href="{{ site.social-pinterest }}">
+				<figure class="u-textCenter">
+					<svg class="Icon Icon--md">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-pinterest"></use>
+					</svg>
+				</figure>
+				<h1 class="Pathway-subtitle">
+					Pin us.
+				</h1>
+			</a>
+
+			{% include pathway-newsletter.html %}
+
+		</div>
+	</section>
+
+</main>

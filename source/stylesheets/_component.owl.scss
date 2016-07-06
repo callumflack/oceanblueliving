@@ -8,3 +8,22 @@
 .owl-carousel .animated {
 	animation-duration: 2000ms;
 }
+
+// 'Draggable' like instrument.com
+// --------------------------------------------------------------------------
+
+.gallery--dragger {
+	.owl-item {
+		// @include smoothTransition();
+		// margin: 0 5%;
+		opacity: 0.5;
+		transform: scale(0.3);
+		// transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
+		max-width: size(container, default);
+	}
+
+	.owl-item.active {
+		opacity: 1;
+		transform: scale(0.5);
+	}
+}
