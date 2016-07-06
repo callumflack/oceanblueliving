@@ -31,7 +31,7 @@
 	<link rel="stylesheet" href="/source/stylesheets/application.css">
 	<!-- <link rel="stylesheet" href="/build/application.min.css"> -->
 </head>
-<body id="top" class="  Blog   "
+<body id="top" class="  blog  "
 	data-spy="scroll" data-target="#scrollspy" data-offset="300">
 
 	<nav class="Nav-toggle">
@@ -43,10 +43,17 @@
 </nav>
 
 
-	<header class="Header Header--halfRatio Header--rev u-bgBrand" role="banner">
+	
+
+<header class="Header Header--halfRatio Header--rev" role="banner">
 	<div class="FlexEmbed">
 		<div class="FlexEmbed-ratio"></div>
 		<div class="FlexEmbed-content">
+			<div class="Header-masthead">
+				<a class="Header-logo" href="/">
+					<img src="/uploads/logo-white.png" alt="Ocean Blue Living">
+				</a>
+			</div>
 			<div
 				class="u-posAbsoluteCenter CoverImage--dark"
 				style="background-image: url('/uploads/blog-hero.png')">
@@ -54,16 +61,19 @@
 		</div>
 	</div>
 	<div class="Header-wrapper">
-		<div class="Container u-textCenter">
-			<a class="Header-logo" href="/">
-				<img src="/uploads/logo-white.png" alt="Ocean Blue Living">
-			</a>
-			<h1 class="Header-title u-marginT15">
-				The Ocean Blue blog.
-			</h1>
+		<div class="o-aligner">
+			<div class="o-aligner-item">
+				<div class="Container">
+					<h1 class="Header-title">
+						The Ocean Blue blog.
+					</h1>
+				</div>
+			</div>
 		</div>
 	</div>
 </header>
+
+
 
 <main class="Content" role="main">
 	<section class="Section">
@@ -124,15 +134,17 @@
 	<section class="Section--cta">
 		<div class="Container Container--textColumn">
 			 <div class="Pathway ">
-	<figure class="u-textCenter">
+	<figure class="Figure--icon">
 		<svg class="Icon Icon--lg">
 			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-newsletter"></use>
 		</svg>
 	</figure>
 	<h2 class="Pathway-subtitle">
-		Get posts delivered.
+		
+			Get posts delivered.
+		
 	</h2>
-	<div class="Grid-cell--center u-size9of12 u-marginT2">
+	<div class="Grid-cell--center u-size9of12">
 		<div id="mc_embed_signup" class="">
 	<form action="//oceanblueliving.us13.list-manage.com/subscribe/post?u=5262b8bb4d6d9d31c4d3b03f0&amp;id=3dd454cbc2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 		<div id="mc_embed_signup_scroll">
@@ -217,14 +229,12 @@ Other times by appointment
 
 	<div class="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-modal>
 	<div class="Modal-dialog" role="document">
-		<div class="Header-wrapper">
+		<div class="Header-masthead">
+			<a class="Header-logo u-block" href="/">
+				<img src="/uploads/logo-white.png" alt="Ocean Blue Living">
+			</a>
 			<div class="Container u-textCenter">
 				<nav class="Nav" role="nav">
-					<div class="Header--rev">
-						<a class="Header-logo" href="/">
-							<img src="/uploads/logo-white.png" alt="Ocean Blue Living">
-						</a>
-					</div>
 					<ul class="o-listInline u-marginT2">
 						<li class="Nav-title"><a href="/">Home</a></li>
 						<li class="Nav-title"><a href="/applications">Applications</a></li>
@@ -241,6 +251,7 @@ Other times by appointment
 
 			</div>
 		</div>
+
 	</div>
 </div>
 
