@@ -45,28 +45,34 @@
 
 	
 
-<header class="Header Header--fullRatio Header--fade" role="banner">
+<!-- <header class="Header Header--fullRatio Header--fade" role="banner"> -->
+<header class="Header Header--fullRatio Header--rev" role="banner">
 	<div class="FlexEmbed">
 		<div class="FlexEmbed-ratio"></div>
 		<div class="FlexEmbed-content">
-			<div class="Header-hero">
-				<img src="/uploads/about-2.png" alt="">
+			<!-- <div class="Header-hero">
+				<img src="/uploads/about-unedited-8.jpg" alt="">
+			</div> -->
+			<div
+				class="u-posAbsoluteCenter CoverImage--dark"
+				style="background-image: url('/uploads/about-unedited-8.jpg')">
 			</div>
 		</div>
 	</div>
 	<div class="Header-wrapper">
 		<div class="Container">
 			<a class="Header-logo" href="/">
-				<img src="/uploads/logo.png" alt="Ocean Blue Living">
+				<img src="/uploads/logo-white.png" alt="Ocean Blue Living">
 			</a>
 			<h1 class="Header-title">
-				We’re craftspeople who love transforming PINK.
+				We’re craftspeople who love transforming spaces.
 			</h1>
 		</div>
 	</div>
 </header>
 
 <main class="Content" role="main">
+
 	<section class="Section">
 		<div class="Container Container--insetTextColumn">
 
@@ -75,7 +81,7 @@
 <p>The biggest thing our clients say about working with us, is we’re good at helping people through the process. Because there’s so much you can do, sometimes it’s overwhelming. We’ve been doing it a while, so we know how to get that idea in your head into a real thing in your living space.</p>
 
 
-			<figure class="Figure">
+			<figure class="Figure--lg">
 				<div class="FlexEmbed">
 					<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 					<div class="FlexEmbed-content">
@@ -102,10 +108,11 @@
 	</section>
 
 	<!-- contacts -->
-	<section class="Section u-paddingT0">
+	<section class="Section--rg">
 		<div class="Container Container--textColumn">
 
-			<div class="Pathway">
+			<!-- <div class="Pathway Section--smTop"> -->
+<div class="Pathway">
 	<figure class="u-textCenter">
 		<svg class="Icon Icon--lg">
 			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-contact"></use>
@@ -133,7 +140,7 @@ Queensland 4870 Australia
 	</div>
 </div>
 
-			<a class="Pathway" href="/blog">
+			<a class="Pathway Section--smTop" href="/blog">
 	<figure class="u-textCenter">
 		<svg class="Icon Icon--md u-colorBrand">
 			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
@@ -143,7 +150,7 @@ Queensland 4870 Australia
 </a>
 
 
-			<a class="Pathway" href="https://www.facebook.com/oceanblueliving">
+			<a class="Pathway Section--smTop" href="https://www.facebook.com/oceanblueliving">
 				<figure class="u-textCenter">
 					<svg class="Icon Icon--md">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-facebook"></use>
@@ -153,7 +160,7 @@ Queensland 4870 Australia
 					Like us.
 				</h1>
 			</a>
-			<a class="Pathway" href="https://www.facebook.com/oceanblueliving">
+			<a class="Pathway Section--smTop" href="https://www.facebook.com/oceanblueliving">
 				<figure class="u-textCenter">
 					<svg class="Icon Icon--md">
 						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-pinterest"></use>
@@ -164,7 +171,7 @@ Queensland 4870 Australia
 				</h1>
 			</a>
 
-			<div class="Pathway">
+			 <div class="Pathway Section--smTop">
 	<figure class="u-textCenter">
 		<svg class="Icon Icon--lg">
 			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-newsletter"></use>
@@ -346,6 +353,14 @@ Other times by appointment
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="/build/lib.owl.carousel.min.js"></script>
 	<script src="/build/application.min.js"></script>
+	<script src="/build/viewport-units-buggyfill.hacks.js"></script>
+	<script src="/build/viewport-units-buggyfill.js"></script>
+	<script>
+	  window.viewportUnitsBuggyfill.init({
+		refreshDebounceWait: 50,
+		hacks: window.viewportUnitsBuggyfillHacks
+	  });
+	</script>
 	
 
 

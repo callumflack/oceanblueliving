@@ -121,9 +121,9 @@
 			
 		</div>
 	</section>
-	<section class="Section u-paddingT0">
+	<section class="Section--cta">
 		<div class="Container Container--textColumn">
-			<div class="Pathway">
+			 <div class="Pathway ">
 	<figure class="u-textCenter">
 		<svg class="Icon Icon--lg">
 			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-newsletter"></use>
@@ -303,6 +303,14 @@ Other times by appointment
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="/build/lib.owl.carousel.min.js"></script>
 	<script src="/build/application.min.js"></script>
+	<script src="/build/viewport-units-buggyfill.hacks.js"></script>
+	<script src="/build/viewport-units-buggyfill.js"></script>
+	<script>
+	  window.viewportUnitsBuggyfill.init({
+		refreshDebounceWait: 50,
+		hacks: window.viewportUnitsBuggyfillHacks
+	  });
+	</script>
 	
 
 
