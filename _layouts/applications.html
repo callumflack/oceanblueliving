@@ -123,12 +123,12 @@ layout: default
 			</figure> -->
 			<h1 class="Pathway-title Pathway-hgroup">Outdoor</h1>
 			<div class="Pathway-text">
-				{{ applications.gates_first_text | markdownify }}
+				{{ applications.outdoor_first_text | markdownify }}
 			</div>
 		</div>
 		<figure class="Figure--lg">
 			<div class="gallery gallery--dragger gallery--light">
-				{% for image in applications.gates_gallery_images %}
+				{% for image in applications.outdoor_gallery_images %}
 					<div class="gallery-cell">
 						<div class="FlexEmbed">
 							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
@@ -145,7 +145,7 @@ layout: default
 		</figure>
 		<div class="Container Container--textColumn">
 			<div class="Pathway-text">
-				{{ applications.gates_second_text | markdownify }}
+				{{ applications.outdoor_second_text | markdownify }}
 			</div>
 			<div class="Pathway-action">
 				<a class="Button t-button" href="/design">Design + estimate →</a>
