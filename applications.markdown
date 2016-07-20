@@ -7,18 +7,19 @@ hero_description: Our weatherproof architectural metalworks are durable both ind
   and out, sculpting light and anchoring spaces to transform your living area. From
   screens, panels, gates and letterbox plates, to signage, wall and garden art, we
   create your designs.
-screens_first_text: Oceanblue living screens segment spaces, filtering light and creating
-  shade, adding privacy, to reshape living spaces.
+screens_first_text: Our screens segment spaces, adding and filtering light, creating
+  shade and privacy, reframing views, reshaping living spaces.
 screens_gallery_images:
 - "/uploads/applications-screen-bamboo.jpg"
 - "/uploads/applications-screen-rainforest.jpg"
 - "/uploads/applications-screen-swirl.jpg"
-screens_second_text: 'Screens reshape spaces. Add privacy, add a visual break, hide
-  or reframe a view, segment a room, redirect routes through your house or office,
-  and at the same time, make it functional and beautiful. Our screens are weatherproof,
-  so they can be used both indoors and outdoors. They''re durable: we guarantee our
-  finishes to industry standards, and all our screens can withstand [cyclonic? conditions
-  / winds up to 180km?]. And our materials are sustainable: [X goes here].'
+screens_second_text: 'Screens reshape spaces. Add shade and privacy, add a visual
+  break, hide or reframe a view, segment a room, redirect routes through your house
+  or office, and at the same time, make the objects functional and beautiful. Our
+  screens are weatherproof, so they can be used both indoors and outdoors. They''re
+  durable: we guarantee our finishes to industry standards, and all our screens can
+  withstand [cyclonic? conditions / winds up to 180km?]. And our materials are sustainable:
+  [X goes here].'
 gates_first_text: Parasoleil panels used overhead create shade with air circulation,
   bridge architecture with nature and create interactive shadows that change over
   the day. Here's a bit more to line things up.
