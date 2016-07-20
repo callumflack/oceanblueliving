@@ -18,7 +18,7 @@ video: https://www.youtube.com/embed/C6huQHDcjWY?autoplay=1
 second_text: |-
   The biggest thing our clients say about working with us, is we’re good at helping people through the process. Because there’s so much you can do, sometimes it’s overwhelming. We’ve been doing it a while, so we know how to turn that idea in your head into a useful, artistic object.
 
-  We're here to help you discover, design and fabricate architectural pieces that will transform your living space.
+  We're here to help you discover, design and fabricate architectural pieces that will bring your ideas to life and transform your living spaces.
 layout: about
 ---
 
