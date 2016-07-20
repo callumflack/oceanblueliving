@@ -20,9 +20,9 @@ screens_second_text: 'Screens reshape spaces. Add shade and privacy, add a visua
   durable: we guarantee our finishes to industry standards, and all our screens can
   withstand [cyclonic? conditions / winds up to 180km?]. And our materials are sustainable:
   [X goes here].'
-gates_first_text: Parasoleil panels used overhead create shade with air circulation,
-  bridge architecture with nature and create interactive shadows that change over
-  the day. Here's a bit more to line things up.
+gates_first_text: OceanBlue Living gates are just like our screens, just with swing
+  and lock mechanisms. Our gates are strong and durable yet aesthetically pleasing
+  and blend into your surrounding environment.
 gates_gallery_images:
 - "/uploads/applications-screen-bamboo.jpg"
 - "/uploads/applications-screen-rainforest.jpg"
