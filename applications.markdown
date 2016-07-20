@@ -27,13 +27,13 @@ gates_gallery_images:
 - "/uploads/applications-screen-bamboo.jpg"
 - "/uploads/applications-screen-rainforest.jpg"
 - "/uploads/applications-screen-swirl.jpg"
-gates_second_text: 'Filter intense sunlight while allowing air flow circulation with
-  this line of open pattern aluminum and copper panels, cut-out with designs to bridge
-  architecture with nature. All-weather shade products create an interesting and inviting
-  space as the shadows move with the sun. Durable finishes, sustainable materials,
-  and versatile patterns are reliable tools to design places where people want to
-  be. Standard shade panels are for installations with wind loads up to 100 mph and
-  snow loads up to 100 lb/sf using Parasoleil’s own brackets and hardware.  '
+gates_second_text: "Safe, strong and secure, our gates are function as they should,
+  but as custom designed architectural objects, they complement and enhance your living
+  spaces rather than compromising them. Our pattern designs increase privacy and allow
+  a great range versatility in application. All our gates surpass building compliance
+  codes, including safe edges, and are installed with the technical craftsmanship
+  we pride ourselves on.\n\nSustainable, durable… Load-tested to [industry standard
+  weight?]. [wind loads up to 100 mph and snow loads up to 100 lb/sf]. "
 layout: applications
 ---
 
