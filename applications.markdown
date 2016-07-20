@@ -35,7 +35,8 @@ gates_second_text: "Safe, strong and secure, our gates are function as they shou
   we pride ourselves on.\n\nSustainable, durable… Load-tested to [industry standard
   weight?]. [wind loads up to 100 mph and snow loads up to 100 lb/sf]. "
 outdoor_first_text: OceanBlue Living outdoor metalworks include postboxes and fire-pits.
-  Our cutting technology means that if you have an idea, we can probably create it.
+  And with our versatile cutting technology, if you have an idea, we can probably
+  create it.
 outdoor_gallery_images:
 - "/uploads/applications-screen-bamboo.jpg"
 - "/uploads/applications-screen-rainforest.jpg"
