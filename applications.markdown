@@ -7,8 +7,8 @@ hero_description: Our weatherproof architectural metalworks are durable both ind
   and out, sculpting light and anchoring spaces to transform your living area. From
   screens, panels, gates and letterbox plates, to signage, wall and garden art, we
   create your designs.
-screens_first_text: Our screens segment spaces, adding and filtering light, creating
-  shade and privacy, reframing views, reshaping living spaces.
+screens_first_text: OceanBlue Living screens reshape living spaces. Segment spaces,
+  reframe views and create shade and privacy by adding and filtering light.
 screens_gallery_images:
 - "/uploads/applications-screen-bamboo.jpg"
 - "/uploads/applications-screen-rainforest.jpg"
