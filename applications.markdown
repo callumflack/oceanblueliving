@@ -7,8 +7,8 @@ hero_description: Our weatherproof architectural metalworks are versatile for bo
   indoor and outdoor living, sculpting light and anchoring spaces to transform your
   living area. From screens, panels, gates and letterbox plates, to signage, wall
   and garden art, we create and manufacture your designs.
-screens_first_text: OceanBlue Living screens reshape living spaces. Segment spaces,
-  reframe views and create shade and privacy by adding and filtering light.
+screens_first_text: OceanBlue Living Screens reshape living spaces. Segment spaces,
+  reframe views and create shade and privacy by filtering light.
 screens_gallery_images:
 - "/uploads/applications-screen-bamboo.jpg"
 - "/uploads/applications-screen-rainforest.jpg"
@@ -21,7 +21,7 @@ screens_second_text: 'Screens reshape spaces. Add shade and privacy, add a visua
   withstand [cyclonic? conditions / winds up to 180km?]. And our materials are sustainable:
   [X goes here]. Our screens surpass building compliance codes and are precisely installed
   to the highest standard.'
-gates_first_text: OceanBlue Living gates are just like our screens, just with swing
+gates_first_text: OceanBlue Living Gates are just like our screens, just with swing
   and lock mechanisms. Our gates are strong and durable yet aesthetically pleasing
   and blend into your surrounding environment.
 gates_gallery_images:
@@ -35,7 +35,7 @@ gates_second_text: "Safe, strong and secure, our gates are function as they shou
   codes, including safe edges, and are installed with the technical craftsmanship
   we pride ourselves on.\n\nSustainable, durable… Load-tested to [industry standard
   weight?]. [wind loads up to 100 mph and snow loads up to 100 lb/sf]. "
-outdoor_first_text: OceanBlue Living outdoor metalworks include postboxes and fire-pits.
+outdoor_first_text: OceanBlue Living Outdoor metalworks include postboxes and fire-pits.
   With our versatile cutting technology, if you have an idea, we can create it.
 outdoor_gallery_images:
 - "/uploads/applications-screen-bamboo.jpg"
