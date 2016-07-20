@@ -20,7 +20,7 @@ screens_second_text: 'Screens reshape spaces. Add shade and privacy, add a visua
   durable: we guarantee our finishes to industry standards, and all our screens can
   withstand [cyclonic? conditions / winds up to 180km?]. And our materials are sustainable:
   [X goes here]. Our screens surpass building compliance codes and are precisely installed
-  to our own high standard.'
+  to the highest standard.'
 gates_first_text: OceanBlue Living gates are just like our screens, just with swing
   and lock mechanisms. Our gates are strong and durable yet aesthetically pleasing
   and blend into your surrounding environment.
