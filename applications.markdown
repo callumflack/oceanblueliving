@@ -43,21 +43,22 @@ outdoor_gallery_images:
 - "/uploads/applications-screen-swirl.jpg"
 outdoor_second_text: "Our outdoor metalworks broaden your living spaces—which is especially
   useful in tropical Queensland—by complementing your existing living spaces with
-  metalwork objects that blend with your natural surroundings.\n\n…Durable finishes,
-  sustainable materials, and versatile patterns are reliable tools to design places
-  where people want to be. \n\nRailings create a sense of safety and subtle element
-  of design branding when using load-tested railing insert panels cut with patterns
-  for security, edge safety, building code compliance, and complementing a variety
-  of architectural styles.  Finishes are exterior-grade and durable in high traffic
-  public areas and extreme weather.  Contact Parasoleil’s design team for guidance
-  in the best ways to support and fasten panels with custom framework installations.\n\nFilter
-  intense sunlight while allowing air flow circulation with this line of open pattern
-  aluminum and copper panels, cut-out with designs to bridge architecture with nature.
-  All-weather shade products create an interesting and inviting space as the shadows
-  move with the sun. Durable finishes, sustainable materials, and versatile patterns
-  are reliable tools to design places where people want to be. Standard shade panels
-  are for installations with wind loads up to 100 mph and snow loads up to 100 lb/sf
-  using Parasoleil’s own brackets and hardware. "
+  metalwork objects that blend with your natural surroundings.\n\nOur firepits even
+  fold away, to avoid backyard cricket crashes. …Durable finishes, sustainable materials,
+  and versatile patterns are reliable tools to design places where people want to
+  be. \n\nRailings create a sense of safety and subtle element of design branding
+  when using load-tested railing insert panels cut with patterns for security, edge
+  safety, building code compliance, and complementing a variety of architectural styles.
+  \ Finishes are exterior-grade and durable in high traffic public areas and extreme
+  weather.  Contact Parasoleil’s design team for guidance in the best ways to support
+  and fasten panels with custom framework installations.\n\nFilter intense sunlight
+  while allowing air flow circulation with this line of open pattern aluminum and
+  copper panels, cut-out with designs to bridge architecture with nature. All-weather
+  shade products create an interesting and inviting space as the shadows move with
+  the sun. Durable finishes, sustainable materials, and versatile patterns are reliable
+  tools to design places where people want to be. Standard shade panels are for installations
+  with wind loads up to 100 mph and snow loads up to 100 lb/sf using Parasoleil’s
+  own brackets and hardware. "
 layout: applications
 ---
 
