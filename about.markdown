@@ -12,7 +12,7 @@ first_text: "We’re boat builders by trade. We were seduced by the weight, feel
   your ideas to life.\n \nWe believe in the transformational effect of spaces: spaces
   that people want to be in, that help people live and work. As our lives become faster,
   having space to regain ourselves becomes more important. The presence and natural
-  beauty of our sculpted architectural metalworks helps create those spaces."
+  beauty of our architectural pieces helps create those spaces."
 video-image: "/uploads/about-video-placeholder.jpg"
 video: https://www.youtube.com/embed/C6huQHDcjWY?autoplay=1
 second_text: |-
