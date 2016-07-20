@@ -12,8 +12,7 @@ gallery-images:
 
 We make elegant, functional, and timeless architectural applications.
 
-Our architectural metal panels filter and sculpt light. They’re not only engineered to withstand the elements, they’re also profoundly artistic.
-
+Our weatherproof architectural metalworks are durable both indoors and out, sculpting light and anchoring spaces to transform your living area.
 
 From screens, panels, gates and letterbox plates, to signage, wall and garden art, we create your designs, or you can choose from ours.
 
