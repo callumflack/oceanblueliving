@@ -35,7 +35,10 @@ gates_second_text: "Safe, strong and secure, our gates are function as they shou
   we pride ourselves on.\n\nSustainable, durable… Load-tested to [industry standard
   weight?]. [wind loads up to 100 mph and snow loads up to 100 lb/sf]. "
 outdoor_first_text: Stuff here
-outdoor_gallery_images: "/uploads/applications-outdoor-1.jpg"
+outdoor_gallery_images:
+- "/uploads/applications-screen-bamboo.jpg"
+- "/uploads/applications-screen-rainforest.jpg"
+- "/uploads/applications-screen-swirl.jpg"
 outdoor_second_text: "Railings create a sense of safety and subtle element of design
   branding when using load-tested railing insert panels cut with patterns for security,
   edge safety, building code compliance, and complementing a variety of architectural
