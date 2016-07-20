@@ -34,6 +34,21 @@ gates_second_text: "Safe, strong and secure, our gates are function as they shou
   codes, including safe edges, and are installed with the technical craftsmanship
   we pride ourselves on.\n\nSustainable, durable… Load-tested to [industry standard
   weight?]. [wind loads up to 100 mph and snow loads up to 100 lb/sf]. "
+outdoor_first_text: Stuff here
+outdoor_gallery_images: "/uploads/applications-outdoor-1.jpg"
+outdoor_second_text: "Railings create a sense of safety and subtle element of design
+  branding when using load-tested railing insert panels cut with patterns for security,
+  edge safety, building code compliance, and complementing a variety of architectural
+  styles.  Finishes are exterior-grade and durable in high traffic public areas and
+  extreme weather.  Contact Parasoleil’s design team for guidance in the best ways
+  to support and fasten panels with custom framework installations.\n\nFilter intense
+  sunlight while allowing air flow circulation with this line of open pattern aluminum
+  and copper panels, cut-out with designs to bridge architecture with nature. All-weather
+  shade products create an interesting and inviting space as the shadows move with
+  the sun. Durable finishes, sustainable materials, and versatile patterns are reliable
+  tools to design places where people want to be. Standard shade panels are for installations
+  with wind loads up to 100 mph and snow loads up to 100 lb/sf using Parasoleil’s
+  own brackets and hardware. "
 layout: applications
 ---
 
