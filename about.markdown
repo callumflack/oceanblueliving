@@ -7,12 +7,13 @@ first_text: "We’re boat builders by trade. We were seduced by the weight, feel
   versatility of water-jet metal cutting, so we decided to start our own metalworks
   shop for artistic,  functional architectural objects. Eight years later, we’re only
   just beginning.\n\nFounded by Vince and LeaAnne Cassaniti in 2008, OceanBlue Living
-  has evolved from a two-person workshop into a team of craftspeople with specialist,
-  multiple skillsets who know how to bring design techniques and technical craftsmanship
-  to metalworks.\n \nWe believe in the transformational effect of spaces: spaces that
-  people want to be in, that help people live and work. As our lives become faster,
-  having space to regain ourselves becomes more important. The presence and natural
-  beauty of our sculpted architectural metalworks helps create those spaces."
+  has evolved from a two-person workshop into a team of craftspeople with multiple
+  specialist skillsets who have the knowhow and experience to bring design techniques
+  and technical craftsmanship to metalworks.\n \nWe believe in the transformational
+  effect of spaces: spaces that people want to be in, that help people live and work.
+  As our lives become faster, having space to regain ourselves becomes more important.
+  The presence and natural beauty of our sculpted architectural metalworks helps create
+  those spaces."
 video-image: "/uploads/about-video-placeholder.jpg"
 video: https://www.youtube.com/embed/C6huQHDcjWY?autoplay=1
 second_text: |-
