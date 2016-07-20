@@ -22,8 +22,8 @@ screens_second_text: 'Screens reshape spaces. Add shade and privacy, add a visua
   [X goes here]. Our screens surpass building compliance codes and are precisely installed
   to the highest standard.'
 gates_first_text: OceanBlue Living Gates are just like our screens, just with swing
-  and lock mechanisms. Our gates are strong and durable yet aesthetically pleasing
-  and blend into your surrounding environment.
+  and lock mechanisms. Our gates are secure and durable yet aesthetically pleasing
+  to blend into your surrounding environment.
 gates_gallery_images:
 - "/uploads/applications-screen-bamboo.jpg"
 - "/uploads/applications-screen-rainforest.jpg"
