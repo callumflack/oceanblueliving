@@ -13,17 +13,15 @@ screens_gallery_images:
 - "/uploads/applications-screen-bamboo.jpg"
 - "/uploads/applications-screen-rainforest.jpg"
 - "/uploads/applications-screen-swirl.jpg"
-screens_second_text: 'Screens reshape spaces. Add shade and privacy, add a visual
-  break, hide or reframe a view, segment a room, redirect routes through your house
-  or office, and at the same time, make the objects functional and beautiful. Our
-  screens are weatherproof, so they can be used both indoors and outdoors. They''re
-  durable: we guarantee our finishes to industry standards, and all our screens can
-  withstand [cyclonic? conditions / winds up to 180km?]. And our materials are sustainable:
-  [X goes here]. Our screens surpass building compliance codes and are precisely installed
-  to the highest standard.'
-gates_first_text: OceanBlue Living Gates are just like our screens, just with swing
-  and lock mechanisms. Our gates are secure and durable yet aesthetically pleasing
-  to blend into your surrounding environment.
+screens_second_text: Screens reshape spaces. Add shade and privacy, add a visual break,
+  hide or reframe a view, segment a room, redirect routes through your house or office,
+  and at the same time, make the objects functional and beautiful. Our screens are
+  weatherproof, so they can be used both indoors and outdoors. And they're durable—we
+  guarantee our finishes to industry standards. Our screens surpass building compliance
+  codes and are precisely installed to the highest standard.
+gates_first_text: Just like our screens, OceanBlue Living Gates are secure and durable
+  yet aesthetically pleasing to blend into your surrounding environment. They can
+  be remotely operated with buttons or your smartphone.
 gates_gallery_images:
 - "/uploads/applications-screen-bamboo.jpg"
 - "/uploads/applications-screen-rainforest.jpg"
