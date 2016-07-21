@@ -14,6 +14,6 @@ We make elegant, functional, and timeless architectural applications.
 
 Our weatherproof architectural metalworks are durable both indoors and out, sculpting light and anchoring areas to transform your living space.
 
-From screens, panels, gates and letterboxes, to signage, wall and garden art, we create your designs, or you can choose from ours.
+From screens, panels, gates and letterboxes, to signage, wall art and garden sculpture, we bring your ideas to life.
 
 Our products are proudly designed and built in our Cairns workshop.
