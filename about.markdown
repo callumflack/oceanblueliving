@@ -5,14 +5,14 @@ hero_headline: We’re craftspeople who love transforming spaces.
 hero_image: "/uploads/about-unedited-8.jpg"
 first_text: "We’re boat builders by trade. We were seduced by the weight, feel and
   versatility of water-jet metal cutting, so we decided to start our own metalworks
-  shop for artistic,  functional architectural objects. Eight years later, we’re only
-  just beginning.\n\nFounded by Vince and LeaAnne Cassaniti in 2008, OceanBlue Living
+  shop for artistic,  functional architectural objects. Thirteen years later, we’re
+  only just beginning.\n\nFounded by Vince and LeaAnne Cassaniti, OceanBlue Living
   has evolved from a two-person workshop into a team of craftspeople with both design
   techniques and technical skillsets who have the knowhow and experience to bring
   your ideas to life.\n \nWe believe in the transformational effect of spaces: spaces
-  that people want to be in, that help people live and work. As our lives become faster,
-  having space to regain ourselves becomes more important. The presence and natural
-  beauty of our architectural pieces helps create those spaces."
+  that people want to be in, that help people work, and live. As our lives become
+  faster, having space to regain ourselves becomes more important. The presence and
+  natural beauty of our architectural pieces helps create those spaces."
 video-image: "/uploads/about-video-placeholder.jpg"
 video: https://www.youtube.com/embed/C6huQHDcjWY?autoplay=1
 second_text: |-
