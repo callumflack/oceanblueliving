@@ -40,7 +40,7 @@ outdoor_gallery_images:
 - "/uploads/applications-screen-rainforest.jpg"
 - "/uploads/applications-screen-swirl.jpg"
 outdoor_second_text: Our outdoor metalworks broaden your living spaces—which is especially
-  useful in tropical Queensland—by complementing your existing living spaces with
+  useful in tropical Queensland—by complementing your existing living spaces using
   architectural objects that blend into your natural surroundings. All-weather durable
   finishes and sustainable materials mean the objects improve appearance and blend
   with age. Of course, we can design and cut any pattern you wish, to match your living
