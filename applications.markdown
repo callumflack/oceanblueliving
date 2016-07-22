@@ -26,15 +26,15 @@ gates_gallery_images:
 - "/uploads/applications-screen-bamboo.jpg"
 - "/uploads/applications-screen-rainforest.jpg"
 - "/uploads/applications-screen-swirl.jpg"
-gates_second_text: "Safe, strong and secure, our gates are function as they should,
+gates_second_text: Safe, strong and secure, our gates are function as they should,
   but as custom designed architectural objects, they complement and enhance your living
-  spaces rather than compromising them. Our pattern designs increase privacy and allow
-  a great range versatility in application. All our gates surpass building compliance
-  codes, including safe edges, and are installed with the technical craftsmanship
-  we pride ourselves on.\n\nSustainable, durable… Load-tested to [industry standard
-  weight?]. [wind loads up to 100 mph and snow loads up to 100 lb/sf]. "
-outdoor_first_text: OceanBlue Living Outdoor metalworks include postboxes and fire-pits.
-  With our versatile cutting technology, if you have an idea, we can create it.
+  spaces rather than compromising them. Our pattern designs increase privacy with
+  restricting airflow, and allow a great range versatility in application. All our
+  gates surpass building compliance codes, including safe edges, and are installed
+  with the technical craftsmanship we pride ourselves on.
+outdoor_first_text: OceanBlue Living Outdoor metalworks include letterboxes, fire-pits,
+  columns and sculpture. With our versatile cutting technology, if you have an idea,
+  we can create it.
 outdoor_gallery_images:
 - "/uploads/applications-screen-bamboo.jpg"
 - "/uploads/applications-screen-rainforest.jpg"
