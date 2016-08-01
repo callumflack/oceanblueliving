@@ -7,5 +7,8 @@ gallery-images:
 - "/uploads/home-hero-1.jpg"
 - "/uploads/home-hero-2.jpg"
 - "/uploads/home-hero-3.jpg"
+- "/uploads/home-hero-6.jpg"
+- "/uploads/home-hero-4.jpg"
+- "/uploads/home-hero-5.jpg"
 ---
 
