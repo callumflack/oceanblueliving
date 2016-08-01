@@ -9,6 +9,8 @@
 //
 //   ToDo:
 // - linting
+// - gzip (https://github.com/jstuckey/gulp-gzip)
+// - zopfli gzip (eg. pngs) (https://github.com/romeovs/gulp-zopfli)
 //
 // -----------------------------------------------
 
