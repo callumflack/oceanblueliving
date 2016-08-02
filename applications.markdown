@@ -4,9 +4,9 @@ date: 2016-06-03 16:46:00 +10:00
 hero_image: "/uploads/applications-hero-test2.jpg"
 hero_headline: Timeless, artistic & functional architectural metalworks.
 hero_description: Our weatherproof architectural metalworks are versatile for both
-  indoor and outdoor living, sculpting light and anchoring areas to transform your
-  living spaces. From screens, panels, gates and letterboxes, to signage, wall art
-  and garden sculpture, we create and manufacture your designs.
+  indoor and outdoor living<em>, sculpting light and anchoring areas to transform
+  your living spaces</em>. From screens, panels, gates and letterboxes, to signage,
+  wall art and garden sculpture, we create and manufacture your designs.
 screens_first_text: OceanBlue Living Screens reshape living spaces. Segment spaces,
   reframe views and create shade and privacy by filtering light.
 screens_gallery_images:
