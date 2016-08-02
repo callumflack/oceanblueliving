@@ -26,6 +26,10 @@ defaults:
 permalink: pretty
 exclude:
 - node_modules
+- README.markdown
+- package.json
+- gulp.js
+- gulpfile.js
 contact-phone: '0409 726 128 '
 contact-email: info@oceanblueliving.com.au
 contact-address: |-
