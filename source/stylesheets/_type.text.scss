@@ -81,9 +81,8 @@
 	font-family: $mixinFont;
 	font-size: fontsize(textMd, xs);
 
-	@include media-breakpoint-up(sm) {
-		font-size: fontsize(textMd, base);
-	}
+	@include media-breakpoint-up(sm) { font-size: fontsize(textMd, sm); }
+	@include media-breakpoint-up(lg) { font-size: fontsize(textMd, base); }
 }
 
 

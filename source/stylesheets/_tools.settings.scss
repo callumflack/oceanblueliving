@@ -134,44 +134,45 @@ $size: (
 
 	font: (
 		textXs: (
-			xs            : rem(11),
-			base          : rem(13)
+			xs            : 11px,
+			base          : 13px
 		),
 		textSm: (
-			xs            : rem(13),
-			base          : rem(15)
+			xs            : 13px,
+			base          : 15px
 		),
 		textRg: (
-			xs            : rem($base-font-size-unit * 0.9),
-			base          : rem($base-font-size-unit * 1.25)
+			xs            : $base-font-size * 0.9,
+			base          : $base-font-size * 1.25
 		),
 		textMd: (
-			xs            : rem(19),
-			base          : rem(24)
+			xs            : 19px,
+			sm            : 21px,
+			base          : 24px
 		),
 		textLg: (
-			xs            : rem(17),
-			base          : rem(21)
+			xs            : 17px,
+			base          : 21px
 		),
 		headerXs: (
-			xs            : rem(13),
-			base          : rem(16)
+			xs            : 13px,
+			base          : 16px
 		),
 		headerSm: (
-			xs            : rem(22),
-			base          : rem(27)
+			xs            : 22px,
+			base          : 27px
 		),
 		headerRg: (
-			xs            : rem(24),
-			base          : rem(30),
-			lg            : rem(35),
-			xl            : rem(39)
+			xs            : 24px,
+			base          : 30px,
+			lg            : 35px,
+			xl            : 39px
 		),
 		headerLg: (
-			xs            : rem(27),
-			base          : rem(35),
-			lg            : rem(41),
-			xl            : rem(46)
+			xs            : 27px,
+			base          : 35px,
+			lg            : 41px,
+			xl            : 46px
 		),
 
 

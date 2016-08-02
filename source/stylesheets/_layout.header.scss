@@ -77,17 +77,14 @@
 	@include headlineLg();
 	margin: 0 auto;
 
-	@include respond-to(sm) {
+	@include media-breakpoint-up(sm) {
 		width: 90%;
 
-		@include when-inside(".home") {
-			width: 70%;
-		}
+		@include when-inside(".home") { width: 70%; }
+		//@include when-inside(".applications") { width: 80%; }
 	}
 
-	@include when-inside(".Header--rev") {
-		color: palette(white);
-	}
+	@include when-inside(".Header--rev") { color: palette(white); }
 }
 
 .Header-hero {
@@ -101,5 +98,15 @@
 		@include respond-to(xs) { width: 90%; }
 		@include respond-to(md) { width: 66%; }
 		@include respond-to(xl) { width: 55%; }
+	}
+}
+
+
+// Header trumps
+// --------------------------------------------------------------------------
+
+.applications .Header .Pathway-text {
+	@include media-breakpoint-down(sm) {
+		em { display: none; }
 	}
 }
