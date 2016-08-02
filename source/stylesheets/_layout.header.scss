@@ -30,9 +30,10 @@
 	}
 }
 
-.Header--fullRatio .FlexEmbed-ratio {
-	padding-bottom: 130%;
-	@include respond-to(xs) { padding-bottom: 100%; }
+.Header--fullRatio .FlexEmbed-ratio,
+.Post--article .FlexEmbed-ratio {
+	padding-bottom: 180%;
+	@include respond-to(xs) { padding-bottom: 125%; }
 	@include respond-to(md) { padding-bottom: 75%; }
 	@include respond-to(lg) { padding-bottom: 66%; }
 	@include respond-to(xl) { padding-bottom: 100vh; }
@@ -74,19 +75,19 @@
 
 .Header-title {
 	@include headlineLg();
+	margin: 0 auto;
 
 	@include respond-to(sm) {
-		margin: 0 auto;
 		width: 90%;
+
+		@include when-inside(".home") {
+			width: 70%;
+		}
 	}
 
 	@include when-inside(".Header--rev") {
 		color: palette(white);
 	}
-}
-
-.home .Header-title {
-	width: 70%;
 }
 
 .Header-hero {

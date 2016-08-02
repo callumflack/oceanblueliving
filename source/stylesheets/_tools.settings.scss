@@ -64,7 +64,34 @@ $space                    : $space-unit * 1;
 $vertSpaceXs              : 6vh;
 $vertSpaceSm              : 8.5vh;
 $vertSpace                : 17vh;
-$vertSpaceLg              : 34vh;
+$vertSpaceLg              : 30vh;
+
+
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 544px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	su: 1700px
+) !default;
+
+$container-max-widths: (
+	xs: 460px,
+	sm: 576px,
+	md: 720px,
+	ml: 840px,
+	lg: 960px,
+	ll: 1140px,
+	xl: 1200px,
+	su: 1700px,
+	xx: 80vw
+) !default;
+
+
+
+
 
 $size: (
 
@@ -99,6 +126,7 @@ $size: (
 		modal-form-sm     : 80%,
 		default           : rem(1100),
 		small             : rem(345),
+		mobile-column     : rem(600),
 		text-column       : rem(720),
 		picture           : rem(960),
 		wide-picture      : rem(1240)

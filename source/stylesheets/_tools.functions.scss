@@ -92,9 +92,19 @@
 	@return map-fetch($size, font, $increment, $response);
 }
 
+//@function fontsize($increment: 'Text', $response: 'sm') {
+//	// @return map-fetch($size, font, $increment, $response);
+//	@return map-fetch($fontsizes, $increment, $response);
+//}
+
 @function transition($property: 'duration', $response: 'short') {
 	@return map-fetch($transition, $property, $response);
 }
+
+@function container-width($width) {
+	@return map-get($container-max-widths, $width);
+}
+
 
 // I think this is a Giraudel function…
 // @link http://sass-guidelin.es/#errors

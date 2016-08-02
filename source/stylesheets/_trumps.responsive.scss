@@ -35,6 +35,7 @@
 .u-mxs-flexOrderLast         { @include respond-to(max-xs) { order: 1 !important; } }
 .u-mxs-flexAlignItemsStretch { @include respond-to(max-xs) { align-items: stretch !important; } }
 .u-mxs-flexJustifyBetween    { @include respond-to(max-xs) { justify-content: space-between !important; } }
+.u-mxs-textCenter            { @include respond-to(max-xs) { text-align: center !important; } }
 
 // breakpoint: max-sm
 .msm-Grid--alignCenter       { @include respond-to(max-sm) { justify-content: center; } }

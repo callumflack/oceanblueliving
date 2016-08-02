@@ -9,7 +9,7 @@ layout: default
 {% assign about        = site.home | where: 'title', 'about' | first  %}
 
 <header class="Header Header--fullRatio Header--rev" role="banner">
-	<div class="owl-carousel js-owl">
+	<!-- <div class="owl-carousel js-owl">
 		{% for image in header.gallery-images %}
 		<div class="FlexEmbed">
 			<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
@@ -21,6 +21,15 @@ layout: default
 			</div>
 		</div>
 		{% endfor %}
+	</div> -->
+	<div class="FlexEmbed">
+		<div class="FlexEmbed-ratio"></div>
+		<div class="FlexEmbed-content">
+			<div
+				class="u-posAbsoluteCenter CoverImage--dark"
+				style="background-image: url('/uploads/home-hero-4.jpg')">
+			</div>
+		</div>
 	</div>
 	<div class="Header-wrapper">
 		<div class="o-aligner">
@@ -65,7 +74,7 @@ layout: default
 				<a class="Button t-button--rev" href="/applications">{{ applications.button }}</a>
 			</div>
 		</div>
-		<figure class="Figure--lg">
+		<figure class="Figure--lgTop">
 			<div class="gallery gallery--dragger gallery--light">
 				{% for image in applications.gallery-images %}
 					<div class="gallery-cell">
@@ -143,7 +152,7 @@ layout: default
 		{% for post in site.posts | limit: 1 %}
 			<article class="Post--article u-bgWhite">
 				<div class="FlexEmbed">
-					<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+					<div class="FlexEmbed-ratio"></div>
 					<div class="FlexEmbed-content">
 						<div
 							class="u-posAbsoluteCenter CoverImage"

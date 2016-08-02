@@ -33,7 +33,7 @@
 	font-size: fontsize(textXs, xs) !important;
 	letter-spacing: 0.03em;
 
-	@include respond-to(xs) {
+	@include media-breakpoint-up(sm) {
 		font-size: fontsize(textXs, base) !important;
 	}
 }
@@ -49,7 +49,7 @@
 	font-size: fontsize(textSm, xs);
 	letter-spacing: 0.03em;
 
-	@include respond-to(xs) {
+	@include media-breakpoint-up(sm) {
 		font-size: fontsize(textSm, base);
 	}
 }
@@ -66,7 +66,7 @@
 	font-family: $mixinFont;
 	font-size: fontsize(textRg, xs);
 
-	@include respond-to(xs) {
+	@include media-breakpoint-up(sm) {
 		font-size: fontsize(textRg, base);
 	}
 }
@@ -81,7 +81,7 @@
 	font-family: $mixinFont;
 	font-size: fontsize(textMd, xs);
 
-	@include respond-to(xs) {
+	@include media-breakpoint-up(sm) {
 		font-size: fontsize(textMd, base);
 	}
 }

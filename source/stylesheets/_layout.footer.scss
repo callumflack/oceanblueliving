@@ -23,7 +23,7 @@
 
 a.Footer-logo {
 	display: block;
-	padding-bottom: space(1);
+	padding-bottom: space(1.5);
 	text-align: center;
 
 	> img {
@@ -36,7 +36,11 @@ a.Footer-logo {
 }
 
 .Footer-nav {
-	margin-bottom: space(1.9);
+	padding-bottom: space(1.4);
+
+	@include respond-to(xs) {
+		padding-bottom: space(1.9);
+	}
 
 	> ul {
 		text-align: center;
@@ -44,5 +48,14 @@ a.Footer-logo {
 
 	li {
 		@include TextRg();
+	}
+}
+
+.Footer-info {
+	@include respond-to(max-xs) {
+		> div {
+			margin-bottom: space(0.5);
+			text-align: center !important;
+		}
 	}
 }

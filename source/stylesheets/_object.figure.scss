@@ -6,15 +6,22 @@
 
 
 .Figure {
-	content: "buggyfill";
+	//content: "buggyfill";
 	margin: $vertSpaceSm auto;
 
 	img { width: 100%; }
 }
 
 .Figure--lg {
-	content: "buggyfill";
+	//content: "buggyfill";
 	margin: $vertSpace auto;
+
+	img { width: 100%; }
+}
+
+.Figure--lgTop {
+	//content: "buggyfill";
+	margin: $vertSpace auto 0;
 
 	img { width: 100%; }
 }

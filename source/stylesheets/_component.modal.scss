@@ -33,11 +33,16 @@
 }
 
 .Modal-dialog {
+	margin: 0 auto;
 	padding: 0 space(1);
 	width: auto;
 
-	@include respond-to(sm) {
-		margin: 0 auto;
+	//@include media-breakpoint-up(sm) {
+	//	padding: 0;
+	//	width: size(container, default);
+	//}
+
+	@include media-breakpoint-up(xl) {
 		padding: 0;
 		width: size(container, default);
 	}

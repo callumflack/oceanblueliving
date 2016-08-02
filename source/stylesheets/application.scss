@@ -10,7 +10,8 @@
 
 @import "tools.functions";
 @import "tools.mixins";
-@import "settings.variables";
+@import "tools.settings";
+@import "tools.mixins.breakpoints";
 
 @import "vendor.suitcss";
 @import "vendor.suitcss.flexbox";

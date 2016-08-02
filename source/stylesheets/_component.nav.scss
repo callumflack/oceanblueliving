@@ -28,22 +28,27 @@
 
 .Nav-list {
 	@include listClean();
-	float: right;
-	opacity: 0;
-	padding-top: 5px;
+	@include sectionSpace--xsTop();
+	margin-bottom: 0;
 
-	@include respond-to(xs) { padding-top: 0; }
-
-	li {
-		padding-bottom: space(0.25);
-		text-align: right;
+	@include media-breakpoint-up(lg) {
+		@include listInline();
 	}
+}
+
+.Nav-list + .Nav-list {
+
 }
 
 .Nav-title {
 	@include headlineSm();
 	color: palette(white);
-	a { @include noLink(); }
+	margin-bottom: 0;
+	@include media-breakpoint-down(lg) { margin-bottom: space(1.25); }
+
+	a {
+		@include noLink();
+	}
 }
 
 $infoColor: rgba( palette(white), 0.5 );
@@ -52,10 +57,12 @@ $infoColor: rgba( palette(white), 0.5 );
 	@include TextMd($mixinFont: $font-sans-light);
 	color: $infoColor;
 
-	&:not(:last-child) {
-		border-right: 1px solid rgba( palette(white), 0.25 );
-		margin-right: space(0.8) !important;
-		padding-right: space(1);
+	@include media-breakpoint-up(lg) {
+		&:not(:last-child) {
+			border-right: 1px solid rgba( palette(white), 0.25 );
+			margin-right: space(0.8) !important;
+			padding-right: space(1);
+		}
 	}
 }
 

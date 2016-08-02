@@ -9,7 +9,7 @@
 	@include clearfix();
 	margin: 0 auto;
 	max-width: size(container, default);
-	padding: 0 space(1);
+	padding: 0 space(1.5);
 	position: relative;
 
 	@include respond-to(text-column) {
@@ -18,9 +18,8 @@
 
 	// basic container width var
 	&--textColumn {
-		@include respond-to(text-column) {
-			max-width: size(container, text-column);
-		}
+		@include media-breakpoint-up(xs) { max-width: container-width(sm); }
+		@include media-breakpoint-up(lg) { max-width: container-width(md); }
 	}
 
 	// inset text column

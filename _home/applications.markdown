@@ -5,8 +5,21 @@ position: 1
 headline: Create timeless elegance.
 button: See all we do →
 gallery-images:
-- "/uploads/applications-screen-rainforest.jpg"
-- "/uploads/applications-screen-bamboo.jpg"
+- "/uploads/applications-1.jpg"
+- "/uploads/applications-2.png"
+- "/uploads/applications-3.jpg"
+- "/uploads/applications-4.jpg"
+- "/uploads/applications-5.jpg"
+- "/uploads/applications-6.jpg"
+- "/uploads/applications-8.jpg"
+- "/uploads/applications-9.jpg"
+- "/uploads/applications-11.jpg"
+- "/uploads/applications-13.jpg"
+- "/uploads/applications-14a.jpg"
+- "/uploads/applications-15.jpg"
+- "/uploads/applications-16.jpg"
+- "/uploads/applications-17.jpg"
+- "/uploads/applications-18.jpg"
 - "/uploads/applications-outdoor-birds.png"
 ---
 
