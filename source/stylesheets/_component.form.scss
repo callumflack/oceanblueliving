@@ -149,9 +149,11 @@ input[type="password"] {
 		cursor: text;
 		left: 1rem;
 		position: absolute;
-		top: 0.65rem;
+		top: 10px;
 		transition: all map-fetch($transition, duration, short) map-fetch($transition, type, thisalso);
 		z-index: 99;
+
+		@include media-breakpoint-down(lg) { top: 12px; }
 	}
 
 	input.Form-control,

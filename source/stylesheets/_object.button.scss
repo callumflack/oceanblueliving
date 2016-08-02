@@ -175,6 +175,8 @@
 
 	&--full {
 		// line-height: size(button-height, large);
+		padding-left: 0;
+		padding-right: 0;
 		text-align: center;
 		width: 100%;
 	}
