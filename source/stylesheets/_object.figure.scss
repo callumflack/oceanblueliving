@@ -6,21 +6,22 @@
 
 
 .Figure {
-	//content: "buggyfill";
 	margin: $vertSpaceSm auto;
 
 	img { width: 100%; }
 }
 
 .Figure--lg {
-	//content: "buggyfill";
 	margin: $vertSpace auto;
 
 	img { width: 100%; }
+
+	@include media-breakpoint-down(md) {
+		margin: $vertSpace space(-1.5);
+	}
 }
 
 .Figure--lgTop {
-	//content: "buggyfill";
 	margin: $vertSpace auto 0;
 
 	img { width: 100%; }

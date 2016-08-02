@@ -25,6 +25,10 @@
 	@include posAbsoluteCenter();
 	z-index: 2;
 
+	&--stickTop {
+		bottom: auto;
+	}
+
 	> .Container {
 		text-align: center;
 	}
@@ -40,11 +44,16 @@
 }
 
 .Header--halfRatio .FlexEmbed-ratio {
-	padding-bottom: 65%;
-	@include respond-to(xs) { padding-bottom: 50%; }
+	padding-bottom: 90%;
+	@include respond-to(xs) { padding-bottom: 62.5%; }
 	@include respond-to(md) { padding-bottom: 37.5%; }
 	@include respond-to(lg) { padding-bottom: 33%; }
 	@include respond-to(xl) { padding-bottom: 50vh; }
+	//padding-bottom: 65%;
+	//@include respond-to(xs) { padding-bottom: 50%; }
+	//@include respond-to(md) { padding-bottom: 37.5%; }
+	//@include respond-to(lg) { padding-bottom: 33%; }
+	//@include respond-to(xl) { padding-bottom: 50vh; }
 }
 
 

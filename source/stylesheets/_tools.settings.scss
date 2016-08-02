@@ -61,6 +61,9 @@ $base-line-height         : ($base-font-size-unit * $base-line-height-unit) * 1p
 $space-unit               : rem($base-line-height);
 $space                    : $space-unit * 1;
 
+$gutterSpace              : space(0.75);
+$gutterSpaceLg            : 5vw;
+
 $vertSpaceXs              : 5vh;
 $vertSpaceSm              : 8.5vh;
 $vertSpace                : 17vh;
@@ -159,8 +162,10 @@ $size: (
 			base          : 16px
 		),
 		headerSm: (
-			xs            : 22px,
-			base          : 27px
+			xs            : 20px,
+			base          : 22px,
+			lg            : 27px,
+			xl            : 27px
 		),
 		headerRg: (
 			xs            : 24px,

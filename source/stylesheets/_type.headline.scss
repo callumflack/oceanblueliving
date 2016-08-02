@@ -66,12 +66,12 @@
 	color: $mixinColor;
 	font-family: $mixinFont;
 	font-size: fontsize(headerSm, xs);
-	line-height: 1.75;
+	//line-height: 1.75;
 	// letter-spacing: 0.03em;
 
-	@include respond-to(xs) {
-		font-size: fontsize(headerSm, base);
-	}
+	@include respond-to(xs) { font-size: fontsize(headerSm, base); }
+	@include respond-to(md) { font-size: fontsize(headerSm, lg); }
+	@include respond-to(xl) { font-size: fontsize(headerSm, xl); }
 }
 
 

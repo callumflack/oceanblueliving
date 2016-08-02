@@ -64,6 +64,12 @@ li {
 		&:not(:last-child) {
 			margin-right: $mixinMarginRight;
 		}
+
+		@include media-breakpoint-down(sm) {
+			&:not(:last-child) {
+				margin-right: $mixinMarginRight * 0.75;
+			}
+		}
 	}
 }
 

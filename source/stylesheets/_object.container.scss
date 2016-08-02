@@ -12,7 +12,7 @@
 	padding: 0 space(1.5);
 	position: relative;
 
-	@include respond-to(text-column) {
+	@include media-breakpoint-up(lg) {
 		padding: 0;
 	}
 
@@ -28,14 +28,17 @@
 			@include TextMd();
 			margin: 0 auto;
 
-			@include respond-to(text-column) {
-				max-width: size(container, text-column);
-			}
+			@include media-breakpoint-up(md) { max-width: container-width(md); }
 
 			+ p {
 				margin-top: space(1);
 			}
 		}
+	}
+
+	&--blog {
+		max-width: 100%;
+		padding: 0 #{$gutterSpaceLg * 2};
 	}
 
 	&--ruleOff {

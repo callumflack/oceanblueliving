@@ -18,7 +18,6 @@
 // Grid-cell: a child cell of Grid that wraps grid content
 // Grid-cell--center: center an individual Grid-cell
 
-$gutterSpace: space(0.75);
 
 .Grid--withGutter {
 	margin: 0 -#{$gutterSpace};
@@ -31,6 +30,22 @@ $gutterSpace: space(0.75);
 
 	@include respond-to(xs) { padding: 0 $gutterSpace; }
 }
+
+
+// large
+
+.Grid--withGutterLg {
+	margin: 0 -#{$gutterSpaceLg};
+
+	@include respond-to(xs) { margin: 0 -#{$gutterSpaceLg}; }
+}
+
+.Grid--withGutterLg > .Grid-cell {
+	padding: 0 $gutterSpaceLg;
+
+	@include respond-to(xs) { padding: 0 $gutterSpaceLg; }
+}
+
 
 // test
 // .Grid--withGutter,

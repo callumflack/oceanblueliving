@@ -52,10 +52,17 @@ a.Footer-logo {
 }
 
 .Footer-info {
-	@include respond-to(max-xs) {
+	@include media-breakpoint-only(xs) {
 		> div {
 			margin-bottom: space(0.5);
 			text-align: center !important;
+		}
+	}
+
+	@include media-breakpoint-between(sm, md) {
+		> div {
+			@include first(2) { margin-bottom: space(0.5); }
+			@include odd() { text-align: right; }
 		}
 	}
 }

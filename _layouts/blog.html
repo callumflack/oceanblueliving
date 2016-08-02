@@ -37,24 +37,26 @@ layout: default
 
 <main class="Content" role="main">
 	<section class="Section">
-		<div class="Grid Grid--withGutterLg">
-			{% for post in site.posts %}
-			<div class="Grid-cell u-xs-size1of2 u-sm-size1of3">
-				<a class="Post--inList" href="{{ post.url }}">
-					<div class="Post-contentAligner">
-						<figure class="Post-image">
-							<img src="{{ post.list-image }}" alt="{{ post.title }}">
-						</figure>
-						<h1 class="Post-subtitle">{{ post.title }}</h1>
-						<div class="Post-meta">
-							{% for tag in post.tags %}
-								<span class="Post-tag">{{ tag | capitalize }}</span>
-							{% endfor %}
+		<div class="Container Container--blog">
+			<div class="Grid Grid--withGutterLg">
+				{% for post in site.posts %}
+				<div class="Grid-cell u-xs-size1of2 u-lg-size1of3">
+					<a class="Post--inList" href="{{ post.url }}">
+						<div class="Post-contentAligner">
+							<figure class="Post-image">
+								<img src="{{ post.list-image }}" alt="{{ post.title }}">
+							</figure>
+							<h1 class="Post-subtitle">{{ post.title }}</h1>
+							<div class="Post-meta">
+								{% for tag in post.tags %}
+									<span class="Post-tag">{{ tag | capitalize }}</span>
+								{% endfor %}
+							</div>
 						</div>
-					</div>
-				</a>
+					</a>
+				</div>
+				{% endfor %}
 			</div>
-			{% endfor %}
 		</div>
 	</section>
 	<section class="Section--cta">

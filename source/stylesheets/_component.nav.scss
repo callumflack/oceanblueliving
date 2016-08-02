@@ -37,14 +37,14 @@
 }
 
 .Nav-list + .Nav-list {
-
+	padding-top: $vertSpaceXs * 0.9;
 }
 
 .Nav-title {
 	@include headlineSm();
 	color: palette(white);
 	margin-bottom: 0;
-	@include media-breakpoint-down(lg) { margin-bottom: space(1.25); }
+	@include media-breakpoint-down(md) { margin-bottom: space(1.25); }
 
 	a {
 		@include noLink();

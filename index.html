@@ -9,10 +9,10 @@ layout: default
 {% assign about        = site.home | where: 'title', 'about' | first  %}
 
 <header class="Header Header--fullRatio Header--rev" role="banner">
-	<!-- <div class="owl-carousel js-owl">
+	<div class="owl-carousel js-owl">
 		{% for image in header.gallery-images %}
 		<div class="FlexEmbed">
-			<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+			<div class="FlexEmbed-ratio"></div>
 			<div class="FlexEmbed-content">
 				<div
 					class="u-posAbsoluteCenter CoverImage--dark"
@@ -21,19 +21,21 @@ layout: default
 			</div>
 		</div>
 		{% endfor %}
-	</div> -->
-	<div class="FlexEmbed">
+	</div>
+	<!-- <div class="FlexEmbed">
 		<div class="FlexEmbed-ratio"></div>
 		<div class="FlexEmbed-content">
-			<div class="Header-masthead">
-				<a class="Header-logo" href="/">
-					<img src="/uploads/logo-white.png" alt="{{ site.title }}">
-				</a>
-			</div>
 			<div
 				class="u-posAbsoluteCenter CoverImage--dark"
 				style="background-image: url('/uploads/home-hero-4.jpg')">
 			</div>
+		</div>
+	</div> -->
+	<div class="Header-wrapper Header-wrapper--stickTop">
+		<div class="Header-masthead">
+			<a class="Header-logo" href="/">
+				<img src="/uploads/logo-white.png" alt="{{ site.title }}">
+			</a>
 		</div>
 	</div>
 	<div class="Header-wrapper">
