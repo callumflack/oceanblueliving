@@ -52,7 +52,7 @@ layout: default
 				{{ applications.screens_first_text | markdownify }}
 			</div>
 		</div>
-		<figure class="Figure--lg">
+		<figure class="Section--rg">
 			<div class="gallery gallery--dragger gallery--light">
 				{% for image in applications.screens_gallery_images %}
 					<div class="gallery-cell">
@@ -89,7 +89,7 @@ layout: default
 				{{ applications.gates_first_text | markdownify }}
 			</div>
 		</div>
-		<figure class="Figure--lg">
+		<figure class="Section--rg">
 			<div class="gallery gallery--dragger gallery--light">
 				{% for image in applications.gates_gallery_images %}
 					<div class="gallery-cell">
@@ -126,12 +126,12 @@ layout: default
 				{{ applications.outdoor_first_text | markdownify }}
 			</div>
 		</div>
-		<figure class="Figure--lg">
+		<figure class="Section--rg">
 			<div class="gallery gallery--dragger gallery--light">
 				{% for image in applications.outdoor_gallery_images %}
 					<div class="gallery-cell">
 						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+							<div class="FlexEmbed-ratio"></div>
 							<div class="FlexEmbed-content">
 								<div
 									class="u-posAbsoluteCenter CoverImage"
@@ -151,6 +151,9 @@ layout: default
 				<a class="Button t-button" href="/design">Design + estimate →</a>
 			</div>
 		</div>
+
+
+
 
 		<div class="Container Container--textColumn Post--article-ruleOff"></div>
 

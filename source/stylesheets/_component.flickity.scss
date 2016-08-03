@@ -27,37 +27,49 @@ a.gallery-cell {
 	transition: none;
 }
 
-.flickity-page-dots .dot {
-	background: palette(muted);
+
+
+// Gallery-cell ratios
+// --------------------------------------------------------------------------
+
+.gallery .FlexEmbed-ratio {
+	padding-bottom: 70%;
+	@include respond-to(lg) { padding-bottom: 56.25%; }
 }
 
-.flickity-prev-next-button {
-	background-color: transparent;
-	border: none;
-	color: palette(muted);
-	height: 100%;
-	opacity: 0;
-	top: 0;
-	transform: none;
-	width: 20%;
 
-	&:disabled {
-		opacity: 0;
-	}
 
-	&.next     { right: -20%; }
-	&.previous { left: -20%; }
+//.flickity-page-dots .dot {
+//	background: palette(muted);
+//}
 
-	.arrow {
-		fill: currentColor;
-	}
-
-	@include on-event() {
-		background-color: transparent;
-		opacity: 1;
-		transition: opacity 500ms;
-	}
-}
+//.flickity-prev-next-button {
+//	background-color: transparent;
+//	border: none;
+//	color: palette(muted);
+//	height: 100%;
+//	opacity: 0;
+//	top: 0;
+//	transform: none;
+//	width: 20%;
+//
+//	&:disabled {
+//		opacity: 0;
+//	}
+//
+//	&.next     { right: -20%; }
+//	&.previous { left: -20%; }
+//
+//	.arrow {
+//		fill: currentColor;
+//	}
+//
+//	@include on-event() {
+//		background-color: transparent;
+//		opacity: 1;
+//		transition: opacity 500ms;
+//	}
+//}
 
 
 // Hero fade effect hack
@@ -90,24 +102,37 @@ a.gallery-cell {
 .gallery--dragger {
 	.gallery-cell {
 		cursor: grab;
-		// opacity: 0.5;
-		transform: scale(0.5);
-		transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
-		max-width: size(container, default);
+
+		@include media-breakpoint-up(xl) {
+			max-width: size(container, default);
+		}
 	}
 
-	.gallery-cell.is-selected {
-		filter: grayscale(0);
-		opacity: 1;
-		transform: scale(1);
-		transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
+	@include media-breakpoint-up(sm) {
+		.gallery-cell {
+			// opacity: 0.5;
+			transform: scale(0.5);
+			transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
+		}
+
+		.gallery-cell.is-selected {
+			transform: scale(1);
+			transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
+		}
 	}
+
 }
 
 .gallery--light {
-	.gallery-cell {
-		filter: grayscale(100%);
-		opacity: 0.3;
+	@include media-breakpoint-up(sm) {
+		.gallery-cell {
+			filter: grayscale(100%);
+			opacity: 0.3;
+		}
+		.gallery-cell.is-selected {
+			filter: grayscale(0);
+			opacity: 1;
+		}
 	}
 }
 
@@ -115,65 +140,65 @@ a.gallery-cell {
 // Theme when inside '.Hero'
 // --------------------------------------------------------------------------
 
-.Hero .gallery-cell {
-	.CoverImage {
-		transition: 1s transform ease-out;
-	}
-
-	@include on-event() {
-		.CoverImage--hint {
-			transform: scale(1.02);
-		}
-	}
-}
-
-.Hero .flickity-page-dots {
-	bottom: space(1);
-
-	.dot {
-		background: palette(white);
-	}
-}
-
-.Hero .flickity-prev-next-button {
-	@include baseTransition();
-	border-radius: 0;
-	color: palette(charcoal);
-	height: 100%;
-	opacity: 1;
-	top: 0;
-	width: 20%;
-	width: 0;
-
-	@include respond-to(sm) {
-		background-color: rgba( palette(neutral-light), 0.96 );
-		width: calc( (100% - #{size(container, wide-picture)}) * 0.5 );
-	}
-
-	&.next     { right: 0; }
-	&.previous { left: 0; }
-
-	$flickityArrowHeight: 100px;
-
-	svg {
-		@include baseTransition();
-		color: inherit;
-		height: $flickityArrowHeight;
-		left: auto;
-		opacity: 0;
-		right: 50%;
-		top: calc( (100% - #{$flickityArrowHeight}) / 2 );
-		transform: translate(50%);
-		width: $flickityArrowHeight;
-	}
-
-	.arrow {
-		fill: currentColor;
-	}
-
-	@include on-event() {
-		svg {
-			opacity: 1;
-		}
-	}
-}
+//.Hero .gallery-cell {
+//	.CoverImage {
+//		transition: 1s transform ease-out;
+//	}
+//
+//	@include on-event() {
+//		.CoverImage--hint {
+//			transform: scale(1.02);
+//		}
+//	}
+//}
+//
+//.Hero .flickity-page-dots {
+//	bottom: space(1);
+//
+//	.dot {
+//		background: palette(white);
+//	}
+//}
+//
+//.Hero .flickity-prev-next-button {
+//	@include baseTransition();
+//	border-radius: 0;
+//	color: palette(charcoal);
+//	height: 100%;
+//	opacity: 1;
+//	top: 0;
+//	width: 20%;
+//	width: 0;
+//
+//	@include respond-to(sm) {
+//		background-color: rgba( palette(neutral-light), 0.96 );
+//		width: calc( (100% - #{size(container, wide-picture)}) * 0.5 );
+//	}
+//
+//	&.next     { right: 0; }
+//	&.previous { left: 0; }
+//
+//	$flickityArrowHeight: 100px;
+//
+//	svg {
+//		@include baseTransition();
+//		color: inherit;
+//		height: $flickityArrowHeight;
+//		left: auto;
+//		opacity: 0;
+//		right: 50%;
+//		top: calc( (100% - #{$flickityArrowHeight}) / 2 );
+//		transform: translate(50%);
+//		width: $flickityArrowHeight;
+//	}
+//
+//	.arrow {
+//		fill: currentColor;
+//	}
+//
+//	@include on-event() {
+//		svg {
+//			opacity: 1;
+//		}
+//	}
+//}

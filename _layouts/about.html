@@ -40,7 +40,6 @@ layout: default
 
 
 
-
 <main class="Content" role="main">
 
 	<section class="Section">
@@ -48,23 +47,27 @@ layout: default
 
 			{{ about.first_text | markdownify }}
 
-			<figure class="Figure--lg">
-				<div class="FlexEmbed">
-					<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-					<div class="FlexEmbed-content">
-						<div class="videoWrapper js-videoWrapper">
-							<iframe class="u-posAbsoluteCenter js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="{{ about.video }}" width="100%" height="100%" ></iframe>
-							<button class="u-posAbsoluteCenter CoverImage videoPoster js-videoPoster" style="background-image:url('{{ about.video-image }}');">
-								<svg class="u-posAbsoluteCenter Icon Icon--super u-colorWhite">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-play"></use>
-								</svg>
-								Play video
-							</button>
-						</div>
+		</div>
+
+		<figure class="Figure--lg">
+			<div class="FlexEmbed">
+				<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+				<div class="FlexEmbed-content">
+					<div class="videoWrapper js-videoWrapper">
+						<iframe class="u-posAbsoluteCenter js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="{{ about.video }}" width="100%" height="100%" ></iframe>
+						<button class="u-posAbsoluteCenter CoverImage videoPoster js-videoPoster" style="background-image:url('{{ about.video-image }}');">
+							<svg class="u-posAbsoluteCenter Icon Icon--super u-colorWhite">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-play"></use>
+							</svg>
+							Play video
+						</button>
 					</div>
 				</div>
-			</figure>
+			</div>
+		</figure>
 
+		<div class="Container Container--insetTextColumn">
+			
 			{{ about.second_text | markdownify }}
 
 		</div>

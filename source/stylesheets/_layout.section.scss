@@ -6,6 +6,8 @@
 
 
 // Using multiple mixins because 'content:' won't take a var.
+// Using vh buggyfill: https://goo.gl/DQESLg
+//   > content: 'viewport-units-buggyfill;'  'font-size: 90vh;';
 // API:
 // $vertSpaceXs              : 5vh;
 // $vertSpaceSm              : 8.5vh;

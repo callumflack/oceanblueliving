@@ -13,16 +13,18 @@
 
 .Figure--lg {
 	margin: $vertSpace auto;
+	max-width: container-width(ll);
 
 	img { width: 100%; }
 
-	@include media-breakpoint-down(md) {
-		margin: $vertSpace space(-1.5);
-	}
+	//@include media-breakpoint-down(md) {
+	//	margin: $vertSpace space(-1.5);
+	//}
 }
 
 .Figure--lgTop {
 	margin: $vertSpace auto 0;
+	max-width: container-width(ll);
 
 	img { width: 100%; }
 }

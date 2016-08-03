@@ -8,7 +8,7 @@
 .Container {
 	@include clearfix();
 	margin: 0 auto;
-	max-width: size(container, default);
+	max-width: container-width(ll);
 	padding: 0 space(1.5);
 	position: relative;
 
