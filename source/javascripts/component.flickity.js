@@ -18,6 +18,7 @@ $(document).ready( function() {
 		wrapAround: true,
 		autoPlay: 5000,
 		lazyLoad: true,
+		bgLazyLoad: 1,
 		pauseAutoPlayOnHover: false,
 		prevNextButtons: false,
 		imagesLoaded: true
@@ -35,13 +36,13 @@ $(document).ready( function() {
 	// </div>
 	// <p class="gallery-caption u-marginTX2">&nbsp;</p>
 
-	var $caption = $('.gallery-caption');
-
-	// Flickity instance
-	var flkty = $gallery.data('flickity');
-	$gallery.on( 'cellSelect', function() {
-		// set image caption using img's alt
-		$caption.html( $( flkty.selectedElement ).data('caption') );
-	});
+	// var $caption = $('.gallery-caption');
+	//
+	// // Flickity instance
+	// var flkty = $gallery.data('flickity');
+	// $gallery.on( 'cellSelect', function() {
+	// 	// set image caption using img's alt
+	// 	$caption.html( $( flkty.selectedElement ).data('caption') );
+	// });
 
 });
