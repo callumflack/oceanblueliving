@@ -104,24 +104,21 @@
 .gallery--dragger {
 	.gallery-cell {
 		cursor: grab;
+		// opacity: 0.5;
+		transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
 
 		@include media-breakpoint-up(xl) {
 			max-width: size(container, default);
 		}
 	}
 
-	@include media-breakpoint-up(sm) {
-		.gallery-cell {
-			// opacity: 0.5;
-			transform: scale(0.5);
-			transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
-		}
-
-		.gallery-cell.is-selected {
-			transform: scale(1);
-			transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
-		}
+	.gallery-cell.is-selected {
+		transform: scale(1);
+		transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
 	}
+
+	@include media-breakpoint-up(sm) { .gallery-cell { transform: scale(0.7); } }
+	@include media-breakpoint-up(su) { .gallery-cell { transform: scale(0.5); } }
 
 }
 
