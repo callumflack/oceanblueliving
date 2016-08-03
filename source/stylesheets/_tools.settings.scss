@@ -249,27 +249,27 @@ $z-index: (
 // $font: join($sans, $font-sans-stack);
 
 $fonts-path           : '/source/fonts/';
-$sans-font-name       : 'Calibre';
+$sans-font-name       : ''; // Calibre-
 $font-sans-stack      : -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Cantarell","Open Sans","Helvetica Neue","Ubuntu",sans-serif;
 // $font-sans-stack      : 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 // $serif-font-name      : 'Calibre';
 // $font-serif-stack     : Georgia, Times, serif;
-$display-font-name    : 'Akkurat-Mono';
+$display-font-name    : 'Display'; // Akkurat-Mono
 $font-display-stack   : 'Courier New', 'Consolas', 'Andale Mono', 'Lucida San Typewriter', 'Lucida Console', mono-spaced;
 
 // Create font-file variables
 
-$sans-thin            : #{$sans-font-name}-Thin;
-$sans-light           : #{$sans-font-name}-Light;
-$sans-book            : #{$sans-font-name}-Regular;
-$sans-regular         : #{$sans-font-name}-Regular;
-$sans-medium          : #{$sans-font-name}-Medium;
-$sans-bold            : #{$sans-font-name}-Bold;
-$sans-xbold           : #{$sans-font-name}-extrabold;
-$sans-black           : #{$sans-font-name}-Black;
+$sans-thin            : #{$sans-font-name}Thin;
+$sans-light           : #{$sans-font-name}Light;
+$sans-book            : #{$sans-font-name}Regular;
+$sans-regular         : #{$sans-font-name}Regular;
+$sans-medium          : #{$sans-font-name}Medium;
+$sans-bold            : #{$sans-font-name}Bold;
+$sans-xbold           : #{$sans-font-name}extrabold;
+$sans-black           : #{$sans-font-name}Black;
 
-$sans-regular-italic  : #{$sans-font-name}-RegularItalic;
-$sans-medium-italic   : #{$sans-font-name}-MediumItalic;
+$sans-regular-italic  : #{$sans-font-name}RegularItalic;
+$sans-medium-italic   : #{$sans-font-name}MediumItalic;
 
 $display              : #{$display-font-name};
 
