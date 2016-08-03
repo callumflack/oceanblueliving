@@ -83,7 +83,7 @@ var options = {
 
 	sass : {
 		files       : 'source/stylesheets/*.scss',
-		destination : 'source/stylesheets'
+		destination : 'build'
 	},
 
 	watch : {
