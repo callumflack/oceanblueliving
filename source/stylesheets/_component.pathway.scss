@@ -16,6 +16,33 @@ $revOpacity: 0.5;
 		p       { color: rgba( palette(white), $revOpacity ); }
 		.Button { color: palette(white); }
 	}
+
+	&--list {
+		text-align: center;
+
+		a {
+			display: block;
+			&:not(:last-child) {
+				margin-bottom: space(2);
+			}
+		}
+
+		@include media-breakpoint-up(md) {
+			a {
+				display: inline-block;
+				&:not(:last-child) {
+					margin-bottom: 0;
+					margin-right: space(3);
+				}
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+			a:not(:last-child) {
+				margin-right: space(5);
+			}
+		}
+	}
 }
 
 .Pathway-title {

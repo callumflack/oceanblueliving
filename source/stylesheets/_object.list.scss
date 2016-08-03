@@ -74,4 +74,4 @@ li {
 }
 
 .o-listInline     { @include listInline(); }
-.o-listInline--lg { @include listInline( space(2) ); }
+.o-listInline--lg { @include listInline( space(4) ); }
