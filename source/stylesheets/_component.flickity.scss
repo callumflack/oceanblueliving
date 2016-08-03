@@ -6,26 +6,28 @@
 
 
 // For this project…
-.gallery {
-	overflow: hidden;
-	width: 100%;
-}
+//.gallery {
+//	overflow: hidden;
+//	width: 100%;
+//}
 
-.gallery,
-.flickity-viewport {
-	&:focus {
-		outline: none;
-	}
-}
+//.gallery,
+//.flickity-viewport {
+//	&:focus {
+//		outline: none;
+//	}
+//}
 
+// Becuase I'm using FlexEmbed as child content,
+// not an img.
 .gallery-cell {
 	width: 100%;
 }
 
-a.gallery-cell {
-	// @include u-link(none);
-	transition: none;
-}
+//a.gallery-cell {
+//	// @include u-link(none);
+//	transition: none;
+//}
 
 
 
