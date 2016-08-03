@@ -1,0 +1,25 @@
+<script>
+	// respimg plugin only if the browser doesn't support responsive images
+	function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+
+	if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
+		document.createElement('picture');
+		loadJS("/build/ls.respimg.min.js");
+	}
+
+	// config for responsive images via lazysizes, taken from http://afarkas.github.io/lazysizes/#examples
+	(function(){
+		var docElem = document.documentElement;
+
+		window.lazySizesConfig = window.lazySizesConfig || {};
+
+		window.lazySizesConfig.loadMode = 1;
+
+		// set expand to a higher value on larger displays
+		window.lazySizesConfig.expand = Math.max(Math.min(docElem.clientWidth, docElem.clientHeight, 1222) - 1, 359);
+		window.lazySizesConfig.expFactor = lazySizesConfig.expand < 380 ? 3 : 2;
+	})();
+</script>
+
+<script src="/build/ls.unveilhooks.min.js" async=""></script>
+<script src="/build/lazysizes.min.js" async=""></script>

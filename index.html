@@ -15,8 +15,8 @@ layout: default
 			<div class="FlexEmbed-ratio"></div>
 			<div class="FlexEmbed-content">
 				<div
-					class="u-posAbsoluteCenter CoverImage--dark"
-					style="background-image: url('{{ image }}')">
+					class="u-posAbsoluteCenter CoverImage--dark lazyload"
+					data-bg="{{ image }}">
 				</div>
 			</div>
 		</div>
@@ -133,10 +133,14 @@ layout: default
 					class="lazyload"
 					alt="Vince & LeaAnne Cassaniti, Ocean Blue Living"
 					data-sizes="auto"
-					data-src="/uploads/about-duo-x.jpg"
-					data-srcset="/uploads/about-duo.jpg 300w,
-					image2.jpg 600w,
-					image3.jpg 900w">
+					data-srcset="
+					/uploads/about-duo-e.jpg 600w,
+					/uploads/about-duo-test.jpg 1200w,
+					/uploads/about-duo.jpg 1700w">
+				<!-- <img
+					class="lazyload"
+					alt="Vince & LeaAnne Cassaniti, Ocean Blue Living"
+					data-src="/uploads/about-duo-x.jpg"> -->
 			</figure>
 		</div>
 		<div class="Container Container--textColumn">

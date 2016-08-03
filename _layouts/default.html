@@ -18,11 +18,13 @@
 	<!-- <link rel="alternate" type="application/rss+xml" href="{{ site.feed_url }}" /> -->
 	<!-- <link rel="alternate" type="application/rss+xml" href="{{ site.sitemap_url }}" /> -->
 
-	<script src="/build/lazysizes.min.js" async=""></script>
-
-	<link rel="stylesheet" href="/source/stylesheets/owl.carousel.css">
-	<link rel="stylesheet" href="/source/stylesheets/application.css">
+	<link rel="stylesheet" href="/build/application.css">
 	<!-- <link rel="stylesheet" href="/build/application.min.css"> -->
+	<link rel="stylesheet" href="/build/owl.carousel.css">
+	<link rel="stylesheet" href="/build/flickity.css">
+
+	{% include lazysize-scripts.html %}
+
 </head>
 
 <body id="top" class="{{type}} {{slug}} {{page.title}} {{page.categories}} {% for tag in site.tags %}{{tag.slug}}{% endfor %}"
