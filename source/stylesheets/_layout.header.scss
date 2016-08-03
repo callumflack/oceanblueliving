@@ -57,6 +57,26 @@
 }
 
 
+// A method where lazyloading can be applied. No IE support at all.
+// See: https://css-tricks.com/almanac/properties/o/object-fit/
+//<div class="CoverImage--dark u-posRelative">
+//	<img class="objectFit" src="/uploads/home-hero-4.jpg" alt="">
+//</div>
+
+.objectFit {
+	object-fit: cover;
+}
+
+.Header--fullRatio .objectFit {
+	height: 75vh;
+	//@include respond-to(xs) { padding-bottom: 125%; }
+	//@include respond-to(md) { padding-bottom: 75%; }
+	//@include respond-to(lg) { padding-bottom: 66%; }
+	//@include respond-to(xl) { padding-bottom: 100vh; }
+	width: 100%;
+}
+
+
 // Header elements
 // --------------------------------------------------------------------------
 
