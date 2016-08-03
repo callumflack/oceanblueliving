@@ -18,10 +18,13 @@
 	<!-- <link rel="alternate" type="application/rss+xml" href="{{ site.feed_url }}" /> -->
 	<!-- <link rel="alternate" type="application/rss+xml" href="{{ site.sitemap_url }}" /> -->
 
+	<script src="/build/lazysizes.min.js" async=""></script>
+
 	<link rel="stylesheet" href="/source/stylesheets/owl.carousel.css">
 	<link rel="stylesheet" href="/source/stylesheets/application.css">
 	<!-- <link rel="stylesheet" href="/build/application.min.css"> -->
 </head>
+
 <body id="top" class="{{type}} {{slug}} {{page.title}} {{page.categories}} {% for tag in site.tags %}{{tag.slug}}{% endfor %}"
 	data-spy="scroll" data-target="#scrollspy" data-offset="300">
 
@@ -36,15 +39,15 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="/build/lib.owl.carousel.min.js"></script>
-	<script src="/build/application.min.js"></script>
-	<script src="/build/viewport-units-buggyfill.hacks.js"></script>
-	<script src="/build/viewport-units-buggyfill.js"></script>
+	<!-- <script src="/build/lib.viewport-units-buggyfill.hacks.js"></script>
+	<script src="/build/lib.viewport-units-buggyfill.js"></script>
 	<script>
 	  window.viewportUnitsBuggyfill.init({
 		refreshDebounceWait: 50,
 		hacks: window.viewportUnitsBuggyfillHacks
 	  });
-	</script>
+	</script> -->
+	<script src="/build/application.min.js"></script>
 	{% include google-analytics.html %}
 
 </body>
