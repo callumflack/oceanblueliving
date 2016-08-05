@@ -1,6 +1,7 @@
 ---
 title: designs
 layout: designs
-hero_headline: We’re craftspeople who love transforming spaces.
+hero_headline: Design it yourself.
+hero_image: "/uploads/designs-hero.jpg"
 ---
 

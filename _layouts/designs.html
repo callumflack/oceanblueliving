@@ -3,7 +3,35 @@ title: designs
 layout: default
 ---
 
-{% assign imagePath = site.pages | where: 'title', 'about' | first  %}
+{% assign designs = site.pages | where: 'title', 'designs' | first  %}
+
+<header class="Header Header--halfRatio Header--rev" role="banner">
+	<div class="FlexEmbed">
+		<div class="FlexEmbed-ratio"></div>
+		<div class="FlexEmbed-content">
+			<div class="Header-masthead">
+				<a class="Header-logo" href="/">
+					<img src="/uploads/logo-white.png" alt="{{ site.title }}">
+				</a>
+			</div>
+			<div
+				class="u-posAbsoluteCenter CoverImage--dark"
+				style="background-image: url('{{ designs.hero_image }}')">
+			</div>
+		</div>
+	</div>
+	<div class="Header-wrapper">
+		<div class="o-aligner">
+			<div class="o-aligner-item">
+				<div class="Container">
+					<h1 class="Header-title">
+						{{ designs.hero_headline }}
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
 
 <main class="Content" role="main">
 	<section class="Section">
@@ -11,16 +39,31 @@ layout: default
 
 			<div class="Grid Grid--withGutter">
 				{% for image in site.static_files %}
-					<p>{{ image.path }}</p>
-					{% if image.path contains 'uploads/designs' %}
-						<div class="Grid-cell u-size1of5">
-							<img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-							<p>{{ image.name }}</p>
+					{% if image.path contains 'designs' %}
+						<div class="Grid-cell u-size1of2 u-sm-size1of5">
+							<div class="Design">
+								<img src="{{ image.path }}" alt="{{ image.name }}" />
+								<p>{{ image.path | remove:'/designs/' | remove:'.png' }}</p>
+							</div>
 						</div>
 					{% endif %}
 				{% endfor %}
 			</div>
 
+		</div>
+
+		<div class="Container Container--textColumn Post--article-ruleOff"></div>
+	</section>
+
+
+
+
+
+
+
+	<section class="Section--rg">
+		<div class="Container Container--textColumn Container--ruleTop">
+			{% include pathway-primary.html %}
 		</div>
 	</section>
 </main>

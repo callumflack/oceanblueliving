@@ -1,0 +1,22 @@
+
+
+// --------------------------------------------------------------------------
+//   COMPONENT: DESIGNS PAGE
+// --------------------------------------------------------------------------
+
+
+.Grid-cell {
+	@include media-breakpoint-up(sm) {
+		@include every(5) {
+			.Design { margin-bottom: $vertSpaceSm; }
+		}
+	}
+}
+
+.Design p {
+	margin: space(0.5) 0 space(1.25);
+
+	@include respond-to(sm) {
+		margin: space(0.75) 0 space(1.5);
+	}
+}
