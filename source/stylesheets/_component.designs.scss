@@ -6,6 +6,10 @@
 
 
 .Grid-cell {
+	@include every(2) {
+		.Design { margin-bottom: $vertSpaceSm; }
+	}
+
 	@include media-breakpoint-up(sm) {
 		@include every(5) {
 			.Design { margin-bottom: $vertSpaceSm; }
