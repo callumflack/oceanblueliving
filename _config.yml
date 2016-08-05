@@ -9,7 +9,10 @@ collections:
     title: Uploads
     output: true
   home:
-    title: home
+    title: Home
+    output: false
+  designs:
+    title: Designs
     output: false
 defaults:
 - scope:
