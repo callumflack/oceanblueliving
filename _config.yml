@@ -2,9 +2,6 @@
 title: Ocean Blue Living
 timezone: Australia/Brisbane
 collections:
-  designs:
-    title: Designs
-    output: false
   home:
     title: Home
     output: false
