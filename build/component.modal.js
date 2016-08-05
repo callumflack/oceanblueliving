@@ -28,7 +28,7 @@
 		// Clicking anywhere outside the modal nav closes the modal.
 		// Only attaches if a modal has been triggered.
 
-		$(document).bind("click.modalNav", function() {
+		$(document).bind("touchstart.modalNav click.modalNav", function() {
 
 			var MODAL        = "[data-modal]",
 				ACTIVE_CLASS = "is-active";
@@ -38,7 +38,7 @@
 				closeModal();
 			}
 
-			$(document).unbind("click.modalNav");
+			$(document).unbind("touchstart.modalNav click.modalNav");
 
 		});
 
