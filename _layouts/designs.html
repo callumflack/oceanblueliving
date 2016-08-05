@@ -1,0 +1,26 @@
+---
+title: designs
+layout: default
+---
+
+{% assign imagePath = site.pages | where: 'title', 'about' | first  %}
+
+<main class="Content" role="main">
+	<section class="Section">
+		<div class="Container">
+
+			<div class="Grid Grid--withGutter">
+				{% for image in site.static_files %}
+					<p>{{ image.path }}</p>
+					{% if image.path contains 'uploads/designs' %}
+						<div class="Grid-cell u-size1of5">
+							<img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+							<p>{{ image.name }}</p>
+						</div>
+					{% endif %}
+				{% endfor %}
+			</div>
+
+		</div>
+	</section>
+</main>

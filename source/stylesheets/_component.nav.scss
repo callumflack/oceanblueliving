@@ -14,9 +14,9 @@
 	}
 
 	// Color the hamburger icon
-	@include when-inside(".Home") { color: palette(white); }
-	@include when-inside(".about") { color: palette(white); }
-	@include when-inside(".Modal") { color: palette(white); }
+	//@include when-inside(".Home") { color: palette(white); }
+	//@include when-inside(".about") { color: palette(white); }
+	//@include when-inside(".Modal") { color: palette(white); }
 }
 
 /* uncss:ignore */
