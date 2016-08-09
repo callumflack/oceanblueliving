@@ -37,19 +37,62 @@ layout: default
 	<section class="Section">
 		<div class="Container">
 
-			<div class="Grid Grid--withGutter">
+			<div class="Grid Grid--withGutter Grid--alignCenter">
+
 				{% for image in site.static_files %}
-					{% if image.path contains 'designs' %}
+					{% if image.path contains 'designs-rg' %}
 						<div class="Grid-cell u-size1of2 u-sm-size1of5">
-							<div class="Design">
+							<!-- <div class="Design">
 								<img src="{{ image.path }}" alt="{{ image.name }}" />
 								<p>{{ image.path | remove:'/designs/' | remove:'.png' }}</p>
+							</div> -->
+							<div class="Design-cell">
+								<div class="FlexEmbed">
+									<div class="FlexEmbed-ratio"></div>
+									<div class="FlexEmbed-content">
+										<div
+											class="u-posAbsoluteCenter CoverImage lazyload"
+											data-bg="{{ image.path }}">
+										</div>
+									</div>
+								</div>
+								<p>{{ image.path | remove:'/designs-rg/' | remove:'.png' | replace: '-', ' ' }}</p>
 							</div>
 						</div>
 					{% endif %}
 				{% endfor %}
-			</div>
 
+				<div class="Grid-cell Grid-cell--center u-sm-size8of12">
+					<div class="Design-cell Design-cell--4across msm-Section--smTop">
+						<div class="FlexEmbed">
+							<div class="FlexEmbed-ratio"></div>
+							<div class="FlexEmbed-content">
+								<div
+									class="u-posAbsoluteCenter CoverImage lazyload"
+									data-bg="/designs-wide/Windy-Branch.png">
+								</div>
+							</div>
+						</div>
+						<p>Windy Branch</p>
+					</div>
+				</div>
+
+				<div class="Grid-cell Grid-cell--center u-sm-size6of12">
+					<div class="Design-cell Design-cell--3across">
+						<div class="FlexEmbed">
+							<div class="FlexEmbed-ratio"></div>
+							<div class="FlexEmbed-content">
+								<div
+									class="u-posAbsoluteCenter CoverImage lazyload"
+									data-bg="/designs-wide/Australian-Bush.png">
+								</div>
+							</div>
+						</div>
+						<p>Australian Bush</p>
+					</div>
+				</div>
+
+			</div>
 		</div>
 
 		<div class="Container Container--textColumn Post--article-ruleOff"></div>

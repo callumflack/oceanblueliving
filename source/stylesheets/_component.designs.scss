@@ -7,17 +7,29 @@
 
 .Grid-cell {
 	@include every(2) {
-		.Design { margin-bottom: $vertSpaceSm; }
+		.Design-cell { margin-bottom: $vertSpaceSm; }
 	}
 
 	@include media-breakpoint-up(sm) {
 		@include every(5) {
-			.Design { margin-bottom: $vertSpaceSm; }
+			.Design-cell { margin-bottom: $vertSpaceSm; }
 		}
 	}
 }
 
-.Design p {
+.Design-cell .FlexEmbed-ratio {
+	padding-bottom: 200%;
+}
+
+.Design-cell--3across .FlexEmbed-ratio {
+	padding-bottom: 66.666666667%;
+}
+
+.Design-cell--4across .FlexEmbed-ratio {
+	padding-bottom: 50%;
+}
+
+.Design-cell p {
 	margin: space(0.5) 0 space(1.25);
 
 	@include respond-to(sm) {

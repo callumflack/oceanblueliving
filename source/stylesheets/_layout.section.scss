@@ -71,6 +71,11 @@
 .Section--smTop { @include sectionSpace--smTop(); }
 .Section--lgTop { @include sectionSpace--lgTop(); }
 
+.msm-Section--smTop { 
+	@include media-breakpoint-down(sm) {
+		@include sectionSpace--smTop();
+	}
+}
 
 // Vars
 
