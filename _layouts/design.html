@@ -3,7 +3,7 @@ title: designs
 layout: default
 ---
 
-{% assign designs = site.pages | where: 'title', 'designs' | first  %}
+{% assign design = site.pages | where: 'title', 'design' | first  %}
 
 <header class="Header Header--halfRatio Header--rev" role="banner">
 	<div class="FlexEmbed">
@@ -16,7 +16,7 @@ layout: default
 			</div>
 			<div
 				class="u-posAbsoluteCenter CoverImage--dark"
-				style="background-image: url('{{ designs.hero_image }}')">
+				style="background-image: url('{{ design.hero_image }}')">
 			</div>
 		</div>
 	</div>
@@ -25,7 +25,7 @@ layout: default
 			<div class="o-aligner-item">
 				<div class="Container">
 					<h1 class="Header-title">
-						{{ designs.hero_headline }}
+						{{ design.hero_headline }}
 					</h1>
 				</div>
 			</div>

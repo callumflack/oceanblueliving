@@ -91,7 +91,7 @@ $infoColor: rgba( palette(white), 0.5 );
 	@include when-inside(".home")  { color: palette(white); }
 	@include when-inside(".about") { color: palette(white); }
 	@include when-inside(".blog")  { color: palette(white); }
-	@include when-inside(".designs")  { color: palette(white); }
+	@include when-inside(".design")  { color: palette(white); }
 }
 
 // Make the header nav fixed and animate down into view on scroll
