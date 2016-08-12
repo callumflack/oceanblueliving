@@ -1,2 +1,7 @@
 source 'http://rubygems.org'
 gem 'jekyll'
+
+group :jekyll_plugins do
+  gem 'liquid'
+  gem 'jekyll-imgix'
+end

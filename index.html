@@ -5,27 +5,184 @@
 	<meta http-equiv="X-UA-Compatible", content="IE=edge,chrome=1" >
 	<meta http-equiv="cleartype", content="on" >
 	<meta name="viewport", content="width=device-width, initial-scale=1.0" >
-	<title>Ocean Blue Living</title>
-
-	<!-- <meta name='description' content='' > -->
-	<!-- <meta name='keywords' content="" > -->
-	<!-- <meta name="author", content="" > -->
+	<title>OceanBlue Living</title>
+	<meta name='description' content='Description' >
+	<meta name='keywords' content="metalworks, sculpture, landscape architecture, Cairns, Queensland, Australia" >
+	<meta name="author", content="OceanBlue Living + patternworks.com.au" >
 	<meta name="handheldfriendly", content="true" >
 	<meta name="mobileoptimized", content="320" >
-	<!-- <link rel="canonical" href=""> -->
-	
+	<link rel="canonical" href="http://oceanblueliving.com.au">
+    <meta name="google-site-verification" content="" />
+    <link rel="alternate" type="application/rss+xml" href="http://oceanblueliving.com.au/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" href="http://oceanblueliving.com.au/map.xml" />
+
+	<!-- 
 
 
-<meta property="og:site_name" content="Ocean Blue Living">
+<meta property="og:site_name" content="OceanBlue Living">
 <meta property="og:title" content="">
 <meta property="og:url" content="">
 <meta property="og:description" content="">
 
 
+ -->
 
-	<meta name="google-site-verification" content="" />
-	<!-- <link rel="alternate" type="application/rss+xml" href="" /> -->
-	<!-- <link rel="alternate" type="application/rss+xml" href="" /> -->
+    <style>
+.o-aligner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100%;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.o-aligner-item {
+  -ms-flex: 1;
+  flex: 1; }
+
+.o-aligner-item--top {
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+.o-aligner-item--bottom {
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+.o-aligner-item--fixed {
+  -ms-flex: none;
+  flex: none;
+  max-width: 50%; }
+
+.Header {
+  background-color: #04152B;
+  position: relative; }
+  .Header--fade {
+    background-image: linear-gradient(to bottom, rgba(220, 216, 209, 0) 50%, rgba(220, 216, 209, 0.7) 100%); }
+
+.Header-masthead {
+  padding-top: 5vh;
+  position: relative;
+  text-align: center;
+  z-index: 3; }
+
+.Header-wrapper {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2; }
+  .Header-wrapper--top {
+    bottom: auto; }
+  .Header-wrapper > .Container {
+    text-align: center; }
+
+.Header--fullRatio .FlexEmbed-ratio,
+.Post--article .FlexEmbed-ratio {
+  padding-bottom: 180%; }
+  @media (min-width: 600px) {
+    .Header--fullRatio .FlexEmbed-ratio,
+    .Post--article .FlexEmbed-ratio {
+      padding-bottom: 125%; } }
+  @media (min-width: 992px) {
+    .Header--fullRatio .FlexEmbed-ratio,
+    .Post--article .FlexEmbed-ratio {
+      padding-bottom: 75%; } }
+  @media (min-width: 1200px) {
+    .Header--fullRatio .FlexEmbed-ratio,
+    .Post--article .FlexEmbed-ratio {
+      padding-bottom: 66%; } }
+  @media (min-width: 1700px) {
+    .Header--fullRatio .FlexEmbed-ratio,
+    .Post--article .FlexEmbed-ratio {
+      padding-bottom: 100vh; } }
+
+.Header--halfRatio .FlexEmbed-ratio {
+  padding-bottom: 90%; }
+  @media (min-width: 600px) {
+    .Header--halfRatio .FlexEmbed-ratio {
+      padding-bottom: 62.5%; } }
+  @media (min-width: 992px) {
+    .Header--halfRatio .FlexEmbed-ratio {
+      padding-bottom: 37.5%; } }
+  @media (min-width: 1200px) {
+    .Header--halfRatio .FlexEmbed-ratio {
+      padding-bottom: 33%; } }
+  @media (min-width: 1700px) {
+    .Header--halfRatio .FlexEmbed-ratio {
+      padding-bottom: 50vh; } }
+
+.objectFit {
+  object-fit: cover; }
+
+.Header--fullRatio .objectFit {
+  height: 75vh;
+  width: 100%; }
+
+.Header-logo {
+  display: inline-block; }
+  .Header-logo > img {
+    width: 30%;
+    width: 130px; }
+    @media (min-width: 767px) {
+      .Header-logo > img {
+        width: 160px; } }
+    @media (min-width: 1200px) {
+      .Header-logo > img {
+        width: 200px; } }
+  .Header--rev .Header-logo {
+    border-color: #FFF; }
+
+.Header-title {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  line-height: 1.6;
+  margin-bottom: 1.275rem;
+  text-align: center;
+  color: #04152B;
+  font-family: Display, "Courier New", "Consolas", "Andale Mono", "Lucida San Typewriter", "Lucida Console", mono-spaced;
+  font-size: 27px;
+  margin: 0 auto; }
+  @media (min-width: 600px) {
+    .Header-title {
+      font-size: 35px; } }
+  @media (min-width: 992px) {
+    .Header-title {
+      font-size: 41px; } }
+  @media (min-width: 1700px) {
+    .Header-title {
+      font-size: 46px; } }
+  @media (min-width: 544px) {
+    .Header-title {
+      width: 90%; }
+      .home .Header-title {
+        width: 70%; } }
+  .Header--rev .Header-title {
+    color: #FFF; }
+
+.Header-hero {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+  .Header-hero > img {
+    width: 100%; }
+    @media (min-width: 600px) {
+      .Header-hero > img {
+        width: 90%; } }
+    @media (min-width: 992px) {
+      .Header-hero > img {
+        width: 66%; } }
+    @media (min-width: 1700px) {
+      .Header-hero > img {
+        width: 55%; } }
+
+@media (max-width: 767px) {
+  .applications .Header .Pathway-text em {
+    display: none; } }
+</style>
 
 	<link rel="stylesheet" href="/build/application.css">
 	<!-- <link rel="stylesheet" href="/build/application.min.css"> -->
@@ -56,12 +213,39 @@
 </script>
 
 <script src="/build/ls.unveilhooks.min.js" async=""></script>
+<!-- <script src="/build/ls.rias.min.js" async=""></script> -->
+<script src="/build/ls.parent-fit.min.js" async=""></script>
+<script src="/build/ls.bgset.min.js" async=""></script>
+<!-- <script src="/build/ls.object-fit.min.js" async=""></script> -->
 <script src="/build/lazysizes.min.js" async=""></script>
+
+	<style>
+    .ls-blur {
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        transition: filter 400ms, -webkit-filter 400ms;
+    }
+
+    .ls-blur.lazyloaded {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+
+    .ls-fade .lazyload,
+    .ls-fade .lazyloading {
+        opacity: 0;
+        transition: opacity 400ms;
+    }
+
+    .ls-fade img.lazyloaded {
+        opacity: 1;
+    }
+</style>
 
 
 </head>
 
-<body id="top" class="  home  "
+<body id="top" class="home "
 	data-spy="scroll" data-target="#scrollspy" data-offset="300">
 
 	<nav class="Nav-toggle">
@@ -85,9 +269,13 @@
 			<div class="FlexEmbed-ratio"></div>
 			<div class="FlexEmbed-content">
 				<div
-					class="u-posAbsoluteCenter CoverImage--dark lazyload"
-					data-bg="/uploads/home-hero-8.jpg">
-				</div>
+    class="u-posAbsoluteCenter CoverImage--dark lazyload ls-blur"
+    src="/uploads/home-hero-160812-vince-src.jpg"
+    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    data-sizes="auto"
+    data-bgset="/uploads/home-hero-160812-vince-xs.jpg 600w, /uploads/home-hero-160812-vince.jpg 1000w">
+</div>
+
 			</div>
 		</div>
 		
@@ -95,9 +283,13 @@
 			<div class="FlexEmbed-ratio"></div>
 			<div class="FlexEmbed-content">
 				<div
-					class="u-posAbsoluteCenter CoverImage--dark lazyload"
-					data-bg="/uploads/applications-17.jpg">
-				</div>
+    class="u-posAbsoluteCenter CoverImage--dark lazyload ls-blur"
+    src="/uploads/home-hero-160812-pineclose-src.jpg"
+    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    data-sizes="auto"
+    data-bgset="/uploads/home-hero-160812-pineclose-xs.jpg 600w, /uploads/home-hero-160812-pineclose.jpg 1000w">
+</div>
+
 			</div>
 		</div>
 		
@@ -105,69 +297,21 @@
 			<div class="FlexEmbed-ratio"></div>
 			<div class="FlexEmbed-content">
 				<div
-					class="u-posAbsoluteCenter CoverImage--dark lazyload"
-					data-bg="/uploads/home-hero-6.jpg">
-				</div>
-			</div>
-		</div>
-		
-		<div class="FlexEmbed">
-			<div class="FlexEmbed-ratio"></div>
-			<div class="FlexEmbed-content">
-				<div
-					class="u-posAbsoluteCenter CoverImage--dark lazyload"
-					data-bg="/uploads/home-hero-4.jpg">
-				</div>
-			</div>
-		</div>
-		
-		<div class="FlexEmbed">
-			<div class="FlexEmbed-ratio"></div>
-			<div class="FlexEmbed-content">
-				<div
-					class="u-posAbsoluteCenter CoverImage--dark lazyload"
-					data-bg="/uploads/home-hero-1.jpg">
-				</div>
-			</div>
-		</div>
-		
-		<div class="FlexEmbed">
-			<div class="FlexEmbed-ratio"></div>
-			<div class="FlexEmbed-content">
-				<div
-					class="u-posAbsoluteCenter CoverImage--dark lazyload"
-					data-bg="/uploads/home-hero-2.jpg">
-				</div>
-			</div>
-		</div>
-		
-		<div class="FlexEmbed">
-			<div class="FlexEmbed-ratio"></div>
-			<div class="FlexEmbed-content">
-				<div
-					class="u-posAbsoluteCenter CoverImage--dark lazyload"
-					data-bg="/uploads/home-hero-3.jpg">
-				</div>
+    class="u-posAbsoluteCenter CoverImage--dark lazyload ls-blur"
+    src="/uploads/home-hero-160812-murphyst-src.jpg"
+    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    data-sizes="auto"
+    data-bgset="/uploads/home-hero-160812-murphyst-xs.jpg 600w, /uploads/home-hero-160812-murphyst.jpg 1000w">
+</div>
+
 			</div>
 		</div>
 		
 	</div>
-	<!-- <div class="FlexEmbed">
-		<div class="FlexEmbed-ratio"></div>
-		<div class="FlexEmbed-content">
-			<div
-				class="u-posAbsoluteCenter CoverImage--dark"
-				style="background-image: url('/uploads/home-hero-4.jpg')">
-			</div>
-		</div>
-	</div> -->
-	<!-- <div class="CoverImage--dark u-posRelative">
-		<img class="objectFit" src="/uploads/home-hero-4.jpg" alt="">
-	</div> -->
-	<div class="Header-wrapper Header-wrapper--stickTop">
+	<div class="Header-wrapper Header-wrapper--top">
 		<div class="Header-masthead">
 			<a class="Header-logo" href="/">
-				<img src="/uploads/logo-white.png" alt="Ocean Blue Living">
+				<img src="/uploads/logo-white.png" alt="OceanBlue Living">
 			</a>
 		</div>
 	</div>
@@ -222,9 +366,13 @@
 							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 							<div class="FlexEmbed-content">
 								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-1.jpg')">
-								</div>
+    class="u-posAbsoluteCenter CoverImage lazyload ls-blur"
+    src="/uploads/home-appl-160812-corellast-src.jpg"
+    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    data-sizes="auto"
+    data-bgset="/uploads/home-appl-160812-corellast-xs.jpg 600w, /uploads/home-appl-160812-corellast.jpg 1000w">
+</div>
+
 							</div>
 						</div>
 					</div>
@@ -234,9 +382,13 @@
 							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 							<div class="FlexEmbed-content">
 								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-2.png')">
-								</div>
+    class="u-posAbsoluteCenter CoverImage lazyload ls-blur"
+    src="/uploads/home-appl-160812-mulgraverd-src.jpg"
+    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    data-sizes="auto"
+    data-bgset="/uploads/home-appl-160812-mulgraverd-xs.jpg 600w, /uploads/home-appl-160812-mulgraverd.jpg 1000w">
+</div>
+
 							</div>
 						</div>
 					</div>
@@ -246,9 +398,13 @@
 							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 							<div class="FlexEmbed-content">
 								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-3.jpg')">
-								</div>
+    class="u-posAbsoluteCenter CoverImage lazyload ls-blur"
+    src="/uploads/home-appl-160812-birdwingst-src.jpg"
+    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    data-sizes="auto"
+    data-bgset="/uploads/home-appl-160812-birdwingst-xs.jpg 600w, /uploads/home-appl-160812-birdwingst.jpg 1000w">
+</div>
+
 							</div>
 						</div>
 					</div>
@@ -258,9 +414,13 @@
 							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 							<div class="FlexEmbed-content">
 								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-4.jpg')">
-								</div>
+    class="u-posAbsoluteCenter CoverImage lazyload ls-blur"
+    src="/uploads/home-appl-160812-billingaicl-src.jpg"
+    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    data-sizes="auto"
+    data-bgset="/uploads/home-appl-160812-billingaicl-xs.jpg 600w, /uploads/home-appl-160812-billingaicl.jpg 1000w">
+</div>
+
 							</div>
 						</div>
 					</div>
@@ -270,9 +430,13 @@
 							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 							<div class="FlexEmbed-content">
 								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-5.jpg')">
-								</div>
+    class="u-posAbsoluteCenter CoverImage lazyload ls-blur"
+    src="/uploads/home-appl-160812-chandos-src.jpg"
+    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    data-sizes="auto"
+    data-bgset="/uploads/home-appl-160812-chandos-xs.jpg 600w, /uploads/home-appl-160812-chandos.jpg 1000w">
+</div>
+
 							</div>
 						</div>
 					</div>
@@ -282,129 +446,13 @@
 							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 							<div class="FlexEmbed-content">
 								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-6.jpg')">
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<div class="gallery-cell">
-						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-8.jpg')">
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<div class="gallery-cell">
-						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-9.jpg')">
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<div class="gallery-cell">
-						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-11.jpg')">
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<div class="gallery-cell">
-						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-13.jpg')">
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<div class="gallery-cell">
-						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-14a.jpg')">
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<div class="gallery-cell">
-						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-15.jpg')">
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<div class="gallery-cell">
-						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-16.jpg')">
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<div class="gallery-cell">
-						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-17.jpg')">
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<div class="gallery-cell">
-						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-18.jpg')">
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<div class="gallery-cell">
-						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('/uploads/applications-outdoor-birds.png')">
-								</div>
+    class="u-posAbsoluteCenter CoverImage lazyload ls-blur"
+    src="/uploads/home-appl-160812-pineclose-src.jpg"
+    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    data-sizes="auto"
+    data-bgset="/uploads/home-appl-160812-pineclose-xs.jpg 600w, /uploads/home-appl-160812-pineclose.jpg 1000w">
+</div>
+
 							</div>
 						</div>
 					</div>
@@ -432,7 +480,7 @@
 
 			</div>
 			<div class="Pathway-action">
-				<a class="Button t-button--rev" href="/design">Get an estimate →</a>
+				<a class="Button t-button--rev" href="/design">See our designs →</a>
 			</div>
 		</div>
 	</section>
@@ -450,19 +498,15 @@
 		</div>
 		<div class="Container">
 			<figure class="Figure">
-				<!-- <img src="/uploads/about-duo.jpg" alt="Vince & LeaAnne Cassaniti, Ocean Blue Living"> -->
+                
 				<img
-					class="lazyload"
+					class="lazyload ls-blur"
 					alt="Vince & LeaAnne Cassaniti, Ocean Blue Living"
 					data-sizes="auto"
+                    src="/uploads/home-about-160812-duo-src.jpg"
 					data-srcset="
-					/uploads/about-duo-e.jpg 600w,
-					/uploads/about-duo-test.jpg 1200w,
-					/uploads/about-duo.jpg 1700w">
-				<!-- <img
-					class="lazyload"
-					alt="Vince & LeaAnne Cassaniti, Ocean Blue Living"
-					data-src="/uploads/about-duo-x.jpg"> -->
+					/uploads/home-about-160812-duo-xs.jpg 500w,
+					/uploads/home-about-160812-duo.jpg 1000w">
 			</figure>
 		</div>
 		<div class="Container Container--textColumn">
@@ -538,7 +582,7 @@
 			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-pinterest"></use>
 		</svg>
 	</a>
-	<a class="" href="mailto:?subject=Check out this article from Ocean Blue Living&body= …at: http://www.oceanblueliving.com.au/" target="_blank">
+	<a class="" href="mailto:?subject=Check out this article from OceanBlue Living&body= …at: http://www.oceanblueliving.com.au/" target="_blank">
 		<svg class="Icon Icon--lg Icon--textAlign Icon--right u-colorBrandLight">
 			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-email"></use>
 		</svg>
@@ -569,7 +613,7 @@
 	<footer class="Footer" role="contentinfo">
 	<div class="Container">
 		<a class="Footer-logo" href="/">
-			<img src="/uploads/logo.png" alt="Ocean Blue Living">
+			<img src="/uploads/logo.png" alt="OceanBlue Living">
 		</a>
 
 		<nav class="Footer-nav">
@@ -619,7 +663,7 @@ Queensland 4870 Australia
 	<div class="Modal-dialog" role="document">
 		<div class="Header-masthead">
 			<a class="Header-logo u-block" href="/">
-				<img src="/uploads/logo-white.png" alt="Ocean Blue Living">
+				<img src="/uploads/logo-white.png" alt="OceanBlue Living">
 			</a>
 			<div class="Container u-textCenter">
 				<nav class="Nav" role="nav">
