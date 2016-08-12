@@ -1,35 +1,41 @@
 ---
-title: Ocean Blue Living
+title: OceanBlue Living
 timezone: Australia/Brisbane
-collections:
-  home:
-    title: Home
-    output: false
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-    permalink: "/blog/:slug/"
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: page
 permalink: pretty
+
+collections:
+    home:
+        title: Home
+        output: false
+    posts:
+        title: Posts
+        output: true
+    uploads:
+        title: Uploads
+        output: true
+
+defaults:
+  -
+    scope:
+        path: ''
+        type: posts
+    values:
+        layout: post
+        permalink: "/blog/:slug/"
+  -
+    scope:
+        path: ''
+        type: pages
+    values:
+        layout: page
+
 exclude:
 - node_modules
 - README.markdown
 - package.json
 - gulp.js
 - gulpfile.js
+
 contact-phone: '0409 726 128 '
 contact-email: info@oceanblueliving.com.au
 contact-address: |-
@@ -37,7 +43,13 @@ contact-address: |-
   Queensland 4870 Australia
 contact-open: Open Tues–Thurs 9am–2pm
 contact-appt: Other times by appointment
-google-analytics: UA-81874944-1
 social-facebook: https://www.facebook.com/oceanblueliving
 social-instagram: https://www.instagram.com/oceanblueliving
 social-pinterest: https://au.pinterest.com/oceanblueliving
+url: http://oceanblueliving.com.au
+feed_url: /feed.xml
+sitemap_url: /map.xml
+description: Description
+keywords: metalworks, sculpture, landscape architecture, Cairns, Queensland, Australia
+author: OceanBlue Living + patternworks.com.au
+google-analytics: UA-81874944-1

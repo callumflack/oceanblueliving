@@ -5,6 +5,13 @@ position: 1
 headline: Create timeless elegance.
 button: See all we do →
 gallery-images:
+- "/uploads/home-appl-160812-corellast"
+- "/uploads/home-appl-160812-mulgraverd"
+- "/uploads/home-appl-160812-birdwingst"
+- "/uploads/home-appl-160812-billingaicl"
+- "/uploads/home-appl-160812-chandos"
+- "/uploads/home-appl-160812-pineclose"
+gallery-images-orig:
 - "/uploads/applications-1.jpg"
 - "/uploads/applications-2.png"
 - "/uploads/applications-3.jpg"

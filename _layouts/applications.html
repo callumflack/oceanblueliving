@@ -14,9 +14,16 @@ layout: default
 					<img src="/uploads/logo.png" alt="{{ site.title }}">
 				</a>
 			</div>
-			<div class="u-posAbsoluteCenter CoverImage CoverImage--applications"
-				style="background-image: url('{{ applications.hero_image }}')">
-			</div>
+			<!-- <div class="u-posAbsoluteCenter CoverImage CoverImage--applications" style="background-image: url('{{ applications.hero_image }}')"></div> -->
+            {% assign image = "/uploads/appl-hero-160812-grinder" %}
+            <div
+                class="u-posAbsoluteCenter CoverImage CoverImage--applications lazyload ls-blur"
+                src="{{ image }}-src.jpg"
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-sizes="auto"
+                data-bgset="{{ image }}-xs.jpg 600w, {{ image }}.jpg 1000w">
+            </div>
+
 		</div>
 	</div>
 	<div class="Header-wrapper">
@@ -59,10 +66,7 @@ layout: default
 						<div class="FlexEmbed">
 							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('{{ image }}');">
-								</div>
+								{% include responsive-img-carousel.html %}
 							</div>
 						</div>
 					</div>
@@ -81,9 +85,6 @@ layout: default
 
 	<section class="Section Pathway">
 		<div class="Container Container--textColumn">
-			<!-- <figure class="u-textCenter">
-				<img class="Icon Icon--super" src="/uploads/ic-app-gates.png" alt="Gate applications icon" />
-			</figure> -->
 			<h1 class="Pathway-title Pathway-hgroup">Gates</h1>
 			<div class="Pathway-text">
 				{{ applications.gates_first_text | markdownify }}
@@ -96,10 +97,7 @@ layout: default
 						<div class="FlexEmbed">
 							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('{{ image }}')">
-								</div>
+								{% include responsive-img-carousel.html %}
 							</div>
 						</div>
 					</div>
@@ -118,9 +116,6 @@ layout: default
 
 	<section class="Section Pathway">
 		<div class="Container Container--textColumn">
-			<!-- <figure class="u-textCenter">
-				<img class="Icon Icon--super" src="/uploads/ic-app-shade.png" alt="Outdoor applications icon" />
-			</figure> -->
 			<h1 class="Pathway-title Pathway-hgroup">Outdoor</h1>
 			<div class="Pathway-text">
 				{{ applications.outdoor_first_text | markdownify }}
@@ -133,10 +128,7 @@ layout: default
 						<div class="FlexEmbed">
 							<div class="FlexEmbed-ratio"></div>
 							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('{{ image }}')">
-								</div>
+								{% include responsive-img-carousel.html %}
 							</div>
 						</div>
 					</div>

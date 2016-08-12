@@ -1,0 +1,156 @@
+<style>
+.o-aligner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100%;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.o-aligner-item {
+  -ms-flex: 1;
+  flex: 1; }
+
+.o-aligner-item--top {
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+.o-aligner-item--bottom {
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+.o-aligner-item--fixed {
+  -ms-flex: none;
+  flex: none;
+  max-width: 50%; }
+
+.Header {
+  background-color: #04152B;
+  position: relative; }
+  .Header--fade {
+    background-image: linear-gradient(to bottom, rgba(220, 216, 209, 0) 50%, rgba(220, 216, 209, 0.7) 100%); }
+
+.Header-masthead {
+  padding-top: 5vh;
+  position: relative;
+  text-align: center;
+  z-index: 3; }
+
+.Header-wrapper {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2; }
+  .Header-wrapper--top {
+    bottom: auto; }
+  .Header-wrapper > .Container {
+    text-align: center; }
+
+.Header--fullRatio .FlexEmbed-ratio,
+.Post--article .FlexEmbed-ratio {
+  padding-bottom: 180%; }
+  @media (min-width: 600px) {
+    .Header--fullRatio .FlexEmbed-ratio,
+    .Post--article .FlexEmbed-ratio {
+      padding-bottom: 125%; } }
+  @media (min-width: 992px) {
+    .Header--fullRatio .FlexEmbed-ratio,
+    .Post--article .FlexEmbed-ratio {
+      padding-bottom: 75%; } }
+  @media (min-width: 1200px) {
+    .Header--fullRatio .FlexEmbed-ratio,
+    .Post--article .FlexEmbed-ratio {
+      padding-bottom: 66%; } }
+  @media (min-width: 1700px) {
+    .Header--fullRatio .FlexEmbed-ratio,
+    .Post--article .FlexEmbed-ratio {
+      padding-bottom: 100vh; } }
+
+.Header--halfRatio .FlexEmbed-ratio {
+  padding-bottom: 90%; }
+  @media (min-width: 600px) {
+    .Header--halfRatio .FlexEmbed-ratio {
+      padding-bottom: 62.5%; } }
+  @media (min-width: 992px) {
+    .Header--halfRatio .FlexEmbed-ratio {
+      padding-bottom: 37.5%; } }
+  @media (min-width: 1200px) {
+    .Header--halfRatio .FlexEmbed-ratio {
+      padding-bottom: 33%; } }
+  @media (min-width: 1700px) {
+    .Header--halfRatio .FlexEmbed-ratio {
+      padding-bottom: 50vh; } }
+
+.objectFit {
+  object-fit: cover; }
+
+.Header--fullRatio .objectFit {
+  height: 75vh;
+  width: 100%; }
+
+.Header-logo {
+  display: inline-block; }
+  .Header-logo > img {
+    width: 30%;
+    width: 130px; }
+    @media (min-width: 767px) {
+      .Header-logo > img {
+        width: 160px; } }
+    @media (min-width: 1200px) {
+      .Header-logo > img {
+        width: 200px; } }
+  .Header--rev .Header-logo {
+    border-color: #FFF; }
+
+.Header-title {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  line-height: 1.6;
+  margin-bottom: 1.275rem;
+  text-align: center;
+  color: #04152B;
+  font-family: Display, "Courier New", "Consolas", "Andale Mono", "Lucida San Typewriter", "Lucida Console", mono-spaced;
+  font-size: 27px;
+  margin: 0 auto; }
+  @media (min-width: 600px) {
+    .Header-title {
+      font-size: 35px; } }
+  @media (min-width: 992px) {
+    .Header-title {
+      font-size: 41px; } }
+  @media (min-width: 1700px) {
+    .Header-title {
+      font-size: 46px; } }
+  @media (min-width: 544px) {
+    .Header-title {
+      width: 90%; }
+      .home .Header-title {
+        width: 70%; } }
+  .Header--rev .Header-title {
+    color: #FFF; }
+
+.Header-hero {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+  .Header-hero > img {
+    width: 100%; }
+    @media (min-width: 600px) {
+      .Header-hero > img {
+        width: 90%; } }
+    @media (min-width: 992px) {
+      .Header-hero > img {
+        width: 66%; } }
+    @media (min-width: 1700px) {
+      .Header-hero > img {
+        width: 55%; } }
+
+@media (max-width: 767px) {
+  .applications .Header .Pathway-text em {
+    display: none; } }
+</style>

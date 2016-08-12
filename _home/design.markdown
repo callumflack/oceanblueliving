@@ -3,7 +3,8 @@ title: design
 date: 2016-06-02 10:52:00 +10:00
 position: 2
 headline: Design it yourself.
-button: Get an estimate →
+button-orig: Get an estimate →
+button: See our designs →
 ---
 
 We use water-jet cutting technology to precisely cut metal from business card to wall sizes. We use a wide range of materials from corten, mild steel, aluminium and we can powder coat any colour you want.

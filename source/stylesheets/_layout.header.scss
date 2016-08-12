@@ -25,7 +25,7 @@
 	@include posAbsoluteCenter();
 	z-index: 2;
 
-	&--stickTop {
+	&--top {
 		bottom: auto;
 	}
 
@@ -133,6 +133,10 @@
 
 // Header trumps
 // --------------------------------------------------------------------------
+
+.applications .Header {
+    background-color: palette(background);
+}
 
 .applications .Header .Pathway-text {
 	@include media-breakpoint-down(sm) {

@@ -11,13 +11,12 @@ hero_description: Our weatherproof architectural metalworks are versatile for bo
 screens_first_text: OceanBlue Living Screens reshape living spaces. Segment spaces,
   reframe views and create shade and privacy by filtering light.
 screens_gallery_images:
-- "/uploads/applications-screen-swirl.jpg"
-- "/uploads/applications-screen-rainforest.jpg"
-- "/uploads/applications-11.jpg"
-- "/uploads/applications-15.jpg"
-- "/uploads/applications-16.jpg"
-- "/uploads/applications-17.jpg"
-- "/uploads/applications-screen-bamboo.jpg"
+- "/uploads/home-appl-160812-billingaicl"
+- "/uploads/appl-screen-160812-barriersolutions"
+- "/uploads/home-hero-160812-pineclose"
+- "/uploads/home-appl-160812-chandos"
+- "/uploads/appl-screen-160812-kanimbla"
+- "/uploads/appl-screen-160812-runciman"
 screens_second_text: Screens reshape spaces. Add shade and privacy, add a visual break,
   hide or reframe a view, segment a room, redirect routes through your house or office,
   and at the same time, make the objects functional and beautiful. Our screens are
@@ -56,4 +55,3 @@ outdoor_second_text: Our outdoor metalworks broaden your living spaces—which i
   we can design and cut any pattern you wish, to match your living space. And some
   of our fire-pits even fold away, to avoid inevitable backyard cricket crashes.
 ---
-

@@ -14,27 +14,12 @@ layout: default
 		<div class="FlexEmbed">
 			<div class="FlexEmbed-ratio"></div>
 			<div class="FlexEmbed-content">
-				<div
-					class="u-posAbsoluteCenter CoverImage--dark lazyload"
-					data-bg="{{ image }}">
-				</div>
+				{% include responsive-img-carousel-hero.html %}
 			</div>
 		</div>
 		{% endfor %}
 	</div>
-	<!-- <div class="FlexEmbed">
-		<div class="FlexEmbed-ratio"></div>
-		<div class="FlexEmbed-content">
-			<div
-				class="u-posAbsoluteCenter CoverImage--dark"
-				style="background-image: url('/uploads/home-hero-4.jpg')">
-			</div>
-		</div>
-	</div> -->
-	<!-- <div class="CoverImage--dark u-posRelative">
-		<img class="objectFit" src="/uploads/home-hero-4.jpg" alt="">
-	</div> -->
-	<div class="Header-wrapper Header-wrapper--stickTop">
+	<div class="Header-wrapper Header-wrapper--top">
 		<div class="Header-masthead">
 			<a class="Header-logo" href="/">
 				<img src="/uploads/logo-white.png" alt="{{ site.title }}">
@@ -84,10 +69,7 @@ layout: default
 						<div class="FlexEmbed">
 							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 							<div class="FlexEmbed-content">
-								<div
-									class="u-posAbsoluteCenter CoverImage"
-									style="background-image: url('{{ image }}')">
-								</div>
+								{% include responsive-img-carousel.html %}
 							</div>
 						</div>
 					</div>
@@ -128,19 +110,15 @@ layout: default
 		</div>
 		<div class="Container">
 			<figure class="Figure">
-				<!-- <img src="/uploads/about-duo.jpg" alt="Vince & LeaAnne Cassaniti, Ocean Blue Living"> -->
+                {% assign image = "/uploads/home-about-160812-duo" %}
 				<img
-					class="lazyload"
+					class="lazyload ls-blur"
 					alt="Vince & LeaAnne Cassaniti, Ocean Blue Living"
 					data-sizes="auto"
+                    src="{{ image }}-src.jpg"
 					data-srcset="
-					/uploads/about-duo-e.jpg 600w,
-					/uploads/about-duo-test.jpg 1200w,
-					/uploads/about-duo.jpg 1700w">
-				<!-- <img
-					class="lazyload"
-					alt="Vince & LeaAnne Cassaniti, Ocean Blue Living"
-					data-src="/uploads/about-duo-x.jpg"> -->
+					{{ image }}-xs.jpg 500w,
+					{{ image }}.jpg 1000w">
 			</figure>
 		</div>
 		<div class="Container Container--textColumn">

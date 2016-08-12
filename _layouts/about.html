@@ -14,13 +14,16 @@ layout: default
 					<img src="/uploads/logo-white.png" alt="{{ site.title }}">
 				</a>
 			</div>
-			<!-- <div class="Header-hero">
-				<img src="{{ about.hero_image }}" alt="">
-			</div> -->
-			<div
-				class="u-posAbsoluteCenter CoverImage--dark"
-				style="background-image: url('{{ about.hero_image }}')">
-			</div>
+
+            {% assign image = "/uploads/about-hero-160812-team" %}
+            <div
+                class="u-posAbsoluteCenter CoverImage--dark lazyload ls-blur"
+                src="{{ image }}-src.jpg"
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-sizes="auto"
+                data-bgset="{{ image }}-xs.jpg 600w, {{ image }}.jpg 1000w">
+            </div>
+
 		</div>
 	</div>
 	<div class="Header-wrapper">
@@ -49,7 +52,7 @@ layout: default
 
 		</div>
 
-		<figure class="Figure--lg">
+		<!-- <figure class="Figure--lg">
 			<div class="FlexEmbed">
 				<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 				<div class="FlexEmbed-content">
@@ -64,10 +67,10 @@ layout: default
 					</div>
 				</div>
 			</div>
-		</figure>
+		</figure> -->
 
 		<div class="Container Container--insetTextColumn">
-			
+
 			{{ about.second_text | markdownify }}
 
 		</div>

@@ -14,10 +14,16 @@ layout: default
 					<img src="/uploads/logo-white.png" alt="{{ site.title }}">
 				</a>
 			</div>
-			<div
-				class="u-posAbsoluteCenter CoverImage--dark"
-				style="background-image: url('{{ design.hero_image }}')">
-			</div>
+
+            {% assign image = "/uploads/designs-hero-160812-dorahy" %}
+            <div
+                class="u-posAbsoluteCenter CoverImage--dark lazyload ls-blur"
+                src="{{ image }}-src.jpg"
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-sizes="auto"
+                data-bgset="{{ image }}-xs.jpg 600w, {{ image }}.jpg 1000w">
+            </div>
+
 		</div>
 	</div>
 	<div class="Header-wrapper">
