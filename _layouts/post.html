@@ -9,13 +9,13 @@ layout: default
 			<div class="Post-header">
 				<div class="Post-meta">
 					{% for tag in page.tags %}
-						<a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a>
+						<!-- <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a> -->
+						<span class="Post-tag">{{ tag | capitalize }}</span>
 					{% endfor %}
-					<a class="Post-tag" href="/blog/tags/{{ page.tags }}">{{ post.tags | first | capitalize }}</a>
 					&nbsp;&nbsp;|&nbsp;&nbsp;
 					<span class="Post-date">{{ page.date | date: "%B %d, %Y" }}</span>
 				</div>
-				<h1 class="Post-title"><a href="{{ post.url }}">{{ page.title }}</a></h1>
+				<h1 class="Post-title">{{ page.title }}</h1>
 			</div>
 		</div>
 	</section>
@@ -23,10 +23,14 @@ layout: default
 	<div class="FlexEmbed">
 		<div class="FlexEmbed-ratio"></div>
 		<div class="FlexEmbed-content">
-			<div
-				class="u-posAbsoluteCenter CoverImage"
-				style="background-image: url('{{ page.hero-image }}')">
-			</div>
+            {% assign imagePath = "/uploads/post-" %}
+            <div
+                class="u-posAbsoluteCenter CoverImage CoverImage--applications lazyload ls-blur"
+                src="{{ imagePath }}{{ page.slug }}-src.jpg"
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-sizes="auto"
+                data-bgset="{{ imagePath }}{{ page.slug }}-xs.jpg 600w, {{ imagePath }}{{ page.slug }}.jpg 1000w">
+            </div>
 		</div>
 	</div>
 

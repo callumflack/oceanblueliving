@@ -6,7 +6,6 @@ tags:
 author: LeaAnne Cassaniti
 hero-image: "/uploads/post-hero-1.jpg"
 list-image: "/uploads/post-list-hero-1.png"
-layout: post
 ---
 
 When we work at scale, we often find that we spend a large amount of our time reading, maintaining, and refactoring existing code, rather than writing and adding new features. This is the reason we focus so much on things like architectures, naming conventions, methodologies, preprocessors, scalability, etc.: because writing CSS is easy; looking after it is not.

@@ -162,17 +162,19 @@ pre {
 // Blockquote & lede
 // --------------------------------------------------------------------------
 
+
 blockquote,
 .Blockquote {
-	color: color(text, medium);
-	font-family: $font-sans-book;
-	font-size: fontsize(headerMd, xs);
-	margin-bottom: space(0.75);
+    @include TextRg();
+    border-left: 2px solid rgba( palette(medium), 0.4);
+	color: rgba( palette(medium), 0.85);
+    padding-left: space(1);
+}
 
-	@include respond-to(sm) {
-		font-size: fontsize(headerMd, base);
-		margin-bottom: space(1);
-	}
+// quick markdown scope added
+blockquote p {
+    @include TextRg();
+	color: rgba( palette(medium), 0.85);
 }
 
 .TextLede {

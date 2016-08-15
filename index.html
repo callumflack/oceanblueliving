@@ -147,11 +147,15 @@ layout: default
 				<div class="FlexEmbed">
 					<div class="FlexEmbed-ratio"></div>
 					<div class="FlexEmbed-content">
-						<div
-							class="u-posAbsoluteCenter CoverImage"
-							style="background-image: url('{{ post.hero-image }}')">
-						</div>
-					</div>
+                        {% assign imagePath = "/uploads/post-" %}
+                        <div
+                            class="u-posAbsoluteCenter CoverImage CoverImage--applications lazyload ls-blur"
+                            src="{{ imagePath }}{{ post.slug }}-src.jpg"
+                            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-sizes="auto"
+                            data-bgset="{{ imagePath }}{{ post.slug }}-xs.jpg 600w, {{ imagePath }}{{ post.slug }}.jpg 1000w">
+                        </div>
+                    </div>
 				</div>
 				<div class="Container Container--textColumn Post--article-ruleOff">
 					<div class="Post-header">

@@ -1,13 +1,11 @@
 ---
 title: How to bring light into your house
 date: 2016-06-02 13:28:00 +10:00
-permalink: "/blog/:slug/"
 tags:
 - ideas
 author: LeaAnne Cassaniti
 hero-image: "/uploads/post-160706-test-hero.jpg"
 list-image: "/uploads/post-list-hero-2.png"
-layout: post
 ---
 
 Every day Airbnb hosts open their homes to travelers looking for a new adventure. These experiences are only possible because of the trust our community puts in one another and the trust they’ve put in us. Our mission is to create a world in which anyone can belong anywhere, and that’s only possible when people feel comfortable. We’re proud that to date over 80 million guests have had safe, positive experiences staying with hosts in over 191 countries worldwide.
