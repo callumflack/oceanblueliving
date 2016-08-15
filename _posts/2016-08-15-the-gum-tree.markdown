@@ -4,7 +4,6 @@ date: 2016-08-15 16:05:00 +10:00
 tags:
 - News
 author: LeaAnne Cassaniti
-list-image: "/uploads/post-list-hero-2.png"
 ---
 
 The Gum Tree is a custom project for Georgetown Council to commemorate the people who helped shape Einasleigh from World War One through to today.

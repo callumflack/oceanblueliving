@@ -1,6 +1,7 @@
 ---
 title: Artistic privacy
 date: 2016-05-17 15:39:00 +10:00
+published: false
 tags:
 - Ideas
 author: LeaAnne Cassaniti
