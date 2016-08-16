@@ -5,7 +5,12 @@
 // --------------------------------------------------------------------------
 
 
-.Grid-cell {
+.PortraitDesigns .Grid-cell {
+    //portrait ratio 2:1
+    .Design-cell .FlexEmbed-ratio {
+        padding-bottom: 200%;
+    }
+
 	@include every(2) {
 		.Design-cell { margin-bottom: $vertSpaceSm; }
 	}
@@ -17,10 +22,29 @@
 	}
 }
 
-.Design-cell .FlexEmbed-ratio {
-	padding-bottom: 200%;
+// caption
+.Design-cell p {
+    margin: space(0.5) 0 space(1.25);
+
+    @include respond-to(sm) {
+        margin: space(0.75) 0 space(1.5);
+    }
 }
 
+// wide designs
+.Design-cell--wide {
+    margin-top: $vertSpaceSm;
+}
+
+.Grid-cell {
+    @include first(1) {
+        .Design-cell--wide {
+            margin-top: 0;
+        }
+	}
+}
+
+// portait ratio variations for wide ones
 .Design-cell--3across .FlexEmbed-ratio {
 	padding-bottom: 66.666666667%;
 }
@@ -32,12 +56,4 @@
 .Design-cell--12across .FlexEmbed-ratio {
 	//padding-bottom: 12.5%;
 	padding-bottom: 22.5%;
-}
-
-.Design-cell p {
-	margin: space(0.5) 0 space(1.25);
-
-	@include respond-to(sm) {
-		margin: space(0.75) 0 space(1.5);
-	}
 }

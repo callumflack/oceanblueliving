@@ -166,7 +166,7 @@ pre {
 blockquote,
 .Blockquote {
     @include TextRg();
-    border-left: 2px solid rgba( palette(medium), 0.4);
+    border-left: 1px solid rgba( palette(medium), 0.4);
 	color: rgba( palette(medium), 0.85);
     padding-left: space(1);
 }

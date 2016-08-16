@@ -12,6 +12,25 @@
 <!-- <img src="lqip-src.jpg" data-src="image.jpg" class="lazyload" /> -->
 
 
+<!-- *** Production and development configs *** -->
+
+<!-- Only show DISQUS comments in production. -->
+{% if site.production %}
+<script type="text/javascript">
+  var disqus_shortname = '...';
+  ...
+</script>
+{% endif %}
+
+<!-- Developing a local only feature not ready for production. -->
+{% unless site.production %}
+<section class="promotion">
+  <header>T-SHIRT FUNDRAISER!</header>
+  ...
+</section>
+{% endunless %}
+
+
 
 
 <!-- <div class="gallery--dragger u-marginT6">
