@@ -16,9 +16,9 @@ $(document).ready( function() {
 		},
 		pageDots: false,
 		wrapAround: true,
-		autoPlay: 5000,
-		lazyLoad: true,
-		bgLazyLoad: 1,
+		autoPlay: 4000,
+		lazyLoad: false,
+		bgLazyLoad: false,
 		pauseAutoPlayOnHover: false,
 		prevNextButtons: false,
 		imagesLoaded: true
