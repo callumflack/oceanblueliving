@@ -63,9 +63,9 @@ layout: default
 			</div>
 		</div>
 		<figure class="Section--top">
-			<div class="gallery gallery--dragger gallery--light">
-				{% for image in applications.gallery-images %}
-					<div class="gallery-cell">
+			<div class="carousel carousel--dragger carousel--light">
+				{% for image in applications.carousel-images %}
+					<div class="carousel-cell">
 						<div class="FlexEmbed">
 							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 							<div class="FlexEmbed-content">
@@ -172,8 +172,8 @@ layout: default
 
 					{{ post.content }}
 
-					<h3 class="Headline--minor u-marginT3">Author</h3>
-					<p class="Post-author">{{ post.author }}</p>
+					<!-- <h3 class="Headline--minor u-marginT3">Author</h3>
+					<p class="Post-author">{{ post.author }}</p> -->
 					<h3 class="Headline--minor u-marginT3">Share</h3>
 					{% include share.html %}
 				</div>

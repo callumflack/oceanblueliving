@@ -4,7 +4,7 @@ date: 2016-06-02 10:46:00 +10:00
 position: 1
 headline: Create timeless elegance.
 button: See all we do →
-gallery-images:
+carousel-images:
 - "/uploads/home-appl-160812-corellast"
 - "/uploads/home-appl-160812-mulgraverd"
 - "/uploads/home-appl-160812-birdwingst"

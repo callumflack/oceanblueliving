@@ -5,26 +5,13 @@
 // --------------------------------------------------------------------------
 
 
-// For this project…
-//.gallery {
-//	overflow: hidden;
-//	width: 100%;
-//}
-
-//.gallery,
-//.flickity-viewport {
-//	&:focus {
-//		outline: none;
-//	}
-//}
-
 // Because I'm using FlexEmbed as child content,
 // not an img.
-.gallery-cell {
+.carousel-cell {
 	width: 100%;
 }
 
-//a.gallery-cell {
+//a.carousel-cell {
 //	// @include u-link(none);
 //	transition: none;
 //}
@@ -34,7 +21,7 @@
 // Page dots
 // --------------------------------------------------------------------------
 
-.gallery .flickity-page-dots {
+.carousel .flickity-page-dots {
     bottom: space(-2);
 
     //@include media-breakpoint-up(lg) {
@@ -51,44 +38,11 @@
 // Gallery-cell ratios
 // --------------------------------------------------------------------------
 
-.gallery .FlexEmbed-ratio {
+.carousel .FlexEmbed-ratio {
 	padding-bottom: 70%;
 	@include respond-to(lg) { padding-bottom: 56.25%; }
 }
 
-
-
-//.flickity-page-dots .dot {
-//	background: palette(muted);
-//}
-
-//.flickity-prev-next-button {
-//	background-color: transparent;
-//	border: none;
-//	color: palette(muted);
-//	height: 100%;
-//	opacity: 0;
-//	top: 0;
-//	transform: none;
-//	width: 20%;
-//
-//	&:disabled {
-//		opacity: 0;
-//	}
-//
-//	&.next     { right: -20%; }
-//	&.previous { left: -20%; }
-//
-//	.arrow {
-//		fill: currentColor;
-//	}
-//
-//	@include on-event() {
-//		background-color: transparent;
-//		opacity: 1;
-//		transition: opacity 500ms;
-//	}
-//}
 
 
 // Hero fade effect hack
@@ -96,19 +50,19 @@
 // See: http://codepen.io/Tumki/pen/JXOyvp?editors=1100
 // --------------------------------------------------------------------------
 
-.gallery--fade {
+.carousel--fade {
 	.flickity-slider {
 		transform: none !important;
 	}
 
-	.gallery-cell {
+	.carousel-cell {
 		left: 0 !important;
 		opacity: 0.1;
 		transition: opacity 1700ms ease-in-out;
 		z-index: -1;
 	}
 
-	.gallery-cell.is-selected {
+	.carousel-cell.is-selected {
 		opacity: 1;
 		z-index: 0
 	}
@@ -118,8 +72,8 @@
 // 'Draggable' like instrument.com
 // --------------------------------------------------------------------------
 
-.gallery--dragger {
-	.gallery-cell {
+.carousel--dragger {
+	.carousel-cell {
 		cursor: grab;
 		// opacity: 0.5;
 		transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
@@ -129,92 +83,25 @@
 		}
 	}
 
-	.gallery-cell.is-selected {
+	.carousel-cell.is-selected {
 		transform: scale(1);
 		transition: scale map-fetch($transition, duration, long) map-fetch($transition, type, thisalso);
 	}
 
-	@include media-breakpoint-up(sm) { .gallery-cell { transform: scale(0.7); } }
-	@include media-breakpoint-up(su) { .gallery-cell { transform: scale(0.5); } }
+	@include media-breakpoint-up(sm) { .carousel-cell { transform: scale(0.7); } }
+	@include media-breakpoint-up(su) { .carousel-cell { transform: scale(0.5); } }
 
 }
 
-.gallery--light {
+.carousel--light {
 	@include media-breakpoint-up(sm) {
-		.gallery-cell {
+		.carousel-cell {
 			filter: grayscale(100%);
 			opacity: 0.3;
 		}
-		.gallery-cell.is-selected {
+		.carousel-cell.is-selected {
 			filter: grayscale(0);
 			opacity: 1;
 		}
 	}
 }
-
-
-// Theme when inside '.Hero'
-// --------------------------------------------------------------------------
-
-//.Hero .gallery-cell {
-//	.CoverImage {
-//		transition: 1s transform ease-out;
-//	}
-//
-//	@include on-event() {
-//		.CoverImage--hint {
-//			transform: scale(1.02);
-//		}
-//	}
-//}
-//
-//.Hero .flickity-page-dots {
-//	bottom: space(1);
-//
-//	.dot {
-//		background: palette(white);
-//	}
-//}
-//
-//.Hero .flickity-prev-next-button {
-//	@include baseTransition();
-//	border-radius: 0;
-//	color: palette(charcoal);
-//	height: 100%;
-//	opacity: 1;
-//	top: 0;
-//	width: 20%;
-//	width: 0;
-//
-//	@include respond-to(sm) {
-//		background-color: rgba( palette(neutral-light), 0.96 );
-//		width: calc( (100% - #{size(container, wide-picture)}) * 0.5 );
-//	}
-//
-//	&.next     { right: 0; }
-//	&.previous { left: 0; }
-//
-//	$flickityArrowHeight: 100px;
-//
-//	svg {
-//		@include baseTransition();
-//		color: inherit;
-//		height: $flickityArrowHeight;
-//		left: auto;
-//		opacity: 0;
-//		right: 50%;
-//		top: calc( (100% - #{$flickityArrowHeight}) / 2 );
-//		transform: translate(50%);
-//		width: $flickityArrowHeight;
-//	}
-//
-//	.arrow {
-//		fill: currentColor;
-//	}
-//
-//	@include on-event() {
-//		svg {
-//			opacity: 1;
-//		}
-//	}
-//}
