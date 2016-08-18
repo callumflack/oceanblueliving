@@ -64,7 +64,7 @@ layout: default
 				{% for image in applications.screens_gallery_images %}
 					<div class="gallery-cell">
 						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+							<div class="FlexEmbed-ratio"></div>
 							<div class="FlexEmbed-content">
 								{% include responsive-img-carousel.html %}
 							</div>
@@ -90,12 +90,12 @@ layout: default
 				{{ applications.gates_first_text | markdownify }}
 			</div>
 		</div>
-		<figure class="Section--rg">
+		<!-- <figure class="Section--rg">
 			<div class="gallery gallery--dragger gallery--light">
 				{% for image in applications.gates_gallery_images %}
 					<div class="gallery-cell">
 						<div class="FlexEmbed">
-							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+							<div class="FlexEmbed-ratio"></div>
 							<div class="FlexEmbed-content">
 								{% include responsive-img-carousel.html %}
 							</div>
@@ -103,7 +103,7 @@ layout: default
 					</div>
 				{% endfor %}
 			</div>
-		</figure>
+		</figure> -->
 		<div class="Container Container--textColumn">
 			<div class="Pathway-text">
 				{{ applications.gates_second_text | markdownify }}
@@ -121,7 +121,7 @@ layout: default
 				{{ applications.outdoor_first_text | markdownify }}
 			</div>
 		</div>
-		<figure class="Section--rg">
+		<!-- <figure class="Section--rg">
 			<div class="gallery gallery--dragger gallery--light">
 				{% for image in applications.outdoor_gallery_images %}
 					<div class="gallery-cell">
@@ -134,7 +134,7 @@ layout: default
 					</div>
 				{% endfor %}
 			</div>
-		</figure>
+		</figure> -->
 		<div class="Container Container--textColumn">
 			<div class="Pathway-text">
 				{{ applications.outdoor_second_text | markdownify }}

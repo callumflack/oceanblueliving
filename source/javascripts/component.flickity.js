@@ -17,7 +17,7 @@ $(document).ready( function() {
 		pageDots: true,
 		wrapAround: true,
 		autoPlay: 3000,
-        imagesLoaded: true,
+        // imagesLoaded: true,
         selectedAttraction: 0.1,
         friction: 0.7,
 		lazyLoad: false,
