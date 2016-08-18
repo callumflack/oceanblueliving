@@ -41,3 +41,4 @@ outdoor_gallery_images:
 outdoor_second_text: |
   Our outdoor metalworks broaden your living spaces—which is especially useful in tropical Queensland—by complementing your existing living spaces using architectural objects that blend into your natural surroundings. All-weather durable finishes and materials mean the objects improve in appearance with age. Of course, we can design and cut any pattern you wish, to match your living space. And some of our fire-pits even fold away, to avoid inevitable backyard cricket crashes.
 ---
+
