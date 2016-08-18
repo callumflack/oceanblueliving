@@ -31,6 +31,23 @@
 
 
 
+// Page dots
+// --------------------------------------------------------------------------
+
+.gallery .flickity-page-dots {
+    bottom: space(-2);
+
+    //@include media-breakpoint-up(lg) {
+    //    display: none;
+    //}
+}
+
+.home .flickity-page-dots .dot {
+    background-color: palette(background);
+}
+
+
+
 // Gallery-cell ratios
 // --------------------------------------------------------------------------
 
