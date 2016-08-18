@@ -14,14 +14,16 @@ $(document).ready( function() {
 			x2: 63, y2: 50,
 			x3: 13
 		},
-		pageDots: false,
+		pageDots: true,
 		wrapAround: true,
-		autoPlay: 4000,
+		autoPlay: 3000,
+        imagesLoaded: true,
+        selectedAttraction: 0.1,
+        friction: 0.7,
 		lazyLoad: false,
 		bgLazyLoad: false,
 		pauseAutoPlayOnHover: false,
-		prevNextButtons: false,
-		imagesLoaded: true
+		prevNextButtons: false
 	});
 
 	// For adding captions to a flickity instance:
