@@ -3,23 +3,17 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible", content="IE=edge,chrome=1" >
-	<meta http-equiv="cleartype", content="on" >
 	<meta name="viewport", content="width=device-width, initial-scale=1.0" >
-	<title>{{ site.title }}</title>
-	<meta name='description' content='{{ site.description }}' >
-	<meta name='keywords' content="{{ site.keywords }}" >
+    <title>{% if page.url != '/' %}{{ page.title }} | {% endif %}OceanBlue Living</title>
+    {% seo title=false %}
 	<meta name="author", content="{{ site.author }}" >
 	<meta name="handheldfriendly", content="true" >
 	<meta name="mobileoptimized", content="320" >
-	<link rel="canonical" href="{{ site.url }}">
-    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}{{ site.feed_url }}" />
-    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}{{ site.sitemap_url }}" />
-
-	<!-- {% include meta-share.html %} -->
+    <link rel="alternate" type="application/rss+xml" title="The OceanBlue Blog (RSS)" href="{{ site.url }}/feed.xml" />
 
     {% include critical-css.html %}
+    <!-- <link rel="stylesheet" href="/build/application.min.css"> -->
 	<link rel="stylesheet" href="/build/application.css">
-	<!-- <link rel="stylesheet" href="/build/application.min.css"> -->
 	<link rel="stylesheet" href="/build/owl.carousel.css">
     <link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.min.css">
 
