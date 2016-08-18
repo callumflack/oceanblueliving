@@ -25,7 +25,7 @@ gates_gallery_images:
 - "/uploads/appl-gates-160816-murphyst"
 - "/uploads/appl-gates-160816-murphyst2"
 - "/uploads/appl-screen-160816-ponticellost"
-- "/uploads/appl-screen-160812-kanimbla"
+- "/uploads/appl-screen-160818-kanimbla"
 gates_gallery_images_orig:
 - "/uploads/applications-9.jpg <== kanimbla a'comin'"
 gates_second_text: |
@@ -41,4 +41,3 @@ outdoor_gallery_images:
 outdoor_second_text: |
   Our outdoor metalworks broaden your living spaces—which is especially useful in tropical Queensland—by complementing your existing living spaces using architectural objects that blend into your natural surroundings. All-weather durable finishes and materials mean the objects improve in appearance with age. Of course, we can design and cut any pattern you wish, to match your living space. And some of our fire-pits even fold away, to avoid inevitable backyard cricket crashes.
 ---
-
