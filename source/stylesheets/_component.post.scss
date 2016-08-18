@@ -48,6 +48,10 @@ a.Post--inList {
 	}
 }
 
+.Post-image > img {
+    width: 100%;
+}
+
 .Post-header {
 	@include sectionSpace--sm();
 }
