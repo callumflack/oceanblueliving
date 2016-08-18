@@ -7,23 +7,25 @@
 
 $(document).ready( function() {
 
-	var $gallery = $('.gallery').flickity({
-		arrowShape: {
-			x0: 10,
-			x1: 60, y1: 50,
-			x2: 63, y2: 50,
-			x3: 13
-		},
-		pageDots: true,
+	$('.carousel').flickity({
 		wrapAround: true,
 		autoPlay: 3000,
-        imagesLoaded: true,
+        pauseAutoPlayOnHover: false,
+        dragThreshold: 10,
         selectedAttraction: 0.1,
         friction: 0.7,
-		lazyLoad: false,
-		bgLazyLoad: false,
-		pauseAutoPlayOnHover: false,
+        arrowShape: {
+            x0: 10,
+            x1: 60, y1: 50,
+            x2: 63, y2: 50,
+            x3: 13
+        },
+        pageDots: true,
 		prevNextButtons: false
+        // all lazyloading handled by lazysizes
+        // imagesLoaded: true,
+        // lazyLoad: true,
+        // bgLazyLoad: true
 	});
 
 	// For adding captions to a flickity instance:
