@@ -21,7 +21,7 @@ layout: default
                 src="{{ image }}-src.jpg"
                 srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                 data-sizes="auto"
-                data-bgset="{{ image }}-xs.jpg 600w, {{ image }}.jpg 1000w">
+                data-bgset="{{ image }}-xs.jpg 900w, {{ image }}.jpg 1800w">
             </div>
 
 		</div>
@@ -44,7 +44,7 @@ layout: default
 <main class="Content" role="main">
 	<section class="Section">
 		<div class="Container Container--blog">
-			<div class="Grid Grid--withGutterLg">
+			<div class="Grid Grid--withGutterLg Grid--alignCenter">
 
                 {% for post in site.posts %}
 				<div class="Grid-cell u-xs-size1of2 u-lg-size1of3">
@@ -57,8 +57,8 @@ layout: default
                                     src="{{ imagePath }}{{ post.slug }}-src.jpg"
                                     data-sizes="auto"
                                     data-srcset="
-                                        {{ imagePath }}{{ post.slug }}-xs.jpg 600w,
-                                        {{ imagePath }}{{ post.slug }}.jpg 1000w"
+                                        {{ imagePath }}{{ post.slug }}-xs.jpg 900w,
+                                        {{ imagePath }}{{ post.slug }}.jpg 1800w"
                                     alt="{{ post.title }}">
 							</figure>
 							<h1 class="Post-subtitle">{{ post.title }}</h1>

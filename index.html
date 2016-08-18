@@ -108,7 +108,7 @@ layout: default
 				<h1 class="Pathway-title">{{ about.headline }}</h1>
 			</div>
 		</div>
-		<div class="Container">
+		<div class="Container Container--fullWidthMobile">
 			<figure class="Figure">
                 {% assign image = "/uploads/home-about-160812-duo" %}
 				<img
@@ -117,8 +117,8 @@ layout: default
 					data-sizes="auto"
                     src="{{ image }}-src.jpg"
 					data-srcset="
-					{{ image }}-xs.jpg 500w,
-					{{ image }}.jpg 1000w">
+					{{ image }}-xs.jpg 900w,
+					{{ image }}.jpg 1800w">
 			</figure>
 		</div>
 		<div class="Container Container--textColumn">
@@ -153,7 +153,7 @@ layout: default
                             src="{{ imagePath }}{{ post.slug }}-src.jpg"
                             srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                             data-sizes="auto"
-                            data-bgset="{{ imagePath }}{{ post.slug }}-xs.jpg 600w, {{ imagePath }}{{ post.slug }}.jpg 1000w">
+                            data-bgset="{{ imagePath }}{{ post.slug }}-xs.jpg 1200w, {{ imagePath }}{{ post.slug }}.jpg 2000w">
                         </div>
                     </div>
 				</div>
