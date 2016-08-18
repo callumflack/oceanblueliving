@@ -18,6 +18,8 @@ $namespace             : '';
 // Do not use these values directly in your Sass files. Use the more
 // specifically named variables below that use these root values.
 
+// Original brand color: #04152B
+
 $base-black                    : #000;
 $base-white                    : #FFF;
 
@@ -36,7 +38,7 @@ $palette: (
 	neutral                    : #F3F2F1,
 	neutral-dark               : darken(#f0eeeb, 9%),
 	neutral-light              : lighten(#f0eeeb, 4%),
-	brand                      : #04152B,
+	brand                      : #030d18,
 	brand-complement           : #6EBE44,
 	brand-counter              : #F7FCFF,
 	warning                    : #FFD40C,
