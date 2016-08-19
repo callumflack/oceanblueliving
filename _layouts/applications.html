@@ -14,16 +14,9 @@ layout: default
 					<img src="/uploads/logo.png" alt="{{ site.title }}">
 				</a>
 			</div>
-			<!-- <div class="u-posAbsoluteCenter CoverImage CoverImage--applications" style="background-image: url('{{ applications.hero_image }}')"></div> -->
             {% assign image = "/uploads/appl-hero-160812-grinder" %}
-            <div
-                class="u-posAbsoluteCenter CoverImage CoverImage--applications lazyload ls-blur"
-                src="{{ image }}-src.jpg"
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-sizes="auto"
-                data-bgset="{{ image }}-xs.jpg 600w, {{ image }}.jpg 1000w">
-            </div>
-
+            {% assign absolute = true %}
+            {% include responsive-img.html %}
 		</div>
 	</div>
 	<div class="Header-wrapper">
@@ -66,7 +59,7 @@ layout: default
 						<div class="FlexEmbed">
 							<div class="FlexEmbed-ratio"></div>
 							<div class="FlexEmbed-content">
-								{% include responsive-img-bg.html %}
+								{% include responsive-img.html %}
 							</div>
 						</div>
 					</div>
@@ -97,7 +90,7 @@ layout: default
 						<div class="FlexEmbed">
 							<div class="FlexEmbed-ratio"></div>
 							<div class="FlexEmbed-content">
-								{% include responsive-img-bg.html %}
+								{% include responsive-img.html %}
 							</div>
 						</div>
 					</div>
@@ -128,7 +121,7 @@ layout: default
 						<div class="FlexEmbed">
 							<div class="FlexEmbed-ratio"></div>
 							<div class="FlexEmbed-content">
-								{% include responsive-img-bg.html %}
+								{% include responsive-img.html %}
 							</div>
 						</div>
 					</div>

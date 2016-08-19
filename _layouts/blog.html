@@ -16,13 +16,9 @@ layout: default
 			</div>
 
             {% assign image = "/uploads/blog-hero-160812-barriersolutions" %}
-            <div
-                class="u-posAbsoluteCenter CoverImage--dark lazyload ls-blur"
-                src="{{ image }}-src.jpg"
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-sizes="auto"
-                data-bgset="{{ image }}-xs.jpg 900w, {{ image }}.jpg 1800w">
-            </div>
+            {% assign absolute = true %}
+            {% include responsive-img.html %}
+            <div class="u-posAbsoluteCenter FlexEmbed-content--dark">&nbsp;</div>
 
 		</div>
 	</div>
