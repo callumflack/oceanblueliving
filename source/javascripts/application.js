@@ -52,7 +52,7 @@ $(document).ready(function() {
     // --------------------------------------------------------------------------
 
     if ( ! Modernizr.objectfit ) {
-        $('.FlexEmbed-fitImage').each(function () {
+        $('.FlexEmbed-content').each(function () {
             var $container = $(this),
                 imgUrl = $container.find('img').prop('src');
 
