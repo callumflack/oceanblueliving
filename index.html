@@ -14,7 +14,8 @@ layout: default
 		<div class="FlexEmbed">
 			<div class="FlexEmbed-ratio"></div>
 			<div class="FlexEmbed-content">
-				{% include responsive-img-carousel-hero.html %}
+				{% include responsive-img.html %}
+                <div class="u-posAbsoluteCenter FlexEmbed-content--dark">&nbsp;</div>
 			</div>
 		</div>
 		{% endfor %}
@@ -69,7 +70,7 @@ layout: default
 						<div class="FlexEmbed">
 							<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
 							<div class="FlexEmbed-content">
-								{% include responsive-img-carousel.html %}
+								{% include responsive-img.html %}
 							</div>
 						</div>
 					</div>
@@ -110,15 +111,16 @@ layout: default
 		</div>
 		<div class="Container Container--fullWidthMobile">
 			<figure class="Figure">
-                {% assign image = "/uploads/home-about-160812-duo" %}
-				<img
-					class="lazyload ls-blur"
-					alt="Vince & LeaAnne Cassaniti, Ocean Blue Living"
-					data-sizes="auto"
-                    src="{{ image }}-src.jpg"
-					data-srcset="
-					{{ image }}-xs.jpg 900w,
-					{{ image }}.jpg 1800w">
+                <div class="FlexEmbed">
+                    {% assign image = "/uploads/home-about-160812-duo" %}
+                    {% assign alt = "Vince & LeaAnne Cassaniti, Ocean Blue Living" %}
+                    {% include responsive-img.html %}
+                    <!-- <div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+                    <div class="FlexEmbed-content">
+                    </div> -->
+                </div>
+
+
 			</figure>
 		</div>
 		<div class="Container Container--textColumn">
@@ -148,13 +150,14 @@ layout: default
 					<div class="FlexEmbed-ratio"></div>
 					<div class="FlexEmbed-content">
                         {% assign imagePath = "/uploads/post-" %}
-                        <div
-                            class="u-posAbsoluteCenter CoverImage CoverImage--applications lazyload ls-blur"
+                        <img
+                            class="FlexEmbed-fitImage lazyload ls-blur"
+                            alt="{{ alt }}"
                             src="{{ imagePath }}{{ post.slug }}-src.jpg"
                             srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                            data-srcset="{{ imagePath }}{{ post.slug }}-xs.jpg 1200w, {{ imagePath }}{{ post.slug }}.jpg 2000w"
                             data-sizes="auto"
-                            data-bgset="{{ imagePath }}{{ post.slug }}-xs.jpg 1200w, {{ imagePath }}{{ post.slug }}.jpg 2000w">
-                        </div>
+                            />
                     </div>
 				</div>
 				<div class="Container Container--textColumn Post--article-ruleOff">

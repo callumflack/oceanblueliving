@@ -1,0 +1,10 @@
+{% assign alt = image.path | remove:'/designs-rg/' | remove:'.jpg' | replace: '-', ' ' %}
+
+<img
+    class="FlexEmbed-fitImage lazyload ls-blur"
+    alt="{{ alt }}"
+    src="{{ image }}-src.jpg"
+    srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    data-srcset="{{ image }}-xs.jpg 900w, {{ image }}.jpg 1800w"
+    data-sizes="auto"
+    />

@@ -47,4 +47,22 @@ $(document).ready(function() {
     })
 
 
+    // Object-fit fallback for IE/Edge
+    // @url: https://medium.com/@primozcigler/neat-trick-for-css-object-fit-fallback-on-edge-and-other-browsers-afbc53bbb2c3#.bs809jr8g
+    // --------------------------------------------------------------------------
+
+    if ( ! Modernizr.objectfit ) {
+        $('.FlexEmbed-fitImage').each(function () {
+            var $container = $(this),
+                imgUrl = $container.find('img').prop('src');
+
+            if (imgUrl) {
+                $container
+                    .css('backgroundImage', 'url(' + imgUrl + ')')
+                    .addClass('u-posAbsoluteCenter CoverImage lazyload ls-blur');
+            }
+        });
+    }
+
+
 });
