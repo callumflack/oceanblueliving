@@ -147,7 +147,16 @@ gulp.task( 'compile:sass', function() {
 			// errLogToConsole: true
 		} ) )
 		.pipe( plugins.autoprefixer( {
-				browsers : [ 'last 2 versions' ],
+                // http://www.analog-ni.co/my-css-autoprefixer-settings-for-ie9-and-up
+                browsers: [
+                    'last 2 versions',
+                    'Explorer >= 9',
+                    'iOS >= 5',
+                    'Safari >= 5',
+                    'OperaMobile >= 11',
+                    'ChromeAndroid >= 9',
+                    'ExplorerMobile >= 9'
+                ],
 				cascade  : false
 		} ) )
 		.pipe( plugins.sourcemaps.write() )
