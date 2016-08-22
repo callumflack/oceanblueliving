@@ -16,13 +16,9 @@ layout: default
 			</div>
 
             {% assign image = "/uploads/designs-hero-160812-dorahy" %}
-            <div
-                class="u-posAbsoluteCenter CoverImage--dark lazyload ls-blur"
-                src="{{ image }}-src.jpg"
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-sizes="auto"
-                data-bgset="{{ image }}-xs.jpg 600w, {{ image }}.jpg 1000w">
-            </div>
+            {% assign absolute = true %}
+            {% include responsive-img.html %}
+            <div class="u-posAbsoluteCenter FlexEmbed-content--dark">&nbsp;</div>
 
 		</div>
 	</div>
@@ -60,6 +56,12 @@ layout: default
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="{{ image.path }}">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt="{{ alt }}"
+                                            data-src="{{ image.path }}"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>{{ image.path | remove:'/designs-rg/' | remove:'.png' | replace: '-', ' ' }}</p>

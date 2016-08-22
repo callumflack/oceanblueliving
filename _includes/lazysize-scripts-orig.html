@@ -14,9 +14,16 @@
 		window.lazySizesConfig = window.lazySizesConfig || {};
 
 		window.lazySizesConfig.loadMode = 1;
-	})();
 
+		// set expand to a higher value on larger displays
+		// window.lazySizesConfig.expand = Math.max(Math.min(docElem.clientWidth, docElem.clientHeight, 1222) - 1, 359);
+		// window.lazySizesConfig.expFactor = lazySizesConfig.expand < 380 ? 3 : 2;
+	})();
 </script>
 
-{% if page.title == "design" %}<script src="/build/ls.unveilhooks.min.js" async=""></script>{% endif %}
+<!-- <script src="/build/ls.unveilhooks.min.js" async=""></script> -->
+<!-- <script src="/build/ls.rias.min.js" async=""></script> -->
+<!-- <script src="/build/ls.parent-fit.min.js" async=""></script> -->
+<!-- <script src="/build/ls.bgset.min.js" async=""></script> -->
+<!-- <script src="/build/ls.object-fit.min.js" async=""></script> -->
 <script src="/build/lazysizes.min.js" async=""></script>
