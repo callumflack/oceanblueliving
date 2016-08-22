@@ -11,13 +11,11 @@
 	<meta name="mobileoptimized", content="320" >
     <link rel="alternate" type="application/rss+xml" title="The OceanBlue Blog (RSS)" href="{{ site.url }}/feed.xml" />
 
-    {% include critical-css.html %}
     {% include lazysize-scripts.html %}
     {% include lazysize-styles.html %}
+    {% include critical-css.html %}
     <!-- <link rel="stylesheet" href="/build/application.min.css"> -->
 	<link rel="stylesheet" href="/build/application.css">
-	<link rel="stylesheet" href="/build/owl.carousel.css">
-    <link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.min.css">
 </head>
 
 <body id="top" class="{{page.title}} {{page.categories}}"
@@ -32,9 +30,9 @@
 	{% include icons.html %}
 	{% include icons-lg.html %}
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
 	<script src="/build/lib.owl.carousel.min.js"></script>
-    <script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+	<script src="/build/lib.flickity.min.js"></script>
 	<script src="/build/application.min.js"></script>
 	<script src="/build/lib.modernizr.min.js"></script>
 	{% include google-analytics.html %}
