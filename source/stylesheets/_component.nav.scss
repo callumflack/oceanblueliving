@@ -72,6 +72,7 @@ $infoColor: rgba( palette(white), 0.5 );
 
 .Nav-toggle {
 	@include baseTransition;
+    color: palette(white);
 	content: "buggyfill";
 	display: inline;
 	position: fixed;
@@ -88,10 +89,10 @@ $infoColor: rgba( palette(white), 0.5 );
 	}
 
 	// Color the hamburger icon
-	@include when-inside(".home")  { color: palette(white); }
-	@include when-inside(".about") { color: palette(white); }
-	@include when-inside(".blog")  { color: palette(white); }
-	@include when-inside(".design")  { color: palette(white); }
+	//@include when-inside(".home")  { color: palette(white); }
+	//@include when-inside(".about") { color: palette(white); }
+	//@include when-inside(".blog")  { color: palette(white); }
+	//@include when-inside(".design")  { color: palette(white); }
 }
 
 // Make the header nav fixed and animate down into view on scroll
