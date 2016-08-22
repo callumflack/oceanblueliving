@@ -184,12 +184,7 @@
     display: none; } }
 </style>
 
-    <!-- <link rel="stylesheet" href="/build/application.min.css"> -->
-	<link rel="stylesheet" href="/build/application.css">
-	<link rel="stylesheet" href="/build/owl.carousel.css">
-    <link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.min.css">
-
-	<script>
+    <script>
 	// respimg plugin only if the browser doesn't support responsive images
 	function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
 
@@ -205,21 +200,14 @@
 		window.lazySizesConfig = window.lazySizesConfig || {};
 
 		window.lazySizesConfig.loadMode = 1;
-
-		// set expand to a higher value on larger displays
-		window.lazySizesConfig.expand = Math.max(Math.min(docElem.clientWidth, docElem.clientHeight, 1222) - 1, 359);
-		window.lazySizesConfig.expFactor = lazySizesConfig.expand < 380 ? 3 : 2;
 	})();
+
 </script>
 
 <script src="/build/ls.unveilhooks.min.js" async=""></script>
-<!-- <script src="/build/ls.rias.min.js" async=""></script> -->
-<script src="/build/ls.parent-fit.min.js" async=""></script>
-<script src="/build/ls.bgset.min.js" async=""></script>
-<!-- <script src="/build/ls.object-fit.min.js" async=""></script> -->
 <script src="/build/lazysizes.min.js" async=""></script>
 
-	<style>
+    <style>
     .ls-blur {
         -webkit-filter: blur(5px);
         filter: blur(5px);
@@ -242,7 +230,10 @@
     }
 </style>
 
-
+    <!-- <link rel="stylesheet" href="/build/application.min.css"> -->
+	<link rel="stylesheet" href="/build/application.css">
+	<link rel="stylesheet" href="/build/owl.carousel.css">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.min.css">
 </head>
 
 <body id="top" class="design "
@@ -270,13 +261,18 @@
 			</div>
 
             
-            <div
-                class="u-posAbsoluteCenter CoverImage--dark lazyload ls-blur"
-                src="/uploads/designs-hero-160812-dorahy-src.jpg"
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-sizes="auto"
-                data-bgset="/uploads/designs-hero-160812-dorahy-xs.jpg 600w, /uploads/designs-hero-160812-dorahy.jpg 1000w">
-            </div>
+            
+            
+
+<img
+    class="FlexEmbed-fitImage lazyload ls-blur u-posAbsoluteCenter"
+    alt=""
+    src="/uploads/designs-hero-160812-dorahy-src.jpg"
+    data-sizes="auto"
+    data-srcset="/uploads/designs-hero-160812-dorahy-src.jpg 300w, /uploads/designs-hero-160812-dorahy-xs.jpg 900w, /uploads/designs-hero-160812-dorahy.jpg 1800w"
+    />
+
+            <div class="u-posAbsoluteCenter FlexEmbed-content--dark">&nbsp;</div>
 
 		</div>
 	</div>
@@ -394,6 +390,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Arrows.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Arrows.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Arrows</p>
@@ -415,6 +417,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Australian-Bush-1.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Australian-Bush-1.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Australian Bush 1</p>
@@ -436,6 +444,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Australian-Bush-2.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Australian-Bush-2.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Australian Bush 2</p>
@@ -457,6 +471,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Australian-Bush-3.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Australian-Bush-3.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Australian Bush 3</p>
@@ -478,6 +498,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Bamboo-2.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Bamboo-2.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Bamboo 2</p>
@@ -499,6 +525,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Bamboo.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Bamboo.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Bamboo</p>
@@ -520,6 +552,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Barcode.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Barcode.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Barcode</p>
@@ -541,6 +579,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Birch.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Birch.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Birch</p>
@@ -562,6 +606,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Birds-on-a-Wire.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Birds-on-a-Wire.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Birds on a Wire</p>
@@ -583,6 +633,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Bubbles.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Bubbles.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Bubbles</p>
@@ -604,6 +660,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Bush-Leaves.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Bush-Leaves.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Bush Leaves</p>
@@ -625,6 +687,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Cairns.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Cairns.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Cairns</p>
@@ -646,6 +714,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Celtic-Circles.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Celtic-Circles.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Celtic Circles</p>
@@ -667,6 +741,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Criss-Cross.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Criss-Cross.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Criss Cross</p>
@@ -688,6 +768,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Dotted-Circles.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Dotted-Circles.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Dotted Circles</p>
@@ -709,6 +795,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Exclamation.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Exclamation.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Exclamation</p>
@@ -730,6 +822,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Forest.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Forest.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Forest</p>
@@ -751,6 +849,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Frangipani.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Frangipani.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Frangipani</p>
@@ -772,6 +876,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Leaf-Skeleton.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Leaf-Skeleton.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Leaf Skeleton</p>
@@ -793,6 +903,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Moorish.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Moorish.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Moorish</p>
@@ -814,6 +930,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Moroccan-2.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Moroccan-2.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Moroccan 2</p>
@@ -835,6 +957,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Moroccan.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Moroccan.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Moroccan</p>
@@ -856,6 +984,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Palm-Leaf.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Palm-Leaf.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Palm Leaf</p>
@@ -877,6 +1011,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Palm-Leaves.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Palm-Leaves.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Palm Leaves</p>
@@ -898,6 +1038,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Plus.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Plus.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Plus</p>
@@ -919,6 +1065,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Retro.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Retro.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Retro</p>
@@ -940,6 +1092,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Scribble.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Scribble.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Scribble</p>
@@ -961,6 +1119,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Slits.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Slits.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Slits</p>
@@ -982,6 +1146,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Spaghetti.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Spaghetti.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Spaghetti</p>
@@ -1003,6 +1173,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Splash.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Splash.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Splash</p>
@@ -1024,6 +1200,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Squares.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Squares.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Squares</p>
@@ -1045,6 +1227,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Thick-Chopsticks.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Thick-Chopsticks.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Thick Chopsticks</p>
@@ -1066,6 +1254,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Thin-Chopsticks.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Thin-Chopsticks.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Thin Chopsticks</p>
@@ -1087,6 +1281,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Tiles.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Tiles.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Tiles</p>
@@ -1108,6 +1308,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Triangles.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Triangles.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Triangles</p>
@@ -1129,6 +1335,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Waves.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Waves.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Waves</p>
@@ -1150,6 +1362,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Web.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Web.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Web</p>
@@ -1171,6 +1389,12 @@
 											class="u-posAbsoluteCenter CoverImage lazyload"
 											data-bg="/designs-rg/Zig-Zag.png">
 										</div>
+                                        <!-- <img
+                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
+                                            alt=""
+                                            data-src="/designs-rg/Zig-Zag.png"
+                                            /> -->
+
 									</div>
 								</div>
 								<p>Zig Zag</p>
@@ -1534,14 +1758,6 @@ Queensland 4870 Australia
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="/build/lib.owl.carousel.min.js"></script>
-	<!-- <script src="/build/lib.viewport-units-buggyfill.hacks.js"></script>
-	<script src="/build/lib.viewport-units-buggyfill.js"></script>
-	<script>
-	  window.viewportUnitsBuggyfill.init({
-		refreshDebounceWait: 50,
-		hacks: window.viewportUnitsBuggyfillHacks
-	  });
-	</script> -->
     <script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 	<script src="/build/application.min.js"></script>
 	<script src="/build/lib.modernizr.min.js"></script>
