@@ -44,10 +44,6 @@ layout: default
 				{% for image in site.static_files %}
 					{% if image.path contains 'designs-rg' %}
 						<div class="Grid-cell u-size1of2 u-sm-size1of5">
-							<!-- <div class="Design">
-								<img src="{{ image.path }}" alt="{{ image.name }}" />
-								<p>{{ image.path | remove:'/designs/' | remove:'.png' }}</p>
-							</div> -->
 							<div class="Design-cell">
 								<div class="FlexEmbed">
 									<div class="FlexEmbed-ratio"></div>
@@ -61,7 +57,6 @@ layout: default
                                             alt="{{ alt }}"
                                             data-src="{{ image.path }}"
                                             /> -->
-
 									</div>
 								</div>
 								<p>{{ image.path | remove:'/designs-rg/' | remove:'.png' | replace: '-', ' ' }}</p>

@@ -50,12 +50,14 @@ layout: default
                                 {% assign imagePath = "/uploads/post-list-" %}
 								<img
                                     class="lazyload ls-blur"
+                                    alt="{{ post.title }}"
                                     src="{{ imagePath }}{{ post.slug }}-src.jpg"
                                     data-sizes="auto"
                                     data-srcset="
+                                        {{ imagePath }}{{ post.slug }}-src.jpg 300w,
                                         {{ imagePath }}{{ post.slug }}-xs.jpg 900w,
                                         {{ imagePath }}{{ post.slug }}.jpg 1800w"
-                                    alt="{{ post.title }}">
+                                    />
 							</figure>
 							<h1 class="Post-subtitle">{{ post.title }}</h1>
 							<div class="Post-meta">
