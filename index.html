@@ -28,6 +28,52 @@
 	<meta name="mobileoptimized", content="320" >
     <link rel="alternate" type="application/rss+xml" title="The OceanBlue Blog (RSS)" href="http://oceanblueliving.com.au/feed.xml" />
 
+    <script>
+	// respimg plugin only if the browser doesn't support responsive images
+	function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+
+	if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
+		document.createElement('picture');
+		loadJS("/build/ls.respimg.min.js");
+	}
+
+	// config for responsive images via lazysizes, taken from http://afarkas.github.io/lazysizes/#examples
+	(function(){
+		var docElem = document.documentElement;
+
+		window.lazySizesConfig = window.lazySizesConfig || {};
+
+		window.lazySizesConfig.loadMode = 1;
+	})();
+
+</script>
+
+
+<script src="/build/lazysizes.min.js" async=""></script>
+
+    <style>
+    .ls-blur {
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        transition: filter 400ms, -webkit-filter 400ms;
+    }
+
+    .ls-blur.lazyloaded {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+
+    .ls-fade .lazyload,
+    .ls-fade .lazyloading {
+        opacity: 0;
+        transition: opacity 400ms;
+    }
+
+    .ls-fade img.lazyloaded {
+        opacity: 1;
+    }
+</style>
+
     <style>
 .o-aligner {
   display: -ms-flexbox;
@@ -185,56 +231,8 @@
     display: none; } }
 </style>
 
-    <script>
-	// respimg plugin only if the browser doesn't support responsive images
-	function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
-
-	if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
-		document.createElement('picture');
-		loadJS("/build/ls.respimg.min.js");
-	}
-
-	// config for responsive images via lazysizes, taken from http://afarkas.github.io/lazysizes/#examples
-	(function(){
-		var docElem = document.documentElement;
-
-		window.lazySizesConfig = window.lazySizesConfig || {};
-
-		window.lazySizesConfig.loadMode = 1;
-	})();
-
-</script>
-
-
-<script src="/build/lazysizes.min.js" async=""></script>
-
-    <style>
-    .ls-blur {
-        -webkit-filter: blur(5px);
-        filter: blur(5px);
-        transition: filter 400ms, -webkit-filter 400ms;
-    }
-
-    .ls-blur.lazyloaded {
-        -webkit-filter: blur(0);
-        filter: blur(0);
-    }
-
-    .ls-fade .lazyload,
-    .ls-fade .lazyloading {
-        opacity: 0;
-        transition: opacity 400ms;
-    }
-
-    .ls-fade img.lazyloaded {
-        opacity: 1;
-    }
-</style>
-
     <!-- <link rel="stylesheet" href="/build/application.min.css"> -->
 	<link rel="stylesheet" href="/build/application.css">
-	<link rel="stylesheet" href="/build/owl.carousel.css">
-    <link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.min.css">
 </head>
 
 <body id="top" class="home "
@@ -511,10 +509,9 @@
 		</div>
 		<div class="Container Container--fullWidthMobile">
 			<figure class="Figure">
-                <div class="FlexEmbed">
-                    
-                    
-                    
+                
+                
+                
 
 <img
     class="FlexEmbed-fitImage lazyload ls-blur"
@@ -523,12 +520,6 @@
     data-sizes="auto"
     data-srcset="/uploads/home-about-160812-duo-src.jpg 300w, /uploads/home-about-160812-duo-xs.jpg 900w, /uploads/home-about-160812-duo.jpg 1800w"
     />
-
-                    <!-- <div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-                    <div class="FlexEmbed-content">
-                    </div> -->
-                </div>
-
 
 			</figure>
 		</div>
@@ -566,9 +557,8 @@
                             class="FlexEmbed-fitImage lazyload ls-blur"
                             alt=""
                             src="/uploads/post-the-gum-tree-src.jpg"
-                            srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                            data-srcset="/uploads/post-the-gum-tree-xs.jpg 1200w, /uploads/post-the-gum-tree.jpg 2000w"
                             data-sizes="auto"
+                            data-srcset="/uploads/post-the-gum-tree-src.jpg 300w, /uploads/post-the-gum-tree-xs.jpg 1200w, /uploads/post-the-gum-tree.jpg 2000w"
                             />
                     </div>
 				</div>
@@ -781,9 +771,9 @@ Queensland 4870 Australia
 </svg>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
 	<script src="/build/lib.owl.carousel.min.js"></script>
-    <script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+	<script src="/build/lib.flickity.min.js"></script>
 	<script src="/build/application.min.js"></script>
 	<script src="/build/lib.modernizr.min.js"></script>
 	
