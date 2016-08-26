@@ -16,15 +16,6 @@
 		padding: 0;
 	}
 
-    &--fullWidthMobile {
-        padding: 0;
-        width: 100%;
-        
-        @include media-breakpoint-up(xl) {
-			max-width: size(container, default);
-		}
-    }
-
 	// basic container width var
 	&--textColumn {
 		@include media-breakpoint-up(xs) { max-width: container-width(sm); }
@@ -44,6 +35,15 @@
 			}
 		}
 	}
+
+    &--fullWidthMobile {
+        padding: 0;
+        width: 100%;
+
+        @include media-breakpoint-up(xl) {
+            max-width: size(container, default);
+        }
+    }
 
 	&--blog {
 		max-width: 100%;

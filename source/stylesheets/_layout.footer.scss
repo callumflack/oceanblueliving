@@ -10,14 +10,10 @@
 	border-top: 1px solid palette(base);
 	// margin-top: space(1.5);
 	padding: space(2) 0;
+    position: relative;
 
 	ul {
 		margin-bottom: 0;
-	}
-
-	@include respond-to(xs) {
-		// margin-top: space(3);
-		padding: space(2) 0;
 	}
 }
 
@@ -65,4 +61,16 @@ a.Footer-logo {
 			@include odd() { text-align: right; }
 		}
 	}
+}
+
+.Footer-author {
+    @include TextSm();
+    bottom: 4.25rem;
+    color: rgba( palette(brand), 0.3 );
+    position: absolute;
+    right: -2rem;
+    transform: rotate(-90deg);
+
+    @include media-breakpoint-up(sm) { bottom: 5rem; right: -2rem; }
+    @include media-breakpoint-up(lg) { bottom: space(4.475); right: 0; }
 }
