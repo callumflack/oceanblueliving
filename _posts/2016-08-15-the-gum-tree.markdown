@@ -16,4 +16,4 @@ Wendi Furber, the driving force behind the Gum Tree project, says it had been an
 
 > I had the idea of the tree for about 6 years but couldn't find anyone to make it a reality until I found a brochure about OceanBlue Living—in a dentist waiting room! Since I made my first phone call to LeeAnne & Vince, it's all come together over time. They've been very helpful and patient as we had to apply for grants and council permission (all takes a long time). I would recommend them to anyone looking for that something that is just that little bit different. Their showroom is full of exciting and innovative works of art for the home and garden.
 
-The Gum Tree is being installed in Einasleigh Town Park [soon](http://google.com).
+The Gum Tree is being installed in Einasleigh Town Park soon.
