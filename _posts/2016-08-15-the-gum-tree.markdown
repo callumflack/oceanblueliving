@@ -6,7 +6,7 @@ tags:
 author: LeaAnne Cassaniti
 ---
 
-# TITLE 
+# This is my headline. 
 
 The Gum Tree is a custom project for Einasleigh Progress Association to commemorate the people who helped shape Einasleigh from World War One through to today.
 
