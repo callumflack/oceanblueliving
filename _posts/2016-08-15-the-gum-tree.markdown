@@ -6,7 +6,7 @@ tags:
 author: LeaAnne Cassaniti
 ---
 
-The Gum Tree is a custom project for Georgetown Council to commemorate the people who helped shape Einasleigh from World War One through to today.
+The Gum Tree is a custom project for Einasleigh Progress Association to commemorate the people who helped shape Einasleigh from World War One through to today.
 
 Made from 6 sheets of 3mm corten steel welded together, and measuring 2.4m high and wide, each sheet is a sculpted tree shape with the names of townsfolk engraved on leaves.
 
