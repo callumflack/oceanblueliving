@@ -1,9 +1,8 @@
 ---
 title: applications
 date: 2016-06-03 16:46:00 +10:00
-layout: applications
 hero_image: "/uploads/applications-hero-test2.jpg"
-hero_headline: Timeless, artistic & functional architectural metalworks.
+hero_headline: Timeless, artistic & functional architectural metalworks!
 hero_description: |
   Our weatherproof architectural metalworks are versatile for both indoor and outdoor living<em>, sculpting light and anchoring areas to transform
   your living spaces</em>. From screens, panels, gates and letterboxes, to signage, wall art and garden sculpture, we create and manufacture your designs.
@@ -40,5 +39,6 @@ outdoor_carousel_images:
 - "/uploads/appl-outdoor-160816-boserio"
 outdoor_second_text: |
   Our outdoor metalworks broaden your living spaces—which is especially useful in tropical Queensland—by complementing your existing living spaces using architectural objects that blend into your natural surroundings. All-weather durable finishes and materials mean the objects improve in appearance with age. Of course, we can design and cut any pattern you wish, to match your living space. And some of our fire-pits even fold away, to avoid inevitable backyard cricket crashes.
+layout: applications
 ---
 
