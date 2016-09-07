@@ -49,7 +49,7 @@ var options = {
 
 	css : {
 		files       : 'source/stylesheets/*.css',
-		file        : 'source/stylesheets/application.css'
+		file        : 'build/application.css'
 	},
 
 	fonts : {
