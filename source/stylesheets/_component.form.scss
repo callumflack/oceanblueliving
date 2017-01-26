@@ -88,12 +88,10 @@ input[type="password"] {
 	@include baseTransition();
 	color: $color-placeholder;
 	background: palette(brand-counter);
-	// border: 0;
 	border: 1px solid transparent;
 	border-color: palette(base);
 	border-radius: size(border-radius, base);
 	display: inline-block;
-	// font-family: $font-sans-regular;
 	line-height: size(button-height, base);
 	padding: 4px 0 0 0;
 	resize: none;
