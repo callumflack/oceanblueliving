@@ -112,9 +112,14 @@ image: "/uploads/home-hero-160812-vince.jpg"
 		</div>
 		<div class="Container Container--fullWidthMobile">
 			<figure class="Figure">
+                {% comment %}
                 {% assign image = "/uploads/home-about-160812-duo" %}
                 {% assign alt = "Vince & LeaAnne Cassaniti, Ocean Blue Living" %}
                 {% include responsive-img.html %}
+                {% endcomment %}
+
+                {% assign image = "home-about-160812-duo.jpg" %}
+                {% include responsive-img-cloudinary.html %}
 			</figure>
 		</div>
 		<div class="Container Container--textColumn">
@@ -140,19 +145,10 @@ image: "/uploads/home-hero-160812-vince.jpg"
 
 		{% for post in site.posts | limit: 1 %}
 			<article class="Post--article u-bgWhite">
-				<div class="FlexEmbed u-bgBrand">
-					<div class="FlexEmbed-ratio"></div>
-					<div class="FlexEmbed-content">
-                        {% assign imagePath = "/uploads/post-" %}
-                        <img
-                            class="FlexEmbed-fitImage lazyload ls-blur"
-                            alt="{{ alt }}"
-                            src="{{ imagePath }}{{ post.slug }}-src.jpg"
-                            data-sizes="auto"
-                            data-srcset="{{ imagePath }}{{ post.slug }}-src.jpg 300w, {{ imagePath }}{{ post.slug }}-xs.jpg 1200w, {{ imagePath }}{{ post.slug }}.jpg 2000w"
-                            />
-                    </div>
-				</div>
+                
+                {% assign image = "post-the-gum-tree.jpg" %}
+                {% include responsive-img-cloudinary.html %}
+
 				<div class="Container Container--textColumn Post--article-ruleOff">
 					<div class="Post-header">
 						<div class="Post-meta">
@@ -167,11 +163,9 @@ image: "/uploads/home-hero-160812-vince.jpg"
 					</div>
 
 					{{ post.content }}
-
-					<!-- <h3 class="Headline--minor u-marginT3">Author</h3>
-					<p class="Post-author">{{ post.author }}</p> -->
 					<h3 class="Headline--minor u-marginT3">Share</h3>
 					{% include share.html %}
+                    
 				</div>
 			</article>
 		{% endfor %}
