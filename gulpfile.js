@@ -49,7 +49,8 @@ var options = {
 
 	css : {
 		files       : 'source/stylesheets/*.css',
-		file        : 'build/application.css'
+		file        : 'build/application.css',
+		destination : 'build/'
 	},
 
 	fonts : {
@@ -68,7 +69,6 @@ var options = {
 	},
 
 	js : {
-		// files       : 'source/scripts/*.js',
 		files : [
 			'node_modules/fontfaceonload/dist/fontfaceonload.js',
 			'source/javascripts/*.js'
@@ -165,39 +165,22 @@ gulp.task( 'compile:sass', function() {
 		.pipe( plugins.connect.reload() );
 });
 
-// from W6…
-// gulp.task( 'compile:css', function() {
-//     return gulp
-//         .src(output.css + '/*.css')
-//         .pipe(order([
-//             "vendor.css",
-//             "flickity.css",
-//             "styles.css"
-//         ]))
-//         .pipe(concat('styles.min.css'))
-//         .pipe(cssNano(nanoOptions))
-//         .pipe(gulp.dest(output.css))
-// });
-
 gulp.task( 'minify:css', function () {
 	gulp.src( options.css.file )
 		.pipe( plugins.plumber() )
 		.pipe( plugins.uncss ( {
 			html: [
-				'_includes/*.html',
-				'_layouts/*.html',
-				'/blog/*.html',
-				'/info-for/*.html',
-				'*.html'
+				'_site/**/*.html'
 			],
 			uncssrc: '.uncssrc'
 		} ) )
 		.pipe( plugins.cssnano( { advanced: false } ) )
 		.pipe( plugins.rename( { suffix: '.min' } ) )
-		.pipe( gulp.dest( options.build.destination ) )
-		.pipe( plugins.size({title: 'styles'}) )
+		.pipe( gulp.dest( options.css.destination ) )
+		.pipe( plugins.size( { title: 'styles' } ) )
 		.pipe( plugins.connect.reload() );
 });
+
 
 gulp.task( 'minify:js', function () {
 	gulp.src( options.js.files )
