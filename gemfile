@@ -1,8 +1,0 @@
-source 'http://rubygems.org'
-gem 'jekyll'
-gem 'jekyll-seo-tag'
-
-group :jekyll_plugins do
-  gem 'liquid'
-  gem 'jekyll-imgix'
-end
