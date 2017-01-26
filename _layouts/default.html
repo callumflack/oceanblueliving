@@ -1,22 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible", content="IE=edge,chrome=1" >
-	<meta name="viewport", content="width=device-width, initial-scale=1.0" >
-    {% seo title=false %}
-    <title>{{ site.title }}{% if page.url != '/' %}. {{ page.title }}{% endif %}</title>
-	<meta name="author", content="{{ site.author }}" >
-	<meta name="handheldfriendly", content="true" >
-	<meta name="mobileoptimized", content="320" >
-    <link rel="alternate" type="application/rss+xml" title="The OceanBlue Blog (RSS)" href="{{ site.url }}/feed.xml" />
 
-    {% include lazysize-scripts.html %}
-    {% include lazysize-styles.html %}
-    {% include critical-css.html %}
-    <!-- <link rel="stylesheet" href="/build/application.min.css"> -->
-	<link rel="stylesheet" href="/build/application.css">
-</head>
+{% include head.html %}
 
 <body id="top" class="{{page.title}} {{page.categories}}"
 	data-spy="scroll" data-target="#scrollspy" data-offset="300">
@@ -35,6 +20,7 @@
 	<script src="/build/lib.flickity.min.js"></script>
 	<script src="/build/application.min.js"></script>
 	<script src="/build/lib.modernizr.min.js"></script>
+	<script src="/build/component.cloudinary.js"></script>
 	{% include google-analytics.html %}
 
 </body>
