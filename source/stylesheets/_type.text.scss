@@ -174,7 +174,7 @@ blockquote,
 // quick markdown scope added
 blockquote p {
     @include TextRg();
-	color: rgba( palette(medium), 0.85);
+	color: rgba( palette(medium), 1);
 }
 
 .TextLede {

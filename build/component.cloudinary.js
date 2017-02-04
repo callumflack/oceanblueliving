@@ -10,5 +10,6 @@
         const url = `${baseUrl}/${imageParams}/${image.dataset.bg}`
         
         image.style.backgroundImage = `url('${url}')`
+        // image.src = url
     })
 })()
