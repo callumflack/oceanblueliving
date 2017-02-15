@@ -23,6 +23,7 @@ layout: default
 	<div class="FlexEmbed">
 		<div class="FlexEmbed-ratio"></div>
 		<div class="FlexEmbed-content">
+            {% comment %}
             {% assign imagePath = "/uploads/post-" %}
             <img
                 class="FlexEmbed-fitImage lazyload ls-blur"
@@ -31,6 +32,9 @@ layout: default
                 data-srcset="{{ imagePath }}{{ page.slug }}-src.jpg 300w, {{ imagePath }}{{ page.slug }}-xs.jpg 900w, {{ imagePath }}{{ page.slug }}.jpg 1800w"
                 data-sizes="auto"
                 />
+            {% endcomment %}
+            
+            {% include responsive-img-cloudinary-pageSlug.html %}
 		</div>
 	</div>
 
@@ -39,8 +43,10 @@ layout: default
 
 			{{ content }}
 
-			<!-- <h3 class="Headline--minor u-marginT3">Author</h3>
-			<p class="Post-author">{{ page.author }}</p> -->
+			{% comment %}
+            <h3 class="Headline--minor u-marginT3">Author</h3>
+			<p class="Post-author">{{ page.author }}</p>
+            {% endcomment %}
 			<h3 class="Headline--minor u-marginT3">Share</h3>
 			{% include share.html %}
 		</div>

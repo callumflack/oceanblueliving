@@ -16,9 +16,14 @@ image: uploads/blog-hero-160812-barriersolutions.jpg
 				</a>
 			</div>
 
-            {% assign image = "/uploads/blog-hero-160812-barriersolutions" %}
+            {% comment %}
+			{% assign image = "/uploads/blog-hero-160812-barriersolutions" %}
             {% assign absolute = true %}
             {% include responsive-img.html %}
+			{% endcomment %}
+			
+			{% assign image = "blog-hero-160812-barriersolutions.jpg" %}
+			{% include responsive-img-cloudinary.html %}
             <div class="u-posAbsoluteCenter FlexEmbed-content--dark">&nbsp;</div>
 
 		</div>

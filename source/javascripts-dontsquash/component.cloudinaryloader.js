@@ -6,11 +6,11 @@ $(function () {
 	
 	console.log("placeholder,small");  
 	
-	var placeholder = document.querySelector('.js-cloudinary');
-    var small = placeholder.querySelector('.xs');
-    // var large = placeholder.querySelector('.lg');
+	var imageWrapper = document.querySelector('.js-cloudinary');
+    var placeholderImage = imageWrapper.querySelector('.xs');
+    var highresImage = imageWrapper.querySelector('.lg');
 			
-	console.log(placeholder,small);
+	console.log(imageWrapper,placeholderImage);
   
 	// 1: load small image and show it
 	// var img = new Image();
@@ -29,8 +29,10 @@ $(function () {
 	
     // 3: show large image on timeout
     window.onload = function() {
+        // placeholderImage.classList.add('is-loaded');
+        
         setTimeout(function() {
-            small.classList.add('is-loaded');
+            highresImage.classList.add('is-loaded');
         }, 1000);
     };
 
