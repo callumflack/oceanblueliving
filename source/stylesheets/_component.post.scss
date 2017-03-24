@@ -80,6 +80,10 @@ a.Post--inList {
         margin: 0 auto;
         width: 70%;
     }
+    
+    @include when-inside(".Header--rev") {
+        color: palette(white);
+    }
 }
 
 .Post-title + p {

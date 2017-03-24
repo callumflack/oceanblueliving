@@ -6,67 +6,67 @@
 
 // 1. To enable use w/ '.FlexEmbed'
 @mixin CoverImage($darkInside: false) {
-	@include baseTransition;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: block;
-	height: 100%; // 1.
-	// max-height: rem(600);
-	margin: 0 auto;
-	// position: relative;
-	width: 100%;
+    @include baseTransition;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%; // 1.
+    // max-height: rem(600);
+    margin: 0 auto;
+    // position: relative;
+    width: 100%;
 
-	@if $darkInside {
-		&:before {
-			background-image: linear-gradient(to bottom, rgba( palette(brand), 0.9 ) 0%, rgba( palette(brand), 0 ) 100%);
-			background-blend-mode: multiply;
-			content: " ";
-			opacity: 1;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			// z-index: -1;
-		}
+    @if $darkInside {
+        &:before {
+            background-image: linear-gradient(to bottom, rgba( palette(brand), 0.9 ) 0%, rgba( palette(brand), 0 ) 100%);
+            background-blend-mode: multiply;
+            content: " ";
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            // z-index: -1;
+        }
 
-	} @else {
-		content: none;
-	}
+    } @else {
+        content: none;
+    }
 
-	// in case the .coverImage is itself a link
-	&a {
-		// @include u-link(none);
-	}
+    // in case the .coverImage is itself a link
+    &a {
+        // @include u-link(none);
+    }
 
-	@include respond-to(sm) {
+    @include respond-to(sm) {
 
-	}
+    }
 }
 
 .CoverImage {
-	@include CoverImage();
+    @include CoverImage();
 }
 
 .CoverImage--dark {
-	@include CoverImage(true);
+    @include CoverImage(true);
 }
 
 .CoverImage--darkRev {
-	@include CoverImage(true);
-	&::before {
-		background-image: linear-gradient(to bottom, rgba( palette(brand), 0 ) 0%, rgba( palette(brand), 0.45 ) 100%);
-	}
+    @include CoverImage(true);
+    &::before {
+        background-image: linear-gradient(to bottom, rgba( palette(brand), 0 ) 0%, rgba( palette(brand), 0.45 ) 100%);
+    }
 }
 
 .CoverImage--applications {
-	@include respond-to(md) {
-		background-position-y: 40%;
-	}
+    @include respond-to(md) {
+        background-position-y: 40%;
+    }
 }
 
 .ContainImage {
-	@include CoverImage();
-	background-size: contain;
+    @include CoverImage();
+    background-size: contain;
 }

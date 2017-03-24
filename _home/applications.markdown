@@ -37,6 +37,8 @@ gallery-images-orig:
 - "/uploads/applications-outdoor-birds.png"
 ---
 
-We make elegant, functional, and timeless architectural applications that transform your living space. From screens, panels, gates and letterboxes, to signage, wall art and garden sculpture, our architectural metalworks are durable, weatherproof and beautiful. Our products are proudly designed and built in our Cairns workshop.
+We make elegant, functional, and timeless architectural applications that transform your living space. From screens, panels, gates and letterboxes, to signage, wall art and garden sculpture, our architectural metalworks are durable, weatherproof and beautiful.
 
-We use water-jet cutting technology to precisely cut metal from business card to wall sizes. We use a wide range of materials from corten, mild steel, aluminium and we can powder coat any colour you want. Our precision and versatility creates amazing results. Which means you’ll be limited only by what you can think of.
+We use water-jet cutting technology to precisely cut metal from business card to wall sizes, in a range of materials and any colour you want. Which means you’ll be limited only by what you can think of. 
+
+Our products are proudly designed and built in our Cairns workshop.

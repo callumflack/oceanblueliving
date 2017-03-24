@@ -1,0 +1,55 @@
+
+
+// --------------------------------------------------------------------------
+//   CSS-ONLY TABS COMPONENT
+//   http://youmightnotneedjs.com/#tabs
+//   http://codepen.io/vulpesigni/pen/yyZYNy?editors=1100
+// --------------------------------------------------------------------------
+
+
+.Tabs-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: center;
+
+    label {
+        background: #eee; 
+        border: 1px solid #ddd; 
+        padding: .7em 1em;
+        cursor: pointer;
+        z-index: 1;
+        margin-left: -1px;
+        position: relative;
+    }
+
+    label:first-of-type {
+        //margin-left: 0;
+        margin-left: auto;
+    }
+
+    label:last-of-type {
+        margin-right: auto;
+    }
+
+    div {
+        width: 100%;
+        margin-top: -1px;
+        padding: 1em;
+        border-top: 1px solid #ddd;
+        order: 1;
+    }
+
+    input[type=radio], div {
+        display: none;
+    }
+
+    input[type=radio]:checked + label {
+        background: #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+    input[type=radio]:checked + label + div {
+        display: block;
+    }
+}

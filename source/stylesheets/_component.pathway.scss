@@ -55,6 +55,14 @@ $revOpacity: 0.6;
     }
 }
 
+.Pathway-icon svg path,
+.Pathway-title {
+    @include when-inside(".Header--rev") { 
+        color: palette(white); 
+        text-shadow: 0 0 space(1) rgba( palette(black), 1);
+    }
+}
+
 .Pathway-icon {
     margin-bottom: space(0.25);
     text-align: center;
@@ -83,6 +91,6 @@ $revOpacity: 0.6;
     text-align: center;
 }
 
-.Pathway .t-button--rev {
-    //opacity: $revOpacity;
+.Pathway--rev .t-button--rev {
+    opacity: $revOpacity;
 }

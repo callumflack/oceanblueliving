@@ -6,7 +6,8 @@
 
 
 .Header {
-    background-color: palette(brand);
+    background-color: palette(white);
+    //padding: 0 space(1);
     position: relative;
 
     &--light {
@@ -40,7 +41,8 @@
 
 .Header--fullRatio .FlexEmbed-ratio,
 .Post--article .FlexEmbed-ratio {
-    padding-bottom: 100vh;;
+    //padding-bottom: calc(100vh - 48px);
+    padding-bottom: 100vh;
     //padding-bottom: 180%;
     //@include respond-to(xs) { padding-bottom: 125%; }
     //@include respond-to(md) { padding-bottom: 75%; }
@@ -67,9 +69,10 @@
     //@include respond-to(xl) { padding-bottom: 50vh; }
 }
 
-.Header--halfRatioHeight {
-    padding-bottom: 50vh;
-}
+.Header--fullRatioHeight { height: 100vh; }
+.Header--halfRatioHeight { height: 50vh; }
+
+.Header--halfRatioHeightPadding { padding-bottom: 50vh; }
 
 
 // A method where lazyloading can be applied. No IE support at all.

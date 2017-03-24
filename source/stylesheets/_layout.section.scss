@@ -62,7 +62,9 @@
 
 .Content-wrapper--oceanblue {
     background-color: palette(brand);
-    background-image: linear-gradient( palette(brand) 30%, palette(brand-light) );
+    background-color: darken(palette(brand-light),10%);
+    //background-image: linear-gradient( palette(brand) 30%, darken(palette(brand-light),15%) );
+    //background-image: linear-gradient( darken(palette(brand-light),10%) 0, palette(brand) 70% );
     padding-bottom: $vertSpaceLg;
 }
 
@@ -100,6 +102,15 @@
         border-top: 1px solid palette(base);
         //padding-top: 14vh !important;
         padding-top: $vertSpace * 0.75;
+    }
+}
+
+.Section--blogPostTitle {
+    margin-top: $vertSpace * 0.3;
+
+    > .Container {
+        border-top: 1px solid palette(base);
+        padding-top: $vertSpace * 0.3;
     }
 }
 

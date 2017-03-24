@@ -33,6 +33,7 @@
 .u-colorBrand       { color: palette(brand) !important; }
 .u-colorBrandMuted  { color: rgba( palette(brand), 0.5 ) !important; }
 .u-colorBrandLight  { color: rgba( palette(brand), 0.3 ) !important; }
+.u-colorBrandLightDarkened  { color: darken(palette(brand-light),10%) !important; }
 .u-colorBrandAlt    { color: palette(brand-complement) !important; }
 .u-colorBrandCount  { color: palette(brand-counter) !important; }
 
@@ -78,6 +79,8 @@
 
 .u-bgBrand          { background-color: palette(brand) !important; }
 .u-bgBrandLight     { background-color: palette(brand-light) !important; }
+.u-bgBrandLightDarkened     { background-color: darken(palette(brand-light),10%) !important; }
+.u-bgBrandSuperLight        { background-color: rgba( palette(brand-light), 0.05) !important; }
 .u-bgBrandAlt       { background-color: palette(brand-complement) !important; }
 
 .u-sm-bgNeutral     { @include respond-to(sm) { background-color: palette(neutral) !important; } }

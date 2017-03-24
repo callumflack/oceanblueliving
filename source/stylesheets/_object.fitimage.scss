@@ -14,7 +14,7 @@
 //.object-fit_scale-down { object-fit: scale-down }
 
 @mixin ObjectFit() {
-	//@include baseTransition;
+    //@include baseTransition;
     height: 100%;
     object-fit: cover;
     width: 100%;
@@ -27,6 +27,21 @@
 .FlexEmbed-content--dark {
     &:before {
         background-image: linear-gradient(to bottom, rgba( palette(brand), 0.9 ) 0%, rgba( palette(brand), 0 ) 100%);
+        background-blend-mode: multiply;
+        content: " ";
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        // z-index: -1;
+    }
+}
+
+.FlexEmbed-content--screen {
+    &:before {
+        background-image: linear-gradient(to bottom, rgba( palette(brand), 0.9 ) 0%, rgba( palette(black), 0.4 ) 100%);
         background-blend-mode: multiply;
         content: " ";
         opacity: 1;
