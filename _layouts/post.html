@@ -20,16 +20,14 @@ layout: default
             <div class="o-aligner">
                 <div class="o-aligner-item">
                     <div class="Container Container--withHero">
-                        <div class="Container Container--withHero">
-                            <h1 class="Post-title">{{ page.title }}</h1>
-                            <div class="Post-meta">
-                                {% for tag in page.tags %}
-                                    <!-- <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a> -->
-                                    <span class="Post-tag">{{ tag | capitalize }}</span>
-                                {% endfor %}
-                                &nbsp;&nbsp;|&nbsp;&nbsp;
-                                <span class="Post-date">{{ page.date | date: "%B %d, %Y" }}</span>
-                            </div>
+                        <h1 class="Post-title">{{ page.title }}</h1>
+                        <div class="Post-meta">
+                            {% for tag in page.tags %}
+                                <!-- <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a> -->
+                                <span class="Post-tag">{{ tag | capitalize }}</span>
+                            {% endfor %}
+                            &nbsp;&nbsp;|&nbsp;&nbsp;
+                            <span class="Post-date">{{ page.date | date: "%B %d, %Y" }}</span>
                         </div>
                     </div>
                 </div>
