@@ -3,26 +3,69 @@ layout: default
 ---
 
 <article class="Post--article" role="main">
+    
+    <header class="Header Header--light Header--halfRatioHeight Header--rev" role="banner">
+        {% comment %}
+        <div class="FlexEmbed">
+            <div class="FlexEmbed-ratio"></div>
+            <div class="FlexEmbed-content">
+                {% assign image = "blog-hero-160812-barriersolutions.jpg" %}
+                {% include responsive-img-cloudinary-halfHero.html %}
+                <div class="u-posAbsoluteCenter FlexEmbed-content--dark">&nbsp;</div>
 
-	<section class="Section">
-		<div class="Container Container--textColumn">
-			<div class="Post-header">
-				<div class="Post-meta">
-					{% for tag in page.tags %}
-						<!-- <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a> -->
-						<span class="Post-tag">{{ tag | capitalize }}</span>
-					{% endfor %}
-					&nbsp;&nbsp;|&nbsp;&nbsp;
-					<span class="Post-date">{{ page.date | date: "%B %d, %Y" }}</span>
-				</div>
-				<h1 class="Post-title">{{ page.title }}</h1>
-			</div>
-		</div>
-	</section>
+            </div>
+        </div>
+        {% endcomment %}
+        <div class="Header-wrapper">
+            <div class="o-aligner">
+                <div class="o-aligner-item">
+                    <div class="Container Container--withHero">
+                        <div class="Container Container--withHero">
+                            <h1 class="Post-title">{{ page.title }}</h1>
+                            <div class="Post-meta">
+                                {% for tag in page.tags %}
+                                    <!-- <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a> -->
+                                    <span class="Post-tag">{{ tag | capitalize }}</span>
+                                {% endfor %}
+                                &nbsp;&nbsp;|&nbsp;&nbsp;
+                                <span class="Post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Header-wrapper">
+            <div class="Header-masthead">
+                <a class="Header-logo" href="/">
+                    <img src="/uploads/logo.png" alt="{{ site.title }}">
+                </a>
+            </div>
+        </div>
+    </header>
 
-	<div class="FlexEmbed">
-		<div class="FlexEmbed-ratio"></div>
-		<div class="FlexEmbed-content">
+    {% comment %}
+    <section class="Section">
+        <div class="Container Container--textColumn">
+            <div class="Post-header">
+                <div class="Post-meta">
+                    {% for tag in page.tags %}
+                        <!-- <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a> -->
+                        <span class="Post-tag">{{ tag | capitalize }}</span>
+                    {% endfor %}
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <span class="Post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+                </div>
+                <h1 class="Post-title">{{ page.title }}</h1>
+            </div>
+        </div>
+    </section>
+    {% endcomment %}
+
+    <!-- <div class="Container Container--blog"> -->
+    <div class="FlexEmbed">
+        <div class="FlexEmbed-ratio"></div>
+        <div class="FlexEmbed-content">
             {% comment %}
             {% assign imagePath = "/uploads/post-" %}
             <img
@@ -33,30 +76,43 @@ layout: default
                 data-sizes="auto"
                 />
             {% endcomment %}
-            
             {% include responsive-img-cloudinary-pageSlug.html %}
-		</div>
-	</div>
+        </div>
+    </div>
+    <!-- </div> -->
 
-	<section class="Section--top">
-		<div class="Container Container--textColumn Post--article-ruleOff">
+    <section class="Section--top">
+        <div class="Container Container--textColumn">
 
-			{{ content }}
+            {{ content }}
 
-			{% comment %}
+            {% comment %}
             <h3 class="Headline--minor u-marginT3">Author</h3>
-			<p class="Post-author">{{ page.author }}</p>
+            <p class="Post-author">{{ page.author }}</p>
             {% endcomment %}
-			<h3 class="Headline--minor u-marginT3">Share</h3>
-			{% include share.html %}
-		</div>
-	</section>
+            <section class="Section--afterArticleBlock">
+                <div class="">
+                    <a class="Headline--minor u-floatRight" href="/blog">View all posts →</a>
+                </div>
+            </section>
+            {% comment %}
+            <h3 class="Headline--minor">Share this</h3>
+            {% include share.html %}
+            <h3 class="Headline--minor u-marginT3">View all posts →</h3>
+            <a class="" href="/blog">
+                <svg class="Icon Icon--lg Icon--textAlign u-colorBrandLight">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
+                </svg>
+            </a>
+            {% endcomment %}
+
+        </div>
+    </section>
 
 </article>
 
-<section class="Section--rg">
-	<div class="Container Container--textColumn">
-		{% include pathway-blog.html %}
-		{% include pathway-newsletter.html %}
-	</div>
+<section class="Section--cta">
+    <div class="Container Container--textColumn">
+        {% include pathway-newsletter.html %}
+    </div>
 </section>

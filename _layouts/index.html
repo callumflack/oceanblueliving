@@ -1,0 +1,226 @@
+---
+title: Home
+layout: default
+image: "/uploads/home-hero-160812-vince.jpg"
+---
+
+{% assign header       = site.home | where: 'title', 'header' | first  %}
+{% assign applications = site.home | where: 'title', 'applications' | first  %}
+{% assign design       = site.home | where: 'title', 'design' | first  %}
+{% assign about        = site.home | where: 'title', 'about' | first  %}
+
+<header class="Header Header--fullRatio Header--rev" role="banner">
+    <div class="Gallery">
+        <div class="Gallery-body">
+            <div class="Gallery-items js-gallery">
+                {% for image in header.gallery-images %}
+                    <div class="Gallery-cell">
+                        <div class="FlexEmbed">
+                            <div class="FlexEmbed-ratio"></div>
+                            <div class="FlexEmbed-content">
+                                {% include responsive-img-cloudinary-hero.html %}
+                            </div>
+                            <div class="FlexEmbed-content FlexEmbed-content--dark">&nbsp;</div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="Header-wrapper">
+        <div class="o-aligner">
+            <div class="o-aligner-item">
+                <div class="Container Container--withinHero">
+                    <h1 class="Header-display">
+                        {{ header.hero_headline }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Header-wrapper Header-wrapper--top">
+        <div class="Header-masthead">
+            <a class="Header-logo" href="/">
+                <img src="/uploads/logo-white.png" alt="{{ site.title }}">
+            </a>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+<main class="Content" role="main">
+    <div class="Content-wrapper--oceanblue">
+        <section class="Section--lgTop Pathway Pathway--rev">
+            <div class="Container Container--textColumn">
+                <div class="Pathway-hgroup">
+                    <figure class="Pathway-icon">
+                        <svg class="Icon Icon--lg u-colorWhite">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-services"></use>
+                        </svg>
+                    </figure>
+                    <h1 class="Pathway-title">{{ applications.headline }}</h1>
+                </div>
+                <div class="Pathway-text">
+                    {{ applications.content }}
+                </div>
+                <div class="Pathway-action">
+                    <a class="Button t-button--rev" href="/applications">{{ applications.button }}</a>
+                </div>
+            </div>
+        </section>
+        
+        {% comment %}
+        <!-- applications gallery -->
+        <section class="Section--top Pathway Pathway--rev">
+            <div class="Container Container--fullWidthMobile">
+                <div class="Gallery">
+                    <div class="Gallery-body">
+                        <div class="Gallery-items js-galleryWithCount">
+                            {% for image in applications.gallery-images %}
+                                <div class="Gallery-item">
+                                    <div class="FlexEmbed">
+                                        <div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+                                        <div class="FlexEmbed-content">
+                                            {% include responsive-img-cloudinary.html %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="Gallery-arrows"></div>
+                    </div>
+                    <div class="Gallery-footer">
+                        <span class="js-GalleryCurrentItem"></span> / <span class="js-GalleryTotalItems"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="Section--lgTop Pathway Pathway--rev">
+            <div class="Container Container--textColumn">
+                <div class="Pathway-hgroup">
+                    <figure class="Pathway-icon">
+                        <svg class="Icon Icon--lg u-colorWhite">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-estimate"></use>
+                        </svg>
+                    </figure>
+                    <h1 class="Pathway-title">{{ design.headline }}</h1>
+                </div>
+                <div class="Pathway-text">
+                    {{ design.content }}
+                </div>
+                <div class="Pathway-action">
+                    <a class="Button t-button--rev" href="/design">{{ design.button }}</a>
+                </div>
+            </div>
+        </section>
+        {% endcomment %}
+        
+        <section class="Section--lgTop Pathway Pathway--rev">
+            <div class="Container Container--textColumn">
+                <div class="Pathway-hgroup u-marginB0 u-paddingB0">
+                    <figure class="Pathway-icon">
+                        <svg class="Icon Icon--lg u-colorWhite">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-about"></use>
+                        </svg>
+                    </figure>
+                    <h1 class="Pathway-title">{{ about.headline }}</h1>
+                </div>
+            </div>
+            <div class="Container Container--fullWidthMobileSm">
+                <figure class="Figure">
+                    {% comment %}
+                    {% assign image = "/uploads/home-about-160812-duo" %}
+                    {% assign alt = "Vince & LeaAnne Cassaniti, Ocean Blue Living" %}
+                    {% include responsive-img.html %}
+                    {% endcomment %}
+                    <div class="FlexEmbed">
+                        <div class="FlexEmbed-ratio FlexEmbed-ratio--4by3"></div>
+                        <div class="FlexEmbed-content">
+                            {% assign image = "home-about-160812-duo.jpg" %}
+                            {% assign alt = "Vince and LeaAnne Cassiniti" %}
+                            {% include responsive-img-cloudinary.html %}
+                        </div>
+                    </div> 
+                </figure>
+            </div>
+            <div class="Container Container--textColumn">
+                <div class="Pathway-text">
+                    {{ about.content }}
+                </div>
+                <div class="Pathway-action">
+                    <a class="Button t-button--rev" href="/about">{{ about.button }}</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- blog -->
+    <section class="Section">
+        <div class="Pathway-hgroup u-bgBrandLight">
+            <figure class="Pathway-icon">
+                <svg class="Icon Icon--lg u-colorWhite">
+                    <use xlink:href="#ic-blog"></use>
+                </svg>
+            </figure>
+            <h1 class="Pathway-title u-colorWhite">The Ocean Blue blog.</h1>
+        </div>
+
+        {% for post in site.posts | limit: 1 %}
+            <article class="Post--article Header--fullRatio u-bgWhite">
+                <div class="FlexEmbed">
+                    <div class="FlexEmbed-ratio"></div>
+                    <div class="FlexEmbed-content">
+                        {% assign image = "post-the-gum-tree.jpg" %}
+                        {% include responsive-img-cloudinary-hero.html %}
+                    </div>
+                </div>
+                <div class="Container Container--textColumn">
+                    <div class="Post-header">
+                        <h1 class="Post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                        <div class="Post-meta">
+                            {% for tag in page.tags %}
+                                <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a>
+                            {% endfor %}
+                            <a class="Post-tag" href="/blog/tags/{{ page.tags }}">{{ post.tags | first | capitalize }}</a>
+                            &nbsp;&nbsp;|&nbsp;&nbsp;
+                            <span class="Post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+                        </div>
+                    </div>
+                    
+                        {{ page.title}}
+
+
+                    {{ post.content }}
+                    
+                    {% comment %}
+                    <section class="Section--afterArticleBlock">
+                        <div class="u-textCenter">
+                            <a class="Headline--minor" href="/blog">View all posts →</a>
+                        </div>
+                        
+                        u-floatRight
+                        <h3 class="Headline--minor">Share this</h3>
+                        {% include share.html %}
+                    </section>
+                    {% endcomment %}
+                    
+                </div>
+            </article>
+        {% endfor %}
+
+    </section>
+
+    {% comment %}
+    {% endcomment %}
+    <section class="Section--cta u-bgWhite">
+        <div class="Container Container--textColumn">
+            {% include pathway-blog.html %}
+        </div>
+    </section>
+
+</main>

@@ -6,83 +6,83 @@
 
 
 @mixin textTemplate() {
-	@include typeReset();
-	// color: palette(brand);
-	// font-family: $font-sans-light;
-	letter-spacing: 0.015em;
-	line-height: $base-line-height-unit;
+    @include typeReset();
+    // color: palette(brand);
+    // font-family: $font-sans-light;
+    letter-spacing: 0.015em;
+    line-height: $base-line-height-unit;
 
-	> li,
-	> li a,
-	> a {
-		color: currentColor;
-		font-family: inherit;
-		font-size: inherit;
-		margin: 0;
-	}
+    > li,
+    > li a,
+    > a {
+        color: currentColor;
+        font-family: inherit;
+        font-size: inherit;
+        margin: 0;
+    }
 }
 
 // 12
 @mixin TextXs(
-	$mixinColor: palette(brand),
-	$mixinFont: $font-sans-book
+    $mixinColor: palette(brand),
+    $mixinFont: $font-sans-book
 ) {
-	@include textTemplate();
-	color: $mixinColor;
-	font-family: $mixinFont;
-	font-size: fontsize(textXs, xs) !important;
-	letter-spacing: 0.03em;
+    @include textTemplate();
+    color: $mixinColor;
+    font-family: $mixinFont;
+    font-size: fontsize(textXs, xs) !important;
+    letter-spacing: 0.03em;
 
-	@include media-breakpoint-up(sm) {
-		font-size: fontsize(textXs, base) !important;
-	}
+    @include media-breakpoint-up(sm) {
+        font-size: fontsize(textXs, base) !important;
+    }
 }
 
 // 14
 @mixin TextSm(
-	$mixinColor: palette(brand),
-	$mixinFont: $font-sans-book
+    $mixinColor: palette(brand),
+    $mixinFont: $font-sans-book
 ) {
-	@include textTemplate();
-	color: $mixinColor;
-	font-family: $mixinFont;
-	font-size: fontsize(textSm, xs);
-	letter-spacing: 0.03em;
+    @include textTemplate();
+    color: $mixinColor;
+    font-family: $mixinFont;
+    font-size: fontsize(textSm, xs);
+    letter-spacing: 0.03em;
 
-	@include media-breakpoint-up(sm) {
-		font-size: fontsize(textSm, base);
-	}
+    @include media-breakpoint-up(sm) {
+        font-size: fontsize(textSm, base);
+    }
 }
 
 // 18/24
 // neutral or blue;
 // light or medium
 @mixin TextRg(
-	$mixinColor: palette(brand),
-	$mixinFont: $font-sans-book
+    $mixinColor: palette(brand),
+    $mixinFont: $font-sans-book
 ) {
-	@include textTemplate();
-	color: $mixinColor;
-	font-family: $mixinFont;
-	font-size: fontsize(textRg, xs);
+    @include textTemplate();
+    color: $mixinColor;
+    font-family: $mixinFont;
+    font-size: fontsize(textRg, xs);
 
-	@include media-breakpoint-up(sm) {
-		font-size: fontsize(textRg, base);
-	}
+    @include media-breakpoint-up(sm) {
+        font-size: fontsize(textRg, base);
+    }
 }
 
 // 21/29
 @mixin TextMd(
-	$mixinColor: palette(brand),
-	$mixinFont: $font-sans-book
+    $mixinColor: palette(brand),
+    $mixinFont: $font-sans-book
 ) {
-	@include textTemplate();
-	color: $mixinColor;
-	font-family: $mixinFont;
-	font-size: fontsize(textMd, xs);
+    @include textTemplate();
+    color: $mixinColor;
+    font-family: $mixinFont;
+    font-size: fontsize(textMd, xs);
 
-	@include media-breakpoint-up(sm) { font-size: fontsize(textMd, sm); }
-	@include media-breakpoint-up(lg) { font-size: fontsize(textMd, base); }
+    @include media-breakpoint-up(sm) { font-size: fontsize(textMd, sm); }
+    @include media-breakpoint-up(lg) { font-size: fontsize(textMd, base); }
 }
 
 
@@ -142,7 +142,7 @@ p, address,
 table, time,
 fieldset, figcaption,
 pre {
-	@include TextRg();
+    @include TextRg();
 }
 
 // em,
@@ -167,29 +167,35 @@ blockquote,
 .Blockquote {
     @include TextRg();
     border-left: 1px solid rgba( palette(medium), 0.4);
-	color: rgba( palette(medium), 0.85);
+    color: rgba( palette(medium), 0.85);
     padding-left: space(1);
 }
 
 // quick markdown scope added
 blockquote p {
     @include TextRg();
-	color: rgba( palette(medium), 1);
+    //color: rgba( palette(medium), 1);
+    font-size: 90% !important;
+    margin-right: space(1);
+    
+    @include media-breakpoint-up(sm) {
+        margin-right: space(3);
+    }
 }
 
 .TextLede {
-	@include TextRg();
-	color: color(text, brand) !important;
-	font-family: $font-sans-regular;
-	font-size: map-fetch($size, font, headerRg, xs);
-	line-height: 1.45;
-	// margin-bottom: space(1);
+    @include TextRg();
+    color: color(text, brand) !important;
+    font-family: $font-sans-regular;
+    font-size: map-fetch($size, font, headerRg, xs);
+    line-height: 1.45;
+    // margin-bottom: space(1);
 
-	@include respond-to(sm) {
-		font-family: $font-sans-bold;
-		font-size: map-fetch($size, font, headerRg, base);
-		line-height: $base-line-height-unit;
-	}
+    @include respond-to(sm) {
+        font-family: $font-sans-bold;
+        font-size: map-fetch($size, font, headerRg, base);
+        line-height: $base-line-height-unit;
+    }
 }
 
 
@@ -198,9 +204,9 @@ blockquote p {
 // --------------------------------------------------------------------------
 
 .c-listItemTag {
-	@include TextSm( palette(brand-counter) );
-	display: inline-block;
-	width: space(0.75);
+    @include TextSm( palette(brand-counter) );
+    display: inline-block;
+    width: space(0.75);
 }
 
 
@@ -214,8 +220,8 @@ blockquote p {
 .Container p,
 .Container li,
 .Container ol {
-	&:last-child,
-	&:last-child a {
-		margin-bottom: 0;
-	}
+    &:last-child,
+    &:last-child a {
+        margin-bottom: 0;
+    }
 }

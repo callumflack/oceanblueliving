@@ -15,75 +15,102 @@
 // $vertSpaceLg              : 34vh;
 
 @mixin sectionSpace() {
-	padding: $vertSpace 0;
+    padding: $vertSpace 0;
 }
 
 @mixin sectionSpace--xs() {
-	padding: $vertSpaceXs 0;
+    padding: $vertSpaceXs 0;
 }
 
 @mixin sectionSpace--sm() {
-	padding: $vertSpaceSm 0;
+    padding: $vertSpaceSm 0;
 }
 
 @mixin sectionSpace--lg() {
-	padding: $vertSpaceLg 0;
+    padding: $vertSpaceLg 0;
 }
 
 
 //  --#{breakpoint}Top
 
 @mixin sectionSpace--top() {
-	padding-top: $vertSpace;
+    padding-top: $vertSpace;
 }
 
 @mixin sectionSpace--xsTop() {
-	padding-top: $vertSpaceXs;
+    padding-top: $vertSpaceXs;
 }
 
 @mixin sectionSpace--smTop() {
-	padding-top: $vertSpaceSm;
+    padding-top: $vertSpaceSm;
 }
 
 @mixin sectionSpace--lgTop() {
-	padding-top: $vertSpaceLg;
+    padding-top: $vertSpaceLg;
+}
+
+@mixin sectionSpace--bottom() {
+    padding-bottom: $vertSpace;
 }
 
 
 // Vax initiate.
 
 .Content {
-	@include sectionSpace--top();
+    //@include sectionSpace--top();
 }
 
-.Section + .Section {
-	@include sectionSpace--lgTop();
-
+.Content-wrapper--oceanblue {
+    background-color: palette(brand);
+    background-image: linear-gradient( palette(brand) 30%, palette(brand-light) );
+    padding-bottom: $vertSpaceLg;
 }
 
-.Section--xs    { @include sectionSpace--xs(); }
-.Section--sm    { @include sectionSpace--sm(); }
-.Section--rg    { @include sectionSpace(); }
-.Section--lg    { @include sectionSpace--lg(); }
+//.Section           { @include sectionSpace--lgTop();}
 
-.Section--top   { @include sectionSpace--top(); }
-.Section--xsTop { @include sectionSpace--xsTop(); }
-.Section--smTop { @include sectionSpace--smTop(); }
-.Section--lgTop { @include sectionSpace--lgTop(); }
+.Section--xs       { @include sectionSpace--xs(); }
+.Section--sm       { @include sectionSpace--sm(); }
+.Section--rg       { @include sectionSpace(); }
+.Section--lg       { @include sectionSpace--lg(); }
+
+.Section--bottom   { @include sectionSpace--bottom(); }
+
+.Section--top      { @include sectionSpace--top(); }
+.Section--xsTop    { @include sectionSpace--xsTop(); }
+.Section--smTop    { @include sectionSpace--smTop(); }
+.Section--lgTop    { @include sectionSpace--lgTop(); }
+
+
 
 .msm-Section--smTop { 
-	@include media-breakpoint-down(sm) {
-		@include sectionSpace--smTop();
-	}
+    @include media-breakpoint-down(sm) {
+        @include sectionSpace--smTop();
+    }
 }
 
-// Vars
+.Section--pageLink { 
+    padding: $vertSpaceSm 0 $vertSpaceSm * 1.25; 
+}
 
 .Section--cta {
-	margin: $vertSpace 0;
+    //margin: $vertSpace 0;
+    margin: $vertSpace 0;
 
-	> .Container {
-		border-top: 1px solid palette(base);
-		padding-top: 14vh !important;
-	}
+    > .Container {
+        border-top: 1px solid palette(base);
+        //padding-top: 14vh !important;
+        padding-top: $vertSpace * 0.75;
+    }
+}
+
+.Section--ruled {
+    border-top: 1px solid palette(base);
+    margin-top: $vertSpaceSm * 0.75;
+    padding-top: $vertSpaceSm * 0.75 !important;
+}
+
+.Section--afterArticleBlock {
+    border-top: 1px solid palette(base);
+    margin-top: $vertSpaceSm * 0.75;
+    padding-top: $vertSpaceSm * 0.25 !important;
 }

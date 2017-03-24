@@ -6,43 +6,43 @@
 
 
 .Figure {
-	margin: $vertSpaceSm auto;
+    margin: 0 auto $vertSpaceSm;
 
-	img { width: 100%; }
+    img { width: 100%; }
 }
 
 .Figure--lg {
-	margin: $vertSpace auto;
-	max-width: container-width(ll);
+    margin: $vertSpace auto;
+    max-width: container-width(ll);
 
-	img { width: 100%; }
+    img { width: 100%; }
 
-	//@include media-breakpoint-down(md) {
-	//	margin: $vertSpace space(-1.5);
-	//}
+    //@include media-breakpoint-down(md) {
+    //	margin: $vertSpace space(-1.5);
+    //}
 }
 
 .Figure--lgTop {
-	margin: $vertSpace auto 0;
-	max-width: container-width(ll);
+    margin: $vertSpace auto 0;
+    max-width: container-width(ll);
 
-	img { width: 100%; }
+    img { width: 100%; }
 }
 
 .Figure--icon {
-	margin: 0 0 space(0.5);
-	text-align: center;
+    //margin: 0 0 space(0.25);
+    text-align: center;
 
-	@include respond-to(sm) {
-		margin: 0 0 space(0.75);
-	}
+    //@include respond-to(sm) {
+    //    margin: 0 0 space(0.3);
+    //}
 }
 
 .Figure--hero {
-	margin: 0 0 space(1);
+    margin: 0 0 space(1);
 
-	@include respond-to(sm) {
-		margin: space(1.5) 0 space(1.25);
-		margin: 0 0 space(1.25);
-	}
+    @include respond-to(sm) {
+        margin: space(1.5) 0 space(1.25);
+        margin: 0 0 space(1.25);
+    }
 }

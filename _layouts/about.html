@@ -7,37 +7,38 @@ image: "/uploads/about-hero-160812-team.jpg"
 {% assign about = site.pages | where: 'title', 'about' | first  %}
 
 <header class="Header Header--fullRatio Header--rev" role="banner">
-	<div class="FlexEmbed">
-		<div class="FlexEmbed-ratio"></div>
-		<div class="FlexEmbed-content">
-			<div class="Header-masthead">
-				<a class="Header-logo" href="/">
-					<img src="/uploads/logo-white.png" alt="{{ site.title }}">
-				</a>
-			</div>
-
+    <div class="FlexEmbed">
+        <div class="FlexEmbed-ratio"></div>
+        <div class="FlexEmbed-content">
             {% comment %}
             {% assign image = "/uploads/about-hero-160812-team" %}
             {% assign absolute = true %}
             {% include responsive-img.html %}
             {% endcomment %}
             {% assign image = "about-hero-160812-team.jpg" %}
-            {% include responsive-img-cloudinary.html %}
+            {% include responsive-img-cloudinary-hero.html %}
             <div class="u-posAbsoluteCenter FlexEmbed-content--dark">&nbsp;</div>
 
-		</div>
-	</div>
-	<div class="Header-wrapper">
-		<div class="o-aligner">
-			<div class="o-aligner-item">
-				<div class="Container">
-					<h1 class="Header-title">
-						{{ about.hero_headline }}
-					</h1>
-				</div>
-			</div>
-		</div>
-	</div>
+        </div>
+    </div>
+    <div class="Header-wrapper">
+        <div class="o-aligner">
+            <div class="o-aligner-item">
+                <div class="Container Container--withinHero">
+                    <h1 class="Header-display">
+                        {{ about.hero_headline }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Header-wrapper">
+        <div class="Header-masthead">
+            <a class="Header-logo" href="/">
+                <img src="/uploads/logo-white.png" alt="{{ site.title }}">
+            </a>
+        </div>
+    </div>
 </header>
 
 
@@ -46,50 +47,48 @@ image: "/uploads/about-hero-160812-team.jpg"
 
 <main class="Content" role="main">
 
-	<section class="Section">
-		<div class="Container Container--insetTextColumn">
+    <section class="Section--top">
+        <div class="Container Container--insetTextColumn">
+            {{ about.first_text | markdownify }}
+        </div>
 
-			{{ about.first_text | markdownify }}
+        {% comment %}
+        <figure class="Figure--lg">
+            <div class="FlexEmbed">
+                <div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
+                <div class="FlexEmbed-content">
+                    <div class="videoWrapper js-videoWrapper">
+                        <iframe class="u-posAbsoluteCenter js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="{{ about.video }}" width="100%" height="100%" ></iframe>
+                        <button class="u-posAbsoluteCenter CoverImage videoPoster js-videoPoster" style="background-image:url('{{ about.video-image }}');">
+                            <svg class="u-posAbsoluteCenter Icon Icon--super u-colorWhite">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-play"></use>
+                            </svg>
+                            Play video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </figure>
 
-		</div>
+        <div class="Container Container--insetTextColumn">
+            {{ about.second_text | markdownify }}
+        </div>
+        {% endcomment %}
+        
+        <div class="Container Container--textColumn">
+            <div class="Section--smTop">
+                {% include pathway-primary.html %}
+            </div>
+            {% include pathway-socials.html %}
+        </div>
 
-		<!-- <figure class="Figure--lg">
-			<div class="FlexEmbed">
-				<div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-				<div class="FlexEmbed-content">
-					<div class="videoWrapper js-videoWrapper">
-						<iframe class="u-posAbsoluteCenter js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="{{ about.video }}" width="100%" height="100%" ></iframe>
-						<button class="u-posAbsoluteCenter CoverImage videoPoster js-videoPoster" style="background-image:url('{{ about.video-image }}');">
-							<svg class="u-posAbsoluteCenter Icon Icon--super u-colorWhite">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-play"></use>
-							</svg>
-							Play video
-						</button>
-					</div>
-				</div>
-			</div>
-		</figure> -->
+    </section>
 
-		<div class="Container Container--insetTextColumn">
-
-			{{ about.second_text | markdownify }}
-
-		</div>
-
-		<div class="Container Container--textColumn Post--article-ruleOff"></div>
-
-	</section>
-
-	<!-- contacts -->
-	<section class="Section--rg">
-		<div class="Container Container--textColumn">
-
-			{% include pathway-primary.html %}
-			{% include pathway-socials.html %}
-			<!-- {% include pathway-blog.html %} -->
-			{% include pathway-newsletter.html %}
-
-		</div>
-	</section>
+    <!-- contacts -->
+    <section class="Section--cta">
+        <div class="Container Container--textColumn">
+            {% include pathway-newsletter.html %}
+        </div>
+    </section>
 
 </main>

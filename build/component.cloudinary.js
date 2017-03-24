@@ -18,9 +18,9 @@
     
     // https://jsfiddle.net/idobarnoam/k89ff3ay/1/
     Array.from(document.querySelectorAll('.js-cloudinaryImageLarge')).forEach(image => {
-        setTimeout(function() {
-            image.classList.add('is-loaded');
-        }, 1000);
+        image.addEventListener('load', () => {
+            image.classList.add('is-loaded')
+        })
     })
     
 })()

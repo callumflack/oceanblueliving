@@ -19,6 +19,7 @@
 @import "vendor.suitcss.settings";
 @import "vendor.flickity";
 @import "vendor.owl.carousel";
+@import "vendor.slick.theme";
 @import "vendor.lazysizes";
 
 @import "base.page";
@@ -48,6 +49,7 @@
 @import "layout.design";
 
 @import "component.nav";
+@import "component.navbar";
 @import "component.coverimage";
 @import "component.imageblend";
 @import "component.form";
@@ -56,8 +58,7 @@
 @import "component.modal";
 @import "component.flickity";
 @import "component.owl";
-@import "component.navbar";
-@import "component.nav";
+@import "component.slick";
 @import "component.pathway";
 @import "component.post";
 @import "component.page";

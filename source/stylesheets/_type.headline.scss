@@ -6,72 +6,72 @@
 
 
 @mixin headlineTemplate() {
-	@include typeReset();
-	line-height: $base-line-height-unit;
-	line-height: 1.6;
-	margin-bottom: space(0.85);
-	text-align: center;
+    @include typeReset();
+    line-height: $base-line-height-unit;
+    line-height: 1.6;
+    margin-bottom: space(0.85);
+    text-align: center;
 
-	// if the headline is a link
-	// https://css-tricks.com/the-sass-ampersand/
-	// &#{a} {
-	//     @include on-event() {
-	//         opacity: 0.4;
-	//         transition: opacity 500ms ease;
-	//     }
-	// }
+    // if the headline is a link
+    // https://css-tricks.com/the-sass-ampersand/
+    // &#{a} {
+    //     @include on-event() {
+    //         opacity: 0.4;
+    //         transition: opacity 500ms ease;
+    //     }
+    // }
 
-	a {
+    a {
 
-	}
+    }
 
-	@include respond-to(xs) {
-		// margin-bottom: space(1.75);
-	}
+    @include respond-to(xs) {
+        // margin-bottom: space(1.75);
+    }
 }
 
 @mixin headlineRg(
-	$mixinColor: palette(brand),
-	$mixinFont: $font-display
+    $mixinColor: palette(brand),
+    $mixinFont: $font-display
 ) {
-	@include headlineTemplate();
-	color: $mixinColor;
-	font-family: $mixinFont;
-	font-size: fontsize(headerRg, xs);
+    @include headlineTemplate();
+    color: $mixinColor;
+    font-family: $mixinFont;
+    font-size: fontsize(headerRg, xs);
 
-	@include respond-to(xs) { font-size: fontsize(headerRg, base); }
-	@include respond-to(md) { font-size: fontsize(headerRg, lg); }
-	@include respond-to(xl) { font-size: fontsize(headerRg, xl); }
+    @include respond-to(xs) { font-size: fontsize(headerRg, base); }
+    @include respond-to(md) { font-size: fontsize(headerRg, lg); }
+    @include respond-to(xl) { font-size: fontsize(headerRg, xl); }
 }
 
 @mixin headlineLg(
-	$mixinColor: palette(brand),
-	$mixinFont: $font-display
+    $mixinColor: palette(brand),
+    $mixinFont: $font-display
 ) {
-	@include headlineTemplate();
-	color: $mixinColor;
-	font-family: $mixinFont;
-	font-size: fontsize(headerLg, xs);
+    @include headlineTemplate();
+    color: $mixinColor;
+    font-family: $mixinFont;
+    font-size: fontsize(headerLg, xs);
 
-	@include respond-to(xs) { font-size: fontsize(headerLg, base); }
-	@include respond-to(md) { font-size: fontsize(headerLg, lg); }
-	@include respond-to(xl) { font-size: fontsize(headerLg, xl); }
+    @include respond-to(xs) { font-size: fontsize(headerLg, base); }
+    @include respond-to(md) { font-size: fontsize(headerLg, lg); }
+    @include respond-to(xl) { font-size: fontsize(headerLg, xl); }
 }
 
 @mixin headlineSm(
-	$mixinColor: palette(brand),
-	$mixinFont: $font-display
+    $mixinColor: palette(brand),
+    $mixinFont: $font-display
 ) {
-	@include headlineTemplate();
-	color: $mixinColor;
-	font-family: $mixinFont;
-	font-size: fontsize(headerSm, xs);
-	//line-height: 1.75;
-	// letter-spacing: 0.03em;
+    @include headlineTemplate();
+    color: $mixinColor;
+    font-family: $mixinFont;
+    font-size: fontsize(headerSm, xs);
+    //line-height: 1.75;
+    // letter-spacing: 0.03em;
 
-	@include respond-to(xs) { font-size: fontsize(headerSm, base); }
-	@include respond-to(md) { font-size: fontsize(headerSm, lg); }
-	@include respond-to(xl) { font-size: fontsize(headerSm, xl); }
+    @include respond-to(xs) { font-size: fontsize(headerSm, base); }
+    @include respond-to(md) { font-size: fontsize(headerSm, lg); }
+    @include respond-to(xl) { font-size: fontsize(headerSm, xl); }
 }
 
 
@@ -99,21 +99,22 @@
 // --------------------------------------------------------------------------
 
 @mixin Headline--minor(
-	$mixinColor: rgba( palette(brand), 0.4 ),
-	$mixinFont: $font-sans-book
+    $mixinColor: rgba( palette(brand), 0.4 ),
+    $mixinFont: $font-sans-book
 ) {
-	@include typeReset();
-	color: $mixinColor;
-	font-family: $mixinFont;
-	font-size: fontsize(headerXs, xs);
-	letter-spacing: 0.06em;
-	line-height: 1.5;
-	margin-bottom: space(0.25);
-	text-transform: uppercase;
+    @include typeReset();
+    color: $mixinColor;
+    display: inline-block;
+    font-family: $mixinFont;
+    font-size: fontsize(headerXs, xs);
+    letter-spacing: 0.06em;
+    line-height: 1.5;
+    margin-bottom: space(0.25);
+    text-transform: uppercase;
 
-	@include respond-to(xs) {
-		font-size: fontsize(headerXs, base);
-	}
+    @include respond-to(xs) {
+        font-size: fontsize(headerXs, base);
+    }
 }
 
 .Headline--minor { @include Headline--minor(); }

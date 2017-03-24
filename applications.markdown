@@ -3,7 +3,8 @@ title: applications
 date: 2016-06-03 16:46:00 +10:00
 layout: applications
 hero_image: "/uploads/applications-hero-test2.jpg"
-hero_headline: Timeless, artistic & functional architectural metalworks.
+x_hero_headline: Timeless, artistic & functional architectural metalworks.
+hero_headline: Architectural metalworks, beautifully crafted.
 hero_description: |
   Our weatherproof architectural metalworks are versatile for both indoor and outdoor living<em>, sculpting light and anchoring areas to transform
   your living spaces</em>. From screens, panels, gates and letterboxes, to signage, wall art and garden sculpture, we create and manufacture your designs.
@@ -29,7 +30,7 @@ gates_carousel_images:
 gates_carousel_images_orig:
 - "/uploads/applications-9.jpg <== kanimbla a'comin'"
 gates_second_text: |
-  Safe, strong and secure, our gates are function as they should, but as custom designed architectural objects, they complement and enhance your living spaces rather than compromising them. Our pattern designs increase privacy with restricting airflow, and allow a great range versatility in application. All our gates surpass building compliance codes, including safe edges, and are installed with the technical craftsmanship we pride ourselves on.
+  Safe, strong and secure, our gates are function as they should, but as custom designed architectural objects, they complement and enhance your living spaces rather than compromising them. Our pattern designs increase privacy without restricting airflow, and allow a great range versatility in application. All our gates surpass building compliance codes, including safe edges, and are installed with the technical craftsmanship we pride ourselves on.
 outdoor_first_text: |
   OceanBlue Living Outdoor metalworks include letterboxes, fire-pits, columns and sculpture. With our versatile cutting technology, if you have an idea, we can create it.
 outdoor_carousel_images:

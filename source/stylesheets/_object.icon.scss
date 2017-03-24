@@ -7,124 +7,124 @@
 
 
 .IconWrapper {
-	cursor: pointer;
-	display: inline-block;
-	margin: -40px;
-	padding: 40px;
+    cursor: pointer;
+    display: inline-block;
+    margin: -40px;
+    padding: 40px;
 }
 
 // .#{$namespace}Icon,
 .Icon {
-	// cursor: pointer;
-	display: inline-block;
-	fill: currentColor; // The color of the SVG will inherit the parent's `color`.
-	height: 24px;
-	line-height: 1;
-	position: relative;
-	text-align: center;
-	vertical-align: middle;
-	width: 24px;
+    // cursor: pointer;
+    display: inline-block;
+    fill: currentColor; // The color of the SVG will inherit the parent's `color`.
+    height: 24px;
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 24px;
 
-	@include on-event() {
-		outline: 0;
-	}
+    @include on-event() {
+        outline: 0;
+    }
 
-	&--nav {
-		height: 18px;
-	}
+    &--nav {
+        height: 18px;
+    }
 
-	&--sm {
-		width: 12px;
-		height: 12px;
-	}
+    &--sm {
+        width: 12px;
+        height: 12px;
+    }
 
-	&--md {
-		width: rem(40);
-		height: rem(40);
-	}
+    &--md {
+        width: rem(40);
+        height: rem(40);
+    }
 
-	&--lg {
-		width: rem(40);
-		height: rem(40);
+    &--lg {
+        width: rem(30);
+        height: rem(30);
 
-		@include respond-to(xs) {
-			width: rem(54);
-			height: rem(54);
-		}
-	}
+        @include respond-to(xs) {
+            width: rem(39);
+            height: rem(39);
+        }
+    }
 
-	&--super {
-		width: rem(60);
-		height: rem(60);
+    &--super {
+        width: rem(60);
+        height: rem(60);
 
-		@include respond-to(xs) {
-			width: rem(80);
-			height: rem(80);
-		}
-	}
+        @include respond-to(xs) {
+            width: rem(80);
+            height: rem(80);
+        }
+    }
 
-	&--left {
-		margin-right: 5px;
+    &--left {
+        margin-right: 5px;
 
-		@include respond-to(xs) {
-			margin-right: rem(7);
-		}
-	}
+        @include respond-to(xs) {
+            margin-right: rem(7);
+        }
+    }
 
-	&--leftSm {
-		margin-right: 1px;
+    &--leftSm {
+        margin-right: 1px;
 
-		@include respond-to(xs) {
-			margin-right: rem(2);
-		}
-	}
+        @include respond-to(xs) {
+            margin-right: rem(2);
+        }
+    }
 
-	&--right {
-		margin-left: 5px;
+    &--right {
+        margin-left: 5px;
 
-		@include respond-to(xs) {
-			margin-left: rem(7);
-		}
-	}
+        @include respond-to(xs) {
+            margin-left: rem(7);
+        }
+    }
 
-	&--rightSm {
-		margin-left: 1px;
+    &--rightSm {
+        margin-left: 1px;
 
-		@include respond-to(xs) {
-			margin-left: rem(2);
-		}
-	}
+        @include respond-to(xs) {
+            margin-left: rem(2);
+        }
+    }
 
-	// This is a vertical alignment fix when used to the right of `.#{$namespace}icon`.
-	+ [class^="#{$namespace}-arrow-inline"] {
-		vertical-align: super;
-	}
+    // This is a vertical alignment fix when used to the right of `.#{$namespace}icon`.
+    + [class^="#{$namespace}-arrow-inline"] {
+        vertical-align: super;
+    }
 
-	&--textAlign {
-		// vertical-align: sub;
-		line-height: inherit;
-		transform: translateY(-2px);
-		vertical-align: middle;
-	}
+    &--textAlign {
+        // vertical-align: sub;
+        line-height: inherit;
+        transform: translateY(-2px);
+        vertical-align: middle;
+    }
 
-	&--textLgAlign {
-		transform: translateY(1px);
-	}
+    &--textLgAlign {
+        transform: translateY(1px);
+    }
 
-	&--buttonAlign {
-		line-height: inherit;
-		transform: translateY(-2px);
-		vertical-align: middle;
-	}
+    &--buttonAlign {
+        line-height: inherit;
+        transform: translateY(-2px);
+        vertical-align: middle;
+    }
 
-	&--formAlign {
-		position: relative;
-		vertical-align: top;
-	}
+    &--formAlign {
+        position: relative;
+        vertical-align: top;
+    }
 
-	&--mediaAlign {
-		transform: translateY(rem(-4));
-	}
+    &--mediaAlign {
+        transform: translateY(rem(-4));
+    }
 }
 
 /// Icon alignment fixes

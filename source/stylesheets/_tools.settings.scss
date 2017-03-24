@@ -24,26 +24,27 @@ $base-black                    : #000;
 $base-white                    : #FFF;
 
 $palette: (
-	black                      : $base-black,
-	dark                       : tint($base-black, 15%),
-	ash                        : tint($base-black, 22%),
-	charcoal                   : tint($base-black, 39%),
-	medium                     : tint($base-black, 50%),
-	muted                      : tint($base-black, 70%),
-	base                       : tint($base-black, 86%),
-	light                      : tint($base-black, 94%),
-	faint                      : tint($base-black, 97%),
-	white                      : $base-white,
-	background                 : #fdfdfd,
-	neutral                    : #F3F2F1,
-	neutral-dark               : darken(#f0eeeb, 9%),
-	neutral-light              : lighten(#f0eeeb, 4%),
-	brand                      : #030d18,
-	brand-complement           : #6EBE44,
-	brand-counter              : #F7FCFF,
-	warning                    : #FFD40C,
-	bad-news                   : #C60C0C,
-	good-news                  : brand-complement
+    black                      : $base-black,
+    dark                       : tint($base-black, 15%),
+    ash                        : tint($base-black, 22%),
+    charcoal                   : tint($base-black, 39%),
+    medium                     : tint($base-black, 50%),
+    muted                      : tint($base-black, 70%),
+    base                       : tint($base-black, 86%),
+    light                      : tint($base-black, 94%),
+    faint                      : tint($base-black, 97%),
+    white                      : $base-white,
+    background                 : #fdfdfd,
+    neutral                    : #F3F2F1,
+    neutral-dark               : darken(#f0eeeb, 9%),
+    neutral-light              : lighten(#f0eeeb, 4%),
+    brand                      : #030d18,
+    brand-light                : #174170, //#1a4a7f,
+    brand-complement           : #6EBE44,
+    brand-counter              : #F7FCFF,
+    warning                    : #FFD40C,
+    bad-news                   : #C60C0C,
+    good-news                  : brand-complement
 
 );
 
@@ -59,7 +60,7 @@ $palette: (
 $base-font-size-unit      : 16;
 $base-line-height-unit    : 1.5;
 $base-font-size           : $base-font-size-unit * 1px;
-$base-line-height         : ($base-font-size-unit * $base-line-height-unit) * 1px; //22.8
+$base-line-height         : ($base-font-size-unit * $base-line-height-unit) * 1px; //24
 $space-unit               : rem($base-line-height);
 $space                    : $space-unit * 1;
 
@@ -69,29 +70,29 @@ $gutterSpaceLg            : 5vw;
 $vertSpaceXs              : 5vh;
 $vertSpaceSm              : 8.5vh;
 $vertSpace                : 15vh;
-$vertSpaceLg              : 30vh;
+$vertSpaceLg              : 27.5vh;
 
 
 
 $grid-breakpoints: (
-	xs: 0,
-	sm: 544px,
-	md: 768px,
-	lg: 992px,
-	xl: 1200px,
-	su: 1700px
+    xs: 0,
+    sm: 544px,
+    md: 768px,
+    lg: 992px,
+    xl: 1440px,
+    su: 1700px
 ) !default;
 
 $container-max-widths: (
-	xs: 460px,
-	sm: 576px,
-	md: 720px,
-	ml: 840px,
-	lg: 960px,
-	ll: 1100px,
-	xl: 1200px,
-	su: 1700px,
-	xx: 80vw
+    xs: 460px,
+    sm: 576px,
+    md: 660px,
+    ml: 740px,
+    lg: 960px,
+    ll: 1040px,
+    xl: 1440px,
+    su: 1700px,
+    xx: 80vw
 ) !default;
 
 
@@ -101,114 +102,114 @@ $container-max-widths: (
 
 $size: (
 
-	border-radius: (
-		small             : rem(3),
-		base              : rem(4),
-		large             : rem(6)
-	),
+    border-radius: (
+        small             : rem(3),
+        base              : rem(4),
+        large             : rem(6)
+    ),
 
-	breakpoint: (
-		'max-xs'          : ( max-width:  600px ),
-		'max-sm'          : ( max-width:  767px ),
-		'ip6'             : ( min-width:  374px ),
-		'xs'              : ( min-width:  600px ),
-		'text-column'     : ( min-width:  766px ), // 1
-		'sm'              : ( min-width:  767px ),
-		'md'              : ( min-width:  992px ),
-		'lg'              : ( min-width: 1200px ),
-		'xl'              : ( min-width: 1700px )
-	),
+    breakpoint: (
+        'max-xs'          : ( max-width:  600px ),
+        'max-sm'          : ( max-width:  767px ),
+        'ip6'             : ( min-width:  374px ),
+        'xs'              : ( min-width:  600px ),
+        'text-column'     : ( min-width:  766px ), // 1
+        'sm'              : ( min-width:  767px ),
+        'md'              : ( min-width:  992px ),
+        'lg'              : ( min-width: 1200px ),
+        'xl'              : ( min-width: 1700px )
+    ),
 
-	button-height: (
-		concise           : rem(36),
-		concisePlus       : rem(38),
-		base              : rem(44),
-		basePlus          : rem(45),
-		large             : rem(48)
-	),
+    button-height: (
+        concise           : rem(36),
+        concisePlus       : rem(38),
+        base              : rem(44),
+        basePlus          : rem(45),
+        large             : rem(48)
+    ),
 
-	container: (
-		modal-form        : rem(740),
-		modal-form-sm     : 80%,
-		default           : rem(1100),
-		small             : rem(345),
-		mobile-column     : rem(600),
-		text-column       : rem(720),
-		picture           : rem(960),
-		wide-picture      : rem(1240)
-	),
+    container: (
+        modal-form        : rem(740),
+        modal-form-sm     : 80%,
+        default           : rem(1100),
+        small             : rem(345),
+        mobile-column     : rem(600),
+        text-column       : rem(720),
+        picture           : rem(960),
+        wide-picture      : rem(1240)
+    ),
 
-	font: (
-		textXs: (
-			xs            : 11px,
-			base          : 13px
-		),
-		textSm: (
-			xs            : 13px,
-			base          : 15px
-		),
-		textRg: (
-			xs            : $base-font-size * 0.9,
-			base          : $base-font-size * 1.25
-		),
-		textMd: (
-			xs            : 19px,
-			sm            : 21px,
-			base          : 24px
-		),
-		textLg: (
-			xs            : 17px,
-			base          : 21px
-		),
-		headerXs: (
-			xs            : 13px,
-			base          : 16px
-		),
-		headerSm: (
-			xs            : 20px,
-			base          : 22px,
-			lg            : 27px,
-			xl            : 27px
-		),
-		headerRg: (
-			xs            : 24px,
-			base          : 30px,
-			lg            : 35px,
-			xl            : 39px
-		),
-		headerLg: (
-			xs            : 27px,
-			base          : 35px,
-			lg            : 41px,
-			xl            : 46px
-		),
-
-
+    font: (
+        textXs: (
+            xs            : 11px,
+            base          : 13px
+        ),
+        textSm: (
+            xs            : 13px,
+            base          : 15px
+        ),
+        textRg: (
+            xs            : 15px,
+            base          : 18px
+        ),
+        textMd: (
+            xs            : 18px,
+            sm            : 20px,
+            base          : 22px
+        ),
+        textLg: (
+            xs            : 17px,
+            base          : 21px
+        ),
+        headerXs: (
+            xs            : 13px,
+            base          : 16px
+        ),
+        headerSm: (
+            xs            : 20px,
+            base          : 22px,
+            lg            : 27px,
+            xl            : 27px
+        ),
+        headerRg: (
+            xs            : 24px,
+            base          : 29px,
+            lg            : 32px,
+            xl            : 35px
+        ),
+        headerLg: (
+            xs            : 28px,
+            base          : 35px,
+            lg            : 40px,
+            xl            : 44px
+        ),
 
 
 
-		headerMd: (
-			xs            : rem(21),
-			base          : rem(28)
-		),
-		headerXl: (
-			xs            : rem(36),
-			base          : rem(41)
-		),
-		close: (
-			xs            : rem(33),
-			base          : rem(66)
-		),
-		super: (
-			xs            : rem(50),
-			base          : rem(100)
-		),
-	),
 
-	list-inset: (
-		margin            : space(1.5),
-		padding           : 0
-	),
+
+        headerMd: (
+            xs            : rem(21),
+            base          : rem(28)
+        ),
+        headerXl: (
+            xs            : rem(36),
+            base          : rem(41)
+        ),
+        close: (
+            xs            : rem(33),
+            base          : rem(66)
+        ),
+        super: (
+            xs            : rem(50),
+            base          : rem(100)
+        ),
+    ),
+
+    list-inset: (
+        margin            : space(1.5),
+        padding           : 0
+    ),
 );
 
 
@@ -216,18 +217,18 @@ $size: (
 // --------------------------------------------------------------------------
 
 $transition: (
-	duration: (
-		fast         : 50ms,
-		short        : 150ms,
-		long         : 500ms
-	),
-	type: (
-		thisalso     : cubic-bezier(0.19, 1, 0.22, 1),
-		cubic-static : cubic-bezier(0, -0.1, 1, -0.1),
-		cubic-state  : cubic-bezier(0, 1.1, 1, 1.1),
-		base         : ease-out,
-		fine         : ease-in-out
-	)
+    duration: (
+        fast         : 50ms,
+        short        : 150ms,
+        long         : 500ms
+    ),
+    type: (
+        thisalso     : cubic-bezier(0.19, 1, 0.22, 1),
+        cubic-static : cubic-bezier(0, -0.1, 1, -0.1),
+        cubic-state  : cubic-bezier(0, 1.1, 1, 1.1),
+        base         : ease-out,
+        fine         : ease-in-out
+    )
 );
 
 
@@ -235,13 +236,13 @@ $transition: (
 // --------------------------------------------------------------------------
 
 $z-index: (
-	'modal'     : 8001,
-	'overlay'   : 8000,
-	'dropdown'  : 7000,
-	'second'    : 2000,
-	'first'     : 1000,
-	'default'   : 1,
-	'below'     : -1,
+    'modal'     : 8001,
+    'overlay'   : 8000,
+    'dropdown'  : 7000,
+    'second'    : 2000,
+    'first'     : 1000,
+    'default'   : 1,
+    'below'     : -1,
 );
 
 
@@ -312,11 +313,11 @@ $font-display         : join($display, $font-display-stack);
 // if using @fontface via a cloud service, eg. Google fonts.
 
 $font-weight: (
-	'thin'      : 100,
-	'light'     : 200,
-	'book'      : 400,
-	'regular'   : 500,
-	'medium'    : 600,
-	'bold'      : 700,
-	'black'     : 900
+    'thin'      : 100,
+    'light'     : 200,
+    'book'      : 400,
+    'regular'   : 500,
+    'medium'    : 600,
+    'bold'      : 700,
+    'black'     : 900
 );

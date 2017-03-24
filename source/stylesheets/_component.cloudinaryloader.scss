@@ -3,6 +3,7 @@
 // --------------------------------------------------------------------------
 //   CLOUDINARY LOADER
 //   Ref: https://jsfiddle.net/idobarnoam/k89ff3ay/1/
+//   1. Let cloudinary blur it so we don't get shite edges.
 // --------------------------------------------------------------------------
 
 
@@ -10,26 +11,25 @@
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    transition: opacity 1.5s linear;
+    transition: opacity 1s linear;
     width: 100%;
     
     // stick it
     bottom: 0;
-	left: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .CloudinaryImage.is-loaded {
+    transition: opacity 0.5s linear;
     opacity: 1;
 }
 
 .CloudinaryImage.xs {
-    filter: blur(5px);
+    //filter: blur(5px); // 1.
     opacity: 1;
     transform: scale(1);
     transition: opacity 0.5s linear, filter 0.5s linear;
 }
-
-
