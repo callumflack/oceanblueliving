@@ -4,24 +4,28 @@
 {% include head.html %}
 
 <body id="top" class="{{page.title}} {{page.categories}}"
-	data-spy="scroll" data-target="#scrollspy" data-offset="300">
+    data-spy="scroll" data-target="#scrollspy" data-offset="300">
 
-	{% include nav-toggle.html %}
+    {% include nav-toggle.html %}
 
-	{{ content }}
+    {{ content }}
 
-	{% include footer.html %}
-	{% include nav.html %}
-	{% include icons.html %}
-	{% include icons-lg.html %}
+    {% include footer.html %}
+    {% include nav.html %}
+    {% include icons.html %}
+    {% include icons-lg.html %}
 
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
-	<script src="/build/lib.owl.carousel.min.js"></script>
-	<script src="/build/lib.flickity.min.js"></script>
-	<script src="/build/application.min.js"></script>
-	<script src="/build/lib.modernizr.min.js"></script>
-	<script src="/build/component.cloudinary.js"></script>
-	{% include google-analytics.html %}
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+    <script src="/build/lib.owl.carousel.min.js"></script>
+    <script src="/build/lib.flickity.min.js"></script>
+    <script src="/build/lib.slick.min.js"></script>
+    <script src="/build/application.min.js"></script>
+    <script src="/build/lib.modernizr.min.js"></script>
+    <script src="/build/component.cloudinary.js"></script>
+    <script src="/build/component.slick.js"></script>
+    <script src="/build/component.navToggleReverseOut.js"></script>
+    <!-- <script src='/build/jquery.cloudinary.js' type='text/javascript'></script> -->
+    {% include google-analytics.html %}
 
 </body>
 </html>

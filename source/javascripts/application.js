@@ -51,7 +51,7 @@ $(document).ready(function() {
     // @url: https://medium.com/@primozcigler/neat-trick-for-css-object-fit-fallback-on-edge-and-other-browsers-afbc53bbb2c3#.bs809jr8g
     // --------------------------------------------------------------------------
 
-    if ( ! Modernizr.objectfit ) {
+    if (!Modernizr.objectfit) {
         $('.FlexEmbed-content').each(function () {
             var $container = $(this),
                 imgUrl = $container.find('img').prop('src');

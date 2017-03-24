@@ -7,49 +7,54 @@ image: uploads/blog-hero-160812-barriersolutions.jpg
 {% assign blog = site.pages | where: 'title', 'blog' | first  %}
 
 <header class="Header Header--halfRatio Header--rev" role="banner">
-	<div class="FlexEmbed">
-		<div class="FlexEmbed-ratio"></div>
-		<div class="FlexEmbed-content">
-			<div class="Header-masthead">
-				<a class="Header-logo" href="/">
-					<img src="/uploads/logo-white.png" alt="{{ site.title }}">
-				</a>
-			</div>
-
+    <div class="FlexEmbed">
+        <div class="FlexEmbed-ratio"></div>
+        <div class="FlexEmbed-content">
+            {% comment %}
             {% assign image = "/uploads/blog-hero-160812-barriersolutions" %}
             {% assign absolute = true %}
             {% include responsive-img.html %}
+            {% endcomment %}
+            {% assign image = "blog-hero-160812-barriersolutions.jpg" %}
+            {% include responsive-img-cloudinary-halfHero.html %}
             <div class="u-posAbsoluteCenter FlexEmbed-content--dark">&nbsp;</div>
 
-		</div>
-	</div>
-	<div class="Header-wrapper">
-		<div class="o-aligner">
-			<div class="o-aligner-item">
-				<div class="Container">
-					<h1 class="Header-title">
-						{{ blog.hero_headline }}
-					</h1>
-				</div>
-			</div>
-		</div>
-	</div>
+        </div>
+    </div>
+    <div class="Header-wrapper">
+        <div class="o-aligner">
+            <div class="o-aligner-item">
+                <div class="Container Container--withHero">
+                    <h1 class="Header-title">
+                        {{ blog.hero_headline }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Header-wrapper">
+        <div class="Header-masthead">
+            <a class="Header-logo" href="/">
+                <img src="/uploads/logo-white.png" alt="{{ site.title }}">
+            </a>
+        </div>
+    </div>
 </header>
 
 
 
 <main class="Content" role="main">
-	<section class="Section">
-		<div class="Container Container--blog">
-			<div class="Grid Grid--withGutterLg Grid--alignCenter">
+    <section class="Section--top">
+        <div class="Container Container--blog">
+            <div class="Grid Grid--withFullGutterLg Grid--alignCenter">
 
                 {% for post in site.posts %}
-				<div class="Grid-cell u-xs-size1of2 u-lg-size1of3">
-					<a class="Post--inList" href="{{ post.url }}">
-						<div class="Post-contentAligner">
-							<figure class="Post-image">
+                <div class="Grid-cell u-xs-size1of2 u-lg-size1of3">
+                    <a class="Post--inList" href="{{ post.url }}">
+                        <div class="Post-contentAligner">
+                            <figure class="Post-image">
                                 {% assign imagePath = "/uploads/post-list-" %}
-								<img
+                                <img
                                     class="lazyload ls-blur"
                                     alt="{{ post.title }}"
                                     src="{{ imagePath }}{{ post.slug }}-src.jpg"
@@ -59,24 +64,24 @@ image: uploads/blog-hero-160812-barriersolutions.jpg
                                         {{ imagePath }}{{ post.slug }}-xs.jpg 900w,
                                         {{ imagePath }}{{ post.slug }}.jpg 1800w"
                                     />
-							</figure>
-							<h1 class="Post-subtitle">{{ post.title }}</h1>
-							<div class="Post-meta">
-								{% for tag in post.tags %}
-									<span class="Post-tag">{{ tag | capitalize }}</span>
-								{% endfor %}
-							</div>
-						</div>
-					</a>
-				</div>
-				{% endfor %}
+                            </figure>
+                            <h1 class="Post-subtitle">{{ post.title }}</h1>
+                            <div class="Post-meta">
+                                {% for tag in post.tags %}
+                                    <span class="Post-tag">{{ tag | capitalize }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
 
             </div>
-		</div>
-	</section>
-	<section class="Section--cta">
-		<div class="Container Container--textColumn">
-			{% include pathway-newsletter.html %}
-		</div>
-	</section>
+        </div>
+    </section>
+    <section class="Section--cta">
+        <div class="Container Container--textColumn">
+            {% include pathway-newsletter.html %}
+        </div>
+    </section>
 </main>

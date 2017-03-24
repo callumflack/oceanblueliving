@@ -1,31 +1,30 @@
-<!-- <div class="Pathway {% if page.title == "about" %}Section--smTop{% endif %}"> -->
 <div class="Pathway">
-	<figure class="Figure--icon">
-		<svg class="Icon Icon--lg">
-			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-contact"></use>
-		</svg>
-	</figure>
-	<h2 class="Pathway-subtitle">
-		{% if page.title == "Applications" %}
-			Got bigger ideas?</br>
-		{% elsif page.title == "Designs" %}
-			Anything amiss?</br>
-		{% endif %}
-		Get in touch.
-	</h2>
-	<div class="Grid-cell Grid-cell--center u-size8of12 u-sm-size6of12 u-md-size5of12">
-		<ul class="o-listClean u-marginB0">
-			<li><a href="tel:{{ site.contact-phone }}">T: {{ site.contact-phone }}</a></li>
-			<li><a href="mailto:{{ site.contact-email }}">E: {{ site.contact-email }}</a></li>
-			<a class="u-block u-marginTD2 u-marginBD2" href="https://goo.gl/maps/GQHnTB9koXQ2" target="_blank">
-				{{ site.contact-address }}
-			</a>
-			<div class="s-cms-content u-textRg u-marginB0">
-				{{ site.contact-open | markdownify }}
-			</div>
-			<div class="s-cms-content u-textRg">
-				{{ site.contact-appt | markdownify }}
-			</div>
-		</ul>
-	</div>
+    <figure class="Figure--icon">
+        <svg class="Icon Icon--lg">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-contact"></use>
+        </svg>
+    </figure>
+    <h2 class="Pathway-subtitle">
+        {% if page.title == "Applications" %}
+            Got bigger ideas?</br>
+        {% elsif page.title == "Designs" %}
+            Anything amiss?</br>
+        {% endif %}
+        Get in touch.
+    </h2>
+    <div class="Grid-cell Grid-cell--center u-size8of12 u-sm-size6of12 u-md-size5of12">
+        <ul class="o-listClean u-marginB0">
+            <li><a href="tel:{{ site.contact-phone }}">T: {{ site.contact-phone }}</a></li>
+            <li><a href="mailto:{{ site.contact-email }}">E: {{ site.contact-email }}</a></li>
+            <a class="u-block u-marginTD2 u-marginBD2" href="https://goo.gl/maps/GQHnTB9koXQ2" target="_blank">
+                {{ site.contact-address }}
+            </a>
+            <div class="s-cms-content u-textRg u-marginB0">
+                {{ site.contact-open | markdownify }}
+            </div>
+            <div class="s-cms-content u-textRg">
+                {{ site.contact-appt | markdownify }}
+            </div>
+        </ul>
+    </div>
 </div>

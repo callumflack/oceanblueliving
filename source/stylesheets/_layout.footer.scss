@@ -6,61 +6,61 @@
 
 
 .Footer {
-	background-color: palette(brand-counter);
-	border-top: 1px solid palette(base);
-	// margin-top: space(1.5);
-	padding: space(2) 0;
+    background-color: rgba( palette(brand-light), 0.05);
+    //border-top: 1px solid palette(light);
+    padding: space(2) 0;
     position: relative;
 
-	ul {
-		margin-bottom: 0;
-	}
+    ul {
+        margin-bottom: 0;
+    }
 }
 
 a.Footer-logo {
-	display: block;
-	padding-bottom: space(1.5);
-	text-align: center;
+    display: block;
+    padding-bottom: space(1.5);
+    text-align: center;
 
-	> img {
-		width: 150px;
-	}
+    > img {
+        width: 110px;
+        @include respond-to(lg) { width: 120px; }
+    }
 
-	@include respond-to(xs) {
-		padding-bottom: space(2);
-	}
+    @include respond-to(xs) {
+        padding-bottom: space(2);
+    }
 }
 
 .Footer-nav {
-	padding-bottom: space(1.4);
+    padding-bottom: space(1.4);
 
-	@include respond-to(xs) {
-		padding-bottom: space(1.9);
-	}
+    @include respond-to(xs) {
+        padding-bottom: space(1.9);
+    }
 
-	> ul {
-		text-align: center;
-	}
+    > ul {
+        text-align: center;
+    }
 
-	li {
-		@include TextRg();
-	}
+    li {
+        @include TextRg();
+    }
 }
 
 .Footer-info {
-	@include media-breakpoint-only(xs) {
-		> div {
-			margin-bottom: space(0.5);
-			text-align: center !important;
-		}
-	}
+    @include media-breakpoint-only(xs) {
+        > div {
+            margin-bottom: space(0.5);
+            text-align: center !important;
+        }
+    }
 
-	@include media-breakpoint-between(sm, md) {
-		> div {
-			@include first(2) { margin-bottom: space(0.5); }
-			@include odd() { text-align: right; }
-		}
-	}
+    @include media-breakpoint-between(sm, md) {
+        > div {
+            @include first(2) { margin-bottom: space(0.5); }
+            @include odd() { text-align: right; }
+        }
+    }
 }
 
 .Footer-author {

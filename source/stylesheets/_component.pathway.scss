@@ -6,76 +6,83 @@
 // --------------------------------------------------------------------------
 
 
-$revOpacity: 0.5;
+$revOpacity: 0.6;
 
 .Pathway {
-	display: block;
+    display: block;
 
-	&--rev {
-		h1      { color: palette(white); }
-		p       { color: rgba( palette(white), $revOpacity ); }
-		.Button { color: palette(white); }
-	}
+    &--rev {
+        h1 { color: palette(white); }
+        p { color: rgba( palette(white), $revOpacity); }
+        .Button { color: palette(white); }
+    }
 
-	&--list {
-		text-align: center;
+    &--list {
+        text-align: center;
 
-		a {
-			display: block;
-			&:not(:last-child) {
-				margin-bottom: space(2);
-			}
-		}
+        a {
+            display: block;
+            &:not(:last-child) {
+                margin-bottom: space(2);
+            }
+        }
 
-		@include media-breakpoint-up(md) {
-			a {
-				display: inline-block;
-				&:not(:last-child) {
-					margin-bottom: 0;
-					margin-right: space(3);
-				}
-			}
-		}
+        @include media-breakpoint-up(md) {
+            a {
+                display: inline-block;
+                &:not(:last-child) {
+                    margin-bottom: 0;
+                    margin-right: space(3);
+                }
+            }
+        }
 
-		@include media-breakpoint-up(lg) {
-			a:not(:last-child) {
-				margin-right: space(5);
-			}
-		}
-	}
-}
-
-.Pathway-title {
-	@include headlineRg();
-	margin: 0;
-}
-
-.Pathway-subtitle {
-	@include headlineSm();
-	margin: space(0.5) 0 space(1.25);
-
-	@include respond-to(sm) {
-		margin: space(0.75) 0 space(1.5);
-	}
+        @include media-breakpoint-up(lg) {
+            a:not(:last-child) {
+                margin-right: space(5);
+            }
+        }
+    }
 }
 
 .Pathway-hgroup {
-	margin: 0 0 space(2);
+    //margin: 0 0 space(2);
+    padding: 0 0 space(2);
 
-	@include respond-to(sm) {
-		margin: 0 0 space(3);
-	}
+    @include respond-to(sm) {
+        //margin: 0 0 space(3);
+        padding: 0 0 space(3);
+    }
+}
+
+.Pathway-icon {
+    margin-bottom: space(0.25);
+    text-align: center;
+}
+
+.Pathway-title {
+    @include headlineRg();
+    margin: space(0.5) 0 0 0;
+}
+
+.Pathway-subtitle {
+    @include headlineSm();
+    margin: space(0.5) 0 space(1.25);
+
+    @include respond-to(sm) {
+        //margin: space(0.75) 0 space(1.5);
+    }
 }
 
 .Pathway-text {
-	> * { @include TextMd( palette(brand) ); }
+    > * { @include TextMd( palette(brand) ); }
 }
 
 .Pathway-action {
-	margin-top: space(3);
-	text-align: center;
+    margin-top: space(3);
+    text-align: center;
 }
 
 .Pathway .t-button--rev {
-	opacity: $revOpacity;
+    //opacity: $revOpacity;
 }

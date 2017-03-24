@@ -2,9 +2,16 @@
 title: applications
 date: 2016-06-02 10:46:00 +10:00
 position: 1
-headline: Create timeless elegance.
+headline: We create functional elegance.
 button: See all we do →
-carousel-images:
+gallery-images:
+- "home-appl-160812-corellast.jpg"
+- "home-appl-160812-mulgraverd.jpg"
+- "home-appl-160812-birdwingst.jpg"
+- "home-appl-160812-billingaicl.jpg"
+- "home-appl-160812-chandos.jpg"
+- "home-appl-160812-pineclose.jpg"
+xcarousel-images:
 - "/uploads/home-appl-160812-corellast"
 - "/uploads/home-appl-160812-mulgraverd"
 - "/uploads/home-appl-160812-birdwingst"
@@ -30,10 +37,6 @@ gallery-images-orig:
 - "/uploads/applications-outdoor-birds.png"
 ---
 
-We make elegant, functional, and timeless architectural applications.
+We make elegant, functional, and timeless architectural applications that transform your living space. From screens, panels, gates and letterboxes, to signage, wall art and garden sculpture, our architectural metalworks are durable, weatherproof and beautiful. Our products are proudly designed and built in our Cairns workshop.
 
-Our weatherproof architectural metalworks are durable both indoors and out, sculpting light and anchoring areas to transform your living space.
-
-From screens, panels, gates and letterboxes, to signage, wall art and garden sculpture, we bring your ideas to life.
-
-Our products are proudly designed and built in our Cairns workshop.
+We use water-jet cutting technology to precisely cut metal from business card to wall sizes. We use a wide range of materials from corten, mild steel, aluminium and we can powder coat any colour you want. Our precision and versatility creates amazing results. Which means you’ll be limited only by what you can think of.

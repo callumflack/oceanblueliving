@@ -7,28 +7,28 @@
 
 $(document).ready( function() {
 
-	var owl = $('.js-owl');
+  var owl = $('.js-owl');
 
-	owl.owlCarousel({
-		animateOut: 'fadeOut',
-		autoplay: true,
-		autoplayTimeout: 4000,
-		// autoWidth:true,
-		items: 1,
-		loop: true
-		// smartSpeed: 1000
-	});
+  owl.owlCarousel({
+    animateOut: 'fadeOut',
+    autoplay: true,
+    autoplayTimeout: 4000,
+    // autoWidth:true,
+    items: 1,
+    loop: true
+    // smartSpeed: 1000
+  });
 
-	var owlDragger = $('.js-owl-dragger');
+  var owlDragger = $('.js-owl-dragger');
 
-	owlDragger.owlCarousel({
-		autoplay: true,
-		autoplayTimeout: 4000,
-		// autoWidth:true,
-		items: 1,
-		loop: true,
-		responsive: false,
-		smartSpeed: 1000
-	});
+  owlDragger.owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 4000,
+    // autoWidth:true,
+    items: 1,
+    loop: true,
+    responsive: false,
+    smartSpeed: 1000
+  });
 
 });

@@ -3,7 +3,8 @@ title: applications
 date: 2016-06-03 16:46:00 +10:00
 layout: applications
 hero_image: "/uploads/applications-hero-test2.jpg"
-hero_headline: Timeless, artistic & functional architectural metalworks.
+x_hero_headline: Timeless, artistic & functional architectural metalworks.
+hero_headline: Architectural metalworks, beautifully crafted.
 hero_description: |
   Our weatherproof architectural metalworks are versatile for both indoor and outdoor living<em>, sculpting light and anchoring areas to transform
   your living spaces</em>. From screens, panels, gates and letterboxes, to signage, wall art and garden sculpture, we create and manufacture your designs.

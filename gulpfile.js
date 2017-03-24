@@ -167,7 +167,7 @@ gulp.task( 'compile:sass', function() {
 
 gulp.task( 'minify:css', function () {
 	gulp.src( options.css.file )
-		.pipe( plugins.plumber() )
+		// .pipe( plugins.plumber() )
 		.pipe( plugins.uncss ( {
 			html: [
 				'_site/**/*.html'
@@ -177,8 +177,7 @@ gulp.task( 'minify:css', function () {
 		.pipe( plugins.cssnano( { advanced: false } ) )
 		.pipe( plugins.rename( { suffix: '.min' } ) )
 		.pipe( gulp.dest( options.css.destination ) )
-		.pipe( plugins.size( { title: 'styles' } ) )
-		.pipe( plugins.connect.reload() );
+		.pipe( plugins.size( { title: 'styles' } ) );
 });
 
 

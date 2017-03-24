@@ -6,52 +6,72 @@
 
 
 .Container {
-	@include clearfix();
-	margin: 0 auto;
-	max-width: container-width(ll);
-	padding: 0 space(1.5);
-	position: relative;
+    @include clearfix();
+    margin: 0 auto;
+    max-width: container-width(xl);
+    padding: 0 space(1.5);
+    position: relative;
 
-	@include media-breakpoint-up(lg) {
-		padding: 0;
-	}
+    @include media-breakpoint-up(lg) {
+        padding: 0;
+    }
 
-	// basic container width var
-	&--textColumn {
-		@include media-breakpoint-up(xs) { max-width: container-width(sm); }
-		@include media-breakpoint-up(lg) { max-width: container-width(md); }
-	}
+    &--sm {
+        max-width: container-width(ll);
+        //@include media-breakpoint-up(lg) { max-width: container-width(md); }
+    }
+    
+    &--withinHero {
+        max-width: container-width(ml);
+        //@include media-breakpoint-up(lg) { max-width: container-width(md); }
+    }
 
-	// inset text column
-	&--insetTextColumn {
-		p {
-			@include TextMd();
-			margin: 0 auto;
+    // basic container width var
+    &--textColumn {
+        max-width: container-width(md);
+        //@include media-breakpoint-up(xs) { max-width: container-width(sm); }
+        //@include media-breakpoint-up(lg) { max-width: container-width(md); }
+    }
 
-			@include media-breakpoint-up(md) { max-width: container-width(md); }
+    // inset text column
+    &--insetTextColumn {
+        p {
+            @include TextMd();
+            margin: 0 auto;
 
-			+ p {
-				margin-top: space(1);
-			}
-		}
-	}
+            @include media-breakpoint-up(md) { max-width: container-width(md); }
+
+            + p {
+                margin-top: space(1);
+            }
+        }
+    }
 
     &--fullWidthMobile {
         padding: 0;
         width: 100%;
 
         @include media-breakpoint-up(xl) {
-            max-width: size(container, default);
+            max-width: container-width(xl);
         }
     }
 
-	&--blog {
-		max-width: 100%;
-		padding: 0 #{$gutterSpaceLg * 2};
-	}
+    &--fullWidthMobileSm {
+        padding: 0;
+        width: 100%;
 
-	&--ruleOff {
-		border-bottom: 1px solid palette(base);
-		padding-bottom: space(3);
-	}
+        @include media-breakpoint-up(xl) {
+            max-width: container-width(ll);
+        }
+    }
+
+    &--blog {
+        max-width: 100%;
+        padding: 0 #{$gutterSpaceLg * 2};
+    }
+
+    &--ruleOff {
+        border-bottom: 1px solid palette(base);
+        padding-bottom: space(3);
+    }
 }
