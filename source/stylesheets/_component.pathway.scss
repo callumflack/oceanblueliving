@@ -46,12 +46,12 @@ $revOpacity: 0.6;
 }
 
 .Pathway-hgroup {
-    margin: 0 0 space(2);
-    //padding: 0 0 space(2);
+    //margin: 0 0 space(2);
+    padding: 0 0 space(2);
 
     @include respond-to(sm) {
-        margin: 0 0 space(3);
-        //padding: 0 0 space(3);
+        //margin: 0 0 space(3);
+        padding: 0 0 space(3);
     }
 }
 

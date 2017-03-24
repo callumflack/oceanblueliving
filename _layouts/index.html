@@ -122,7 +122,7 @@ image: "/uploads/home-hero-160812-vince.jpg"
         
         <section class="Section--lgTop Pathway Pathway--rev">
             <div class="Container Container--textColumn">
-                <div class="Pathway-hgroup u-marginB0 u-paddingB0">
+                <div class="Pathway-hgroup">
                     <figure class="Pathway-icon">
                         <svg class="Icon Icon--lg u-colorWhite">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-about"></use>
@@ -160,14 +160,16 @@ image: "/uploads/home-hero-160812-vince.jpg"
     </div>
 
     <!-- blog -->
-    <section class="Section">
-        <div class="Pathway-hgroup u-bgBrandLight">
-            <figure class="Pathway-icon">
-                <svg class="Icon Icon--lg u-colorWhite">
-                    <use xlink:href="#ic-blog"></use>
-                </svg>
-            </figure>
-            <h1 class="Pathway-title u-colorWhite">The Ocean Blue blog.</h1>
+    <section class="Section u-bgBrandLight">
+        <div class="Container Container--textColumn">
+            <div class="Pathway-hgroup">
+                <figure class="Pathway-icon">
+                    <svg class="Icon Icon--lg u-colorWhite">
+                        <use xlink:href="#ic-blog"></use>
+                    </svg>
+                </figure>
+                <h1 class="Pathway-title u-colorWhite">The Ocean Blue blog.</h1>
+            </div>
         </div>
 
         {% for post in site.posts | limit: 1 %}
