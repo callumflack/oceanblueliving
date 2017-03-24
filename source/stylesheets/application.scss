@@ -19,6 +19,7 @@
 @import "vendor.suitcss.settings";
 @import "vendor.flickity";
 @import "vendor.owl.carousel";
+@import "vendor.slick.theme";
 @import "vendor.lazysizes";
 
 @import "base.page";
@@ -48,30 +49,33 @@
 @import "layout.design";
 
 @import "component.nav";
-// @import "component.header";
+@import "component.navbar";
 @import "component.coverimage";
 @import "component.imageblend";
 @import "component.form";
 @import "component.form.radiobutton";
 @import "component.form.select";
 @import "component.modal";
-//@import "component.scrollspy";
-//@import "component.affix";
 @import "component.flickity";
 @import "component.owl";
-//@import "component.videoembed";
-// @import "component.aside";
-@import "component.navbar";
-@import "component.nav";
-// @import "component.fontfaceonload";
-//@import "component.spinkit";
+@import "component.slick";
 @import "component.pathway";
 @import "component.post";
 @import "component.page";
+@import "component.cloudinaryloader";
+
+//@import "component.header";
+//@import "component.scrollspy";
+//@import "component.affix";
+//@import "component.videoembed";
+//@import "component.aside";
+//@import "component.fontfaceonload";
+//@import "component.spinkit";
 
 @import "trumps.spacers";
 @import "trumps.helpers";
-//@import "trumps.suitcss";
 @import "trumps.cms";
-// @import "trumps.helpers.base";
 @import "trumps.responsive";
+
+//@import "trumps.suitcss";
+//@import "trumps.helpers.base";
