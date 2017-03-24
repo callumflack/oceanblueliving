@@ -3,12 +3,13 @@ title: header
 date: 2016-05-13 17:17:00 +10:00
 position: 0
 hero_headline: Transform your living space with crafted metalworks.
-x_hero_headline: Transform your living space with architectural metalworks, crafted in Cairns, Australia.
+x_hero_headline: Transform your living space with architectural metalworks, crafted
+  in Cairns, Australia.
 gallery-images:
-- "obl-screen-hillviewcres-purplepoolangle.jpg"
-- "home-hero-160812-murphyst.jpg"
-- "home-hero-160812-vince.jpg"
-- "home-hero-160812-pineclose.jpg"
+- obl-screen-hillviewcres-purplepoolangle.jpg
+- home-hero-160812-murphyst.jpg
+- home-hero-160812-vince.jpg
+- home-hero-160812-pineclose.jpg
 ---
 
 Other hero img options:

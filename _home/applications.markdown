@@ -5,12 +5,12 @@ position: 1
 headline: We create functional elegance.
 button: See all we do →
 gallery-images:
-- "home-appl-160812-corellast.jpg"
-- "home-appl-160812-mulgraverd.jpg"
-- "home-appl-160812-birdwingst.jpg"
-- "home-appl-160812-billingaicl.jpg"
-- "home-appl-160812-chandos.jpg"
-- "home-appl-160812-pineclose.jpg"
+- home-appl-160812-corellast.jpg
+- home-appl-160812-mulgraverd.jpg
+- home-appl-160812-birdwingst.jpg
+- home-appl-160812-billingaicl.jpg
+- home-appl-160812-chandos.jpg
+- home-appl-160812-pineclose.jpg
 xcarousel-images:
 - "/uploads/home-appl-160812-corellast"
 - "/uploads/home-appl-160812-mulgraverd"

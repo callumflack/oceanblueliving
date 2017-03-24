@@ -12,11 +12,14 @@ first_text: "We’re boat builders by trade. We were seduced by the weight, feel
   your ideas to life.\n \nWe believe in the transformational effect of spaces: spaces
   that people want to be in, that help people work, and live. As our lives become
   faster, having space to regain ourselves becomes more important. The presence and
-  natural beauty of our architectural pieces helps create those spaces.\n \nWe're here to help you discover, design and fabricate architectural pieces that will bring your ideas to life and transform your living spaces."
+  natural beauty of our architectural pieces helps create those spaces.\n \nWe're
+  here to help you discover, design and fabricate architectural pieces that will bring
+  your ideas to life and transform your living spaces."
 video-image: "/uploads/about-video-placeholder.jpg"
 video: https://www.youtube.com/embed/C6huQHDcjWY?autoplay=1
-second_text: |-
-  We're here to help you discover, design and fabricate architectural pieces that will bring your ideas to life and transform your living spaces.
+second_text: We're here to help you discover, design and fabricate architectural pieces
+  that will bring your ideas to life and transform your living spaces.
 layout: about
 navToggleReversedOut: true
 ---
+
