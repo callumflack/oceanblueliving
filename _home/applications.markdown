@@ -2,7 +2,7 @@
 title: applications
 date: 2016-06-02 10:46:00 +10:00
 position: 1
-headline: We create functional elegance.
+headline: Durable. Functional. Beautiful.
 button: See all we do →
 gallery-images:
 - home-appl-160812-corellast.jpg
@@ -35,10 +35,6 @@ gallery-images-orig:
 - "/uploads/applications-17.jpg"
 - "/uploads/applications-18.jpg"
 - "/uploads/applications-outdoor-birds.png"
+first-p: "We make elegant, timeless architectural applications that transform your living space and blend into your surroundings. From screens, panels, gates and letterboxes, to signage, wall art and garden sculpture, our metalworks are weatherproof, durable, functional and beautiful."
+second-p: "We use water-jet cutting technology to precisely cut metal from business card to wall sizes, in a range of materials and any colour you want. Which means you’ll be limited only by what you can think of. Our products are proudly designed and built in our Cairns workshop."
 ---
-
-We make elegant, functional, and timeless architectural applications that transform your living space. From screens, panels, gates and letterboxes, to signage, wall art and garden sculpture, our architectural metalworks are durable, weatherproof and beautiful.
-
-We use water-jet cutting technology to precisely cut metal from business card to wall sizes, in a range of materials and any colour you want. Which means you’ll be limited only by what you can think of. 
-
-Our products are proudly designed and built in our Cairns workshop.

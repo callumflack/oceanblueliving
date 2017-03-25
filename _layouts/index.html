@@ -51,11 +51,8 @@ image: "/uploads/home-hero-160812-vince.jpg"
 
 
 
-<!-- <div class="Content-wrapper--oceanblue"></div> -->
-
 <main class="Content" role="main">
         
-    <!-- <section class="Section--lgTop Pathway Pathway--rev"> -->
     <section class="Section--lg">
         <div class="Container Container--textColumn">
             <div class="Pathway-hgroup">
@@ -67,7 +64,49 @@ image: "/uploads/home-hero-160812-vince.jpg"
                 <h1 class="Pathway-title">{{ applications.headline }}</h1>
             </div>
             <div class="Pathway-text">
-                {{ applications.content }}
+                {{ applications.first-p | markdownify }}
+            </div>
+        </div>
+        
+        <div class="Categories">
+            <div class="Container Container--lg">
+                <div class="Grid Grid--withGutter">
+                    <div class="Grid-cell u-size1of3">
+                        <a href="/applications" class="Category-button">
+                            <div class="Category-image">
+                                {% assign image = "home-appl-160812-billingaicl.jpg" %}
+                                {% assign image = "home-hero-160812-pineclose.jpg" %}
+                                {% assign image = "obl-screen-hillviewcres-purplepool-detail.jpg" %}
+                                {% include responsive-img-cloudinary.html %}
+                            </div>
+                            Screens
+                        </a>
+                    </div>
+                    <div class="Grid-cell u-size1of3">
+                        <a href="/applications" class="Category-button">
+                            <div class="Category-image">
+                                {% assign image = "obl-gate-midshipst-portrait-detail.jpg" %}
+                                {% include responsive-img-cloudinary.html %}
+                            </div>
+                            Gates
+                        </a>
+                    </div>
+                    <div class="Grid-cell u-size1of3">
+                        <a href="/applications" class="Category-button">
+                            <div class="Category-image">
+                                {% assign image = "obl-outdoor-midshipst-portrait-firepit.jpg" %}
+                                {% include responsive-img-cloudinary.html %}
+                            </div>
+                            Outdoor
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="Container Container--textColumn">
+            <div class="Pathway-text">
+                {{ applications.second-p | markdownify }}
             </div>
             <div class="Pathway-action">
                 <a class="Button t-button--rev" href="/applications">{{ applications.button }}</a>
@@ -215,13 +254,13 @@ image: "/uploads/home-hero-160812-vince.jpg"
         {% endcomment %}
 
         {% for post in site.posts | limit: 1 %}
-            <a href="/blog">
+            <a href="{{ post.url }}">
                 <article class="Post--article">
                     <header class="Header Header--fullRatio Header--rev">
                         <div class="FlexEmbed">
                             <div class="FlexEmbed-ratio"></div>
                             <div class="FlexEmbed-content">
-                                {% assign image = "post-the-gum-tree.jpg" %}
+                                {% capture image %}post-{{ post.slug }}.jpg{% endcapture %}
                                 {% include responsive-img-cloudinary-hero.html %}
                             </div>
                             <div class="FlexEmbed-content FlexEmbed-content--screen">&nbsp;</div>
@@ -230,9 +269,6 @@ image: "/uploads/home-hero-160812-vince.jpg"
                             <div class="o-aligner">
                                 <div class="o-aligner-item">
                                     <div class="Container Container--withinHero">
-                                        
-                                        <!-- <div class="Pathway-hgroup">
-                                        </div> -->
                                         
                                         <figure class="Pathway-icon">
                                             <svg class="Icon Icon--lg u-colorWhite">

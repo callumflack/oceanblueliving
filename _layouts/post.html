@@ -60,7 +60,6 @@ layout: default
     </section>
     {% endcomment %}
 
-    <!-- <div class="Container Container--blog"> -->
     <div class="FlexEmbed">
         <div class="FlexEmbed-ratio"></div>
         <div class="FlexEmbed-content">
@@ -74,10 +73,10 @@ layout: default
                 data-sizes="auto"
                 />
             {% endcomment %}
-            {% include responsive-img-cloudinary-heroPageSlug.html %}
+            {% capture image %}post-{{ page.slug }}.jpg{% endcapture %}
+            {% include responsive-img-cloudinary-hero.html %}
         </div>
     </div>
-    <!-- </div> -->
 
     <section class="Section--top">
         <div class="Container Container--textColumn">

@@ -7,6 +7,7 @@ x_hero_headline: Transform your living space with architectural metalworks, craf
   in Cairns, Australia.
 gallery-images:
 - obl-screen-hillviewcres-purplepoolangle.jpg
+- obl-gate-midshipst-landscape.jpg
 - home-hero-160812-murphyst.jpg
 - home-hero-160812-vince.jpg
 - home-hero-160812-pineclose.jpg
