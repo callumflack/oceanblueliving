@@ -13,7 +13,7 @@ Facades are a great way to modernise an existing building, attract attention of 
 
 Here’s a few pics of facades in bigger cities and a mock up of what we think would rock our little city. 
 
-
+J: add before/after pic here
 
 Until next time,
 Oceanblue living
