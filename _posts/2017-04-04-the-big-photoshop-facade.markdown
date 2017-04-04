@@ -16,4 +16,5 @@ Here’s a few pics of facades in bigger cities and a mock up of what we think w
 J: add before/after pic here
 
 Until next time,
+
 Oceanblue living
