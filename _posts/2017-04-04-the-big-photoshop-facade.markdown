@@ -13,8 +13,7 @@ Facades are a great way to modernise an existing building, attract attention of 
 
 Here’s a photoshop mock up I did of one inner city building next to the school of arts. I reckon facades could rock our little city.
 
-
-
+![Cairns before-Edit.jpg](/uploads/Cairns%20before-Edit.jpg)
 Until next time,
 
 Oceanblue living
