@@ -1,9 +1,9 @@
 ---
 title: The big facade
 date: 2017-04-04 15:23:00 +10:00
-hero_image: "uploads/post-the-big-facade.jpg"
 tags:
 - Ideas
+hero_image: uploads/post-the-big-facade.jpg
 ---
 
 Last Thursday it was 36 degrees and 66% humidity at 11am. I found myself desperately seeking an air-conditioned space in the city centre of Cairns for a coffee meeting and a bit blogging. 

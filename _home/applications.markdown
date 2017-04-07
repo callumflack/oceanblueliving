@@ -38,10 +38,11 @@ gallery-images-orig:
 first-p: We make elegant, timeless architectural applications that transform your
   living space and blend into your surroundings. From screens, panels, gates and letterboxes,
   to signage, wall art and garden sculpture, our metalworks are weatherproof, durable,
-  functional and beautiful. Our products are proudly designed
-  and built in our Cairns workshop.
+  functional and beautiful. Our products are proudly designed and built in our Cairns
+  workshop.
 second-p: We use water-jet cutting technology to precisely cut metal from business
   card to wall sizes, in a range of materials and any colour you want. Which means
   you’ll be limited only by what you can think of. Our products are proudly designed
   and built in our Cairns workshop.
 ---
+
