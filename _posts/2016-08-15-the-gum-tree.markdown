@@ -1,6 +1,7 @@
 ---
 title: The Gum Tree
 date: 2016-08-15 16:05:00 +10:00
+hero_image: "uploads/post-the-gum-tree.jpg"
 tags:
 - News
 author: LeaAnne Cassaniti

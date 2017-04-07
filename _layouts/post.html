@@ -4,7 +4,7 @@ layout: default
 
 <article class="Post--article" role="main">
     
-    <header class="Header Header--light Header--halfRatioHeightPadding Header--rev" role="banner">
+    <header class="Header Header--light Header--halfRatioHeightPadding" role="banner">
         {% comment %}
         <div class="FlexEmbed">
             <div class="FlexEmbed-ratio"></div>
@@ -64,6 +64,9 @@ layout: default
         <div class="FlexEmbed-ratio"></div>
         <div class="FlexEmbed-content">
             {% comment %}
+            
+            Alt methods:
+            
             {% assign imagePath = "/uploads/post-" %}
             <img
                 class="FlexEmbed-fitImage lazyload ls-blur"
@@ -72,8 +75,13 @@ layout: default
                 data-srcset="{{ imagePath }}{{ page.slug }}-src.jpg 300w, {{ imagePath }}{{ page.slug }}-xs.jpg 900w, {{ imagePath }}{{ page.slug }}.jpg 1800w"
                 data-sizes="auto"
                 />
+                
+            Or:
+                
+                {% capture image %}post-{{ page.slug }}.jpg{% endcapture %}
             {% endcomment %}
-            {% capture image %}post-{{ page.slug }}.jpg{% endcapture %}
+            
+            {% assign image = page.hero_image %}
             {% include responsive-img-cloudinary-hero.html %}
         </div>
     </div>
