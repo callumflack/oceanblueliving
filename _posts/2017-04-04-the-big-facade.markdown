@@ -1,6 +1,9 @@
 ---
 title: The big facade
 date: 2017-04-04 15:23:00 +10:00
+hero_image: "uploads/post-the-big-facade.jpg"
+tags:
+- Ideas
 ---
 
 Last Thursday it was 36 degrees and 66% humidity at 11am. I found myself desperately seeking an air-conditioned space in the city centre of Cairns for a coffee meeting and a bit blogging. 
@@ -11,9 +14,7 @@ One thing I love about visiting bigger cities in Australia is the use of Facades
 
 Facades are a great way to modernise an existing building, attract attention of locals and visitors like no other feature can. Especially since they’re designed and manufactured locally with framing, brackets, fixings etc where required, ready for immediate (and easy) onsite installation. 
 
-Here’s a photoshop mock up I did of one inner city building next to the school of arts. I reckon facades could rock our little city.
+So the hero shot on this post if a photoshop mock-up I did of one inner city building next to the school of arts. I reckon facades could rock our little city.
 
-![Cairns before-Edit.jpg](/uploads/Cairns%20before-Edit.jpg)
-Until next time,
-
+Until next time,<br>
 Oceanblue living
