@@ -100,6 +100,15 @@ a.Post--inList {
     @include TextSm();
 }
 
+// Post on home pg
+.Header--rev {
+    .Post-title,
+    .Post-meta {
+        color: palette(white); 
+        text-shadow: 0 0 space(1) rgba( palette(black), 1);
+    }
+}
+
 
 
 // Pathway
