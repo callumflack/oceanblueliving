@@ -1,8 +1,15 @@
 ---
 title: Home
 layout: default
-image: "/uploads/home-hero-160812-vince.jpg"
+image: "uploads/home-hero-160812-vince.jpg"
 ---
+
+{% comment %}
+FYI: old way of adding a responsive image:
+{% assign image = "uploads/home-about-160812-duo" %}
+{% assign alt = "Vince & LeaAnne Cassaniti, Ocean Blue Living" %}
+{% include responsive-img.html %}
+{% endcomment %}
 
 {% assign header       = site.home | where: 'title', 'header' | first  %}
 {% assign applications = site.home | where: 'title', 'applications' | first  %}
@@ -41,7 +48,7 @@ image: "/uploads/home-hero-160812-vince.jpg"
     <div class="Header-wrapper Header-wrapper--top">
         <div class="Header-masthead">
             <a class="Header-logo" href="/">
-                <img src="/uploads/logo-white.png" alt="{{ site.title }}">
+                <img src="uploads/logo-white.png" alt="{{ site.title }}">
             </a>
         </div>
     </div>
@@ -70,13 +77,11 @@ image: "/uploads/home-hero-160812-vince.jpg"
         
         <div class="Categories">
             <div class="Container Container--lg">
-                <div class="Grid Grid--withGutter">
+                <div class="Grid Grid--withBoxedCells">
                     <div class="Grid-cell u-size1of3">
                         <a href="/applications" class="Category-button">
                             <div class="Category-image">
-                                {% assign image = "home-appl-160812-billingaicl.jpg" %}
-                                {% assign image = "home-hero-160812-pineclose.jpg" %}
-                                {% assign image = "obl-screen-hillviewcres-purplepool-detail.jpg" %}
+                                {% assign image = "uploads/obl-screen-hillviewcres-purplepool-detail.jpg" %}
                                 {% include responsive-img-cloudinary.html %}
                             </div>
                             Screens
@@ -85,7 +90,7 @@ image: "/uploads/home-hero-160812-vince.jpg"
                     <div class="Grid-cell u-size1of3">
                         <a href="/applications" class="Category-button">
                             <div class="Category-image">
-                                {% assign image = "obl-gate-midshipst-portrait-detail.jpg" %}
+                                {% assign image = "uploads/obl-gate-midshipst-portrait-detail.jpg" %}
                                 {% include responsive-img-cloudinary.html %}
                             </div>
                             Gates
@@ -94,16 +99,20 @@ image: "/uploads/home-hero-160812-vince.jpg"
                     <div class="Grid-cell u-size1of3">
                         <a href="/applications" class="Category-button">
                             <div class="Category-image">
-                                {% assign image = "obl-outdoor-midshipst-portrait-firepit.jpg" %}
+                                {% assign image = "uploads/obl-outdoor-midshipst-portrait-firepit.jpg" %}
                                 {% include responsive-img-cloudinary.html %}
                             </div>
                             Outdoor
                         </a>
                     </div>
                 </div>
+                <div class="Pathway-action">
+                    <a class="Button t-button--rev" href="/applications">{{ applications.button }}</a>
+                </div>
             </div>
         </div>
         
+        {% comment %}
         <div class="Container Container--textColumn">
             <div class="Pathway-text">
                 {{ applications.second-p | markdownify }}
@@ -112,6 +121,7 @@ image: "/uploads/home-hero-160812-vince.jpg"
                 <a class="Button t-button--rev" href="/applications">{{ applications.button }}</a>
             </div>
         </div>
+        {% endcomment %}
     </section>
     
     {% comment %}
@@ -174,15 +184,10 @@ image: "/uploads/home-hero-160812-vince.jpg"
         </div>
         <div class="Container Container--fullWidthMobileSm">
             <figure class="Figure">
-                {% comment %}
-                {% assign image = "/uploads/home-about-160812-duo" %}
-                {% assign alt = "Vince & LeaAnne Cassaniti, Ocean Blue Living" %}
-                {% include responsive-img.html %}
-                {% endcomment %}
                 <div class="FlexEmbed">
                     <div class="FlexEmbed-ratio FlexEmbed-ratio--4by3"></div>
                     <div class="FlexEmbed-content">
-                        {% assign image = "home-about-160812-duo.jpg" %}
+                        {% assign image = "uploads/home-about-160812-duo.jpg" %}
                         {% assign alt = "Vince and LeaAnne Cassiniti" %}
                         {% include responsive-img-cloudinary.html %}
                     </div>
@@ -198,61 +203,9 @@ image: "/uploads/home-hero-160812-vince.jpg"
             </div>
         </div>
     </section>
-    
-    <!-- <section class="Section--lgTop Pathway Pathway--rev">
-        <div class="Container Container--textColumn">
-            <div class="Pathway-hgroup">
-                <figure class="Pathway-icon">
-                    <svg class="Icon Icon--lg u-colorWhite">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-about"></use>
-                    </svg>
-                </figure>
-                <h1 class="Pathway-title">{{ about.headline }}</h1>
-            </div>
-        </div>
-        <div class="Container Container--fullWidthMobileSm">
-            <figure class="Figure">
-                {% comment %}
-                {% assign image = "/uploads/home-about-160812-duo" %}
-                {% assign alt = "Vince & LeaAnne Cassaniti, Ocean Blue Living" %}
-                {% include responsive-img.html %}
-                {% endcomment %}
-                <div class="FlexEmbed">
-                    <div class="FlexEmbed-ratio FlexEmbed-ratio--4by3"></div>
-                    <div class="FlexEmbed-content">
-                        {% assign image = "home-about-160812-duo.jpg" %}
-                        {% assign alt = "Vince and LeaAnne Cassiniti" %}
-                        {% include responsive-img-cloudinary.html %}
-                    </div>
-                </div> 
-            </figure>
-        </div>
-        <div class="Container Container--textColumn">
-            <div class="Pathway-text">
-                {{ about.content }}
-            </div>
-            <div class="Pathway-action">
-                <a class="Button t-button--rev" href="/about">{{ about.button }}</a>
-            </div>
-        </div>
-    </section> -->
-    
 
     <!-- blog -->
     <section class="Section u-bgBrandLightDarkened">
-        {% comment %}
-        <div class="Container Container--textColumn">
-            <div class="Pathway-hgroup">
-                <figure class="Pathway-icon">
-                    <svg class="Icon Icon--lg u-colorWhite">
-                        <use xlink:href="#ic-blog"></use>
-                    </svg>
-                </figure>
-                <h1 class="Pathway-title u-colorWhite">The Ocean Blue blog.</h1>
-            </div>
-        </div>
-        {% endcomment %}
-
         {% for post in site.posts | limit: 1 %}
             <a href="{{ post.url }}">
                 <article class="Post--article">
@@ -260,7 +213,7 @@ image: "/uploads/home-hero-160812-vince.jpg"
                         <div class="FlexEmbed">
                             <div class="FlexEmbed-ratio"></div>
                             <div class="FlexEmbed-content">
-                                {% capture image %}post-{{ post.slug }}.jpg{% endcapture %}
+                                {% assign image = post.hero_image %}
                                 {% include responsive-img-cloudinary-hero.html %}
                             </div>
                             <div class="FlexEmbed-content FlexEmbed-content--screen">&nbsp;</div>

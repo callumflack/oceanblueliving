@@ -31,9 +31,7 @@
     @include respond-to(xs) { padding: 0 $gutterSpace; }
 }
 
-
 // large
-
 .Grid--withGutterLg {
     margin: 0 -#{$gutterSpaceLg};
 
@@ -46,9 +44,7 @@
     @include respond-to(xs) { padding: 0 $gutterSpaceLg; }
 }
 
-
 // Full and large
-
 .Grid--withFullGutterLg {
     margin: -#{$gutterSpaceLg};
     @include respond-to(xs) { margin: -#{$gutterSpaceLg}; }
@@ -58,6 +54,17 @@
     padding: $gutterSpaceLg;
     @include respond-to(xs) { padding: $gutterSpaceLg; }
 }
+
+.Grid--withBoxedCells > .Grid-cell {
+    &:not(:first-of-type) {
+        margin-left: -1px;
+    }
+    
+    a {
+        margin: 0;
+    }
+}
+
 
 
 // test
