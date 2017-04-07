@@ -15,7 +15,7 @@ image: uploads/blog-hero-160812-barriersolutions.jpg
             {% assign absolute = true %}
             {% include responsive-img.html %}
             {% endcomment %}
-            {% assign image = "blog-hero-160812-barriersolutions.jpg" %}
+            {% assign image = "uploads/blog-hero-160812-barriersolutions.jpg" %}
             {% include responsive-img-cloudinary.html %}
             <div class="u-posAbsoluteCenter FlexEmbed-content--dark">&nbsp;</div>
 
@@ -53,6 +53,7 @@ image: uploads/blog-hero-160812-barriersolutions.jpg
                     <a class="Post--inList" href="{{ post.url }}">
                         <div class="Post-contentAligner">
                             <figure class="Post-image">
+                                {% comment %}
                                 {% assign imagePath = "/uploads/post-list-" %}
                                 <img
                                     class="lazyload ls-blur"
@@ -64,6 +65,9 @@ image: uploads/blog-hero-160812-barriersolutions.jpg
                                         {{ imagePath }}{{ post.slug }}-xs.jpg 900w,
                                         {{ imagePath }}{{ post.slug }}.jpg 1800w"
                                     />
+                                {% endcomment %}
+                                {% assign image = post.hero_image %}
+                                {% include responsive-img-cloudinary.html %}
                             </figure>
                             <h1 class="Post-subtitle">{{ post.title }}</h1>
                             <div class="Post-meta">

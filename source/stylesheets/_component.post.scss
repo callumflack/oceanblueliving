@@ -49,7 +49,14 @@ a.Post--inList {
     }
 }
 
-.Post-image > img {
+//.Post-image > img {
+//    width: 100%;
+//}
+
+.Post-image {
+    height: $vertSpaceLg;
+    min-height: space(10);
+    position: relative;
     width: 100%;
 }
 
