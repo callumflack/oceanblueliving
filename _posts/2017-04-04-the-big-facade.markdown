@@ -14,7 +14,9 @@ One thing I love about visiting bigger cities in Australia is the use of Facades
 
 Facades are a great way to modernise an existing building, attract attention of locals and visitors like no other feature can. Especially since they’re designed and manufactured locally with framing, brackets, fixings etc where required, ready for immediate (and easy) onsite installation. 
 
-So the hero shot on this post if a photoshop mock-up I did of one inner city building next to the school of arts. I reckon facades could rock our little city.
+So the hero shot on this post if a photoshop mock-up I did of one inner city building next to the school of arts. Here it is again, just because. I reckon facades could rock our little city. 
+
+![alt text](/uploads/post-the-big-facade.jpg "The big facade")
 
 Until next time,<br>
-Oceanblue living
+Oceanblue Living
