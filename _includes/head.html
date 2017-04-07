@@ -5,7 +5,7 @@
 
     {% seo title=false %}
 
-    <title>{{ site.title }}{% if page.url != '/' %} | {{ page.title | capitalize }}{% endif %}</title>
+    <title>{% if page.url == '/' %}{{ site.title }}  | Transform your living spaces with sculpted metalworks{% else %}{{ page.title | capitalize }} | {{ site.title }}{% endif %}</title>
 
     {% include lazysize-scripts.html %}
     {% include lazysize-styles.html %}
