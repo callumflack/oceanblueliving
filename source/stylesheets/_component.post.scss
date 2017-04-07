@@ -8,6 +8,14 @@
 // When a post is an article.
 .Post--article {
     background-color: palette(background);
+    
+    .FlexEmbed-ratio {
+        padding-bottom: 50vh;
+        
+        @include media-breakpoint-up(sm) {
+            padding-bottom: 100vh;
+        }
+    }
 }
 
 .Post--article-ruleOff {
@@ -82,9 +90,9 @@ a.Post--inList {
 
 .Post-title {
     @include headlineRg();
+    margin: space(1) auto 0;
 
     @include respond-to(sm) {
-        margin: 0 auto;
         width: 70%;
     }
 }
