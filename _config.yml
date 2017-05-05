@@ -33,8 +33,8 @@ exclude:
 - package.json
 - gulp.js
 - gulpfile.js
-url: http://oceanblueliving.com.au
-logo: http://oceanblueliving.com.au/uploads/logo.png
+url: https://oceanblueliving.com.au
+logo: https://oceanblueliving.com.au/uploads/logo.png
 feed_url: "/feed.xml"
 sitemap_url: "/map.xml"
 description: 'We’re metalworks craftspeople who love transforming living spaces. We
