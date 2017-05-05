@@ -32,7 +32,7 @@
         margin-right: auto;
     }
 
-    div {
+    .Tab {
         width: 100%;
         margin-top: -1px;
         padding: 1em;
@@ -40,7 +40,8 @@
         order: 1;
     }
 
-    input[type=radio], div {
+    input[type=radio], 
+    .Tab {
         display: none;
     }
 
@@ -49,7 +50,19 @@
         border-bottom: 1px solid #fff;
     }
 
-    input[type=radio]:checked + label + div {
+    input[type=radio]:checked + label + .Tab {
         display: block;
+    }
+}
+
+
+
+// Expanded image
+// --------------------------------------------------------------------------
+
+.Tabs-container img {
+    @include media-breakpoint-up(lg) {
+        max-width: 1440px;
+        margin-left: -200px;
     }
 }

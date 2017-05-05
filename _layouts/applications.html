@@ -46,6 +46,8 @@ image: "/uploads/appl-hero-160812-grinder.jpg"
 
 <main class="Content" role="main">
     {% comment %}
+    {% endcomment %}
+    
     <section class="Section--top">
         <div class="Container Container--textColumn Pathway-text">
             {{ applications.hero_description | markdownify }}
@@ -57,125 +59,146 @@ image: "/uploads/appl-hero-160812-grinder.jpg"
             <div class="Tabs-container">
                 
                 <input id="Tab-one" type="radio" name="grp" checked="checked"/>
-                <label for="Tab-one">Tab One</label>
-                <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <label for="Tab-one">Screens</label>
+                <div class="Tab">
+                    <div class="Container Container--textColumn Pathway-text">
+                        {{ applications.screens_first_text | markdownify }}
+                    </div>
+                    <img src="/uploads/appl-screens.png" alt="">
+                </div>
                 
                 <input id="Tab-two" type="radio" name="grp" />
-                <label for="Tab-two">Tab Two</label>
-                <div>
-                  <img src="http://sbarthel.github.io/images/img/berg.JPG" alt="mountain" />
+                <label for="Tab-two">Gates</label>
+                <div class="Tab">
+                    <div class="Container Container--textColumn Pathway-text">
+                        {{ applications.gates_first_text | markdownify }}
+                    </div>
+                    <img src="/uploads/appl-gates.png" alt="">
                 </div>
 
                 <input id="Tab-three" type="radio" name="grp" />
                 <label for="Tab-three">Tab Three</label>
-                <div>... no fixed height for tabbed area!</div>
+                <div class="Tab">
+                    <div class="Container Container--textColumn Pathway-text">
+                        {{ applications.outdoor_first_text | markdownify }}
+                    </div>
+                    <img src="/uploads/appl-outdoor.png" alt="">
+                </div>
 
             </div>
         </div>
     </section>
-    {% endcomment %}
     
-    <section class="Section--top Pathway">
-        <div class="Container Container--textColumn">
-            <!-- <figure class="u-textCenter">
-                <img class="Icon Icon--super" src="/uploads/ic-app-screens.png" alt="Screen applications icon" />
-            </figure> -->
-            <div class="Pathway-hgroup">
-                <h1 class="Pathway-title">Screens</h1>
-            </div>
-            <div class="Pathway-text">
-                {{ applications.screens_first_text | markdownify }}
-            </div>
-        </div>
-        <figure class="Section--rg">
-            <div class="carousel carousel--dragger carousel--light">
-                {% for image in applications.screens_carousel_images %}
-                    <div class="carousel-cell">
-                        <div class="FlexEmbed">
-                            <div class="FlexEmbed-ratio"></div>
-                            <div class="FlexEmbed-content">
-                                {% include responsive-img.html %}
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </figure>
-        <div class="Container Container--textColumn">
-            <div class="Pathway-text">
-                {{ applications.screens_second_text | markdownify }}
-            </div>
-            <div class="Pathway-action">
-                <a class="Button t-button" href="/design">Design + estimate →</a>
-            </div>
-        </div>
-    </section>
 
-    <section class="Section--top Pathway">
-        <div class="Container Container--textColumn">
-            <div class="Pathway-hgroup">
-                <h1 class="Pathway-title">Gates</h1>
-            </div>
-            <div class="Pathway-text">
-                {{ applications.gates_first_text | markdownify }}
-            </div>
-        </div>
-        <figure class="Section--rg">
-            <div class="carousel carousel--dragger carousel--light">
-                {% for image in applications.gates_carousel_images %}
-                    <div class="carousel-cell">
-                        <div class="FlexEmbed">
-                            <div class="FlexEmbed-ratio"></div>
-                            <div class="FlexEmbed-content">
-                                {% include responsive-img.html %}
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </figure>
-        <div class="Container Container--textColumn">
-            <div class="Pathway-text">
-                {{ applications.gates_second_text | markdownify }}
-            </div>
-            <div class="Pathway-action">
-                <a class="Button t-button" href="/design">Design + estimate →</a>
-            </div>
-        </div>
-    </section>
 
-    <section class="Section--top Pathway">
-        <div class="Container Container--textColumn">
-            <div class="Pathway-hgroup">
-                <h1 class="Pathway-title">Outdoor</h1>
+
+
+
+    {% comment %}
+    <div class="OldShit">
+        <section class="Section--top Pathway">
+            <div class="Container Container--textColumn">
+                <!-- <figure class="u-textCenter">
+                    <img class="Icon Icon--super" src="/uploads/ic-app-screens.png" alt="Screen applications icon" />
+                </figure> -->
+                <div class="Pathway-hgroup">
+                    <h1 class="Pathway-title">Screens</h1>
+                </div>
+                <div class="Pathway-text">
+                    {{ applications.screens_first_text | markdownify }}
+                </div>
             </div>
-            <div class="Pathway-text">
-                {{ applications.outdoor_first_text | markdownify }}
-            </div>
-        </div>
-        <figure class="Section--rg">
-            <div class="carousel carousel--dragger carousel--light">
-                {% for image in applications.outdoor_carousel_images %}
-                    <div class="carousel-cell">
-                        <div class="FlexEmbed">
-                            <div class="FlexEmbed-ratio"></div>
-                            <div class="FlexEmbed-content">
-                                {% include responsive-img.html %}
+            <figure class="Section--rg">
+                <div class="carousel carousel--dragger carousel--light">
+                    {% for image in applications.screens_carousel_images %}
+                        <div class="carousel-cell">
+                            <div class="FlexEmbed">
+                                <div class="FlexEmbed-ratio"></div>
+                                <div class="FlexEmbed-content">
+                                    {% include responsive-img.html %}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
+            </figure>
+            <div class="Container Container--textColumn">
+                <div class="Pathway-text">
+                    {{ applications.screens_second_text | markdownify }}
+                </div>
+                <div class="Pathway-action">
+                    <a class="Button t-button" href="/design">Design + estimate →</a>
+                </div>
             </div>
-        </figure>
-        <div class="Container Container--textColumn">
-            <div class="Pathway-text">
-                {{ applications.outdoor_second_text | markdownify }}
+        </section>
+        
+        <section class="Section--top Pathway">
+            <div class="Container Container--textColumn">
+                <div class="Pathway-hgroup">
+                    <h1 class="Pathway-title">Gates</h1>
+                </div>
+                <div class="Pathway-text">
+                    {{ applications.gates_first_text | markdownify }}
+                </div>
             </div>
-            <div class="Pathway-action">
-                <a class="Button t-button" href="/design">Design + estimate →</a>
+            <figure class="Section--rg">
+                <div class="carousel carousel--dragger carousel--light">
+                    {% for image in applications.gates_carousel_images %}
+                        <div class="carousel-cell">
+                            <div class="FlexEmbed">
+                                <div class="FlexEmbed-ratio"></div>
+                                <div class="FlexEmbed-content">
+                                    {% include responsive-img.html %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </figure>
+            <div class="Container Container--textColumn">
+                <div class="Pathway-text">
+                    {{ applications.gates_second_text | markdownify }}
+                </div>
+                <div class="Pathway-action">
+                    <a class="Button t-button" href="/design">Design + estimate →</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
+        <section class="Section--top Pathway">
+            <div class="Container Container--textColumn">
+                <div class="Pathway-hgroup">
+                    <h1 class="Pathway-title">Outdoor</h1>
+                </div>
+                <div class="Pathway-text">
+                    {{ applications.outdoor_first_text | markdownify }}
+                </div>
+            </div>
+            <figure class="Section--rg">
+                <div class="carousel carousel--dragger carousel--light">
+                    {% for image in applications.outdoor_carousel_images %}
+                        <div class="carousel-cell">
+                            <div class="FlexEmbed">
+                                <div class="FlexEmbed-ratio"></div>
+                                <div class="FlexEmbed-content">
+                                    {% include responsive-img.html %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </figure>
+            <div class="Container Container--textColumn">
+                <div class="Pathway-text">
+                    {{ applications.outdoor_second_text | markdownify }}
+                </div>
+                <div class="Pathway-action">
+                    <a class="Button t-button" href="/design">Design + estimate →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    {% endcomment %}
 
     {% comment %}
     <!-- pathway -->
