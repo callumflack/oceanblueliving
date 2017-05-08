@@ -2,7 +2,7 @@
 // g_auto or g_center
 
 (() => {
-    const baseUrl = 'http://res.cloudinary.com/pw-img-cdn/image/fetch'
+    const baseUrl = 'https://res.cloudinary.com/pw-img-cdn/image/fetch'
 
     Array.from(document.querySelectorAll('[data-bg]')).forEach(image => {
         
