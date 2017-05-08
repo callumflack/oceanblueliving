@@ -1,26 +1,24 @@
 {% comment %}
-	See: http://www.ericmobley.net/social-media-share-buttons-impact-on-performance/
-	Also, fb could be: href="https://www.facebook.com/dialog/share?app_id=APP_ID&display=popup&href={{ permalink }}&redirect_uri={{ site.permalink }}
-	Register w/ fb: https://www.facebook.com/login.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Fapps
-	more refs: https://developers.facebook.com/docs/javascript/quickstart/v2.5
+    See: http://www.ericmobley.net/social-media-share-buttons-impact-on-performance/
+    Also, fb could be: href="https://www.facebook.com/dialog/share?app_id=APP_ID&display=popup&href={{ permalink }}&redirect_uri={{ site.permalink }}
+    Register w/ fb: https://www.facebook.com/login.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Fapps
+    more refs: https://developers.facebook.com/docs/javascript/quickstart/v2.5
 {% endcomment %}
 
-{% assign sitedomain = 'http://www.oceanblueliving.com.au' %}
-
 <div class="">
-	<a class="" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: sitedomain }}">
-		<svg class="Icon Icon--lg Icon--textAlign u-colorBrandLight">
-			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-facebook"></use>
-		</svg>
-	</a>
-	<!-- <a class="" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: sitedomain }}">
-		<svg class="Icon Icon--lg Icon--textAlign Icon--right u-colorBrandLight">
-			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-pinterest"></use>
-		</svg>
-	</a> -->
-	<a class="" href="mailto:?subject=Check out this article from {{ site.title }}&body={{ page.caption }} …at: {{ page.url | prepend: sitedomain }}" target="_blank">
-		<svg class="Icon Icon--lg Icon--textAlign Icon--right u-colorBrandLight">
-			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-email"></use>
-		</svg>
-	</a>
+    <a class="" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}">
+        <svg class="Icon Icon--lg Icon--textAlign u-colorBrandLight">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-facebook"></use>
+        </svg>
+    </a>
+    <!-- <a class="" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}">
+        <svg class="Icon Icon--lg Icon--textAlign Icon--right u-colorBrandLight">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-pinterest"></use>
+        </svg>
+    </a> -->
+    <a class="" href="mailto:?subject=Check out this article from {{ site.title }}&body={{ page.caption }} …at: {{ page.url | prepend: site.url }}" target="_blank">
+        <svg class="Icon Icon--lg Icon--textAlign Icon--right u-colorBrandLight">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-sm-email"></use>
+        </svg>
+    </a>
 </div>
