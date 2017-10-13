@@ -5,6 +5,8 @@ published: false
 hero_image: "/uploads/FormBoss%20REDCOR%C2%AEsteel%20Sydney1.jpg"
 ---
 
+If you've been watching The Block, you'll want to read all the way to the end of this post...
+
 One of my most favourite observations in the week leading up to christmas in Cairns, is the high number of driveways which all of a sudden appear to have loads of mulch dumped on them. It’s like clock work, you know it’s the beginning of an in-law induced backyard blitz.
 
 Appearing organised isn’t enough, you need to have a plan, and we’ve got a handy tip to share with you ahead of time, so that your Christmas blitz delivers the best results.
