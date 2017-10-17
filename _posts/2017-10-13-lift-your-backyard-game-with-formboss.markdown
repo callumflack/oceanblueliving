@@ -1,6 +1,8 @@
 ---
 title: Lift your backyard game with FormBoss
 date: 2017-10-13 12:30:00 +10:00
+tags:
+- News
 hero_image: "/uploads/FormBoss%20REDCOR%C2%AEsteel%20Sydney1.jpg"
 ---
 
