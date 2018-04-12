@@ -42,7 +42,7 @@ function videoStop($wrapper) {
 }
 
 
-// Find YouTube videos inside Container--textColumn
+// Find YouTube videos inside Container--text
 // keep them in a 16by9 Aspect Ratio
 var $allVideos = $("iframe[src^='https://www.youtube.com']:not(.videoIframe)"),
 

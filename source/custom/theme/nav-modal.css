@@ -1,0 +1,49 @@
+.Nav {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 250ms ease-in-out 250ms;
+}
+
+.Modal.is-active .Nav {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 250ms ease-in-out 250ms;
+}
+
+.Nav-list {
+  @mixin listUnstyled;
+  margin-bottom: 0;
+
+  @media (--lg) {
+    & > * {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: var(--inlineBlockChildrenSpace);
+      }
+    }
+  }
+}
+
+.Nav-title {
+  color: var(--c-white);
+  margin-bottom: 0;
+
+  @media (--md) {
+    margin-bottom: var(--space);
+  }
+
+  a {
+    /* @include noLink(); */
+  }
+}
+
+.Nav-info {
+  @media (--lg) {
+    &:not(:last-child) {
+      border-right: 1px solid rgba(255, 255, 255, 0.25);
+      margin-right: calc(0.9 * var(--space)) !important;
+      padding-right: var(--space);
+    }
+  }
+}

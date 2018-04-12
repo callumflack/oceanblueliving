@@ -1,12 +1,9 @@
-
-
 // --------------------------------------------------------------------------
 //   APPLICATION.SCSS
 // --------------------------------------------------------------------------
 
-
-@import "generic.normalize";
-@import "generic.suitcss.base";
+// @import "generic.normalize";
+// @import "generic.suitcss.base";
 
 @import "tools.functions";
 @import "tools.mixins";
@@ -15,7 +12,7 @@
 @import "tools.mixins.family";
 
 @import "vendor.suitcss";
-@import "vendor.suitcss.flexbox";
+// @import "vendor.suitcss.flexbox";
 @import "vendor.suitcss.settings";
 @import "vendor.flickity";
 @import "vendor.owl.carousel";
@@ -30,8 +27,8 @@
 @import "type.text";
 @import "type.headline";
 
-@import "object.container";
-@import "object.button";
+// @import "object.container";
+// @import "object.button";
 @import "object.icon";
 @import "object.rule";
 @import "object.list";
@@ -48,11 +45,11 @@
 @import "layout.footer";
 @import "layout.design";
 
-@import "component.nav";
+// @import "component.nav";
 @import "component.navbar";
 @import "component.coverimage";
 @import "component.imageblend";
-@import "component.categorylinks";
+// @import "component.categorylinks";
 @import "component.form";
 @import "component.form.radiobutton";
 @import "component.form.select";
@@ -61,11 +58,10 @@
 @import "component.post";
 @import "component.flickity";
 @import "component.owl";
-@import "component.slick";
+// @import "component.slick";
 @import "component.pathway";
 @import "component.cloudinaryloader";
 
-//@import "component.header";
 //@import "component.scrollspy";
 //@import "component.affix";
 //@import "component.videoembed";

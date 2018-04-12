@@ -1,0 +1,7 @@
+html {
+  background-color: var(--c-ash);
+  background-color: var(--c-bg);
+}
+.page {
+  background-color: var(--c-bg);
+}

@@ -16,112 +16,101 @@ FYI: old way of adding a responsive image:
 {% assign design       = site.home | where: 'title', 'design' | first  %}
 {% assign about        = site.home | where: 'title', 'about' | first  %}
 
-<header class="Header Header--fullRatio Header--rev" role="banner">
-    <div class="Gallery">
-        <div class="Gallery-body">
-            <div class="Gallery-items js-gallery">
-                {% for image in header.gallery-images %}
-                    <div class="Gallery-cell">
-                        <div class="FlexEmbed">
-                            <div class="FlexEmbed-ratio"></div>
-                            <div class="FlexEmbed-content">
-                                {% include responsive-img-cloudinary-hero.html %}
-                            </div>
-                            <div class="FlexEmbed-content FlexEmbed-content--dark">&nbsp;</div>
-                        </div>
-                    </div>
-                {% endfor %}
+<header class="Header" role="banner">
+  <div class="Gallery">
+    <div class="Gallery-body">
+      <div class="Gallery-items js-gallery">
+        {% for image in header.gallery-images %}
+          <div class="Gallery-cell">
+            <div class="FlexEmbed">
+              <div class="FlexEmbed-ratio"></div>
+              <div class="FlexEmbed-content">
+                {% include responsive-img-cloudinary-hero.html %}
+              </div>
+              <div class="FlexEmbed-content CoverImage--dark">&nbsp;</div>
             </div>
-        </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
-    <div class="Header-wrapper">
-        <div class="o-aligner">
-            <div class="o-aligner-item">
-                <div class="Container Container--withinHero">
-                    <h1 class="Header-display">
-                        {{ header.hero_headline }}
-                    </h1>
-                </div>
-            </div>
-        </div>
+  </div>
+  <div class="u-absolutePin">
+    <div class="u-flexChildrenCenter">
+      <div class="Container Container--text">
+        <h1 class="Title Title--reversed">
+          {{ header.hero_headline }}
+        </h1>
+      </div>
     </div>
-    <div class="Header-wrapper Header-wrapper--top">
-        <div class="Header-masthead">
-            <a class="Header-logo" href="/">
-                <img src="uploads/logo-white.png" alt="{{ site.title }}">
-            </a>
-        </div>
+  </div>
+  <div class="u-absolutePin">
+    <div class="b-mt2 u-textCenter u-posRelative">
+      <a class="Header-logo" href="/">
+        <img src="uploads/logo-white.png" alt="{{ site.title }}">
+      </a>
     </div>
+  </div>
 </header>
 
-
-
-
-
-<main class="Content" role="main">
-        
-    <section class="Section--lg">
-        <div class="Container Container--textColumn">
-            <div class="Pathway-hgroup">
-                <figure class="Pathway-icon">
-                    <svg class="Icon Icon--lg">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-services"></use>
-                    </svg>
-                </figure>
-                <h1 class="Pathway-title">{{ applications.headline }}</h1>
-            </div>
-            <div class="Pathway-text">
-                {{ applications.first-p | markdownify }}
-            </div>
+<main class="" role="main">
+    <section class="b-py4">
+      <div class="Container Container--text m-b5">
+        <div class="m-b5">
+          <figure class="u-icon u-icon--lg m-b3 u-textCenter w-100">
+            <svg version="1.1" viewbox="0 0 54 54">
+              {% include icons/services.html %}
+            </svg>
+          </figure>
+          <h1 class="Heading">{{ applications.headline }}</h1>
         </div>
-        
-        <div class="Categories">
-            <div class="Container Container--lg">
-                <div class="Grid Grid--withBoxedCells">
-                    <div class="Grid-cell u-size1of3">
-                        <a href="/applications" class="Category-button">
-                            <div class="Category-image">
-                                {% assign image = "uploads/obl-screen-hillviewcres-purplepool-detail.jpg" %}
-                                {% include responsive-img-cloudinary.html %}
-                            </div>
-                            Screens
-                        </a>
-                    </div>
-                    <div class="Grid-cell u-size1of3">
-                        <a href="/applications" class="Category-button">
-                            <div class="Category-image">
-                                {% assign image = "uploads/obl-gate-midshipst-portrait-detail.jpg" %}
-                                {% include responsive-img-cloudinary.html %}
-                            </div>
-                            Gates
-                        </a>
-                    </div>
-                    <div class="Grid-cell u-size1of3">
-                        <a href="/applications" class="Category-button">
-                            <div class="Category-image">
-                                {% assign image = "uploads/obl-outdoor-midshipst-portrait-firepit.jpg" %}
-                                {% include responsive-img-cloudinary.html %}
-                            </div>
-                            Outdoor
-                        </a>
-                    </div>
-                </div>
-                <div class="Pathway-action">
-                    <a class="Button t-button--rev" href="/applications">{{ applications.button }}</a>
-                </div>
-            </div>
+        {{ applications.first-p | markdownify }}
+      </div>
+      
+      <div class="Container Container--lg">
+        <div class="FlexGrid--categoryButtons m-b5">
+          <div class="u-size1of3">
+            <a href="/applications" class="Category-button">
+              <div class="Category-image">
+                {% assign image = "uploads/obl-screen-hillviewcres-purplepool-detail.jpg" %}
+                {% include responsive-img-cloudinary.html %}
+              </div>
+              <h2 class="Subheading m-y3">Screens</h2>
+            </a>
+          </div>
+          <div class="u-size1of3">
+            <a href="/applications" class="Category-button">
+              <div class="Category-image">
+                {% assign image = "uploads/obl-gate-midshipst-portrait-detail.jpg" %}
+                {% include responsive-img-cloudinary.html %}
+              </div>
+              <h2 class="Subheading m-y3">Gates</h2>
+            </a>
+          </div>
+          <div class="u-size1of3">
+            <a href="/applications" class="Category-button">
+              <div class="Category-image">
+                {% assign image = "uploads/obl-outdoor-midshipst-portrait-firepit.jpg" %}
+                {% include responsive-img-cloudinary.html %}
+              </div>
+              <h2 class="Subheading m-y3">Outdoor</h2>
+            </a>
+          </div>
         </div>
-        
-        {% comment %}
-        <div class="Container Container--textColumn">
-            <div class="Pathway-text">
-                {{ applications.second-p | markdownify }}
-            </div>
-            <div class="Pathway-action">
-                <a class="Button t-button--rev" href="/applications">{{ applications.button }}</a>
-            </div>
+        <div class="u-textCenter">
+          <a class="Button" href="/applications">{{ applications.button }}</a>
         </div>
-        {% endcomment %}
+      </div>
+      
+      {% comment %}
+      <div class="Container Container--text">
+          <div class="Pathway-text">
+              {{ applications.second-p | markdownify }}
+          </div>
+          <div class="Pathway-action">
+              <a class="Button t-button--rev" href="/applications">{{ applications.button }}</a>
+          </div>
+      </div>
+      {% endcomment %}
     </section>
     
     {% comment %}
@@ -151,8 +140,8 @@ FYI: old way of adding a responsive image:
         </div>
     </section>
     
-    <section class="Section--lgTop Pathway Pathway--rev">
-        <div class="Container Container--textColumn">
+    <section class="b-py4Top Pathway Pathway--rev">
+        <div class="Container Container--text">
             <div class="Pathway-hgroup">
                 <figure class="Pathway-icon">
                     <svg class="Icon Icon--lg u-colorWhite">
@@ -171,37 +160,35 @@ FYI: old way of adding a responsive image:
     </section>
     {% endcomment %}
     
-    <section class="Section--lg u-bgBrandSuperLight">
-        <div class="Container Container--textColumn">
-            <div class="Pathway-hgroup">
-                <figure class="Pathway-icon">
-                    <svg class="Icon Icon--lg">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-about"></use>
-                    </svg>
-                </figure>
-                <h1 class="Pathway-title">{{ about.headline }}</h1>
-            </div>
+    <section class="b-py4 bg-neutralAlt">
+      <div class="Container Container--text">
+        <div class="m-b5">
+          <figure class="u-icon u-icon--lg m-b3 u-textCenter w-100">
+            <svg version="1.1" viewbox="0 0 54 54">
+              {% include icons/about.html %}
+            </svg>
+          </figure>
+          <h1 class="Heading">{{ about.headline }}</h1>
         </div>
-        <div class="Container Container--fullWidthMobileSm">
-            <figure class="Figure">
-                <div class="FlexEmbed">
-                    <div class="FlexEmbed-ratio FlexEmbed-ratio--4by3"></div>
-                    <div class="FlexEmbed-content">
-                        {% assign image = "uploads/home-about-160812-duo.jpg" %}
-                        {% assign alt = "Vince and LeaAnne Cassiniti" %}
-                        {% include responsive-img-cloudinary.html %}
-                    </div>
-                </div> 
-            </figure>
-        </div>
-        <div class="Container Container--textColumn">
-            <div class="Pathway-text">
-                {{ about.content }}
+      </div>
+      <div class="Container p-msm-x0">
+        <figure class="m-b5">
+          <div class="FlexEmbed">
+            <div class="FlexEmbed-ratio FlexEmbed-ratio--4by3"></div>
+            <div class="FlexEmbed-content">
+              {% assign image = "uploads/home-about-160812-duo.jpg" %}
+              {% assign alt = "Vince and LeaAnne Cassiniti" %}
+              {% include responsive-img-cloudinary.html %}
             </div>
-            <div class="Pathway-action">
-                <a class="Button t-button--rev" href="/about">{{ about.button }}</a>
-            </div>
+          </div> 
+        </figure>
+      </div>
+      <div class="Container Container--text">
+        {{ about.content }}
+        <div class="m-t4 u-textCenter">
+          <a class="Button" href="/about">{{ about.button }}</a>
         </div>
+      </div>
     </section>
 
     <!-- blog -->
@@ -216,68 +203,35 @@ FYI: old way of adding a responsive image:
                                 {% assign image = post.hero_image %}
                                 {% include responsive-img-cloudinary-hero.html %}
                             </div>
-                            <div class="FlexEmbed-content FlexEmbed-content--screen">&nbsp;</div>
+                            <div class="FlexEmbed-content CoverImage--screen">&nbsp;</div>
                         </div>
-                        <div class="Header-wrapper">
-                            <div class="o-aligner">
-                                <div class="o-aligner-item">
-                                    <div class="Container Container--withinHero">
-                                        
-                                        <figure class="Pathway-icon">
-                                            <svg class="Icon Icon--lg u-colorWhite">
-                                                <use xlink:href="#ic-blog"></use>
-                                            </svg>
-                                        </figure>
-                                        <h1 class="Header-title">The Ocean Blue blog.</h1>
-                                        
-                                        <div class="Section--blogPostTitle">
-                                            <div class="Container Container--textColumn">
-                                                <h1 class="Post-title u-colorWhite">{{ post.title }}</h1>
-                                                <div class="Post-meta">
-                                                    {% comment %}
-                                                    {% for tag in page.tags %}
-                                                        <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a>
-                                                    {% endfor %}
-                                                    {% endcomment %}
-                                                    <span class="Post-tag">{{ post.tags | first | capitalize }}</span>
-                                                    &nbsp;&nbsp;|&nbsp;&nbsp;
-                                                    <span class="Post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                            
-                                    </div>
-                                </div>
+                        <div class="u-absolutePin">
+                          <div class="u-flexChildrenCenter">
+                            <div class="Container Container--xs">
+                              <figure class="u-icon u-icon--lg c-bg m-b3 u-textCenter w-100">
+                                <svg version="1.1" viewbox="0 0 54 54">
+                                  {% include icons/blog.html %}
+                                </svg>
+                              </figure>
+                              <h1 class="Heading c-bg">The Ocean Blue blog.</h1>
+                              <hr class="bg-bg m-y4">
+                              <h1 class="Heading c-bg">{{ post.title }}</h1>
+                              <div class="Post-meta">
+                                {% comment %}
+                                {% for tag in page.tags %}
+                                    <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a>
+                                {% endfor %}
+                                {% endcomment %}
+                                <span class="Post-tag">{{ post.tags | first | capitalize }}</span>
+                                &nbsp;&nbsp;|&nbsp;&nbsp;
+                                <span class="Post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+                              </div>
                             </div>
+                          </div>
                         </div>
                     </header>
-                    {% comment %}
-                    <div class="Container Container--textColumn">
-                        {{ post.content }}
-                        
-                        <section class="Section--afterArticleBlock">
-                            <div class="u-textCenter">
-                                <a class="Headline--minor" href="/blog">View all posts →</a>
-                            </div>
-                            
-                            u-floatRight
-                            <h3 class="Headline--minor">Share this</h3>
-                            {% include share.html %}
-                        </section>
-                        
-                    </div>
-                    {% endcomment %}
                 </article>
             </a>
         {% endfor %}
     </section>
-
-    {% comment %}
-    <section class="Section--cta u-bgWhite">
-        <div class="Container Container--textColumn">
-            {% include pathway-blog.html %}
-        </div>
-    </section>
-    {% endcomment %}
-
 </main>

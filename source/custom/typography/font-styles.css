@@ -1,0 +1,240 @@
+/* 
+  Font sizes
+  https://github.com/jonathanharrell/hiq/blob/master/pcss/typography/sizes.pcss
+*/
+
+@define-mixin fs-text {
+  font-size: var(--fs-text);
+}
+@define-mixin fs-textSmall {
+  font-size: var(--fs-textSmall);
+}
+@define-mixin fs-textMedium {
+  font-size: var(--fs-textMedium);
+}
+@define-mixin fs-textLarge {
+  font-size: var(--fs-textLarge);
+}
+@define-mixin fs-subheading {
+  font-size: var(--fs-subheading);
+}
+@define-mixin fs-heading {
+  font-size: var(--fs-heading);
+}
+@define-mixin fs-title {
+  font-size: var(--fs-title);
+}
+
+/* 
+  Font weights
+*/
+
+@define-mixin fw-light {
+  font-weight: var(--fw-light);
+}
+@define-mixin fw-regular {
+  font-weight: var(--fw-regular);
+}
+@define-mixin fw-medium {
+  font-weight: var(--fw-medium);
+}
+@define-mixin fw-semibold {
+  font-weight: var(--fw-semibold);
+}
+@define-mixin fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+/* 
+  Font line-height
+*/
+
+@define-mixin flh-super {
+  line-height: var(--flh-super);
+}
+@define-mixin flh-tight {
+  line-height: var(--flh-tight);
+}
+@define-mixin flh-regular {
+  line-height: var(--flh-regular);
+}
+@define-mixin flh-loose {
+  line-height: var(--flh-loose);
+}
+
+/* 
+  Font letter-spacing
+*/
+
+@define-mixin fls-tight {
+  letter-spacing: var(--fls-tight);
+}
+@define-mixin fls-regular {
+  letter-spacing: var(--fls-regular);
+}
+@define-mixin fls-loose {
+  letter-spacing: var(--fls-loose);
+}
+
+/*
+
+  Mixins applied
+
+ */
+
+@define-mixin Text {
+  @mixin fs-text;
+  @mixin fw-regular;
+  @mixin flh-regular;
+  @mixin fls-regular;
+}
+
+p,
+ul,
+ol,
+.Text,
+.Text--sm,
+.Text--md {
+  @mixin Text;
+}
+
+.Button,
+.Text--meta {
+  @mixin fs-textSmall;
+  @mixin fw-semibold;
+  @mixin fls-loose;
+  font-family: var(--ff-text-semibold), var(--ff-stack-sans);
+  text-transform: uppercase;
+}
+
+.Text--sm {
+  @mixin fs-textSmall;
+}
+
+.Text--md {
+  @mixin fs-textMedium;
+}
+
+.Text--lg {
+  @mixin fs-textLarge;
+  @mixin fw-light;
+}
+
+@define-mixin Heading {
+  @mixin fw-regular;
+  @mixin flh-regular;
+  @mixin fls-regular;
+  font-family: var(--ff-heading), var(--ff-stack-heading);
+  text-align: center;
+}
+
+h1,
+.Heading {
+  @mixin fs-heading;
+  @mixin Heading;
+}
+
+h2,
+.Subheading {
+  @mixin fs-subheading;
+  @mixin Heading;
+}
+
+.Title {
+  @mixin fs-title;
+  @mixin Heading;
+}
+
+.Title--reversed {
+  color: var(--c-bg);
+  text-shadow: 0 0 2em var(--c-black);
+}
+
+/*
+
+  Text blocks
+
+ */
+
+.TextBlock--sm {
+  & > p,
+  & > ul,
+  & > li {
+    @mixin fs-textSmall;
+  }
+}
+
+.TextBlock--md {
+  & > p,
+  & > ul,
+  & > li {
+    @mixin fs-textMedium;
+  }
+}
+
+.TextBlock--lg {
+  & > p,
+  & > ul,
+  & > li {
+    @mixin fs-textLarge;
+    @mixin fw-light;
+  }
+}
+
+/*
+
+  Mixins as utilities (last source order)
+
+ */
+
+.fs-text {
+  @mixin fs-text;
+}
+.fs-textSmall {
+  @mixin fs-textSmall;
+}
+.fs-textMedium {
+  @mixin fs-textMedium;
+}
+.fs-textLarge {
+  @mixin fs-textLarge;
+}
+.fs-heading {
+  @mixin fs-heading;
+}
+.fs-subheading {
+  @mixin fs-subheading;
+}
+
+.fw-light {
+  @mixin fw-light;
+}
+.fw-regular {
+  @mixin fw-regular;
+}
+.fw-medium {
+  @mixin fw-medium;
+}
+.fw-bold {
+  @mixin fw-bold;
+}
+
+.flh-tight {
+  @mixin flh-tight;
+}
+.flh-regular {
+  @mixin flh-regular;
+}
+.flh-loose {
+  @mixin flh-loose;
+}
+
+.fls-tight {
+  @mixin fls-tight;
+}
+.fls-regular {
+  @mixin fls-regular;
+}
+.fls-loose {
+  @mixin fls-loose;
+}

@@ -24,7 +24,7 @@
 .FlexEmbed-fitImage { @include ObjectFit(); }
 
 // To darken like 'CoverImage--dark'
-.FlexEmbed-content--dark {
+.CoverImage--dark {
     &:before {
         background-image: linear-gradient(to bottom, rgba( palette(brand), 0.9 ) 0%, rgba( palette(brand), 0 ) 100%);
         background-blend-mode: multiply;
@@ -39,7 +39,7 @@
     }
 }
 
-.FlexEmbed-content--screen {
+.CoverImage--screen {
     &:before {
         background-image: linear-gradient(to bottom, rgba( palette(brand), 0.9 ) 0%, rgba( palette(black), 0.4 ) 100%);
         background-blend-mode: multiply;

@@ -1,0 +1,49 @@
+/*
+
+  Flex grid
+
+ */
+
+:root {
+  --flhexGrid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--gridSpace));
+    margin-left: calc(-1 * var(--gridSpace));
+    
+    & > * {
+      flex: 1 1 auto;
+      padding-right: var(--gridSpace);
+      padding-left: var(--gridSpace);
+    }
+  }
+  
+  --sm-flexGrid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--sm-gridSpace));
+    margin-left: calc(-1 * var(--sm-gridSpace));
+    
+    & > * {
+      flex: 1 1 auto;
+      padding-right: var(--sm-gridSpace);
+      padding-left: var(--sm-gridSpace);
+    }
+  }
+}
+
+.FlexGrid {
+  @apply --flhexGrid;
+}
+
+.FlexGrid--sm {
+  @apply --sm-flexGrid;
+}
+
+.FlexGrid--noGrow {
+  @apply --flhexGrid;
+
+  & > * {
+    flex-grow: 0;
+  }
+}

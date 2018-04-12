@@ -1,0 +1,78 @@
+.css {
+
+}
+
+.MobileNav {
+  position: relative;
+
+  & p,
+  & ul {
+    margin-bottom: 0;
+  }
+
+  & a {
+    color: var(--c-white);
+    padding: var(--space) 0;
+  }
+}
+
+
+.MobileNav-trigger,
+.MobileNav-close {
+  color: var(--c-brand);
+  font-weight: var(--fw-bold);
+  // line-height: 38px;
+  margin-left: auto;
+  padding: 0 0 0 16px);
+
+  &:before {
+    content: '\2630';
+    font-size: 112%;
+    margin-right: 3px;
+  }
+}
+
+.MobileNav-close {
+  color: var(--c-white);
+  
+  &:before {
+    content: none;
+  }
+}
+
+.MobileNav-menu {
+  @mixin listUnstyled;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  opacity: 0;
+  padding-top: var(--s-4);
+  padding-left: var(--s-3a);
+  padding-right: var(--s-3a);
+  transform: translateY(48px);
+  transition: all 500ms ease-in-out;
+  
+  & li {
+
+    &:not(:last-child) {
+      margin-bottom: var(--s-3);
+    }
+  }
+  
+  & li a {
+    @mixin Heading;
+    @mixin fw-light;
+    color: var(--c-white);
+    display: block;
+    padding: 0;
+    text-decoration: none;
+  }
+}
+
+.Modal.is-active .MobileNav-menu {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
+
+  &:last-of-type {
+    transition-delay: 150ms;
+  }
+}

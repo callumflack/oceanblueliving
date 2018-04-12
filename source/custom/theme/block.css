@@ -1,0 +1,87 @@
+/*
+
+  https://philipwalton.com/articles/why-im-excited-about-native-css-variables/
+
+*/
+
+:root {
+  --responsive-space: 1.25rem;
+}
+
+@media (--md) {
+  :root {
+    --responsive-space: 2.5rem;
+  }
+}
+@media (--lg) {
+  :root {
+    --responsive-space: 5rem;
+  }
+}
+
+/* 
+
+  Responsive margin blocks
+
+ */
+
+.b {
+  margin: var(--responsive-space) auto;
+}
+.b-mb1 {
+  margin-bottom: calc(0.5 * var(--responsive-space));
+}
+.b-mb2 {
+  margin-bottom: var(--responsive-space);
+}
+.b-mb3 {
+  margin-bottom: calc(2 * var(--responsive-space));
+}
+.b-mt1 {
+  margin-top: calc(0.5 * var(--responsive-space));
+}
+.b-mt2 {
+  margin-top: var(--responsive-space);
+}
+.b-mt3 {
+  margin-top: calc(2 * var(--responsive-space));
+}
+
+/* 
+
+  Responsive padding blocks
+
+ */
+
+.b-py2 {
+  padding-top: var(--responsive-space);
+  padding-bottom: var(--responsive-space);
+}
+.b-py3 {
+  padding-top: calc(2 * var(--responsive-space));
+  padding-bottom: calc(2 * var(--responsive-space));
+}
+.b-py4 {
+  padding-top: calc(3 * var(--responsive-space));
+  padding-bottom: calc(3 * var(--responsive-space));
+}
+
+.b-pt2 {
+  padding-top: var(--responsive-space);
+}
+.b-pt3 {
+  padding-top: calc(2 * var(--responsive-space));
+}
+.b-pt4 {
+  padding-top: calc(3 * var(--responsive-space));
+}
+
+.b-pb2 {
+  padding-bottom: var(--responsive-space);
+}
+.b-pb3 {
+  padding-bottom: calc(2 * var(--responsive-space));
+}
+.b-pb4 {
+  padding-bottom: calc(3 * var(--responsive-space));
+}
