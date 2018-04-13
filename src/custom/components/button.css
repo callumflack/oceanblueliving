@@ -1,0 +1,108 @@
+/** @define Button */
+
+:root {
+  --Button-background-color: transparent;
+  --Button-border-color: currentcolor;
+  --Button-border-width: 1px;
+  --Button-color: inherit;
+  --Button-disabled-opacity: 0.6;
+  --Button-font: inherit;
+  --Button-font-weight: var(--fw-semibold);
+  --Button-height: var(--field-height);
+  --Button-xpadding: 1.5em;
+  --Button-radius: var(--border-radius);
+}
+
+/*
+  Adapted from Suit & HiQ
+ */
+
+.Button {
+  align-items: center;
+  background-color: var(--Button-background-color);
+  border-color: var(--Button-border-color);
+  border-radius: var(--Button-radius);
+  border-style: solid;
+  border-width: var(--Button-border-width);
+  box-sizing: border-box;
+  color: var(--Button-color);
+  cursor: pointer;
+  display: inline-flex;
+  /* font: var(--Button-font); */
+  /* font-weight: var(--Button-font-weight); */
+  height: var(--Button-height);
+  justify-content: center;
+  margin: 0;
+  padding-left: var(--Button-xpadding);
+  padding-right: var(--Button-xpadding);
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+
+  /* THEME */
+  padding-top: 0.25rem;
+}
+
+/**
+ * Remove excess padding and border in Firefox 4+
+ */
+
+.Button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Work around a Firefox/IE bug where the transparent `button` background
+ * results in a loss of the default `button` focus styles.
+ */
+
+.Button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/**
+ * UI states
+ */
+
+.Button:hover,
+.Button:focus,
+.Button:active {
+  text-decoration: none;
+}
+
+.Button:disabled,
+.Button.is-disabled {
+  cursor: default;
+  opacity: var(--Button-disabled-opacity);
+}
+
+/**
+ * Variations
+ */
+
+.Button--primary {
+  --Button-background-color: var(--c-brand);
+  --Button-border-color: var(--c-brand) !important;
+  --Button-border-width: 1px;
+  --Button-color: var(--c-white);
+}
+
+.Button--outline {
+  --Button-background-color: var(--c-brand);
+  --Button-border-color: currentcolor;
+  --Button-border-width: 1px;
+  --Button-color: var(--c-white);
+}
+
+.Button--reverse {
+  --Button-background-color: transparent;
+  --Button-border-width: 1px;
+  /* --Button-color: var(--c-brand); */
+}
+
+.Button--transparent {
+  --Button-background-color: transparent;
+  --Button-border-color: transparent;
+}

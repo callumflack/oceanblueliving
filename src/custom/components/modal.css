@@ -1,0 +1,47 @@
+.Modal {
+  /* @mixin absolutePin; */
+  @mixin fullScreen;
+  background-color: var(--c-brand);
+  margin: initial;
+  opacity: 0;
+  outline: 0;
+  overflow-x: hidden;
+  transform: scale(0);
+  transition-property: opacity;
+  transition-duration: 750ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  width: 100vw;
+  z-index: -1;
+
+  &.is-active {
+    opacity: 1;
+    overflow: hidden;
+    transform: scale(1);
+    transition-property: opacity;
+    transition-duration: 750ms;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1000;
+
+    @media (--sm) {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+}
+
+/*@mixin t-modalDialog() {
+  opacity: 0;
+  transform: translateY(-20px);
+  //transition: all map-fetch($transition, duration, fast) map-fetch($transition, type, base);
+  transition: all 500ms ease-in-out;
+}
+
+@mixin t-modalDialogActive() {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 300ms ease-in-out;
+}*/
+
+.Modal-dialog {
+  position: relative;
+}

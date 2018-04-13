@@ -1,0 +1,65 @@
+/**
+
+  Link
+  https://github.com/suitcss/utils-link/blob/master/lib/link.css
+
+ */
+
+.u-linkClean,
+.u-linkClean:hover,
+.u-linkClean:focus,
+.u-linkClean:active {
+  color: currentColor;
+  text-decoration: none !important;
+}
+
+.u-linkCleanChildren a,
+.u-linkCleanChildren > * {
+  color: currentColor;
+  text-decoration: none !important;
+  text-decoration-color: transparent !important;
+}
+
+.u-linkComplex,
+.u-linkComplex:hover,
+.u-linkComplex:focus,
+.u-linkComplex:active {
+  text-decoration: none !important;
+}
+
+.u-linkComplex:hover .u-linkComplexTarget,
+.u-linkComplex:focus .u-linkComplexTarget,
+.u-linkComplex:active .u-linkComplexTarget {
+  text-decoration: underline !important;
+}
+
+.u-linkBlock,
+.u-linkBlock:hover,
+.u-linkBlock:focus,
+.u-linkBlock:active {
+  display: block !important;
+  text-decoration: none !important;
+}
+
+/* THEME */
+
+@define-mixin linkBuried {
+  display: block;
+  width: 100%;
+
+  &:focus,
+  &:hover {
+    & .LinkBuried-target {
+      transform: translateX(5%);
+    }
+  }
+}
+
+.LinkBuried {
+  @mixin linkBuried;
+}
+
+.LinkBuried-target {
+  transition: all var(--speed) var(--easing);
+  transform: translateX(0);
+}

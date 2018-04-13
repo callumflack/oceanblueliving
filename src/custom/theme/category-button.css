@@ -1,0 +1,30 @@
+:root {
+  --categoryButtonHeight: 25em;
+}
+
+.Category-button {
+  border: 1px solid var(--c-gray);
+  display: inline-block;
+  padding: 2rem 2rem 0 2rem;
+  text-align: center;
+  transition: all 250ms ease-out;
+  width: 100%;
+
+  &:hover,
+  &:active {
+    background-color: var(--c-brandNeutral);
+    border-color: currentColor;
+    position: relative;
+    transition: all 250ms ease-out;
+  }
+}
+
+.Category-image {
+  height: calc(0.75 * var(--categoryButtonHeight));
+  position: relative;
+  width: 100%;
+
+  @media (--lg) {
+    height: var(--categoryButtonHeight);
+  }
+}

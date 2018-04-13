@@ -1,0 +1,124 @@
+/*
+
+  colors
+
+ */
+
+.c-brand {
+  color: var(--c-brand) !important;
+}
+.c-brandHover {
+  color: var(--c-brandHover) !important;
+}
+.c-brandLight {
+  color: var(--c-brandLight) !important;
+}
+
+.c-black {
+  color: black !important;
+}
+.c-text {
+  color: var(--c-text) !important;
+}
+.c-textLight {
+  color: var(--c-textLight) !important;
+}
+.c-gray {
+  color: var(--c-gray) !important;
+}
+.c-muted {
+  color: var(--c-muted) !important;
+}
+.c-border {
+  color: var(--c-border) !important;
+}
+.c-neutral {
+  color: var(--c-brand) !important;
+}
+.c-bg {
+  color: var(--c-bg) !important;
+}
+.c-white {
+  color: white !important;
+}
+
+.c-success {
+  color: var(--c-success) !important;
+}
+.c-warning {
+  color: var(--c-warning) !important;
+}
+.c-danger {
+  color: var(--c-danger) !important;
+}
+
+/*
+
+  color blocks
+
+ */
+
+.c-textBlock > * {
+  color: var(--c-text) !important;
+}
+.c-textLightBlock > * {
+  color: var(--c-textLight) !important;
+}
+.c-whiteBlock > * {
+  color: var(--c-white) !important;
+}
+
+/*
+
+  bg colors
+
+ */
+
+.bg-brand {
+  background-color: var(--c-brand) !important;
+}
+.bg-black {
+  background-color: black !important;
+}
+.bg-ash {
+  background-color: var(--c-ash) !important;
+}
+.bg-text {
+  background-color: var(--c-text) !important;
+}
+.bg-textLight {
+  background-color: var(--c-textLight) !important;
+}
+.bg-gray {
+  background-color: var(--c-gray) !important;
+}
+.bg-rule {
+  background-color: var(--c-rule) !important;
+}
+.bg-border {
+  background-color: var(--c-border) !important;
+}
+.bg-neutral {
+  background-color: var(--c-neutral) !important;
+}
+.bg-neutralAlt {
+  background-color: var(--c-neutralAlt) !important;
+}
+.bg-bg {
+  background-color: var(--c-bg) !important;
+}
+.bg-whitesmoke {
+  background-color: var(--c-whitesmoke) !important;
+}
+.bg-white {
+  background-color: white !important;
+}
+.bg-success {
+  background-color: var(--c-success) !important;
+}
+.bg-warning {
+  background-color: var(--c-warning) !important;
+}
+.bg-danger {
+  background-color: var(--c-danger) !important;
+}

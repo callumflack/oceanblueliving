@@ -1,0 +1,16 @@
+.owl-carousel .animated {
+  animation-duration: 2000ms;
+}
+
+.gallery--dragger {
+  & .owl-item {
+    opacity: 0.5;
+    transform: scale(0.3);
+    max-width: var(--Container-max-width);
+  }
+
+  & .owl-item.active {
+    opacity: 1;
+    transform: scale(0.5);
+  }
+}

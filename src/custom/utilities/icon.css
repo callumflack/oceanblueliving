@@ -1,0 +1,93 @@
+/*
+
+  Icon
+
+ */
+
+@define-mixin IconWrapper {
+  cursor: pointer;
+  display: inline-block;
+  margin: calc(-1 * var(--space));
+  padding: var(--space);
+}
+
+.u-iconWrapper {
+  @mixin IconWrapper;
+}
+
+.u-md-iconWrapper {
+  @media (--md) {
+    @mixin IconWrapper;
+  }
+}
+
+.u-icon {
+  display: inline-block;
+  fill: currentColor;
+  height: var(--s-3a);
+  line-height: 1;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  vertical-align: text-bottom;
+  width: var(--s-3a);
+
+  & > svg {
+    fill: currentColor;
+    transition: fill 400ms ease;
+  }
+}
+
+/* 
+
+  THEME
+  https://css-tricks.com/scale-svg/ 
+
+*/
+
+.u-icon--logo {
+  height: 70px;
+  height: 4.375em;
+  width: 120px;
+  width: 7.5em;
+}
+
+.u-icon--hamburger {
+  height: 18px;
+  width: 24px;
+}
+
+.u-icon--tiny,
+.u-icon--tiny svg {
+  height: 0.75em;
+  width: 0.75em;
+}
+
+.u-icon--sm,
+.u-icon--sm svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.u-icon--md,
+.u-icon--md svg {
+  height: 1.875rem;
+  width: 1.875rem;
+}
+
+.u-icon--lg,
+.u-icon--lg svg {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.u-icon-toggle svg {
+  height: 1.5em;
+  width: 1.5em;
+
+  @media (--md) {
+    height: 2rem;
+    width: 2rem;
+  }
+}

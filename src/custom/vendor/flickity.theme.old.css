@@ -1,0 +1,85 @@
+.carousel-cell {
+  width: 100%;
+}
+
+.carousel .flickity-page-dots {
+  bottom: space(-2);
+}
+
+.Home .flickity-page-dots .dot {
+  background-color: var(--c-bg);
+}
+
+.carousel .FlexEmbed-ratio {
+  padding-bottom: 70%;
+  @include respond-to(lg) {
+    padding-bottom: 56.25%;
+  }
+}
+
+/*
+  Hero fade effect hack
+  See: http://codepen.io/eikeco/pen/MwGRKr?editors=1100
+  See: http://codepen.io/Tumki/pen/JXOyvp?editors=1100
+*/
+
+.carousel--fade {
+  & .flickity-slider {
+    transform: none !important;
+  }
+
+  & .carousel-cell {
+    left: 0 !important;
+    opacity: 0.1;
+    transition: opacity 1700ms ease-in-out;
+    z-index: -1;
+  }
+
+  & .carousel-cell.is-selected {
+    opacity: 1;
+    z-index: 0;
+  }
+}
+
+/* 'Draggable' like instrument.com */
+
+.carousel--dragger {
+  & .carousel-cell {
+    cursor: grab;
+    transition: scale 1s var(--thisalso);
+
+    @media (--xl) {
+      max-width: var(--Container-max-width);
+    }
+  }
+
+  & .carousel-cell.is-selected {
+    transform: scale(1);
+    transition: scale 1s var(--thisalso);
+  }
+
+  @media (--sm) {
+    & .carousel-cell {
+      transform: scale(0.7);
+    }
+  }
+  @media (--xl) {
+    & .carousel-cell {
+      transform: scale(0.5);
+    }
+  }
+}
+
+.carousel--light {
+  @media (--sm) {
+    & .carousel-cell {
+      filter: grayscale(100%);
+      opacity: 0.3;
+    }
+
+    & .carousel-cell.is-selected {
+      filter: grayscale(0);
+      opacity: 1;
+    }
+  }
+}
