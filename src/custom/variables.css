@@ -50,13 +50,12 @@
   --c-brandLight: #174170;
   --c-brandHover: hsl(288, 100%, 40%);
   --c-brandHover: #9bbbdc;
-  --c-brandMedium: hsl(288, 100%, 35%);
-  --c-brandComplement: #6EBE44;
-  --c-brandCounter: #F7FCFF;
+  --c-brandNeutral: #ebedf1;
 
   --c-black: hsl(0, 0%, 3%);
   --c-ash: hsl(213, 11%, 8%);
   --c-text: hsl(0, 0%, 12%);
+  --c-textMid: hsl(0, 0%, 25%);
   --c-textLight: hsl(0, 0%, 60%);
   --c-gray: hsl(0, 0%, 60%);
   --c-muted: hsl(0, 0%, 75%);

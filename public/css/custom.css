@@ -55,13 +55,12 @@
   --c-brandLight: #174170;
   --c-brandHover: hsl(288, 100%, 40%);
   --c-brandHover: #9bbbdc;
-  --c-brandMedium: hsl(288, 100%, 35%);
-  --c-brandComplement: #6EBE44;
-  --c-brandCounter: #F7FCFF;
+  --c-brandNeutral: #ebedf1;
 
   --c-black: hsl(0, 0%, 3%);
   --c-ash: hsl(213, 11%, 8%);
   --c-text: hsl(0, 0%, 12%);
+  --c-textMid: hsl(0, 0%, 25%);
   --c-textLight: hsl(0, 0%, 60%);
   --c-gray: hsl(0, 0%, 60%);
   --c-muted: hsl(0, 0%, 75%);
@@ -1240,6 +1239,12 @@ img {
   https://css-tricks.com/scale-svg/ 
 
 */
+.u-icon--logo {
+  height: 70px;
+  height: 4.375em;
+  width: 120px;
+  width: 7.5em;
+}
 .u-icon--hamburger {
   height: 18px;
   width: 24px;
@@ -3662,10 +3667,6 @@ body,
 body {
   text-align: left;
 }
-/* used to allow end-paper effect on scroll */
-.Page {
-  background-color: var(--c-bg);
-}
 a {
   /* color: var(--c-text); */
   color: inherit;
@@ -4956,7 +4957,7 @@ img[data-sizes="auto"] {
 .Category-button:hover,
   .Category-button:active {
   
-  background-color: #ebedf1;
+  background-color: var(--c-brandNeutral);
   
   border-color: currentColor;
   
@@ -5073,6 +5074,10 @@ img[data-sizes="auto"] {
   border-bottom-left-radius: 0;
   margin-left: -1px;
 }
+/* create an end-paper effect on scroll */
+.Page {
+  background-color: var(--c-bg);
+}
 /*
 
   CSS-ONLY TABS COMPONENT
@@ -5091,11 +5096,11 @@ img[data-sizes="auto"] {
 }
 .Tabs-container label {
   
-  background: #eee;
+  background: var(--c-brandNeutral);
   
   border: 1px solid #ddd;
   
-  padding: 0.7em 1em;
+  padding: 0.7em 1.5em;
   
   cursor: pointer;
   
@@ -5179,6 +5184,37 @@ img[data-sizes="auto"] {
 }
 .Design-cell--12across .AspectRatio {
   padding-bottom: 22.5%;
+}
+.gallery {
+  color: var(--c-gray);
+}
+.gallery .Page {
+  background-color: var(--c-brand);
+}
+.gallery .Nav-toggle button {
+  color: var(--c-bg);
+}
+.gallery hr {
+  
+  background-color: var(--c-text);
+
+  
+}
+.gallery .Footer {
+  
+  background-color: var(--c-brand) !important;
+  
+  border-top: 1px solid var(--c-text);
+  
+  color: var(--c-textMid) !important;
+
+  
+}
+.gallery .Footer-author {
+  
+  color: var(--c-textMid);
+
+  
 }
 /*
 

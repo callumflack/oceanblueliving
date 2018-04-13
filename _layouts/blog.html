@@ -22,19 +22,13 @@ image: uploads/blog-hero-160812-barriersolutions.jpg
   <div class="u-absolutePin">
     <div class="u-flexChildrenCenter">
       <div class="Container Container--text">
-        <h1 class="Title Title--reversed m-t3">
+        <h1 class="Title Title--reversed b-mt2">
           {{ blog.hero_headline }}
         </h1>
       </div>
     </div>
   </div>
-  <div class="u-absolutePin">
-    <div class="b-mt1 u-textCenter u-posRelative">
-      <a class="Header-logo" href="/">
-        <img src="/uploads/logo-white.png" alt="{{ site.title }}">
-      </a>
-    </div>
-  </div>
+  {% include hero-logo.html %}
 </header>
 
 

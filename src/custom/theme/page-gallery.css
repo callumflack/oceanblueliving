@@ -1,0 +1,27 @@
+.gallery {
+  color: var(--c-gray);
+}
+
+.gallery .Page {
+  background-color: var(--c-brand);
+}
+
+.gallery .Nav-toggle button {
+  color: var(--c-bg);
+}
+
+.gallery {
+  & hr {
+    background-color: var(--c-text);
+  }
+
+  & .Footer {
+    background-color: var(--c-brand) !important;
+    border-top: 1px solid var(--c-text);
+    color: var(--c-textMid) !important;
+  }
+
+  & .Footer-author {
+    color: var(--c-textMid);
+  }
+}

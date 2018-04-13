@@ -46,6 +46,13 @@
 
 */
 
+.u-icon--logo {
+  height: 70px;
+  height: 4.375em;
+  width: 120px;
+  width: 7.5em;
+}
+
 .u-icon--hamburger {
   height: 18px;
   width: 24px;

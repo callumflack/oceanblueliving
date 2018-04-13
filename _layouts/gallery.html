@@ -1,0 +1,66 @@
+---
+title: Designs
+layout: default
+---
+
+{% assign gallery = site.pages | where: 'title', 'gallery' | first  %}
+
+<header class="Header" role="banner">
+  <div class="AspectRatio AspectRatio--halfHero">
+  </div>
+  <div class="u-absolutePin">
+    <div class="u-flexChildrenCenter">
+      <div class="Container Container--text">
+        <h1 class="Title Title--reversed b-mt2">
+          {{ gallery.hero_headline }}
+        </h1>
+      </div>
+    </div>
+  </div>
+  {% include hero-logo.html %}
+</header>
+
+
+
+
+
+<main class="Content" role="main">
+  <!-- <section class="b-py3">
+    <div class="Container Container--text">
+      {{ gallery.content | markdownify }}
+    </div>
+  </section> -->
+  <section class="b-pb3">
+    <div class="Container Container--super">
+      <div class="FlexGrid--designs u-flexJustifyCenter">
+        
+        {% for image in gallery.gallery-images %}
+          <!-- <p class="c-bg">{{ image.path }}</p> -->
+          
+          <div class="w-1of2 w-sm-1of3">
+            <div class="AspectRatio AspectRatio--4x3">
+              <div class="AspectRatio-content">
+                <!-- <div
+                  class="u-absolutePin CoverImage lazyload"
+                  data-bg="{{ image.path }}">
+                </div> -->
+                <div
+                  class="u-absolutePin CoverImage"
+                  style="background-image:url('/{{ image }}')">
+                </div>
+              </div>
+            </div>
+            <p class="Text--xs c-bg m-t2 m-b4">{{ image.path | remove:'/designs-rg/' | remove:'.png' | replace: '-', ' ' }}</p>
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+  <section class="b-pb3">
+    <div class="Container Container--text">
+      <hr class="m-t0 b-mb2">
+      {% include pathway-primary.html %}
+    </div>
+  </section>
+</main>

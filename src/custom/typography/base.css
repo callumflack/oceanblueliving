@@ -47,8 +47,3 @@ body,
 body {
   text-align: left;
 }
-
-/* used to allow end-paper effect on scroll */
-.Page {
-  background-color: var(--c-bg);
-}

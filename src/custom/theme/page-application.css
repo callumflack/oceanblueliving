@@ -13,9 +13,9 @@
   text-align: center;
 
   & label {
-    background: #eee;
+    background: var(--c-brandNeutral);
     border: 1px solid #ddd;
-    padding: 0.7em 1em;
+    padding: 0.7em 1.5em;
     cursor: pointer;
     z-index: 1;
     margin-left: -1px;

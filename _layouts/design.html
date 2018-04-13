@@ -1,7 +1,6 @@
 ---
 title: Designs
 layout: default
-image: "/uploads/designs-hero-160812-dorahy.jpg"
 ---
 
 {% assign design = site.pages | where: 'title', 'design' | first  %}
@@ -22,13 +21,9 @@ image: "/uploads/designs-hero-160812-dorahy.jpg"
       </div>
     </div>
   </div>
-  <div class="u-absolutePin">
-    <div class="b-mt1 u-textCenter u-posRelative">
-      <a class="Header-logo" href="/">
-        <img src="/uploads/logo.png" alt="{{ site.title }}">
-      </a>
-    </div>
-  </div>
+  
+  {% include hero-logo.html %}
+  
 </header>
 
 <main class="Content" role="main">
@@ -51,13 +46,6 @@ image: "/uploads/designs-hero-160812-dorahy.jpg"
                       class="u-absolutePin CoverImage lazyload"
                       data-bg="{{ image.path }}">
                     </div>
-                    {% comment %}
-                    <img
-                      class="u-absolutePin AspectRatio-fitImage lazyload ls-blur"
-                      alt="{{ alt }}"
-                      data-src="{{ image.path }}"
-                    />
-                    {% endcomment %}
                   </div>
                 </div>
                 <p class="Text--xs m-t2 m-b4">{{ image.path | remove:'/designs-rg/' | remove:'.png' | replace: '-', ' ' }}</p>

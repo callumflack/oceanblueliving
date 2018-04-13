@@ -12,7 +12,7 @@
 
   &:hover,
   &:active {
-    background-color: #ebedf1;
+    background-color: var(--c-brandNeutral);
     border-color: currentColor;
     position: relative;
     transition: all 250ms ease-out;

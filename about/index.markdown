@@ -1,6 +1,8 @@
 ---
 title: about
 date: 2016-05-13 16:39:00 +10:00
+logoReversedOut: true
+navToggleReversedOut: true
 hero_headline: We’re craftspeople who love transforming spaces.
 hero_image: "/uploads/about-unedited-8.jpg"
 first_text: "We’re boat builders by trade. We were seduced by the weight, feel and
@@ -20,6 +22,4 @@ video: https://www.youtube.com/embed/C6huQHDcjWY?autoplay=1
 second_text: We're here to help you discover, design and fabricate architectural pieces
   that will bring your ideas to life and transform your living spaces.
 layout: about
-navToggleReversedOut: true
 ---
-
