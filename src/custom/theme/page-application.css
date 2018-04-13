@@ -29,7 +29,11 @@
   & label:last-of-type {
     margin-right: auto;
   }
+}
 
+/* the magic */
+
+.Tabs-container {
   & .Tab {
     width: 100%;
     margin-top: -1px;
@@ -39,7 +43,7 @@
   }
 
   & input[type="radio"],
-  .Tab {
+  & .Tab {
     display: none;
   }
 
@@ -53,9 +57,11 @@
   }
 }
 
+/* theme */
+
 .Tabs-container img {
-  @include media-breakpoint-up(lg) {
-    max-width: 1440px;
-    margin-left: -200px;
+  @media (--lg) {
+    /* max-width: 1440px; */
+    /* margin-left: -200px; */
   }
 }

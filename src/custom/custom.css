@@ -56,7 +56,8 @@
 @import "theme/header.css";
 @import "theme/footer.css";
 @import "theme/form.css";
-@import "theme/page-designs.css";
+@import "theme/page-application.css";
+@import "theme/page-design.css";
 @import "theme/post.css";
 @import "theme/nav-toggle.css";
 @import "theme/nav-modal.css";

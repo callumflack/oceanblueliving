@@ -5073,6 +5073,101 @@ img[data-sizes="auto"] {
   border-bottom-left-radius: 0;
   margin-left: -1px;
 }
+/*
+
+  CSS-ONLY TABS COMPONENT
+  http://youmightnotneedjs.com/#tabs
+  http://codepen.io/vulpesigni/pen/yyZYNy?editors=1100
+
+*/
+.Tabs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  text-align: center
+}
+.Tabs-container label {
+  
+  background: #eee;
+  
+  border: 1px solid #ddd;
+  
+  padding: 0.7em 1em;
+  
+  cursor: pointer;
+  
+  z-index: 1;
+  
+  margin-left: -1px;
+  
+  position: relative;
+
+  
+}
+.Tabs-container label:first-of-type {
+  
+  margin-left: auto;
+
+  
+}
+.Tabs-container label:last-of-type {
+  
+  margin-right: auto;
+
+  
+}
+/* the magic */
+.Tabs-container .Tab {
+  
+  width: 100%;
+  
+  margin-top: -1px;
+  
+  padding: 1em;
+  
+  border-top: 1px solid #ddd;
+  
+  -webkit-box-ordinal-group: 2;
+  
+      -ms-flex-order: 1;
+  
+          order: 1;
+
+  
+}
+.Tabs-container input[type="radio"],
+  .Tabs-container .Tab {
+  
+  display: none;
+
+  
+}
+.Tabs-container input[type="radio"]:checked + label {
+  
+  background: #fff;
+  
+  border-bottom: 1px solid #fff;
+
+  
+}
+.Tabs-container input[type="radio"]:checked + label + .Tab {
+  
+  display: block;
+
+  
+}
+/* theme */
+@media (min-width: 1280px) {
+  .Tabs-container img {/* max-width: 1440px; *//* margin-left: -200px; */
+
+  
+  }
+
+  
+}
 .Designs--portrait .AspectRatio {
   padding-bottom: 200%;
 }

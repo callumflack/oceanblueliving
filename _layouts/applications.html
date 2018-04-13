@@ -1,7 +1,6 @@
 ---
 title: Applications
 layout: default
-image: "/uploads/appl-hero-160812-grinder.jpg"
 ---
 
 {% assign applications = site.pages | where: 'title', 'applications' | first  %}
@@ -9,11 +8,6 @@ image: "/uploads/appl-hero-160812-grinder.jpg"
 <header class="Header Header--light Header--halfRatio" role="banner">
   <div class="AspectRatio AspectRatio--halfHero">
     <div class="AspectRatio-content" style="opacity:0.7;">
-      {% comment %}
-      {% assign image = "/uploads/appl-hero-160812-grinder" %}
-      {% assign absolute = true %}
-      {% include responsive-img.html %}
-      {% endcomment %}
       {% assign image = "uploads/appl-hero-160812-grinder.jpg" %}
       {% include responsive-img-cloudinary.html %}
     </div>
@@ -39,42 +33,49 @@ image: "/uploads/appl-hero-160812-grinder.jpg"
 
 
 
-
-
 <main class="Content" role="main">
-  <section class="Section--top Pathway">
-    <div class="Container Container--text">
-      <div class="Pathway-hgroup">
-        <h1 class="Heading">Screens</h1>
-      </div>
-      <div class="Pathway-text">
-        {{ applications.screens_first_text | markdownify }}
-      </div>
-    </div>
-    <figure class="Section--rg">
-      <div class="carousel carousel--dragger carousel--light">
-        {% for image in applications.screens_carousel_images %}
-          <div class="carousel-cell">
-            <div class="AspectRatio">
-              <div class="AspectRatio-content">
-                {% include responsive-img.html %}
-              </div>
+  <section class="b-py3">
+    <div class="Container">
+      <div class="Tabs-container">
+          
+        <input id="Tab-one" type="radio" name="grp" checked="checked"/>
+        <label for="Tab-one" class="Subheading">Screens</label>
+        <div class="Tab">
+          <div class="Container--text m-xA">
+            <div class="b-py2">
+              {{ applications.screens_first_text | markdownify }}
             </div>
           </div>
-        {% endfor %}
-      </div>
-    </figure>
-    <div class="Container Container--text">
-      <div class="Pathway-text">
-        {{ applications.screens_second_text | markdownify }}
-      </div>
-      <div class="Pathway-action">
-        <a class="Button t-button" href="/design">Design + estimate →</a>
+          <img src="/uploads/appl-screens.png" alt="">
+        </div>
+        
+        <input id="Tab-two" type="radio" name="grp" />
+        <label for="Tab-two" class="Subheading">Gates</label>
+        <div class="Tab">
+          <div class="Container--text m-xA">
+              <div class="b-py2">
+                {{ applications.gates_first_text | markdownify }}
+              </div>
+          </div>
+          <img src="/uploads/appl-gates.png" alt="">
+        </div>
+
+        <input id="Tab-three" type="radio" name="grp" />
+        <label for="Tab-three" class="Subheading">Outdoor</label>
+        <div class="Tab">
+          <div class="Container--text m-xA">
+            <div class="b-py2">
+              {{ applications.outdoor_first_text | markdownify }}
+            </div>
+          </div>
+          <img src="/uploads/appl-outdoor.png" alt="">
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="b-py3">
+  <section class="b-pb3">
     <div class="Container Container--text">
       <hr class="m-t0 b-mb2">
       {% include pathway-primary.html %}
