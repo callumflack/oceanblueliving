@@ -6,160 +6,131 @@ image: "/uploads/designs-hero-160812-dorahy.jpg"
 
 {% assign design = site.pages | where: 'title', 'design' | first  %}
 
-<header class="Header Header--light Header--halfRatio" role="banner">
-    <div class="FlexEmbed">
-        <div class="FlexEmbed-ratio"></div>
-        <div class="FlexEmbed-content" style="opacity:0.1;">
-            {% assign image = "uploads/designs-hero-160812-dorahy.jpg" %}
-            {% include responsive-img-cloudinary.html %}
-            <!-- <div class="u-posAbsoluteCenter CoverImage--dark">&nbsp;</div> -->
-
-        </div>
+<header class="Header" role="banner">
+  <div class="AspectRatio AspectRatio--halfHero">
+    <div class="AspectRatio-content" style="opacity:0.1;">
+      {% assign image = "uploads/designs-hero-160812-dorahy.jpg" %}
+      {% include responsive-img-cloudinary-hero.html %}
     </div>
-    <div class="Header-wrapper">
-        <div class="o-aligner">
-            <div class="o-aligner-item">
-                <div class="Container">
-                    <h1 class="Header-title">
-                        {{ design.hero_headline }}
-                    </h1>
-                </div>
-            </div>
-        </div>
+  </div>
+  <div class="u-absolutePin">
+    <div class="u-flexChildrenCenter">
+      <div class="Container Container--text">
+        <h1 class="Title m-t3">
+          {{ design.hero_headline }}
+        </h1>
+      </div>
     </div>
-    <div class="Header-wrapper">
-        <div class="Header-masthead">
-            <a class="Header-logo" href="/">
-                <img src="/uploads/logo.png" alt="{{ site.title }}">
-            </a>
-        </div>
+  </div>
+  <div class="u-absolutePin">
+    <div class="b-mt1 u-textCenter u-posRelative">
+      <a class="Header-logo" href="/">
+        <img src="/uploads/logo.png" alt="{{ site.title }}">
+      </a>
     </div>
+  </div>
 </header>
 
 <main class="Content" role="main">
-    <section class="Section--top">
-        <div class="Container Container--insetTextColumn">
-            {{ design.content | markdownify }}
-        </div>
-    </section>
-    <section class="Section--top">
-        <div class="Container Container--sm">
-            <div class="Grid Grid--withGutter Grid--alignCenter PortraitDesigns">
+  <section class="b-py3">
+    <div class="Container Container--text">
+      {{ design.content | markdownify }}
+    </div>
+  </section>
+  <section class="b-pb3">
+    <div class="Container">
+      <div class="FlexGrid--designs u-flexJustifyCenter m-xA Designs--portrait">
 
-                {% for image in site.static_files %}
-                    {% if image.path contains 'designs-rg' %}
-                        <div class="Grid-cell u-size1of3 u-sm-size1of6">
-                            <div class="Design-cell">
-                                <div class="FlexEmbed">
-                                    <div class="FlexEmbed-ratio"></div>
-                                    <div class="FlexEmbed-content">
-                                        <div
-                                            class="u-posAbsoluteCenter CoverImage lazyload"
-                                            data-bg="{{ image.path }}">
-                                        </div>
-                                        <!-- <img
-                                            class="u-posAbsoluteCenter FlexEmbed-fitImage lazyload ls-blur"
-                                            alt="{{ alt }}"
-                                            data-src="{{ image.path }}"
-                                            /> -->
-                                    </div>
-                                </div>
-                                <p>{{ image.path | remove:'/designs-rg/' | remove:'.png' | replace: '-', ' ' }}</p>
-                            </div>
-                        </div>
-                    {% endif %}
-                {% endfor %}
-
+        {% for image in site.static_files %}
+          {% if image.path contains 'designs-rg' %}
+            <div class="w-1of3 w-sm-1of6">
+              <div class="Design-cell">
+                <div class="AspectRatio">
+                  <div class="AspectRatio-content">
+                    <div
+                      class="u-absolutePin CoverImage lazyload"
+                      data-bg="{{ image.path }}">
+                    </div>
+                    {% comment %}
+                    <img
+                      class="u-absolutePin AspectRatio-fitImage lazyload ls-blur"
+                      alt="{{ alt }}"
+                      data-src="{{ image.path }}"
+                    />
+                    {% endcomment %}
+                  </div>
+                </div>
+                <p class="Text--xs m-t2 m-b4">{{ image.path | remove:'/designs-rg/' | remove:'.png' | replace: '-', ' ' }}</p>
+              </div>
             </div>
-            <div class="Grid Grid--withGutter Grid--alignCenter">
-                <div class="Grid-cell Grid-cell--center">
-                    <div class="Design-cell Design-cell--wide Design-cell--12across">
-                        <div class="FlexEmbed">
-                            <div class="FlexEmbed-ratio"></div>
-                            <div class="FlexEmbed-content">
-                                <div
-                                    class="u-posAbsoluteCenter CoverImage lazyload"
-                                    data-bg="/designs-wide/Wild-Flowers.png">
-                                </div>
-                            </div>
-                        </div>
-                        <p>Wild Flowers</p>
-                    </div>
+          {% endif %}
+        {% endfor %}
+
+      </div>
+      <div class="FlexGrid--designs u-flexJustifyCenter m-xA ">
+        <div class="w-100">
+          <div class="Design-cell Design-cell--12across">
+            <div class="AspectRatio">
+              <div class="AspectRatio-content">
+                <div
+                  class="u-absolutePin CoverImage lazyload"
+                  data-bg="/designs-wide/Wild-Flowers.png">
                 </div>
-
-                <div class="Grid-cell u-size1of2">
-                    <div class="Design-cell Design-cell--wide Design-cell--4across">
-                        <div class="FlexEmbed">
-                            <div class="FlexEmbed-ratio"></div>
-                            <div class="FlexEmbed-content">
-                                <div
-                                    class="u-posAbsoluteCenter CoverImage lazyload"
-                                    data-bg="/designs-wide/Windy-Branch.png">
-                                </div>
-                            </div>
-                        </div>
-                        <p>Windy Branch</p>
-                    </div>
-                </div>
-
-                <div class="Grid-cell u-size1of2">
-                    <div class="Design-cell Design-cell--wide Design-cell--4across">
-                        <div class="FlexEmbed">
-                            <div class="FlexEmbed-ratio"></div>
-                            <div class="FlexEmbed-content">
-                                <div
-                                    class="u-posAbsoluteCenter CoverImage lazyload"
-                                    data-bg="/designs-wide/Bottlebrush.png">
-                                </div>
-                            </div>
-                        </div>
-                        <p>Bottlebrush</p>
-                    </div>
-                </div>
-
-                <div class="Grid-cell Grid-cell--center u-size1of2">
-                    <div class="Design-cell Design-cell--wide Design-cell--4across">
-                        <div class="FlexEmbed">
-                            <div class="FlexEmbed-ratio"></div>
-                            <div class="FlexEmbed-content">
-                                <div
-                                    class="u-posAbsoluteCenter CoverImage lazyload"
-                                    data-bg="/designs-wide/Dandelion.png">
-                                </div>
-                            </div>
-                        </div>
-                        <p>Dandelion</p>
-                    </div>
-                </div>
-
-                <!-- <div class="Grid-cell Grid-cell--center u-sm-size6of12">
-                    <div class="Design-cell Design-cell--3across">
-                        <div class="FlexEmbed">
-                            <div class="FlexEmbed-ratio"></div>
-                            <div class="FlexEmbed-content">
-                                <div
-                                    class="u-posAbsoluteCenter CoverImage lazyload"
-                                    data-bg="/designs-wide/Australian-Bush.png">
-                                </div>
-                            </div>
-                        </div>
-                        <p>Australian Bush</p>
-                    </div>
-                </div> -->
-
+              </div>
             </div>
+            <p class="Text--xs m-t2 m-b4">Wild Flowers</p>
+          </div>
         </div>
-    </section>
 
-
-
-
-
-
-
-    <section class="Section--cta">
-        <div class="Container Container--text">
-            {% include pathway-primary.html %}
+        <div class="w-1of2">
+          <div class="Design-cell Design-cell--4across">
+            <div class="AspectRatio">
+              <div class="AspectRatio-content">
+                <div
+                  class="u-absolutePin CoverImage lazyload"
+                  data-bg="/designs-wide/Windy-Branch.png">
+                </div>
+              </div>
+            </div>
+            <p class="Text--xs m-t2 m-b4">Windy Branch</p>
+          </div>
         </div>
-    </section>
+
+        <div class="w-1of2">
+          <div class="Design-cell Design-cell--4across">
+            <div class="AspectRatio">
+              <div class="AspectRatio-content">
+                <div
+                  class="u-absolutePin CoverImage lazyload"
+                  data-bg="/designs-wide/Bottlebrush.png">
+                </div>
+              </div>
+            </div>
+            <p class="Text--xs m-t2 m-b4">Bottlebrush</p>
+          </div>
+        </div>
+
+        <div class="w-1of2">
+          <div class="Design-cell Design-cell--4across">
+            <div class="AspectRatio">
+              <div class="AspectRatio-content">
+                <div
+                  class="u-absolutePin CoverImage lazyload"
+                  data-bg="/designs-wide/Dandelion.png">
+                </div>
+              </div>
+            </div>
+            <p class="Text--xs m-t2 m-b4">Dandelion</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="b-pb3">
+    <div class="Container Container--text">
+      <hr class="m-t0 b-mb2">
+      {% include pathway-primary.html %}
+    </div>
+  </section>
 </main>

@@ -1,0 +1,28 @@
+/* https://codepen.io/desandro/pen/QwQbQJ */
+
+.gallery-cell {
+  width: 100%;
+}
+
+/* Fade CSS */
+
+.flickity-slider {
+  transform: none !important;
+}
+
+.gallery-cell {
+  left: 0 !important;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out 0.3s;
+  z-index: 1;
+}
+
+.gallery-cell.is-selected {
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+  z-index: 2;
+}
+
+.flickity-prev-next-button {
+  z-index: 3;
+}

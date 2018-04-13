@@ -1,0 +1,36 @@
+/* 
+
+  https://www.smashingmagazine.com/2013/02/setting-weights-and-styles-at-font-face-declaration/#unique-font-family-names-matching-weights-and-styles 
+
+*/
+
+@font-face {
+  font-family: var(--ff-text-light);
+  font-style: normal;
+  font-weight: 200;
+  src: url("/public/fonts/Calibre-Light.woff") format("woff");
+}
+@font-face {
+  font-family: var(--ff-text-regular);
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/fonts/Calibre-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: var(--ff-text-medium);
+  font-style: normal;
+  font-weight: 500;
+  src: url("/public/fonts/Calibre-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: var(--ff-text-semibold);
+  font-style: normal;
+  font-weight: 600;
+  src: url("/public/fonts/Calibre-Semibold.woff") format("woff");
+}
+@font-face {
+  font-family: var(--ff-heading);
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/fonts/Akkurat-Mono.woff") format("woff");
+}

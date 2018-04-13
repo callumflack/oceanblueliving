@@ -1,0 +1,10 @@
+.TypeScope {
+  & p + h3 {
+  }
+
+  & p {
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom: 0;
+  }
+}

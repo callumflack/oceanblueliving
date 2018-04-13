@@ -1,0 +1,54 @@
+/* 
+
+  The web is typography.
+
+  1. font-feature-settings from http://fadeyev.net 
+
+*/
+
+html {
+  background-color: var(--c-brand);
+  color: var(--c-text);
+  font-family: var(--ff-stack-sans);
+  font-family: var(--ff-text-regular), var(--ff-stack-sans);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: var(--fls-regular);
+  line-height: var(--flh-regular);
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+@define-mixin responsive-scale {
+  font-size: 0.833333333rem !important; /*15pt*/
+
+  @media (max-width: 320px) {
+    font-size: 0.722222222rem !important; /*13pt*/
+  }
+  @media (--sm) {
+    font-size: 0.888888889rem !important; /*16pt*/
+  }
+  @media (--md) {
+    font-size: 0.944444444rem !important; /*17pt*/
+  }
+  @media (--lg) {
+    font-size: 1rem !important; /*18pt*/
+  }
+}
+
+body,
+.TypeScopeReset {
+  @mixin responsive-scale;
+}
+
+body {
+  text-align: left;
+}
+
+/* used to allow end-paper effect on scroll */
+.Page {
+  background-color: var(--c-bg);
+}

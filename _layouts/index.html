@@ -17,45 +17,60 @@ FYI: old way of adding a responsive image:
 {% assign about        = site.home | where: 'title', 'about' | first  %}
 
 <header class="Header" role="banner">
-  <div class="Gallery">
+  <!-- <div class="Gallery">
     <div class="Gallery-body">
-      <div class="Gallery-items js-gallery">
+      <div class="Gallery-items js-flickity">
         {% for image in header.gallery-images %}
           <div class="Gallery-cell">
-            <div class="FlexEmbed">
-              <div class="FlexEmbed-ratio"></div>
-              <div class="FlexEmbed-content">
+            <div class="AspectRatio AspectRatio--hero">
+              <div class="AspectRatio-content">
                 {% include responsive-img-cloudinary-hero.html %}
               </div>
-              <div class="FlexEmbed-content CoverImage--dark">&nbsp;</div>
+              <div class="AspectRatio-content CoverImage--dark">&nbsp;</div>
             </div>
           </div>
         {% endfor %}
       </div>
     </div>
+  </div> -->
+  <div 
+    class="gallery js-flickity" 
+    data-flickity='{ "prevNextButtons": false, "pageDots": false, "draggable": false, "autoPlay": 4000 }'
+  >
+    {% for image in header.gallery-images %}
+      <div class="gallery-cell">
+        <div class="AspectRatio AspectRatio--hero">
+          <div class="AspectRatio-content">
+            {% include responsive-img-cloudinary-hero.html %}
+          </div>
+          <div class="AspectRatio-content CoverImage--dark">&nbsp;</div>
+        </div>
+      </div>
+    {% endfor %}
   </div>
-  <div class="u-absolutePin">
+  
+  <div class="u-absolutePin" style="z-index:999">
     <div class="u-flexChildrenCenter">
       <div class="Container Container--text">
-        <h1 class="Title Title--reversed">
+        <h1 class="Title Title--reversed m-t3">
           {{ header.hero_headline }}
         </h1>
       </div>
     </div>
   </div>
-  <div class="u-absolutePin">
-    <div class="b-mt2 u-textCenter u-posRelative">
+  <div class="u-absolutePin" style="z-index:999">
+    <div class="b-mt1 u-textCenter u-posRelative">
       <a class="Header-logo" href="/">
-        <img src="uploads/logo-white.png" alt="{{ site.title }}">
+        <img src="/uploads/logo-white.png" alt="{{ site.title }}">
       </a>
     </div>
   </div>
 </header>
 
 <main class="" role="main">
-    <section class="b-py4">
+    <section class="b-py3">
       <div class="Container Container--text m-b5">
-        <div class="m-b5">
+        <div class="m-b4">
           <figure class="u-icon u-icon--lg m-b3 u-textCenter w-100">
             <svg version="1.1" viewbox="0 0 54 54">
               {% include icons/services.html %}
@@ -68,7 +83,7 @@ FYI: old way of adding a responsive image:
       
       <div class="Container Container--lg">
         <div class="FlexGrid--categoryButtons m-b5">
-          <div class="u-size1of3">
+          <div class="w-sm-1of3">
             <a href="/applications" class="Category-button">
               <div class="Category-image">
                 {% assign image = "uploads/obl-screen-hillviewcres-purplepool-detail.jpg" %}
@@ -77,7 +92,7 @@ FYI: old way of adding a responsive image:
               <h2 class="Subheading m-y3">Screens</h2>
             </a>
           </div>
-          <div class="u-size1of3">
+          <div class="w-sm-1of3">
             <a href="/applications" class="Category-button">
               <div class="Category-image">
                 {% assign image = "uploads/obl-gate-midshipst-portrait-detail.jpg" %}
@@ -86,7 +101,7 @@ FYI: old way of adding a responsive image:
               <h2 class="Subheading m-y3">Gates</h2>
             </a>
           </div>
-          <div class="u-size1of3">
+          <div class="w-sm-1of3">
             <a href="/applications" class="Category-button">
               <div class="Category-image">
                 {% assign image = "uploads/obl-outdoor-midshipst-portrait-firepit.jpg" %}
@@ -122,9 +137,9 @@ FYI: old way of adding a responsive image:
                     <div class="Gallery-items js-galleryWithCount">
                         {% for image in applications.gallery-images %}
                             <div class="Gallery-item">
-                                <div class="FlexEmbed">
-                                    <div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"></div>
-                                    <div class="FlexEmbed-content">
+                                <div class="AspectRatio">
+                                    <div class="AspectRatio-ratio AspectRatio-ratio--16by9"></div>
+                                    <div class="AspectRatio-content">
                                         {% include responsive-img-cloudinary.html %}
                                     </div>
                                 </div>
@@ -140,12 +155,12 @@ FYI: old way of adding a responsive image:
         </div>
     </section>
     
-    <section class="b-py4Top Pathway Pathway--rev">
+    <section class="b-py3 Top Pathway Pathway--rev">
         <div class="Container Container--text">
             <div class="Pathway-hgroup">
                 <figure class="Pathway-icon">
                     <svg class="Icon Icon--lg u-colorWhite">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-estimate"></use>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-estimate"></use>
                     </svg>
                 </figure>
                 <h1 class="Pathway-title">{{ design.headline }}</h1>
@@ -160,7 +175,7 @@ FYI: old way of adding a responsive image:
     </section>
     {% endcomment %}
     
-    <section class="b-py4 bg-neutralAlt">
+    <section class="b-py3 bg-neutralAlt">
       <div class="Container Container--text">
         <div class="m-b5">
           <figure class="u-icon u-icon--lg m-b3 u-textCenter w-100">
@@ -173,9 +188,8 @@ FYI: old way of adding a responsive image:
       </div>
       <div class="Container p-msm-x0">
         <figure class="m-b5">
-          <div class="FlexEmbed">
-            <div class="FlexEmbed-ratio FlexEmbed-ratio--4by3"></div>
-            <div class="FlexEmbed-content">
+          <div class="AspectRatio AspectRatio--4x3">
+            <div class="AspectRatio-content">
               {% assign image = "uploads/home-about-160812-duo.jpg" %}
               {% assign alt = "Vince and LeaAnne Cassiniti" %}
               {% include responsive-img-cloudinary.html %}
@@ -193,45 +207,44 @@ FYI: old way of adding a responsive image:
 
     <!-- blog -->
     <section class="Section u-bgBrandLightDarkened">
-        {% for post in site.posts | limit: 1 %}
-            <a href="{{ post.url }}">
-                <article class="Post--article">
-                    <header class="Header Header--fullRatio Header--rev">
-                        <div class="FlexEmbed">
-                            <div class="FlexEmbed-ratio"></div>
-                            <div class="FlexEmbed-content">
-                                {% assign image = post.hero_image %}
-                                {% include responsive-img-cloudinary-hero.html %}
-                            </div>
-                            <div class="FlexEmbed-content CoverImage--screen">&nbsp;</div>
-                        </div>
-                        <div class="u-absolutePin">
-                          <div class="u-flexChildrenCenter">
-                            <div class="Container Container--xs">
-                              <figure class="u-icon u-icon--lg c-bg m-b3 u-textCenter w-100">
-                                <svg version="1.1" viewbox="0 0 54 54">
-                                  {% include icons/blog.html %}
-                                </svg>
-                              </figure>
-                              <h1 class="Heading c-bg">The Ocean Blue blog.</h1>
-                              <hr class="bg-bg m-y4">
-                              <h1 class="Heading c-bg">{{ post.title }}</h1>
-                              <div class="Post-meta">
-                                {% comment %}
-                                {% for tag in page.tags %}
-                                    <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a>
-                                {% endfor %}
-                                {% endcomment %}
-                                <span class="Post-tag">{{ post.tags | first | capitalize }}</span>
-                                &nbsp;&nbsp;|&nbsp;&nbsp;
-                                <span class="Post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </header>
-                </article>
-            </a>
-        {% endfor %}
+      {% for post in site.posts | limit: 1 %}
+        <a href="{{ post.url }}">
+          <article class="Post--article">
+            <header class="Header Header--rev">
+              <div class="AspectRatio AspectRatio--hero">
+                <div class="AspectRatio-content">
+                  {% assign image = post.hero_image %}
+                  {% include responsive-img-cloudinary-hero.html %}
+                </div>
+                <div class="AspectRatio-content CoverImage--screen">&nbsp;</div>
+              </div>
+              <div class="u-absolutePin">
+                <div class="u-flexChildrenCenter">
+                  <div class="Container Container--xs">
+                    <figure class="u-icon u-icon--lg c-bg m-b3 u-textCenter w-100">
+                      <svg version="1.1" viewbox="0 0 54 54">
+                        {% include icons/blog.html %}
+                      </svg>
+                    </figure>
+                    <h1 class="Heading c-bg">The OceanBlue blog</h1>
+                    <hr class="bg-bg m-y4">
+                    <h1 class="Heading c-bg">{{ post.title }}</h1>
+                    <div class="Post-meta c-bg u-textCenter">
+                      {% comment %}
+                      {% for tag in page.tags %}
+                          <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a>
+                      {% endfor %}
+                      {% endcomment %}
+                      <span class="Post-tag">{{ post.tags | first | capitalize }}</span>
+                      &nbsp;&nbsp;|&nbsp;&nbsp;
+                      <span class="Post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </article>
+        </a>
+      {% endfor %}
     </section>
 </main>

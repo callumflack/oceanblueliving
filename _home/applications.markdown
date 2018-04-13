@@ -2,7 +2,7 @@
 title: applications
 date: 2016-06-02 10:46:00 +10:00
 position: 1
-headline: Durable. Functional. Beautiful.
+headline: Durable, functional, beautiful
 button: See all we do →
 gallery-images:
 - home-appl-160812-corellast.jpg

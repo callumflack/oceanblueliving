@@ -6,86 +6,70 @@ image: uploads/blog-hero-160812-barriersolutions.jpg
 
 {% assign blog = site.pages | where: 'title', 'blog' | first  %}
 
-<header class="Header Header--halfRatio Header--rev" role="banner">
-    <div class="FlexEmbed">
-        <div class="FlexEmbed-ratio"></div>
-        <div class="FlexEmbed-content">
-            {% comment %}
-            {% assign image = "/uploads/blog-hero-160812-barriersolutions" %}
-            {% assign absolute = true %}
-            {% include responsive-img.html %}
-            {% endcomment %}
-            {% assign image = "uploads/blog-hero-160812-barriersolutions.jpg" %}
-            {% include responsive-img-cloudinary.html %}
-            <div class="u-posAbsoluteCenter CoverImage--dark">&nbsp;</div>
-
-        </div>
+<header class="Header" role="banner">
+  <div class="AspectRatio AspectRatio--halfHero">
+    <div class="AspectRatio-content">
+      {% comment %}
+      {% assign image = "/uploads/blog-hero-160812-barriersolutions" %}
+      {% assign absolute = true %}
+      {% include responsive-img.html %}
+      {% endcomment %}
+      {% assign image = "uploads/blog-hero-160812-barriersolutions.jpg" %}
+      {% include responsive-img-cloudinary.html %}
+      <div class="u-posAbsoluteCenter CoverImage--dark">&nbsp;</div>
     </div>
-    <div class="Header-wrapper">
-        <div class="o-aligner">
-            <div class="o-aligner-item">
-                <div class="Container Container--withHero">
-                    <h1 class="Header-title">
-                        {{ blog.hero_headline }}
-                    </h1>
-                </div>
-            </div>
-        </div>
+  </div>
+  <div class="u-absolutePin">
+    <div class="u-flexChildrenCenter">
+      <div class="Container Container--text">
+        <h1 class="Title Title--reversed m-t3">
+          {{ blog.hero_headline }}
+        </h1>
+      </div>
     </div>
-    <div class="Header-wrapper">
-        <div class="Header-masthead">
-            <a class="Header-logo" href="/">
-                <img src="/uploads/logo-white.png" alt="{{ site.title }}">
-            </a>
-        </div>
+  </div>
+  <div class="u-absolutePin">
+    <div class="b-mt1 u-textCenter u-posRelative">
+      <a class="Header-logo" href="/">
+        <img src="/uploads/logo-white.png" alt="{{ site.title }}">
+      </a>
     </div>
+  </div>
 </header>
 
 
 
 <main class="Content" role="main">
-    <section class="Section--top">
-        <div class="Container Container--blog">
-            <div class="Grid Grid--withFullGutterLg Grid--alignCenter">
+  <section class="b-py3">
+    <div class="Container Container--super">
+      <div class="FlexGrid--lg u-flexJustifyCenter">
 
-                {% for post in site.posts %}
-                <div class="Grid-cell u-xs-size1of2 u-lg-size1of3">
-                    <a class="Post--inList" href="{{ post.url }}">
-                        <div class="Post-contentAligner">
-                            <figure class="Post-image">
-                                {% comment %}
-                                {% assign imagePath = "/uploads/post-list-" %}
-                                <img
-                                    class="lazyload ls-blur"
-                                    alt="{{ post.title }}"
-                                    src="{{ imagePath }}{{ post.slug }}-src.jpg"
-                                    data-sizes="auto"
-                                    data-srcset="
-                                        {{ imagePath }}{{ post.slug }}-src.jpg 300w,
-                                        {{ imagePath }}{{ post.slug }}-xs.jpg 900w,
-                                        {{ imagePath }}{{ post.slug }}.jpg 1800w"
-                                    />
-                                {% endcomment %}
-                                {% assign image = post.hero_image %}
-                                {% include responsive-img-cloudinary.html %}
-                            </figure>
-                            <h1 class="Post-subtitle">{{ post.title }}</h1>
-                            <div class="Post-meta">
-                                {% for tag in post.tags %}
-                                    <span class="Post-tag">{{ tag | capitalize }}</span>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </a>
-                </div>
+        {% for post in site.posts %}
+        <div class="PostButton w-xs-1of2 w-lg-1of3">
+          <a class="" href="{{ post.url }}">
+            <div class="PostButton-content">
+              <figure class="PostButton-image">
+                {% assign image = post.hero_image %}
+                {% include responsive-img-cloudinary.html %}
+              </figure>
+              <h1 class="Subheading u-textLeft m-t3">{{ post.title }}</h1>
+              <div class="Post-meta">
+                {% for tag in post.tags %}
+                    <span class="Post-tag">{{ tag | capitalize }}</span>
                 {% endfor %}
-
+              </div>
             </div>
+          </a>
         </div>
-    </section>
-    <section class="Section--cta">
-        <div class="Container Container--text">
-            {% include pathway-newsletter.html %}
-        </div>
-    </section>
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+  <section class="b-pb3">
+    <div class="Container Container--text">
+      <hr class="m-t0 b-mb2">
+      {% include pathway-newsletter.html %}
+    </div>
+  </section>
 </main>

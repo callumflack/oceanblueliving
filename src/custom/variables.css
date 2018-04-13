@@ -1,0 +1,194 @@
+/* eslint-disable */
+/* prettier-ignore */
+
+:root {
+  /* 
+
+    Media queries 
+
+   */
+
+  /* @custom-media --mobile-only (max-width: 35rem);
+  @custom-media --tablet (min-width: 35rem);
+  @custom-media --tablet-only (min-width: 35rem) and (max-width: 54rem);
+  @custom-media --tablet-down (max-width: 54rem);
+  @custom-media --desktop (min-width: 54rem);
+  @custom-media --super (min-width: 100rem); */
+
+  @custom-media --sm (min-width: 512px);
+  @custom-media --md (min-width: 768px);
+  @custom-media --lg (min-width: 1280px);
+  @custom-media --xl (min-width: 1600px);
+
+  /* 
+
+    Space scale
+
+   */
+  
+  --s-0: 0;
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 1rem;
+  --s-3a: 1.5rem;
+  --s-4: 2rem;
+  --s-5: 4rem;
+  --s-6: 8rem;
+  --s-7: 16rem;
+
+  --space: 1rem;
+  --gridSpace: 1rem;
+  --sm-gridSpace: 0.5rem;
+
+  /* 
+
+    Colors
+
+   */
+
+  --c-brand: #030d18;
+  --c-brandLight: #174170;
+  --c-brandHover: hsl(288, 100%, 40%);
+  --c-brandHover: #9bbbdc;
+  --c-brandMedium: hsl(288, 100%, 35%);
+  --c-brandComplement: #6EBE44;
+  --c-brandCounter: #F7FCFF;
+
+  --c-black: hsl(0, 0%, 3%);
+  --c-ash: hsl(213, 11%, 8%);
+  --c-text: hsl(0, 0%, 12%);
+  --c-textLight: hsl(0, 0%, 60%);
+  --c-gray: hsl(0, 0%, 60%);
+  --c-muted: hsl(0, 0%, 75%);
+  --c-rule: hsl(0, 0%, 90%);
+  --c-border: hsl(0, 0%, 93%);
+  --c-neutral: #F3F2F1;
+  --c-neutralAlt: rgba(23, 65, 112, 0.05);
+  --c-neutralAlt: rgb(241, 243, 246);
+  --c-whitesmoke: hsl(200, 23%, 97%);
+  --c-bg: #fdfdfd;
+  --c-white: white;
+  
+  --c-danger: hsl(352, 95%, 61%);
+  --c-success: hsl(158, 73%, 48%);
+  
+  --c-inputHover: var(--c-success);
+  --c-inputFocus: var(--c-success);
+
+  --initialBlendColor: rgba(97, 22, 106, 0.7);
+  
+  /* neutral-dark               : darken(#f0eeeb, 9%),
+  neutral-light              : lighten(#f0eeeb, 4%), */
+  
+
+  /* 
+  
+    Fields
+  
+   */
+
+  --field-height: 3rem;
+
+  /* 
+  
+    Radii
+  
+   */
+
+  --border-radius: 4px;
+
+  /* 
+  
+    Fonts
+  
+   */
+
+  --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
+  --ff-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;  
+  --ff-stack-heading: 'Courier New', 'Consolas', 'Andale Mono', 'Lucida San Typewriter', 'Lucida Console', mono-spaced;
+
+  --ff-text-light: "Calibre-Light";
+  --ff-text-regular: "Calibre-Regular";
+  --ff-text-medium: "Calibre-Medium";
+  --ff-text-semibold: "Calibre-Semibold";
+
+  --ff-heading: "Akkurat-Mono";
+
+  /* 
+
+    Font weights
+
+   */
+
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+/* 
+
+    Font sizes
+
+   */
+
+  --fs-text-unit: 1.3125;
+  --fs-text: 1.3125em;
+  
+  --fs-textXs: 0.9375em;
+  --fs-textSm: 1.125em;
+  --fs-textMd: calc(var(--fs-text-unit) * 1.3125em);
+  --fs-textLg: calc(var(--fs-text-unit) * 1.75em);
+  
+  --fs-subheading: 1.5625em;
+  --fs-heading: 1.75em;
+  --fs-title: calc(var(--fs-text-unit) * 1.75em);
+  --fs-title: 2em;
+
+
+  /* 
+
+    Font line-height (leading) & letter-spacing (tracking)
+
+   */
+
+  --flh-super: 0.9;
+  --flh-tight: 1.15;
+  --flh-regular: 1.5;
+  --flh-loose: 1.7;
+  
+  --fls-tight: -0.02em;
+  --fls-touch: -0.0025em;
+  --fls-regular: 0.0075em;
+  --fls-loose: 0.05em;
+
+  /* 
+
+    Transitions
+
+   */
+
+  --speed: 0.15s;
+  --easing: ease-out;
+  --thisalso: cubic-bezier(0.19, 1, 0.22, 1);
+  
+  /* cubic-static : cubic-bezier(0, -0.1, 1, -0.1),
+  cubic-state  : cubic-bezier(0, 1.1, 1, 1.1), */
+
+  /* 
+
+    Utility vars
+
+   */
+
+  --inlineBlockChildrenSpace: calc(1.25 * var(--s-3));
+  --progressHeight: 32px;
+
+  /* 
+
+    Theme vars
+
+   */
+
+  
+}

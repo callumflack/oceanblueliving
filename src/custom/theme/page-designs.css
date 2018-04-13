@@ -1,0 +1,15 @@
+.Designs--portrait .AspectRatio {
+  padding-bottom: 200%;
+}
+
+.Design-cell--3across .AspectRatio {
+  padding-bottom: 66.666666667%;
+}
+
+.Design-cell--4across .AspectRatio {
+  padding-bottom: 50%;
+}
+
+.Design-cell--12across .AspectRatio {
+  padding-bottom: 22.5%;
+}

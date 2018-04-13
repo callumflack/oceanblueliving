@@ -3,128 +3,70 @@ layout: default
 ---
 
 <article class="Post--article" role="main">
-    
-    <header class="Header Header--light Header--halfRatioHeightPadding" role="banner">
-        {% comment %}
-        <div class="FlexEmbed">
-            <div class="FlexEmbed-ratio"></div>
-            <div class="FlexEmbed-content">
-                {% assign image = "blog-hero-160812-barriersolutions.jpg" %}
-                {% include responsive-img-cloudinary-halfHero.html %}
-                <div class="u-posAbsoluteCenter CoverImage--dark">&nbsp;</div>
-
+  <header class="Header" role="banner">
+    <div class="AspectRatio AspectRatio--halfHero">
+      <div class="u-absolutePin">
+        <div class="u-flexChildrenCenter">
+          <div class="Container Container--text">
+            <h1 class="Title m-t5">
+              {{ page.title }}
+            </h1>
+            <div class="Post-meta u-textCenter">
+              {% for tag in page.tags %}
+                <!-- <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a> -->
+                <span class="Post-tag">{{ tag | capitalize }}</span>
+              {% endfor %}
+              &nbsp;&nbsp;|&nbsp;&nbsp;
+              <span class="Post-date">{{ page.date | date: "%B %d, %Y" }}</span>
             </div>
+          </div>
         </div>
-        {% endcomment %}
-        <div class="Header-wrapper">
-            <div class="o-aligner">
-                <div class="o-aligner-item">
-                    <div class="Container Container--withHero">
-                        <h1 class="Post-title">{{ page.title }}</h1>
-                        <div class="Post-meta">
-                            {% for tag in page.tags %}
-                                <!-- <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a> -->
-                                <span class="Post-tag">{{ tag | capitalize }}</span>
-                            {% endfor %}
-                            &nbsp;&nbsp;|&nbsp;&nbsp;
-                            <span class="Post-date">{{ page.date | date: "%B %d, %Y" }}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="u-absolutePin">
+        <div class="b-mt1 u-textCenter u-posRelative">
+          <a class="Header-logo" href="/">
+            <img src="/uploads/logo.png" alt="{{ site.title }}">
+          </a>
         </div>
-        <div class="Header-wrapper">
-            <div class="Header-masthead">
-                <a class="Header-logo" href="/">
-                    <img src="/uploads/logo.png" alt="{{ site.title }}">
-                </a>
-            </div>
-        </div>
-    </header>
-
-    {% comment %}
-    <section class="Section">
-        <div class="Container Container--text">
-            <div class="Post-header">
-                <div class="Post-meta">
-                    {% for tag in page.tags %}
-                        <!-- <a class="Post-tag" href="/blog/tags/{{ tag | downcase | replace:' ','+' }}">{{ tag | capitalize }}</a> -->
-                        <span class="Post-tag">{{ tag | capitalize }}</span>
-                    {% endfor %}
-                    &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <span class="Post-date">{{ page.date | date: "%B %d, %Y" }}</span>
-                </div>
-                <h1 class="Post-title">{{ page.title }}</h1>
-            </div>
-        </div>
-    </section>
-    {% endcomment %}
-
-    <div class="FlexEmbed">
-        <div class="FlexEmbed-ratio"></div>
-        <div class="FlexEmbed-content">
-            {% comment %}
-            
-            Alt methods:
-            
-            {% assign imagePath = "/uploads/post-" %}
-            <img
-                class="FlexEmbed-fitImage lazyload ls-blur"
-                alt="{{ alt }}"
-                src="{{ imagePath }}{{ page.slug }}-src.jpg"
-                data-srcset="{{ imagePath }}{{ page.slug }}-src.jpg 300w, {{ imagePath }}{{ page.slug }}-xs.jpg 900w, {{ imagePath }}{{ page.slug }}.jpg 1800w"
-                data-sizes="auto"
-                />
-                
-            Or:
-                
-                {% capture image %}post-{{ page.slug }}.jpg{% endcapture %}
-            {% endcomment %}
-            
-            {% assign image = page.hero_image %}
-            {% include responsive-img-cloudinary-hero.html %}
-        </div>
+      </div>
     </div>
+  </header>
 
-    <section class="Section--top">
-        <div class="Container Container--text">
+  <div class="AspectRatio AspectRatio--hero">
+    <div class="AspectRatio-content">
+      {% assign image = page.hero_image %}
+      {% include responsive-img-cloudinary-hero.html %}
+    </div>
+  </div>
 
-            {{ content }}
+  <section class="b-py3">
+    <div class="Container Container--text">
 
-            {% comment %}
-            <h3 class="Headline--minor u-marginT3">Author</h3>
-            <p class="Post-author">{{ page.author }}</p>
-            {% endcomment %}
-            <section class="Section--afterArticleBlock">
-                <div class="Grid">
-                    <div class="Grid-cell u-size1of2">
-                        <h3 class="Headline--minor">Share this</h3>
-                        {% include share.html %}
-                    </div>
-                    <div class="Grid-cell u-size1of2 u-textRight">
-                        <a class="Headline--minor" href="/blog">View all posts →</a>
-                    </div>
-                </div>
-                
-            </section>
-            {% comment %}
-            <h3 class="Headline--minor">Share this</h3>
-            {% include share.html %}
-            <h3 class="Headline--minor u-marginT3">View all posts →</h3>
-            <a class="" href="/blog">
-                <svg class="Icon Icon--lg Icon--textAlign u-colorBrandLight">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-blog"></use>
-                </svg>
-            </a>
-            {% endcomment %}
+      {{ content }}
 
+      {% comment %}
+      <h3 class="Text--meta c-gray u-marginT3">Author</h3>
+      <p class="Post-author">{{ page.author }}</p>
+      {% endcomment %}
+      <div class="b-mt2">
+        <div class="FlexGrid">
+          <div class="u-flex u-flexJustifyCenter u-sm-flexJustifyStart">
+            <span class="Text--meta c-gray">Share this</span>
+            {% include pathway-share.html %}
+          </div>
+          <div class="u-textCenter u-sm-textRight m-t3 m-sm-t0">
+            <a class="Text--meta c-gray" href="/blog">View all posts →</a>
+          </div>
         </div>
-    </section>
-
+      </div>
+      
+    </div>
+  </section>
 </article>
 
-<section class="Section--cta">
-    <div class="Container Container--text">
-        {% include pathway-newsletter.html %}
-    </div>
+<section class="b-pb3">
+  <div class="Container Container--text">
+    <hr class="m-t0 b-mb2">
+    {% include pathway-newsletter.html %}
+  </div>
 </section>

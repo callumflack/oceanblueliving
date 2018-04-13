@@ -1,0 +1,52 @@
+:root {
+  --Container-max-width: 1120px;
+  --Container-max-width-xs: 500px;
+  --Container-max-width-sm: 600px;
+  --Container-max-width-md: 768px;
+  --Container-max-width-hero: 1440px;
+}
+
+@define-mixin Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--Container-max-width);
+  padding-left: var(--s-3a);
+  padding-right: var(--s-3a);
+  width: 100%;
+}
+
+@define-mixin Container--hero {
+  max-width: var(--Container-max-width-hero);
+}
+
+@define-mixin Container--text {
+  max-width: var(--Container-max-width-sm);
+}
+
+@define-mixin Container--xs {
+  max-width: var(--Container-max-width-xs);
+}
+
+.Container {
+  @mixin Container;
+}
+
+/* THEME */
+
+.Container--super {
+  max-width: 100%;
+  padding: 0 10vw;
+}
+
+.Container--hero {
+  @mixin Container--hero;
+  padding: 0;
+}
+
+.Container--text {
+  @mixin Container--text;
+}
+
+.Container--xs {
+  @mixin Container--xs;
+}
