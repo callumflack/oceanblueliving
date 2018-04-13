@@ -24,7 +24,7 @@
   position: relative;
   width: 100%;
 
-  @media (--md) {
+  @media (--lg) {
     height: var(--categoryButtonHeight);
   }
 }

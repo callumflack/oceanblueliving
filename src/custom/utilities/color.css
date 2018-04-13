@@ -26,6 +26,9 @@
 .c-gray {
   color: var(--c-gray) !important;
 }
+.c-muted {
+  color: var(--c-muted) !important;
+}
 .c-border {
   color: var(--c-border) !important;
 }

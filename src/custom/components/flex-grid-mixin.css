@@ -59,6 +59,20 @@
   }
 }
 
+.FlexGrid--socialButtons {
+  @mixin flexGrid 1, auto, var(--s-3);
+
+  & div + div {
+    margin-top: var(--s-4);
+  }
+
+  @media (--sm) {
+    & div + div {
+      margin-top: 0;
+    }
+  }
+}
+
 .FlexGrid--designs {
   @mixin flexGrid 0, auto, var(--s-3);
   flex-direction: row;

@@ -1,14 +1,13 @@
 .Footer-author {
-  bottom: 6rem;
-  color: var(--c-gray);
+  color: var(--c-muted);
   position: absolute;
-  right: -2rem;
   transform: rotate(-90deg);
 
+  top: 5rem;
+  right: -3rem;
+
   @media (--sm) {
-    bottom: 5rem;
-  }
-  @media (--lg) {
-    bottom: 7rem;
+    top: auto;
+    bottom: 6rem;
   }
 }

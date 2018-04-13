@@ -24,16 +24,16 @@
     box-shadow: initial;
     color: var(--c-brand);
     bottom: auto;
-    top: var(--s-5);
-    right: var(--s-5);
-
-    & button {
-      color: var(--c-brand);
-    }
+    top: var(--s-4);
 
     &.is-reversedOut button {
       color: var(--c-bg);
     }
+  }
+
+  @media (--lg) {
+    top: var(--s-5);
+    right: var(--s-5);
   }
 }
 

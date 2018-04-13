@@ -17,22 +17,6 @@ FYI: old way of adding a responsive image:
 {% assign about        = site.home | where: 'title', 'about' | first  %}
 
 <header class="Header" role="banner">
-  <!-- <div class="Gallery">
-    <div class="Gallery-body">
-      <div class="Gallery-items js-flickity">
-        {% for image in header.gallery-images %}
-          <div class="Gallery-cell">
-            <div class="AspectRatio AspectRatio--hero">
-              <div class="AspectRatio-content">
-                {% include responsive-img-cloudinary-hero.html %}
-              </div>
-              <div class="AspectRatio-content CoverImage--dark">&nbsp;</div>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div> -->
   <div 
     class="gallery js-flickity" 
     data-flickity='{ "prevNextButtons": false, "pageDots": false, "draggable": false, "autoPlay": 4000 }'
@@ -49,7 +33,7 @@ FYI: old way of adding a responsive image:
     {% endfor %}
   </div>
   
-  <div class="u-absolutePin" style="z-index:999">
+  <div class="u-absolutePin" style="z-index:8">
     <div class="u-flexChildrenCenter">
       <div class="Container Container--text">
         <h1 class="Title Title--reversed m-t3">
@@ -58,7 +42,7 @@ FYI: old way of adding a responsive image:
       </div>
     </div>
   </div>
-  <div class="u-absolutePin" style="z-index:999">
+  <div class="u-absolutePin" style="z-index:8">
     <div class="b-mt1 u-textCenter u-posRelative">
       <a class="Header-logo" href="/">
         <img src="/uploads/logo-white.png" alt="{{ site.title }}">
@@ -71,7 +55,7 @@ FYI: old way of adding a responsive image:
     <section class="b-py3">
       <div class="Container Container--text m-b5">
         <div class="m-b4">
-          <figure class="u-icon u-icon--lg m-b3 u-textCenter w-100">
+          <figure class="u-icon u-icon--lg m-b1 u-textCenter w-100">
             <svg version="1.1" viewbox="0 0 54 54">
               {% include icons/services.html %}
             </svg>
@@ -178,7 +162,7 @@ FYI: old way of adding a responsive image:
     <section class="b-py3 bg-neutralAlt">
       <div class="Container Container--text">
         <div class="m-b5">
-          <figure class="u-icon u-icon--lg m-b3 u-textCenter w-100">
+          <figure class="u-icon u-icon--lg m-b1 u-textCenter w-100">
             <svg version="1.1" viewbox="0 0 54 54">
               {% include icons/about.html %}
             </svg>
@@ -221,7 +205,7 @@ FYI: old way of adding a responsive image:
               <div class="u-absolutePin">
                 <div class="u-flexChildrenCenter">
                   <div class="Container Container--xs">
-                    <figure class="u-icon u-icon--lg c-bg m-b3 u-textCenter w-100">
+                    <figure class="u-icon u-icon--lg c-bg m-b1 u-textCenter w-100">
                       <svg version="1.1" viewbox="0 0 54 54">
                         {% include icons/blog.html %}
                       </svg>

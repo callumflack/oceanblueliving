@@ -584,6 +584,9 @@ img {
 .c-gray {
   color: var(--c-gray) !important;
 }
+.c-muted {
+  color: var(--c-muted) !important;
+}
 .c-border {
   color: var(--c-border) !important;
 }
@@ -4300,6 +4303,65 @@ hr {
 
   
 }
+.FlexGrid--socialButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: calc(-1 * var(--s-3));
+  margin-left: calc(-1 * var(--s-3))
+}
+.FlexGrid--socialButtons > * {
+  
+  -webkit-box-flex: 1;
+  
+      -ms-flex: 1 1 auto;
+  
+          flex: 1 1 auto;
+  
+  padding-right: var(--s-3);
+  
+  padding-left: var(--s-3);
+
+  
+}
+@media (min-width: 512px) {
+  .FlexGrid--socialButtons {
+  
+    -webkit-box-orient: horizontal;
+  
+    -webkit-box-direction: normal;
+  
+        -ms-flex-direction: row;
+  
+            flex-direction: row;
+
+  
+  }
+
+  
+}
+.FlexGrid--socialButtons div + div {
+  
+  margin-top: var(--s-4);
+
+  
+}
+@media (min-width: 512px) {
+  .FlexGrid--socialButtons div + div {
+  
+    margin-top: 0;
+
+  
+  }
+
+  
+}
 .FlexGrid--designs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4911,7 +4973,7 @@ img[data-sizes="auto"] {
   position: relative;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .Category-image {
   
     height: var(--categoryButtonHeight);
@@ -4944,29 +5006,22 @@ img[data-sizes="auto"] {
   
 }
 .Footer-author {
-  bottom: 96px;
-  bottom: 6rem;
-  color: var(--c-gray);
+  color: var(--c-muted);
   position: absolute;
-  right: -32px;
-  right: -2rem;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+
+  top: 80px;
+  top: 5rem;
+  right: -48px;
+  right: -3rem;
 }
 @media (min-width: 512px) {
   .Footer-author {
   
-    bottom: 5rem;
-
+    top: auto;
   
-  }
-
-  
-}
-@media (min-width: 1280px) {
-  .Footer-author {
-  
-    bottom: 7rem;
+    bottom: 6rem;
 
   
   }
@@ -5147,21 +5202,25 @@ img[data-sizes="auto"] {
   
     bottom: auto;
   
-    top: var(--s-5);
-  
-    right: var(--s-5);
-
-  
-  }
-  .Nav-toggle button {
-  
-    color: var(--c-brand);
+    top: var(--s-4);
 
   
   }
   .Nav-toggle.is-reversedOut button {
   
     color: var(--c-bg);
+
+  
+  }
+
+  
+}
+@media (min-width: 1280px) {
+  .Nav-toggle {
+  
+    top: var(--s-5);
+  
+    right: var(--s-5);
 
   
   }
