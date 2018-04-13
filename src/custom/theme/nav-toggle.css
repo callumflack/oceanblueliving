@@ -1,0 +1,53 @@
+.Nav-toggle {
+  background-color: var(--c-bg);
+  border: 1px solid var(--c-border);
+  border-radius: 999px;
+  bottom: var(--s-4);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14),
+    0 5px 3px -4px rgba(0, 0, 0, 0.12), 0 9px 19px 0 rgba(0, 0, 0, 0.2);
+  color: var(--c-bg);
+  display: inline-flex;
+  height: 44px;
+  justify-content: center;
+  position: fixed;
+  right: var(--s-4);
+  width: 44px;
+  z-index: 9;
+
+  & button {
+    color: var(--c-brand);
+  }
+
+  @media (--md) {
+    background-color: initial;
+    border: initial;
+    box-shadow: initial;
+    color: var(--c-brand);
+    bottom: auto;
+    top: var(--s-4);
+
+    &.is-reversedOut button {
+      color: var(--c-bg);
+    }
+  }
+
+  @media (--lg) {
+    top: var(--s-5);
+    right: var(--s-5);
+  }
+}
+
+/*  
+  Make the header nav fixed and animate down into view on scroll
+  Req's: component.fixedheaderanimation.js
+  See: http://codepen.io/Craig-Watson/pen/zGbNRL
+
+
+$FixedNavHeight: rem(220);
+
+.Nav-toggle--transition {
+  position: fixed;
+  transform: translateY(-#{$FixedNavHeight});
+  transition-duration: map-fetch($transition, duration, long);
+}
+*/

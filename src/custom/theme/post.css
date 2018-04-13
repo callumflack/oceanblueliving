@@ -1,0 +1,59 @@
+/*
+
+  Blog index post buttons.
+
+*/
+
+.PostButton + .PostButton {
+  margin-top: var(--responsive-space);
+
+  @media (--sm) {
+    margin-top: 0;
+  }
+}
+
+.PostButton a {
+  align-items: flex-end;
+  display: flex;
+  height: 100%;
+  opacity: 1;
+
+  &:hover {
+    & .CoverImage,
+    & .PostButton-image {
+      transition: all 500ms ease-out;
+      opacity: 0.5;
+    }
+  }
+}
+
+.PostButton-content {
+  flex: 1;
+}
+
+.PostButton-image {
+  height: 22.5vh;
+  min-height: var(--s-7);
+  position: relative;
+  width: 100%;
+}
+
+.Post-header {
+  /* @include sectionSpace--sm(); */
+}
+
+/*
+
+  Blog post metas
+
+*/
+
+.Post-meta {
+  @mixin fs-textXs;
+  color: var(--c-textLight);
+  margin: var(--s-2) 0;
+}
+
+.Post-tag,
+.Post-date {
+}

@@ -1,49 +1,50 @@
-<footer class="Footer" role="contentinfo">
-    <div class="Container Container--sm">
-        <a class="Footer-logo" href="/">
-            <img src="/uploads/logo.png" alt="{{ site.title }}">
-        </a>
-
-        <nav class="Footer-nav">
-            <ul class="o-listInline">
-                <li><a href="/">Home</a></li>
-                <li><a href="/applications">Applications</a></li>
-                <li><a href="/design">Design</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/about">About</a></li>
-            </ul>
-        </nav>
-
-        <div class="Grid Grid--alignCenter">
-            <div class="Grid-cell u-size8of12 u-md-size11of12 u-lg-size10of12">
-                <div class="Grid Grid--withGutter Footer-info">
-                    <div class="Grid-cell u-xs-size6of12 u-md-size3of12">
-                        <ul class="o-listClean u-textSm">
-                            <li><a href="tel:{{ site.contact-phone }}">T: {{ site.contact-phone }}</a></li>
-                            <li><a href="mailto:{{ site.contact-email }}">{{ site.contact-email }}</a></li>
-                        </ul>
-                    </div>
-                    <div class="Grid-cell u-xs-size6of12 u-md-size3of12">
-                        <a class="u-textSm u-block" href="https://goo.gl/maps/GQHnTB9koXQ2" target="_blank">
-                            {{ site.contact-address }}
-                        </a>
-                    </div>
-                    <div class="Grid-cell u-xs-size6of12 u-md-size3of12">
-                        <p class="u-textSm u-marginB0">{{ site.contact-open }}</p>
-                        <p class="u-textSm">{{ site.contact-appt }}</p>
-                    </div>
-                    <div class="Grid-cell u-xs-size6of12 u-md-size3of12">
-                        <ul class="o-listClean u-textSm">
-                            <li><a href="{{ site.social-facebook }}">Like us on Facebook</a></li>
-                            <li><a href="{{ site.social-instagram }}">Gram us on Instagram</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+<footer class="Footer b-py2 bg-neutralAlt u-relative" role="contentinfo">
+  <div class="Container">
+    <div class="u-textCenter">
+      <a class="Header-logo" href="/">
+        <img src="/uploads/logo.png" alt="{{ site.title }}">
+      </a>
     </div>
+    <nav class="b-py1">
+      <ul class="u-md-inlineChildrenBlock u-listUnstyled u-textCenter">
+        <li><a href="/">Home</a></li>
+        <li><a href="/applications">Applications</a></li>
+        <li><a href="/design">Design</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
 
-    <a href="https://www.patternworks.com.au" class="Footer-author">Site by Patternworks</a>
+    <div class="w-8of12 w-md-7of12 w-lg-9of12 m-xA">
+      <div class="FlexGrid u-flexJustifyCenter">
+        <div class="w-sm-1of2 w-lg-1of4 m-b2 m-sm-b0">
+          <ul class="Text--xs u-listUnstyled u-textCenterBlock u-sm-textLeftBlock">
+            <li><a href="tel:{{ site.contact-phone }}">T: {{ site.contact-phone }}</a></li>
+            <li><a href="mailto:{{ site.contact-email }}">{{ site.contact-email }}</a></li>
+          </ul>
+        </div>
+        <div class="w-sm-1of2 w-lg-1of4 m-b2 m-sm-b0 u-textCenterBlock u-sm-textLeftBlock">
+          <a class="Text--xs u-block" href="https://goo.gl/maps/GQHnTB9koXQ2" target="_blank">
+            <!-- {{ site.contact-address }} -->
+            116 Lyons Street, Cairns<br>Queensland 4870 Australia
+          </a>
+        </div>
+        <div class="w-sm-1of2 w-lg-1of4 m-b2 m-sm-b0">
+          <ul class="Text--xs u-listUnstyled u-textCenterBlock u-sm-textLeftBlock">
+            <li>{{ site.contact-open }}</li>
+            <li>{{ site.contact-appt }}</li>
+          </ul>
+        </div>
+        <div class="w-sm-1of2 w-lg-1of4 m-b2 m-sm-b0">
+          <ul class="Text--xs u-listUnstyled u-textCenterBlock u-sm-textLeftBlock">
+            <li><a href="{{ site.social-facebook }}">Like us on Facebook</a></li>
+            <li><a href="{{ site.social-instagram }}">Gram us on Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://callumflack.design" class="Footer-author Text--xs">Site by Callum Flack Design</a>
 
 </footer>

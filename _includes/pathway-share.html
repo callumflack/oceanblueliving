@@ -1,0 +1,23 @@
+{% comment %}
+    See: http://www.ericmobley.net/social-media-share-buttons-impact-on-performance/
+    Also, fb could be: href="https://www.facebook.com/dialog/share?app_id=APP_ID&display=popup&href={{ permalink }}&redirect_uri={{ site.permalink }}
+    Register w/ fb: https://www.facebook.com/login.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Fapps
+    more refs: https://developers.facebook.com/docs/javascript/quickstart/v2.5
+{% endcomment %}
+
+<div class="m-l3" style="transform:translateY(-5px)">
+  <a class="" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}">
+    <span class="u-icon c-gray">
+      <svg version="1.1" viewbox="0 0 54 54">
+        {% include icons/facebook.html %}
+      </svg>
+    </span>
+  </a>
+  <a class="" href="mailto:?subject=Check out this article from {{ site.title }}&body={{ page.caption }} …at: {{ page.url | prepend: site.url }}" target="_blank">
+    <span class="u-icon c-gray">
+      <svg version="1.1" viewbox="0 0 54 54">
+        {% include icons/email.html %}
+      </svg>
+    </span>
+  </a>
+</div>

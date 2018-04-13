@@ -2,7 +2,7 @@
 title: applications
 date: 2016-06-02 10:46:00 +10:00
 position: 1
-headline: Durable. Functional. Beautiful.
+headline: Durable, functional, beautiful
 button: See all we do →
 gallery-images:
 - home-appl-160812-corellast.jpg
@@ -45,4 +45,3 @@ second-p: We use water-jet cutting technology to precisely cut metal from busine
   you’ll be limited only by what you can think of. Our products are proudly designed
   and built in our Cairns workshop.
 ---
-

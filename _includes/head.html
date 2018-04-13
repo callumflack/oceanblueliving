@@ -9,11 +9,13 @@
 
     {% include lazysize-scripts.html %}
     {% include lazysize-styles.html %}
-    {% include critical-css.html %}
 
-    <link rel="stylesheet" href="{{ "/build/slick.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/build/application.css" | prepend: site.baseurl }}">
+    <!-- <link rel="stylesheet" href="{{ "/public/css/application.css" | prepend: site.baseurl }}"> -->
+    <link rel="stylesheet" href="{{ "/public/css/custom.css" | prepend: site.baseurl }}">
 
-    {% comment %}{% feed_meta %}{% endcomment %}
+    {% comment %}
+      {% include critical-css.html %}
+      {% feed_meta %}
+    {% endcomment %}
 
 </head>

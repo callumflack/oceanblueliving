@@ -1,0 +1,181 @@
+// --------------------------------------------------------------------------
+//   HEADER
+// --------------------------------------------------------------------------
+
+.Header {
+  background-color: palette(white);
+  //padding: 0 space(1);
+  position: relative;
+
+  &--light {
+    background-color: palette(background);
+  }
+
+  &--fade {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(palette(neutral-dark), 0) 50%,
+      rgba(palette(neutral-dark), 0.7) 100%
+    );
+  }
+}
+
+.Header-masthead {
+  @include sectionSpace--xsTop();
+  position: relative;
+  text-align: center;
+  z-index: 3;
+}
+
+// .Header-wrapper {
+//     @include posAbsoluteCenter();
+//     z-index: 2;
+//
+//     &--top {
+//         bottom: auto;
+//     }
+//
+//     > .Container {
+//         text-align: center;
+//     }
+// }
+
+.Header--fullRatio .FlexEmbed-ratio {
+  padding-bottom: 100vh;
+
+  //padding-bottom: 180%;
+  //padding-bottom: calc(100vh - 48px);
+  //@include respond-to(xs) { padding-bottom: 125%; }
+  //@include respond-to(md) { padding-bottom: 75%; }
+  //@include respond-to(lg) { padding-bottom: 66%; }
+  //@include respond-to(xl) { padding-bottom: 100vh; }
+}
+
+.Header--almostFullRatio .FlexEmbed-ratio {
+  padding-bottom: 75vh;
+}
+
+.Header--halfRatio .FlexEmbed-ratio {
+  padding-bottom: 50vh;
+
+  //padding-bottom: 90%;
+  //@include respond-to(xs) { padding-bottom: 62.5%; }
+  //@include respond-to(md) { padding-bottom: 37.5%; }
+  //@include respond-to(lg) { padding-bottom: 33%; }
+  //@include respond-to(xl) { padding-bottom: 50vh; }
+
+  //padding-bottom: 65%;
+  //@include respond-to(xs) { padding-bottom: 50%; }
+  //@include respond-to(md) { padding-bottom: 37.5%; }
+  //@include respond-to(lg) { padding-bottom: 33%; }
+  //@include respond-to(xl) { padding-bottom: 50vh; }
+}
+
+.Header--fullRatioHeight {
+  height: 100vh;
+}
+.Header--halfRatioHeight {
+  height: 50vh;
+}
+
+.Header--halfRatioHeightPadding {
+  padding-bottom: 50vh;
+}
+
+// A method where lazyloading can be applied. No IE support at all.
+// See: https://css-tricks.com/almanac/properties/o/object-fit/
+//<div class="CoverImage--dark u-posRelative">
+//	<img class="objectFit" src="/uploads/home-hero-4.jpg" alt="">
+//</div>
+
+.objectFit {
+  object-fit: cover;
+}
+
+.Header--fullRatio .objectFit {
+  height: 75vh;
+  width: 100%;
+
+  //@include respond-to(xs) { padding-bottom: 125%; }
+  //@include respond-to(md) { padding-bottom: 75%; }
+  //@include respond-to(lg) { padding-bottom: 66%; }
+  //@include respond-to(xl) { padding-bottom: 100vh; }
+}
+
+// Header elements
+// --------------------------------------------------------------------------
+
+// .Header-logo {
+//     // border-bottom: 1px solid palette(brand);
+//     display: inline-block;
+//     // padding-bottom: space(1);
+//
+//     > img {
+//         //width: 30%;
+//         width: 100px;
+//         @include respond-to(lg) { width: 120px; }
+//     }
+//
+//     @include when-inside(".Header--rev") {
+//         border-color: palette(white);
+//     }
+// }
+
+.Header-display {
+  @include headlineLg();
+}
+.Header-title {
+  @include headlineRg();
+}
+
+.Header-display,
+.Header-title {
+  margin: space(1) auto 0;
+
+  //@include media-breakpoint-up(sm) {
+  //    width: 90%;
+  //
+  //    // TODO: not appending page.title classes for SEO extraction purposes.
+  //    // So is this required? Prob not.
+  //    @include when-inside(".home") { width: 70%; }
+  //    //@include when-inside(".applications") { width: 80%; }
+  //}
+
+  @include when-inside(".Header--rev") {
+    color: palette(white);
+    text-shadow: 0 0 space(1) rgba(palette(black), 1);
+  }
+}
+
+.Header-hero {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  > img {
+    width: 100%;
+    @include respond-to(xs) {
+      width: 90%;
+    }
+    @include respond-to(md) {
+      width: 66%;
+    }
+    @include respond-to(xl) {
+      width: 55%;
+    }
+  }
+}
+
+// Header trumps
+// --------------------------------------------------------------------------
+
+//.applications .Header {
+//    background-color: palette(background);
+//}
+//
+//.applications .Header .Pathway-text {
+//    @include media-breakpoint-down(sm) {
+//        em { display: none; }
+//    }
+//}

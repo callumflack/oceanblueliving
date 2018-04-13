@@ -4,7 +4,7 @@
 
 	if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
 		document.createElement('picture');
-		loadJS("/build/ls.respimg.min.js");
+		loadJS("/public/js/ls.respimg.min.js");
 	}
 
 	// config for responsive images via lazysizes, taken from http://afarkas.github.io/lazysizes/#examples
@@ -18,5 +18,5 @@
 
 </script>
 
-{% if page.title == "design" %}<script src="/build/ls.unveilhooks.min.js" async=""></script>{% endif %}
-<script src="/build/lazysizes.min.js" async=""></script>
+{% if page.title == "design" %}<script src="/public/js/ls.unveilhooks.min.js" async=""></script>{% endif %}
+<script src="/public/js/lazysizes.min.js" async=""></script>

@@ -1,0 +1,15 @@
+.Header {
+  position: relative;
+}
+
+.Header-logo {
+  display: inline-block;
+
+  & > img {
+    width: 100px;
+
+    @media (--lg) {
+      width: 120px;
+    }
+  }
+}

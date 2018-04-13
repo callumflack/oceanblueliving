@@ -1,0 +1,28 @@
+.Hero-hgroup {
+  position: relative;
+
+  & h1,
+  & h2 {
+    color: var(--color-bg);
+    color: var(--c-white);
+    text-align: center;
+    text-shadow: 0 0 24px rgba(0, 0, 0, 1);
+  }
+
+  & button {
+    color: var(--c-white);
+  }
+}
+
+.Hero-showcase {
+  background-color: var(--c-neutral);
+  background-color: whitesmoke;
+  border-bottom: 1px solid var(--c-border);
+  position: relative;
+
+  &:after {
+    @mixin absolutePin;
+    background: linear-gradient(rgba(0,0,0,0) 80%, rgba(0,0,0,0.05) 100%);
+    content: "";
+  }
+}

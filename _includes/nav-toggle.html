@@ -1,10 +1,12 @@
 <nav class="
-    Nav-toggle 
-    {% if page.navToggleReversedOut %} js-navToggle is-reversedOut
-    {% endif %}">
-    <button class="IconWrapper" type="button" data-modal-toggle>
-        <svg class="Icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ic-nav"></use>
-        </svg>
-    </button>
+  Nav-toggle 
+  {% if page.navToggleReversedOut %} js-navToggle is-reversedOut
+  {% endif %}">
+  <button class="u-md-iconWrapper" type="button" data-modal-toggle>
+    <span class="u-icon u-icon--hamburger">
+      <svg version="1.1" viewbox="0 0 24 18">
+        {% include icons/hamburger.html %}
+      </svg>
+    </span>
+  </button>
 </nav>

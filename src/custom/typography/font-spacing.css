@@ -1,0 +1,64 @@
+/* 
+  -------------------------------------------------
+
+  Spaces
+
+  -------------------------------------------------
+ */
+
+p,
+ul,
+ol,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h6,
+.ParagraphSpace {
+  margin-bottom: var(--s-3);
+
+  @media (--md) {
+    margin-bottom: var(--s-3);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.TypeScope h1,
+.TypeScope h2,
+.TypeScope h3,
+.TypeScope h4,
+.TypeScope h6,
+.HeadingSpace {
+  &:not(:first-child) {
+    margin-top: calc(3 * var(--s-3));
+
+    @media (--md) {
+      margin-top: calc(3 * var(--s-3));
+    }
+  }
+}
+
+blockquote {
+  margin-top: calc(1.5 * var(--s-3));
+  margin-bottom: calc(1.5 * var(--s-3));
+}
+
+* + .Button {
+  margin-top: var(--s-3);
+
+  @media (--lg) {
+    margin-top: var(--s-3a);
+  }
+}
+
+.Button + .Button {
+  margin-top: var(--s-2);
+
+  @media (--lg) {
+    margin-top: var(--s-2);
+  }
+}

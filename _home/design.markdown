@@ -2,7 +2,7 @@
 title: design
 date: 2016-06-02 10:52:00 +10:00
 position: 2
-headline: Design it yourself.
+headline: Design it yourself
 button-orig: Get an estimate →
 button: See our designs →
 ---

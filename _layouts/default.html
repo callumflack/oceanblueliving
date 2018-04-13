@@ -7,24 +7,28 @@
     data-spy="scroll" data-target="#scrollspy" data-offset="300">
 
     {% include nav-toggle.html %}
-
-    {{ content }}
+    
+    <div class="Page">
+      {{ content }}
+    </div>
 
     {% include footer.html %}
     {% include nav.html %}
+    
+    <!-- {% comment %}
     {% include icons.html %}
     {% include icons-lg.html %}
+    {% endcomment %} -->
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
-    <script src="/build/lib.owl.carousel.min.js"></script>
-    <script src="/build/lib.flickity.min.js"></script>
-    <script src="/build/lib.slick.min.js"></script>
-    <script src="/build/application.min.js"></script>
-    <script src="/build/lib.modernizr.min.js"></script>
-    <script src="/build/component.cloudinary.js"></script>
-    <script src="/build/component.slick.js"></script>
-    <script src="/build/component.navToggleReverseOut.js"></script>
-    <!-- <script src='/build/jquery.cloudinary.js' type='text/javascript'></script> -->
+    
+    <!-- <script src="/public/js/application.min.js"></script> -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/public/js/lib.modernizr.min.js"></script>
+    <script src="/public/js/component.cloudinary.js"></script>
+    <script src="/public/js/component.navToggleReverseOut.js"></script>
+    <script src="/public/js/component.modal.js"></script>
+    
     {% include google-analytics.html %}
 
 </body>
