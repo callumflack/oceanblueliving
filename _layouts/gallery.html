@@ -35,10 +35,8 @@ layout: default
       <div class="FlexGrid--designs u-flexJustifyCenter">
         
         {% for image in gallery.gallery-images %}
-          <!-- <p class="c-bg">{{ image.path }}</p> -->
-          
           <div class="w-1of2 w-sm-1of3">
-            <a class="u-linkPointer" type="w-100" data-modal-toggle data-modal-id="gallery">
+            <a class="u-linkPointer" type="w-100" data-modal-toggle data-modal-id="gallery" data-src="{{ image }}">
               <div class="AspectRatio AspectRatio--4x3">
                 <div class="AspectRatio-content">
                   <!-- <div
@@ -47,7 +45,7 @@ layout: default
                   </div> -->
                   <div
                     class="u-absolutePin CoverImage"
-                    style="background-image:url('/{{ image }}')">
+                    style="background-image:url('{{ image }}')">
                   </div>
                 </div>
               </div>
@@ -85,3 +83,5 @@ layout: default
 
   </div>
 </div>
+
+<script src="/public/js/component.gallery.js"></script>
