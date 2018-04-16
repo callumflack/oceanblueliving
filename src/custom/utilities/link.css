@@ -41,6 +41,13 @@
   text-decoration: none !important;
 }
 
+.u-linkPointer,
+.u-linkPointer:hover,
+.u-linkPointer:focus,
+.u-linkPointer:active {
+  cursor: pointer !important;
+}
+
 /* THEME */
 
 @define-mixin linkBuried {

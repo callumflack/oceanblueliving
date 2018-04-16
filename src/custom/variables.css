@@ -102,10 +102,6 @@
   
    */
 
-  --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
-  --ff-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;  
-  --ff-stack-heading: 'Courier New', 'Consolas', 'Andale Mono', 'Lucida San Typewriter', 'Lucida Console', mono-spaced;
-
   --ff-text-light: "Calibre-Light";
   --ff-text-regular: "Calibre-Regular";
   --ff-text-medium: "Calibre-Medium";
@@ -113,6 +109,10 @@
 
   --ff-heading: "Akkurat-Mono";
 
+  --ff-stack-serif: Georgia, "Times New Roman", Times, serif;
+  --ff-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;  
+  --ff-stack-heading: 'Courier New', 'Consolas', 'Andale Mono', 'Lucida San Typewriter', 'Lucida Console', mono-spaced;
+  
   /* 
 
     Font weights
@@ -141,7 +141,6 @@
   
   --fs-subheading: 1.5625em;
   --fs-heading: 1.75em;
-  --fs-title: calc(var(--fs-text-unit) * 1.75em);
   --fs-title: 2em;
 
 

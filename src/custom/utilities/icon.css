@@ -58,6 +58,13 @@
   width: 24px;
 }
 
+.u-icon--close {
+  cursor: pointer;
+  height: 19px;
+  margin-top: 12px;
+  width: 19px;
+}
+
 .u-icon--tiny,
 .u-icon--tiny svg {
   height: 0.75em;
