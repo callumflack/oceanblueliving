@@ -67,4 +67,9 @@ outdoor_second_text: 'Our outdoor metalworks broaden your living spaces—which 
   of our fire-pits even fold away, to avoid inevitable backyard cricket crashes.
 
 '
+commercial_first_text: 'Our outdoor metalworks broaden your living spaces—which is especially
+  useful in tropical Queensland—by complementing your existing living spaces using
+  architectural objects that blend into your natural surroundings.
+
+'
 ---

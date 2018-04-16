@@ -38,19 +38,21 @@ layout: default
           <!-- <p class="c-bg">{{ image.path }}</p> -->
           
           <div class="w-1of2 w-sm-1of3">
-            <div class="AspectRatio AspectRatio--4x3">
-              <div class="AspectRatio-content">
-                <!-- <div
-                  class="u-absolutePin CoverImage lazyload"
-                  data-bg="{{ image.path }}">
-                </div> -->
-                <div
-                  class="u-absolutePin CoverImage"
-                  style="background-image:url('/{{ image }}')">
+            <a class="u-linkPointer" type="w-100" data-modal-toggle data-modal-id="gallery">
+              <div class="AspectRatio AspectRatio--4x3">
+                <div class="AspectRatio-content">
+                  <!-- <div
+                    class="u-absolutePin CoverImage lazyload"
+                    data-bg="{{ image.path }}">
+                  </div> -->
+                  <div
+                    class="u-absolutePin CoverImage"
+                    style="background-image:url('/{{ image }}')">
+                  </div>
                 </div>
               </div>
-            </div>
-            <p class="Text--xs c-bg m-t2 m-b4">{{ image.path | remove:'/designs-rg/' | remove:'.png' | replace: '-', ' ' }}</p>
+              <p class="Text--xs c-bg m-t2 m-b4">{{ image.path | remove:'/designs-rg/' | remove:'.png' | replace: '-', ' ' }}</p>
+            </a>
           </div>
         {% endfor %}
 
@@ -64,3 +66,22 @@ layout: default
     </div>
   </section>
 </main>
+
+<div class="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-modal data-modal-id="gallery">
+  <div class="Modal-dialog" role="document">
+    <span class="Nav-toggle">
+      <span class="u-icon u-icon--close c-bg">
+        {% include icons/close.html %}
+      </span>
+    </span>
+
+    <div class="u-fullScreen">
+      <div class="u-flexChildrenCenter">
+        <div class="Container Container--hero u-textCenter">
+          <img src="/uploads/gallery-joselito.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

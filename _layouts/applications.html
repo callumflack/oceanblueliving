@@ -32,8 +32,8 @@ layout: default
     <div class="Container">
       <div class="Tabs-container">
           
-        <input id="Tab-one" type="radio" name="grp" checked="checked"/>
-        <label for="Tab-one" class="Subheading">Screens</label>
+        <input id="Tab-1" type="radio" name="grp" checked="checked"/>
+        <label for="Tab-1" class="Subheading">Screens</label>
         <div class="Tab">
           <div class="Container--text m-xA">
             <div class="b-py2">
@@ -47,8 +47,8 @@ layout: default
           <img src="/uploads/appl-screens.png" alt="">
         </div>
         
-        <input id="Tab-two" type="radio" name="grp" />
-        <label for="Tab-two" class="Subheading">Gates</label>
+        <input id="Tab-2" type="radio" name="grp" />
+        <label for="Tab-2" class="Subheading">Gates</label>
         <div class="Tab">
           <div class="Container--text m-xA">
               <div class="b-py2">
@@ -58,12 +58,23 @@ layout: default
           <img src="/uploads/appl-gates.png" alt="">
         </div>
 
-        <input id="Tab-three" type="radio" name="grp" />
-        <label for="Tab-three" class="Subheading">Outdoor</label>
+        <input id="Tab-3" type="radio" name="grp" />
+        <label for="Tab-3" class="Subheading">Outdoor</label>
         <div class="Tab">
           <div class="Container--text m-xA">
             <div class="b-py2">
               {{ applications.outdoor_first_text | markdownify }}
+            </div>
+          </div>
+          <img src="/uploads/appl-outdoor.png" alt="">
+        </div>
+        
+        <input id="Tab-4" type="radio" name="grp" />
+        <label for="Tab-4" class="Subheading">Commercial</label>
+        <div class="Tab">
+          <div class="Container--text m-xA">
+            <div class="b-py2">
+              {{ applications.commercial_first_text | markdownify }}
             </div>
           </div>
           <img src="/uploads/appl-outdoor.png" alt="">
