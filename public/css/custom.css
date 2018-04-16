@@ -5221,7 +5221,17 @@ img[data-sizes="auto"] {
   background-color: var(--c-brand);
 }
 .gallery .Nav-toggle button {
-  color: var(--c-bg);
+  color: var(--c-brand);
+}
+@media (min-width: 768px) {
+  .gallery .Nav-toggle button {
+  
+    color: var(--c-bg);
+
+  
+  }
+
+  
 }
 .gallery hr {
   
