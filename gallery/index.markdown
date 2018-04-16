@@ -6,12 +6,12 @@ navToggleReversedOut: false
 gallery-images:
 - "/uploads/LARGE-9.jpg"
 - "/uploads/LARGE-1-a31f28.jpg"
-- /uploads/gallery-joselito-1.jpg
-- /uploads/gallery-joselito-2.jpg
-- /uploads/gallery-joselito-3.jpg
-- /uploads/gallery-joselito-4.jpg
-- /uploads/gallery-joselito-5.jpg
-- /uploads/gallery-joselito-6.jpg
+- "/uploads/gallery-joselito-1.jpg"
+- "/uploads/gallery-joselito-2.jpg"
+- "/uploads/gallery-joselito-3.jpg"
+- "/uploads/gallery-joselito-4.jpg"
+- "/uploads/gallery-joselito-5.jpg"
+- "/uploads/gallery-joselito-6.jpg"
 layout: gallery
 ---
 
