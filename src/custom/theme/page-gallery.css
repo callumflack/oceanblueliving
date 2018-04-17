@@ -29,3 +29,7 @@
     color: var(--c-textMid);
   }
 }
+
+.gallery [data-modal-id="gallery"].is-active {
+  transition-delay: 150ms;
+}
