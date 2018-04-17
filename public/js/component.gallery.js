@@ -15,6 +15,7 @@
 
     // If the modal is for a gallery, set the image src
     if (id.toLowerCase() === "gallery" && src) {
+      $(MODAL + " img")[0].setAttribute("src", "");
       $(MODAL + " img")[0].setAttribute("src", src);
     }
 
