@@ -25,5 +25,5 @@
 
 .CloudinaryImage.xs.is-loaded {
   opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  transition: opacity 750ms ease-out 500ms;
 }
