@@ -43,7 +43,7 @@ layout: default
           <div class="AspectRatio AspectRatio--16x9">
             <div class="AspectRatio-content">
               {% assign image = "uploads/appl-screens-1A.png" %}
-              {% include responsive-img-cloudinary.html %}
+              {% include responsive-img-cloudinary-applications.html %}
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@ layout: default
           <div class="AspectRatio AspectRatio--16x9">
             <div class="AspectRatio-content">
               {% assign image = "uploads/appl-gates-1A.png" %}
-              {% include responsive-img-cloudinary.html %}
+              {% include responsive-img-cloudinary-applications.html %}
             </div>
           </div>
         </div>
@@ -75,12 +75,13 @@ layout: default
           <div class="AspectRatio AspectRatio--16x9">
             <div class="AspectRatio-content">
               {% assign image = "uploads/appl-outdoor-1A.png" %}
-              {% include responsive-img-cloudinary.html %}
+              {% include responsive-img-cloudinary-applications.html %}
             </div>
           </div>
         </div>
         
-        <!-- <input id="Tab-4" type="radio" name="grp" />
+        {% comment %}
+        <input id="Tab-4" type="radio" name="grp" />
         <label for="Tab-4" class="Subheading">Commercial</label>
         <div class="Tab">
           <div class="Container--text m-xA">
@@ -89,7 +90,8 @@ layout: default
             </div>
           </div>
           <img src="uploads/appl-outdoor.png" alt="">
-        </div> -->
+        </div>
+        {% endcomment %}
 
       </div>
     </div>

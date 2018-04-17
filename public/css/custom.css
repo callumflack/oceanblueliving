@@ -4528,8 +4528,8 @@ hr {
 }
 .CloudinaryImage.xs.is-loaded {
   opacity: 0;
-  -webkit-transition: opacity 150ms ease-in-out;
-  transition: opacity 150ms ease-in-out;
+  -webkit-transition: opacity 750ms ease-out 500ms;
+  transition: opacity 750ms ease-out 500ms;
 }
 .Modal {
   /* @mixin absolutePin; */
@@ -5150,8 +5150,6 @@ img[data-sizes="auto"] {
   width: 100%;
   
   margin-top: -1px;
-  
-  padding: 1em;
   
   border-top: 1px solid #ddd;
   
