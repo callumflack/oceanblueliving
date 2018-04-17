@@ -1,6 +1,6 @@
 ---
 title: gallery
-hero_headline: Gallery
+hero_headline: Gallery of works
 logoReversedOut: true
 navToggleReversedOut: false
 gallery-images:

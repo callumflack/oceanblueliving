@@ -6,24 +6,31 @@
   // Show the modal in the DOM
   $(document).on("click", "[data-modal-toggle]", function(e) {
     e.stopPropagation();
+
     var id = e.currentTarget.getAttribute("data-modal-id");
     var src = e.currentTarget.getAttribute("data-src");
-    var MODAL = "[data-modal-id=" + id + "]",
-      ACTIVE_CLASS = "is-active";
-    // If the modal is for a gallery set the image src
+    var MODAL = "[data-modal-id=" + id + "]";
+    var ACTIVE_CLASS = "is-active";
+    var SRC_CLASS = "is-active";
+
+    // If the modal is for a gallery, set the image src
     if (id.toLowerCase() === "gallery" && src) {
       $(MODAL + " img")[0].setAttribute("src", src);
     }
+
     $(MODAL).toggleClass(ACTIVE_CLASS);
+
     // Clicking anywhere outside the modal nav closes the modal.
     // Only attaches if a modal has been triggered.
     $(document).bind("click.modalNav", function() {
       var MODAL = "[data-modal]",
         ACTIVE_CLASS = "is-active";
+
       // If a modal is visible, close it.
       if ($(MODAL).hasClass(ACTIVE_CLASS)) {
         $(MODAL).removeClass(ACTIVE_CLASS);
       }
+
       $(document).unbind("click.modalNav");
     });
   });

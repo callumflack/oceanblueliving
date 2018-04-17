@@ -39,14 +39,19 @@ layout: default
             <a class="u-linkPointer" type="w-100" data-modal-toggle data-modal-id="gallery" data-src="{{ image }}">
               <div class="AspectRatio AspectRatio--4x3">
                 <div class="AspectRatio-content">
-                  <!-- <div
+                  {% comment %}
+                  <div
                     class="u-absolutePin CoverImage lazyload"
                     data-bg="{{ image.path }}">
-                  </div> -->
+                  </div> 
                   <div
                     class="u-absolutePin CoverImage"
                     style="background-image:url('{{ image }}')">
                   </div>
+                  {% endcomment %}
+                  {% assign image = {{ image.path }} %}
+                  {% include responsive-img-cloudinary-gallerythumb.html %}
+                  
                 </div>
               </div>
               <p class="Text--xs c-bg m-t2 m-b4">{{ image.path | remove:'/designs-rg/' | remove:'.png' | replace: '-', ' ' }}</p>
@@ -73,10 +78,19 @@ layout: default
       </button>
     </span>
 
-    <div class="u-fullScreen" style="cursor:pointer">
+    <div class="u-fullScreen u-linkPointer">
       <div class="u-flexChildrenCenter">
         <div class="Container Container--hero u-textCenter">
           <img src="" alt="">
+          {% comment %}
+          <div class="AspectRatio AspectRatio--16x9">
+            <div class="AspectRatio-content">
+              <div class="CloudinaryImage is-loaded" 
+                  style="background-image: url('https://res.cloudinary.com/pw-img-cdn/image/fetch/w_2500,h_1406,c_fill,g_center,f_auto/https://www.oceanblueliving.com.au/{{ image }}')"
+              ></div>
+            </div>
+          </div>
+          {% endcomment %}
         </div>
       </div>
     </div>
