@@ -9,7 +9,7 @@ layout: default
   <div class="AspectRatio AspectRatio--halfHero">
     <div class="AspectRatio-content" style="opacity:0.7;">
       {% assign image = "uploads/appl-hero-160812-grinder.jpg" %}
-      {% include responsive-img-cloudinary.html %}
+      {% include responsive-img-cloudinary-hero.html %}
     </div>
   </div>
   <div class="u-absolutePin">
@@ -40,11 +40,12 @@ layout: default
               {{ applications.screens_first_text | markdownify }}
             </div>
           </div>
-          {% comment %}
-          {% assign image = "uploads/appl-screens.png" %}
-          {% include responsive-img-cloudinary.html %}
-          {% endcomment %}
-          <img src="/uploads/appl-screens.png" alt="">
+          <div class="AspectRatio AspectRatio--16x9">
+            <div class="AspectRatio-content">
+              {% assign image = "uploads/appl-screen-1A.png" %}
+              {% include responsive-img-cloudinary.html %}
+            </div>
+          </div>
         </div>
         
         <input id="Tab-2" type="radio" name="grp" />
@@ -55,7 +56,12 @@ layout: default
                 {{ applications.gates_first_text | markdownify }}
               </div>
           </div>
-          <img src="/uploads/appl-gates.png" alt="">
+          <div class="AspectRatio AspectRatio--16x9">
+            <div class="AspectRatio-content">
+              {% assign image = "uploads/appl-gates-1A.png" %}
+              {% include responsive-img-cloudinary.html %}
+            </div>
+          </div>
         </div>
 
         <input id="Tab-3" type="radio" name="grp" />
@@ -66,7 +72,12 @@ layout: default
               {{ applications.outdoor_first_text | markdownify }}
             </div>
           </div>
-          <img src="/uploads/appl-outdoor.png" alt="">
+          <div class="AspectRatio AspectRatio--16x9">
+            <div class="AspectRatio-content">
+              {% assign image = "uploads/appl-outdoor-1A.png" %}
+              {% include responsive-img-cloudinary.html %}
+            </div>
+          </div>
         </div>
         
         <!-- <input id="Tab-4" type="radio" name="grp" />
@@ -77,7 +88,7 @@ layout: default
               {{ applications.commercial_first_text | markdownify }}
             </div>
           </div>
-          <img src="/uploads/appl-outdoor.png" alt="">
+          <img src="uploads/appl-outdoor.png" alt="">
         </div> -->
 
       </div>

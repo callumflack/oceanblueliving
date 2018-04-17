@@ -20,7 +20,12 @@
     <script src="/public/js/lib.modernizr.min.js"></script>
     <script src="/public/js/component.cloudinary.js"></script>
     <script src="/public/js/component.navToggleReverseOut.js"></script>
-    <script src="/public/js/component.modal.js"></script>
+    
+    {% if page.title == "gallery" %}
+      <script src="/public/js/component.gallery.js"></script>
+    {% else %}
+      <script src="/public/js/component.modal.js"></script>
+    {% endif %}
     
     {% include google-analytics.html %}
     {% include facebook-pixel.html %}

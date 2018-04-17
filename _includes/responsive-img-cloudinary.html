@@ -1,13 +1,13 @@
 {% comment %}
 <img class="CloudinaryImage xs" src="https://res.cloudinary.com/pw-img-cdn/image/fetch/w_100,e_blur:300/https://www.oceanblueliving.com.au/uploads/{{ image }}">
-<img class="CloudinaryImage js-cloudinaryImageLarge" data-bg="https://www.oceanblueliving.com.au/uploads/{{ image }}" alt="{{ alt }}">
+<img class="CloudinaryImage js-cloudinaryImage" data-bg="https://www.oceanblueliving.com.au/uploads/{{ image }}" alt="{{ alt }}">
 {% endcomment %}
 
 <div 
-    class="CloudinaryImage xs" 
+    class="CloudinaryImage xs js-cloudinaryImage" 
     style="background-image: url('https://res.cloudinary.com/pw-img-cdn/image/fetch/w_100,e_blur:300/https://www.oceanblueliving.com.au/{{ image }}')"
 ></div>
 <div 
-    class="CloudinaryImage js-cloudinaryImageLarge" 
+    class="CloudinaryImage js-cloudinaryImage" 
     data-bg="https://www.oceanblueliving.com.au/{{ image }}" 
 ></div>

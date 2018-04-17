@@ -9,12 +9,6 @@
   @mixin CoverImage;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .CloudinaryImage.is-loaded {
@@ -27,4 +21,9 @@
   opacity: 1;
   transform: scale(1);
   transition: opacity 1s ease-in-out;
+}
+
+.CloudinaryImage.xs.is-loaded {
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
 }
