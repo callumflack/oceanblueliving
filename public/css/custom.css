@@ -5110,7 +5110,7 @@ img[data-sizes="auto"] {
   
   border: 1px solid #ddd;
   
-  padding: 0.7em 0.5em;
+  padding: 0.7em 0.8em;
   
   cursor: pointer;
   
@@ -5192,7 +5192,7 @@ img[data-sizes="auto"] {
 @media (max-width: 512px) {
   .Tabs-container .Subheading {
   
-    font-size: 1em;
+    font-size: 0.9em;
 
   
   }
