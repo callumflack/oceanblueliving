@@ -1,21 +1,18 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    {% seo title=false %}
+  <title>
+    {% if page.url == '/' %}{{ site.title }} | Transform your living spaces with
+    sculpted metalworks{% else %}{{ page.title | capitalize }} | {{ site.title
+    }}{% endif %}
+  </title>
 
-    <title>{% if page.url == '/' %}{{ site.title }}  | Transform your living spaces with sculpted metalworks{% else %}{{ page.title | capitalize }} | {{ site.title }}{% endif %}</title>
+  {% include lazysize-scripts.html %} {% include lazysize-styles.html %}
 
-    {% include lazysize-scripts.html %}
-    {% include lazysize-styles.html %}
-
-    <!-- <link rel="stylesheet" href="{{ "/public/css/application.css" | prepend: site.baseurl }}"> -->
-    <link rel="stylesheet" href="{{ "/public/css/custom.css" | prepend: site.baseurl }}">
-
-    {% comment %}
-      {% include critical-css.html %}
-      {% feed_meta %}
-    {% endcomment %}
-
+  <!-- <link rel="stylesheet" href="{{ "/public/css/application.css" | prepend: site.baseurl }}"> -->
+  <link rel="stylesheet" href="{{ "/public/css/custom.css" | prepend:
+  site.baseurl }}"> {% comment %} {% include critical-css.html %} {% feed_meta
+  %} {% endcomment %}
 </head>
